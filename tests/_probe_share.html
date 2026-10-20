@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>p</title></head>
+<body>
+<iframe id="f" style="width:1400px;height:3000px;border:0"></iframe>
+<script>
+// share-link decode: Senate, three solid-D seats then blanks
+const codes = '3'.repeat(3) + '.'.repeat(32);
+const f = document.getElementById('f');
+f.src = '/map.html#senate/' + codes;
+f.addEventListener('load', () => {
+  const w = f.contentWindow, d = f.contentDocument;
+  const T = (ms) => new Promise((r) => setTimeout(r, ms));
+  (async () => {
+    await T(2500);
+    const val = (id) => (d.getElementById(id) || {}).textContent || '';
+    document.title = 'DIAG ' + JSON.stringify({
+      tab: (d.querySelector('.tab.active') || {}).textContent || '',
+      tally: val('tD') + '/' + val('tR') + '/' + val('tI'),
+      called: val('tCalled'),
+    });
+  })();
+});
+</script>
+</body></html>

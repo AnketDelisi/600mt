@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0}iframe{width:1400px;height:4200px;border:0}</style></head>
+<body>
+<iframe id="f" src="/index.html"></iframe>
+<script>
+const f = document.getElementById('f');
+f.addEventListener('load', () => {
+  const w = f.contentWindow, d = f.contentDocument;
+  const errs = [];
+  w.addEventListener('error', (e) => errs.push('E:' + (e.message || '').slice(0, 80)));
+  w.addEventListener('unhandledrejection', (e) => errs.push('R:' + String((e.reason && e.reason.message) || e.reason).slice(0, 80)));
+  const T = (ms) => new Promise((r) => setTimeout(r, ms));
+  (async () => {
+    let n = 0;
+    while (n < 120 && !d.querySelector('#pane-senate table tbody tr')) { await T(250); n++; }
+    await T(1200);
+    const out = {};
+    out.updated = (d.getElementById('updated') || {}).textContent || '';
+    out.generic = (d.getElementById('generic') || {}).textContent || '';
+    out.senateRows = d.querySelectorAll('#pane-senate table tbody tr[data-key]').length;
+    out.senateMap = d.querySelectorAll('#pane-senate .map-svg path.st').length;
+    out.senateChance = d.querySelectorAll('#pane-senate .chance').length;
+    const tabs = [...d.querySelectorAll('.tab')];
+    out.tabs = tabs.length;
+    const houseTab = tabs.find((t) => t.dataset.chamber === 'house');
+    if (houseTab) { houseTab.click(); await T(1500); }
+    out.houseRows = d.querySelectorAll('#pane-house table tbody tr[data-key]').length;
+    out.houseMap = d.querySelectorAll('#pane-house .map-svg path.dist').length;
+    out.status = (d.querySelector('#pane-house .statusbar') || {}).innerText || '';
+    const govTab = tabs.find((t) => t.dataset.chamber === 'governor');
+    if (govTab) { govTab.click(); await T(1200); }
+    out.govRows = d.querySelectorAll('#pane-governor table tbody tr[data-key]').length;
+    out.govMap = d.querySelectorAll('#pane-governor .map-svg path.st').length;
+    out.errs = errs.length ? errs.join(' | ') : 'none';
+    document.title = 'DIAG ' + JSON.stringify(out);
+  })();
+});
+</script>
+</body></html>

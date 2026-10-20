@@ -1,0 +1,78 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0}iframe{width:1400px;height:4200px;border:0}</style></head>
+<body>
+<iframe id="f" src="/map.html"></iframe>
+<script>
+const f = document.getElementById('f');
+f.addEventListener('load', () => {
+  const w = f.contentWindow, d = f.contentDocument;
+  const errs = [];
+  w.addEventListener('error', (e) => errs.push('E:' + (e.message || '').slice(0, 80)));
+  w.addEventListener('unhandledrejection', (e) => errs.push('R:' + String((e.reason && e.reason.message) || e.reason).slice(0, 80)));
+  const T = (ms) => new Promise((r) => setTimeout(r, ms));
+  const val = (id) => (d.getElementById(id) || {}).textContent || '';
+  (async () => {
+    let n = 0;
+    while (n < 120 && !d.querySelector('#stage svg path.dist')) { await T(250); n++; }
+    await T(800);
+    const out = {};
+    out.dists = d.querySelectorAll('#stage svg path.dist').length;
+    out.tab = (d.querySelector('.tab.active') || {}).textContent || '';
+    out.t0 = val('tD') + '/' + val('tR') + '/' + val('tI');
+    // paint one district: zoom into the first state by clicking a district
+    const first = d.querySelector('#stage svg path.dist');
+    first.dispatchEvent(new w.MouseEvent('click', { bubbles: true }));
+    await T(600);
+    out.zoomBar = !d.getElementById('zoombar').hidden;
+    const zpath = d.querySelector('#stage svg path.dist');
+    if (zpath) {
+      zpath.dispatchEvent(new w.PointerEvent('pointerdown', { bubbles: true }));
+      zpath.dispatchEvent(new w.PointerEvent('pointerup', { bubbles: true }));
+      await T(300);
+      out.painted = (val('tD') + '/' + val('tR') + '/' + val('tI'));
+      out.called = val('tCalled');
+      // erase with context menu
+      zpath.dispatchEvent(new w.MouseEvent('contextmenu', { bubbles: true }));
+      await T(250);
+      out.erased = (val('tD') + '/' + val('tR') + '/' + val('tI'));
+      // paint again then undo
+      zpath.dispatchEvent(new w.PointerEvent('pointerdown', { bubbles: true }));
+      zpath.dispatchEvent(new w.PointerEvent('pointerup', { bubbles: true }));
+      d.getElementById('undoBtn').click();
+      await T(250);
+      out.undone = (val('tD') + '/' + val('tR') + '/' + val('tI'));
+      d.getElementById('fillStateBtn').click();
+      await T(300);
+      out.filledState = (val('tD') + '/' + val('tR') + '/' + val('tI'));
+      out.calledAfterFill = val('tCalled');
+    }
+    // load forecast on the house map
+    d.getElementById('loadFc').click();
+    await T(600);
+    out.forecastTally = (val('tD') + '/' + val('tR') + '/' + val('tI'));
+    out.forecastCalled = val('tCalled');
+    // senate tab
+    const stab = [...d.querySelectorAll('.tab')].find((t) => t.dataset.chamber === 'senate');
+    stab.click();
+    await T(700);
+    out.senRegions = d.querySelectorAll('#stage svg path.region').length;
+    out.senPaintable = d.querySelectorAll('#stage svg path.region:not(.nopaint)').length;
+    const sp = d.querySelector('#stage svg path.region:not(.nopaint)');
+    if (sp) {
+      sp.dispatchEvent(new w.PointerEvent('pointerdown', { bubbles: true }));
+      sp.dispatchEvent(new w.PointerEvent('pointerup', { bubbles: true }));
+      await T(300);
+      out.senTally = (val('tD') + '/' + val('tR') + '/' + val('tI'));
+      out.senLine = val('chamberLine').slice(0, 90);
+    }
+    // share builds a URL (clipboard may be blocked in headless)
+    d.getElementById('shareBtn').click();
+    await T(300);
+    out.shareToast = val('toast');
+    out.errs = errs.length ? errs.join(' | ') : 'none';
+    document.title = 'DIAG ' + JSON.stringify(out);
+  })();
+});
+</script>
+</body></html>
