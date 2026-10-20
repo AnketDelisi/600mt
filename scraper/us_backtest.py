@@ -18,14 +18,15 @@ Inputs:
 The environment (generic ballot) is the final 2024 average, D+1.0.
 
 Usage:
-  python scraper/us_backtest.py            # score the current constants
-  python scraper/us_backtest.py --sweep    # coarse constant sweep
+  python scraper/us_backtest.py            # score the current model
+  python scraper/us_calibrate.py --grid    # parameter grid (cached snapshots)
 """
 import argparse
 import math
 import os
 import re
 import sys
+from datetime import date
 
 import requests
 from bs4 import BeautifulSoup
@@ -254,19 +255,18 @@ def load_races(cycle=2024):
     return out
 
 
-def predict(race, chamber="senate", env=ENV_2024):
+def predict(race, chamber="senate", env=ENV_2024, asof=date(2024, 11, 5)):
     """The model's expected D-minus-R margin and D win probability."""
     polls = race.get("_polls")
-    margin = m.final_margin(race, polls, chamber)
-    rated = m.consensus_band(race.get("ratings")) is not None
-    mu = (m.ENV_WEIGHT[chamber] if rated
-          else m.UNRATED_ENV_WEIGHT[chamber]) * env
-    margin += mu
+    # the backtest cycles are 2022/2024; the honest lean is the 2020
+    # presidential result, not the 2024 one the live 2026 model uses
+    margin = m.final_margin(race, polls, chamber, env, asof, lean_year="2020")
     p_win = 1.0 / (1.0 + math.exp(-margin / m.LOGISTIC_BETA[chamber]))
     return margin, p_win
 
 
-def score(races, label="", chamber="senate", env=ENV_2024):
+def score(races, label="", chamber="senate", env=ENV_2024,
+          asof=date(2024, 11, 5)):
     n = win = 0
     mae = brier = 0.0
     bins = [(0.5, 0.6), (0.6, 0.7), (0.7, 0.85), (0.85, 1.01)]
@@ -275,7 +275,7 @@ def score(races, label="", chamber="senate", env=ENV_2024):
         actual = race.get("_actual")
         if actual is None:
             continue
-        margin, p_win = predict(race, chamber, env)
+        margin, p_win = predict(race, chamber, env, asof)
         n += 1
         mae += abs(margin - actual)
         dem_won = 1.0 if actual > 0 else 0.0
@@ -296,55 +296,10 @@ def score(races, label="", chamber="senate", env=ENV_2024):
                   (b[0], b[1], cnt, 100.0 * won / cnt))
 
 
-def sweep(races, chamber="senate", env=ENV_2024):
-    """Coarse grid over the tunable constants."""
-    base_consts = (m.POLL_WEIGHT, m.ENV_WEIGHT[chamber],
-                   m.UNRATED_ENV_WEIGHT[chamber], m.INC_BONUS,
-                   m.LOGISTIC_BETA[chamber])
-    results = []
-    for pw in (0.0, 0.35, 0.5, 0.65, 0.8, 1.0):
-        for ew in (0.0, 0.25, 0.5, 1.0):
-            for ib in (0.0, 1.5, 2.5):
-                for beta in (3.5, 4.0, 4.5, 5.0):
-                    m.POLL_WEIGHT = pw
-                    m.ENV_WEIGHT[chamber] = ew
-                    m.UNRATED_ENV_WEIGHT[chamber] = ew
-                    m.INC_BONUS = ib
-                    m.LOGISTIC_BETA[chamber] = beta
-                    n = win = 0
-                    mae = brier = 0.0
-                    for race in races:
-                        if race.get("_actual") is None:
-                            continue
-                        margin, p_win = predict(race, chamber, env)
-                        n += 1
-                        mae += abs(margin - race["_actual"])
-                        dem_won = 1.0 if race["_actual"] > 0 else 0.0
-                        brier += (p_win - dem_won) ** 2
-                        win += 1 if (margin > 0) == (dem_won == 1.0) else 0
-                    results.append((brier / n, mae / n, win, n, pw, ew, ib, beta))
-    # restore
-    (m.POLL_WEIGHT, m.ENV_WEIGHT[chamber], m.UNRATED_ENV_WEIGHT[chamber],
-     m.INC_BONUS, m.LOGISTIC_BETA[chamber]) = base_consts
-    results.sort()
-    print("\n== sweep %s (best by Brier; check sensitivity, do not overfit)" % chamber)
-    print("Brier   MAE   wins     poll_w env_w inc_b beta")
-    for row in results[:12]:
-        print("%.4f  %.2f  %d/%d   %.2f   %.2f  %.1f   %.1f" %
-              (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
-    base = [x for x in results
-            if (x[4], x[5], x[6], x[7]) == (0.65, 0.25, 1.5, 4.0)]
-    if base:
-        b = base[0]
-        print("current constants: Brier %.4f, MAE %.2f, wins %d/%d" %
-              (b[0], b[1], b[2], b[3]))
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--chamber", default="senate", choices=("senate", "house"))
     ap.add_argument("--cycle", type=int, default=2024, choices=(2022, 2024))
-    ap.add_argument("--sweep", action="store_true")
     args = ap.parse_args()
     if args.chamber == "house":
         print("loading %d House races (50 state articles)..." % args.cycle)
@@ -353,17 +308,16 @@ def main():
         print("loading %d Senate races..." % args.cycle)
         races = load_races(args.cycle)
         env = CYCLES[args.cycle]["env_fallback"]
+    asof = date(2024, 11, 5) if args.cycle == 2024 else date(2022, 11, 8)
     print("environment (generic ballot, D-R points): %s" % env)
     with_polls = sum(1 for x in races if x.get("_polls"))
     print("races: %d | with polls: %d | with actual: %d" %
           (len(races), with_polls,
            sum(1 for x in races if x.get("_actual") is not None)))
     ch = args.chamber
-    score(races, "all:", ch, env)
-    score([x for x in races if x.get("_polls")], "polled:", ch, env)
-    score([x for x in races if not x.get("_polls")], "unpolled:", ch, env)
-    if args.sweep:
-        sweep(races, ch, env)
+    score(races, "all:", ch, env, asof)
+    score([x for x in races if x.get("_polls")], "polled:", ch, env, asof)
+    score([x for x in races if not x.get("_polls")], "unpolled:", ch, env, asof)
 
 
 if __name__ == "__main__":

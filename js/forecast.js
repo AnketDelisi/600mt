@@ -488,11 +488,14 @@ function render() {
     ${dist}
     ${table}
     <p class="foot">
-      Method: the 600 in-house model starts from district/state partisan lean (PVI and the last election
-      result), clamps that margin inside the race-rating band (Cook, Inside Elections, Sabato), blends in
-      per-race polling averages where available, then runs a national-swing simulation
-      (${fmt(f.environment ? f.environment.n_sims : 20000)} nights, national swing &sigma; = ${fmt(f.environment ? f.environment.national_swing_sigma : 2.5)} pts centred on the generic ballot${f.environment && f.environment.state_swing_sigma ? `, plus a correlated per-state deviation &sigma; = ${fmt(f.environment.state_swing_sigma)} pts` : ""}).
-      Races without public polling are shown as &ldquo;&mdash;&rdquo;; their probability comes from the rating and lean alone.
+      Method: Senate races start from the state's lean in the last presidential
+      election, adjusted for the national environment (scaled by the state's
+      historical elasticity), incumbency and trend. House and governor races
+      start from district/state PVI, the last result and the rating band. Polls
+      are rebuilt from the individual surveys with recency and partisan
+      weighting and an outlier guard, then blended. The simulation runs
+      (${fmt(f.environment ? f.environment.n_sims : 20000)} nights, national swing &sigma; = ${fmt(f.environment ? f.environment.national_swing_sigma : 2.5)} pts${f.environment && f.environment.state_swing_sigma ? `, plus a correlated per-state deviation &sigma; = ${fmt(f.environment.state_swing_sigma)} pts` : ""}).
+      Races without public polling are shown as &ldquo;&mdash;&rdquo;; their probability comes from the fundamentals alone.
       Sources: Wikipedia (2026 Senate, House and gubernatorial election articles and ratings) and the generic-ballot aggregates.
       Model generated: ${f.generated ? new Date(f.generated).toUTCString() : "—"}.
       Want to disagree? <a href="map.html"><b>Paint the map yourself &rarr;</b></a>

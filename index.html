@@ -28,7 +28,7 @@
     <header class="masthead">
       <div class="kicker">2026 United States midterm elections &middot; November 3</div>
       <h1 class="display">The midterms,<br><em>race by race.</em></h1>
-      <p class="lede">Race-by-race chances for the Senate, the House and the governorships, from the 600 in-house model: district partisan lean and the last election, the consensus rating band, per-race polling, and a national-swing simulation of 20,000 election nights.</p>
+      <p class="lede">Race-by-race chances for the Senate, the House and the governorships, from the 600 in-house model: the state's presidential lean and the national environment, district fundamentals, per-race polling, and a correlated national-swing simulation of 20,000 election nights.</p>
       <div class="dateline">
         <span id="updated">Loading model&hellip;</span>
         <span>Generic ballot <b id="generic">—</b> D</span>
@@ -48,13 +48,18 @@
     <div id="pane-governor" class="pane"></div>
 
     <footer class="foot">
-      Method: the 600 model starts from district/state partisan lean (PVI and the last election
-      result), clamps that margin inside the race-rating band (Cook, Inside Elections, Sabato),
-      blends in per-race polling averages where available, then runs a national-swing Monte Carlo
-      centered on the generic ballot. Races without public polling get their probability from the
-      rating and lean alone. Sources: Wikipedia (2026 Senate, House and gubernatorial election
-      articles and their ratings tables) and the generic-ballot aggregates. The map painter on
-      <a href="map.html">the map builder</a> uses the same boundaries as the forecast map.
+      Method: Senate races start from the state's lean in the last presidential
+      election, adjusted for the national environment (scaled by the state's
+      historical elasticity), incumbency and trend. House and governor races
+      start from district/state PVI, the last result and the rating band. Polls
+      are rebuilt from the individual surveys with recency and partisan
+      weighting and an outlier guard, then blended. The Monte Carlo runs 20,000
+      nights with a national swing and a correlated per-state deviation. Races
+      without public polling get their probability from the fundamentals alone.
+      Sources: Wikipedia (2026 Senate, House and gubernatorial election articles
+      and their ratings tables) and the generic-ballot aggregates. The map
+      painter on <a href="map.html">the map builder</a> uses the same boundaries
+      as the forecast map.
     </footer>
   </main>
 

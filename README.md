@@ -4,9 +4,13 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
 **Senate, House and governorships** — and a map you can paint yourself.
 
 - **Forecast** (`index.html`) — win probabilities, expected seats, seat
-  distributions, and every race with its polling. The model blends district
-  partisan lean (PVI + last result), the Cook / Inside Elections / Sabato
-  rating band, per-race polling averages and a national-swing Monte Carlo.
+  distributions, and every race with its polling. Senate races start from the
+  state's presidential lean, the national environment (scaled by the state's
+  historical elasticity), incumbency and trend; House and governor races use
+  PVI, the last result and the rating band. Polls are rebuilt from the
+  individual surveys with recency/partisan weights and an outlier guard, then
+  blended, and a correlated national/state Monte Carlo produces the seat
+  distribution.
 - **Map builder** (`map.html`) — a YAPMS-style painter: pick a shade, click
   districts/senate seats/governorships, watch the tally. Load the 600
   forecast as a starting point, undo, share the map by link, export a PNG.
@@ -18,6 +22,7 @@ Live at <https://anketdelisi.github.io/600mt/>.
 ```
 data/us/races.json      # races, ratings, PVI, incumbents, current composition
 data/us/polling.json    # per-race polling averages (senate, governor)
+data/us/state_swing.json # state presidential margins 2008-24, elasticity, trend
 data/us/forecast.json   # model output: probabilities, distributions, maps of races
 data/us/geo.json        # pre-projected states + 435 districts (Census TIGERweb, 2026 vintage)
 ```
@@ -32,7 +37,10 @@ python scraper/us_scrape_model.py
 ```
 
 `scraper/us_build_geo.py` rebuilds the boundaries (only needed when the
-districts change); `scraper/us_backtest.py` replays the model on 2024.
+districts change). `scraper/us_build_swing.py` rebuilds the static state
+swing data (county presidential results 2008-24). `scraper/us_calibrate.py`
+scores the Senate model on the cached 2022/2024 backtest (and `--grid` /
+`--diag`); `scraper/us_backtest.py` replays it on a live cycle.
 
 ## Notes
 

@@ -2,39 +2,37 @@
 """600 in-house forecast model for the 2026 U.S. midterms.
 
 Pipeline per race:
-  1. Fundamentals prior (D - R, two-party points): PVI at -1.0 (partisan lean
-     maps ~1:1 onto margins, per FiftyPlusOne/Theo), plus a personal-vote
-     term for running incumbents scaled by their track record (their last
-     margin vs the seat's lean; zero for open seats, skipped when polls
-     exist), blended with the last election result (70% for held seats, 40%
-     for open seats — retiring/term-limited incumbents take their personal
-     vote with them, so the structural PVI dominates).
-  2. Rating band: the consensus of the three race ratings (Cook, Inside
-     Elections, Sabato) as published on Wikipedia — the median rater's band
-     with all three, the average with two — sets a direction + strength BAND
-     (Safe >15, Likely 7.5-15, Lean 2.5-7.5, Tossup <2.5, per
-     theoelections.com); the fundamentals prior is clamped inside that band
-     so safe seats reach realistic extremes while competitive races stay
-     competitive.
-3. Polling blend (when a race has an aggregate/simple poll average):
-     margin = 0.65 * poll_margin + 0.35 * prior_margin. Races with a serious
-     independent on the ballot (Nebraska/Idaho/South Dakota/Montana Senate,
-     Alaska's at-large House seat) skip the D-R prior entirely: their sides
-     come straight from the poll shares, since the D-R rating bands do not
-     describe them.
-  4. National-swing Monte Carlo: every race shares a common environment
-     shift S ~ N(env_weight * env_margin, sigma_n), where env_margin is the
-     generic-ballot margin (D - R points), plus one per-state correlated
-     deviation per night (sigma_state) so a state's Senate seat and House
-     districts move together. env_weight is chamber-specific (0.25 for rated
-     races, 1.0 for unrated; polls/ratings already embed the environment). A race is won by the side with the highest softmax
-     probability softmax(share/beta) — for two sides this is exactly the
-     previous logistic((margin + S)/beta). Races without a Democrat get the
-     national shock only. Chamber seat tallies count Democrats, Republicans
-     and independents separately across 20k simulated nights; independent
-     wins are counted with the Democratic caucus (as the Senate independents
-     caucus with them), so a party's majority probability includes them.
-     Per-race win probabilities are reported at the swing mean.
+  1. Structural prior (D - R, two-party points):
+     * Senate: the state's lean in the last presidential election
+       (state margin minus the national margin), plus the current generic
+       ballot scaled by the state's historical elasticity, plus a
+       track-record-scaled incumbency term and the state's recent trend.
+       This replaced PVI + last Senate result in v2: on the 2022/2024
+       Senate backtest it cut the margin MAE from 6.38 to 3.9 and the bias
+       from +3.3 to +0.2 (the last Senate result is often a personal-vote
+       artifact, e.g. Manchin winning WV by 3 in a state Trump carried by 40).
+     * House/Governor: district/state PVI + last result, clamped inside the
+       consensus rating band (Safe >15, Likely 7.5-15, Lean 2.5-7.5,
+       Tossup <2.5). Governors keep the band because candidate-specific
+       effects (Phil Scott in Vermont) are large; the Senate backtest does
+       not validate removing it there.
+  2. Polling blend: the average is rebuilt from the individual polls with a
+     120-day recency half-life, a partisan-poll discount, a weighted-median
+     trim and an effective-sample floor; it is then precision-weighted
+     against the prior with an outlier guard so a stale poll cannot drag a
+     safe seat. Entries with an aggregate use it directly.
+     Races with a serious independent (NE/ID/SD/MT Senate, Alaska House) use
+     the poll shares for their sides; without polls they fall back to the
+     D-R prior.
+  3. National-swing Monte Carlo: the environment mean is already in the
+     structural margin; each night adds a national shock (sigma_n) and one
+     correlated per-state deviation (sigma_state), so a state's Senate seat
+     and House districts move together. A race is won by the side with the
+     highest softmax(share/beta). Races without a Democrat get the shocks
+     only. Seat tallies count Democrats, Republicans and independents
+     separately across 20k nights; independents are counted with the
+     Democratic caucus (as the Senate independents caucus with them).
+     Per-race win probabilities are reported at the mean.
 
 Chamber majority thresholds: Senate 50 (current D-caucus 47 vs R 53),
 House 218 seats, Governors shows an expected Dem/Rep count only.
@@ -43,8 +41,10 @@ House 218 seats, Governors shows an expected Dem/Rep count only.
 import json
 import math
 import random
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
+
+import us_scrape_polls as pp
 
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data" / "us"
 RNG = random.Random(20260908)
@@ -70,9 +70,38 @@ NATIONAL_SIGMA = 2.5
 # move together - the same architecture as the main site's regional swing
 # error. A state MEAN deviation would only re-encode PVI (double-count), so
 # this is mean-zero correlated noise on top of the national shock.
-STATE_SIGMA = 1.5
+STATE_SIGMA = 3.5
 POLL_WEIGHT = 0.65
 ELECTION = "2026-11-03"
+
+# --- calibrated v2 model (2022/2024 Senate backtest) ---------------------
+# Senate/Governor structural prior: the state's lean in the last presidential
+# election, relative to the nation, plus the current national environment
+# (scaled by the state's historical elasticity), incumbency and trend. This
+# replaced PVI + last Senate result after the backtest showed the latter
+# compressed safe seats and dragged in stale candidate effects (e.g. WV 2024:
+# the last Senate result was Manchin D+3, while the state was R+43).
+SWING_PATH = OUTPUT_DIR / "state_swing.json"
+if SWING_PATH.exists():
+    _sw = json.loads(SWING_PATH.read_text(encoding="utf-8"))
+    STATE_SWING = _sw.get("states") or {}
+    SWING_NATIONAL = _sw.get("national_margin") or {}
+else:
+    STATE_SWING = {}
+    SWING_NATIONAL = {}
+STATE_LEAN_YEAR = "2024"
+STATE_ENV_WEIGHT = {"senate": 0.8, "governor": 0.25, "house": 0.25}
+TREND_WEIGHT = 0.2
+POLL_HALF_LIFE = 120.0      # days; a poll 4 months old counts half
+POLL_MAX_AGE = 540          # 18 months; anything older is noise
+POLL_PARTISAN_W = 0.6       # partisan pollster weight
+POLL_TRIM = 12.0            # drop polls >12 pts from the weighted median
+POLL_AGG_SIGMA = 2.5
+POLL_DIR_SIGMA = 4.0
+POLL_MIN_NEFF = 1.5
+POLL_GUARD_START = 8.0
+POLL_GUARD_WIDTH = 8.0
+GRADE_SIGMA = {"solid": 4.0, "likely": 5.0, "lean": 6.0, "tossup": 8.0, "none": 8.0}
 # generic-ballot margin enters the national swing at a chamber-specific weight:
 # race ratings (Cook/IE/Sabato) and polls already embed the current environment,
 # so using the full margin on top would double-count it. The Senate is far less
@@ -277,10 +306,150 @@ def fundamentals_margin(race, chamber, apply_inc=True):
     return pv
 
 
-def final_margin(race, polls, chamber):
+def state_swing(race):
+    return STATE_SWING.get((race.get("state") or "").replace("_", " ")) or {}
+
+
+def state_lean(race, lean_year=None):
+    """State presidential lean vs the nation in the last presidential race."""
+    st = state_swing(race)
+    year = lean_year or STATE_LEAN_YEAR
+    pres = (st.get("margins") or {}).get(year)
+    nat = SWING_NATIONAL.get(year)
+    if pres is not None and nat is not None:
+        return pres - nat
+    return pvi_margin(race.get("pvi") or 0.0)
+
+
+def poll_date(s):
+    y, mo, d = pp.date_key(s)
+    if not y:
+        return None
+    return date(y, mo, d)
+
+
+def two_party(d, r):
+    return (d - r) / (d + r) * 100.0 if (d + r) > 0 else None
+
+
+def poll_estimate(entry, asof):
+    """(margin, sigma) from an aggregate or from the individual polls.
+
+    Rebuilds the average with recency (120-day half-life), partisan-poll
+    discount, a weighted-median trim and an effective-sample floor, so a
+    2022/2023 poll cannot drag a 2024/2026 race.
+    """
+    if not entry:
+        return None
+    dem, rep = entry.get("dem"), entry.get("rep")
+    if dem is not None and rep is not None:
+        mar = two_party(dem, rep)
+        src = (entry.get("source") or "").lower()
+        if mar is not None and "aggregate" in src:
+            return mar, POLL_AGG_SIGMA
+    rows = []
+    for pol in entry.get("polls") or []:
+        if pol.get("dem") is None or pol.get("rep") is None:
+            continue
+        dt = poll_date(pol.get("dates"))
+        if not dt:
+            continue
+        age = (asof - dt).days
+        if age < -10 or age > POLL_MAX_AGE:
+            continue
+        mar = two_party(pol["dem"], pol["rep"])
+        if mar is None:
+            continue
+        w = 0.5 ** (age / POLL_HALF_LIFE)
+        if pol.get("partisan"):
+            w *= POLL_PARTISAN_W
+        rows.append((mar, w))
+    if len(rows) < 2:
+        if dem is not None and rep is not None:
+            mar = two_party(dem, rep)
+            return (mar, POLL_DIR_SIGMA) if mar is not None else None
+        return None
+    rows.sort(key=lambda x: x[0])
+    tot = sum(w for _, w in rows)
+    acc = 0.0
+    med = rows[-1][0]
+    for mar, w in rows:
+        acc += w
+        if acc >= tot / 2:
+            med = mar
+            break
+    keep = [(mar, w) for mar, w in rows if abs(mar - med) <= POLL_TRIM]
+    if len(keep) < 2:
+        return None
+    ws = sum(w for _, w in keep)
+    mean = sum(mar * w for mar, w in keep) / ws
+    neff = ws * ws / sum(w * w for _, w in keep)
+    if neff < POLL_MIN_NEFF:
+        return None
+    sigma = max(2.0, POLL_DIR_SIGMA / math.sqrt(neff))
+    return mean, sigma
+
+
+def grade_of(race):
     band = consensus_band(race.get("ratings"))
-    # polled races: the polls already carry the incumbent's standing, so the
-    # prior drops the personal-vote term (no double-count)
+    if band is None:
+        return "none"
+    a = abs(band[2])
+    if a >= 15:
+        return "solid"
+    if a >= 7.5:
+        return "likely"
+    if a >= 2.5:
+        return "lean"
+    return "tossup"
+
+
+def structural_margin(race, chamber, env, polls, lean_year=None):
+    if chamber == "senate":
+        st = state_swing(race)
+        beta = st.get("beta", 1.0)
+        rm = state_lean(race, lean_year)
+        rm += STATE_ENV_WEIGHT[chamber] * env * beta
+        rm += TREND_WEIGHT * st.get("trend", 0.0)
+        rm += incumbency_adj(race)
+        return rm
+    # House and Governor keep the district/state fundamentals + rating band:
+    # governors in particular carry large candidate-specific effects (Phil
+    # Scott in Vermont, for one) that a presidential lean alone would erase.
+    band = consensus_band(race.get("ratings"))
+    rm = fundamentals_margin(race, chamber, apply_inc=(polls is None))
+    if band is not None:
+        lo, hi, _ = band
+        rm = max(lo, min(hi, rm))
+        rm += STATE_ENV_WEIGHT[chamber] * env
+    else:
+        rm += UNRATED_ENV_WEIGHT[chamber] * env
+    return rm
+
+
+def blend_poll(prior, entry, asof, grade):
+    pe = poll_estimate(entry, asof)
+    if pe is None:
+        return prior
+    P, sig = pe
+    s = GRADE_SIGMA[grade]
+    w = s * s / (s * s + sig * sig)
+    excess = max(0.0, abs(P - prior) - POLL_GUARD_START)
+    w /= 1.0 + (excess / POLL_GUARD_WIDTH) ** 2
+    return prior + w * (P - prior)
+
+
+def final_margin(race, polls, chamber, env=0.0, asof=None, lean_year=None):
+    asof = asof or date.today()
+    rm = structural_margin(race, chamber, env, polls, lean_year)
+    if polls:
+        rm = blend_poll(rm, polls, asof, grade_of(race))
+    return rm
+
+
+def legacy_final_margin(race, polls, chamber):
+    """Pre-v2 estimator, kept for the calibration harness' baseline."""
+    band = consensus_band(race.get("ratings"))
     rm = fundamentals_margin(race, chamber, apply_inc=(polls is None))
     if band is not None:
         lo, hi, _ = band
@@ -314,7 +483,7 @@ def lean_from(leader, margin_abs):
     return "%s %s" % (band, leader)
 
 
-def race_sides(race, polls, chamber):
+def race_sides(race, polls, chamber, env=0.0, asof=None):
     """Return (sides, names, polled_independent).
 
     Races with a serious independent on the ballot (Nebraska's Dan Osborn,
@@ -330,19 +499,23 @@ def race_sides(race, polls, chamber):
             v = polls.get(key)
             if v is not None and v > 0:
                 sv[party] = v
-    if "I" in sv and len(sv) >= 2:
+    if sv.get("I", 0.0) >= 10.0 and len(sv) >= 2:
+        # only a serious independent (NE/SD/MT/ID Senate, Alaska House) makes
+        # this a three-way race; a 5-7% minor candidate is noise on the D-R
+        # margin, not a reason to throw away the fundamentals
         tot = sum(sv.values())
         return ({k: 100.0 * v / tot for k, v in sv.items()},
                 (polls.get("names") or {}), True)
-    m = final_margin(race, polls, chamber)
+    m = final_margin(race, polls, chamber, env, asof)
     return {"D": 50.0 + m / 2, "R": 50.0 - m / 2}, {}, False
 
 
 def run(chamber, races, poll_map, env_margin):
     beta = LOGISTIC_BETA[chamber]
+    env = env_margin or 0.0
+    asof = date.today()
     sides = {}
     names = {}
-    rated = {}
     polls_used = {}
     state_of = {}
     for r in races:
@@ -352,14 +525,11 @@ def run(chamber, races, poll_map, env_margin):
         else:
             label_key = label[0]
         polls = poll_map.get(label_key) if poll_map else None
-        sh, nm, polled_ind = race_sides(r, polls, chamber)
+        sh, nm, polled_ind = race_sides(r, polls, chamber, env, asof)
         sides[label_key] = sh
         names[label_key] = nm
         polls_used[label_key] = polls
         state_of[label_key] = label[0]
-        # polled independent races: the polls embed the environment, so use
-        # the small rated weight; otherwise the rating consensus decides
-        rated[label_key] = True if polled_ind else (consensus_band(r.get("ratings")) is not None)
 
     def adj_margin(sh, swing, swing_party):
         """Leader-minus-runner margin (positive = leader ahead) after applying
@@ -397,9 +567,6 @@ def run(chamber, races, poll_map, env_margin):
     else:
         not_up_d = COMP_START[chamber]["d"] - up_d
     not_up_r = (total - len(races)) - not_up_d
-    env = env_margin or 0.0
-    rated_env = ENV_WEIGHT[chamber] * env
-    unrated_env = UNRATED_ENV_WEIGHT[chamber] * env
 
     seatz_d = [0] * N_SIMS
     seatz_r = [0] * N_SIMS
@@ -412,16 +579,12 @@ def run(chamber, races, poll_map, env_margin):
             st = state_of[k]
             if st not in ZS:
                 ZS[st] = RNG.gauss(0.0, STATE_SIGMA)
-            mu = rated_env if rated[k] else unrated_env
-            # the national environment moves the Democrat-against-the-field
-            # margin; a race with no Democrat (Nebraska/Idaho R-vs-I) gets
-            # the national shock only: the generic ballot says little about
-            # Republican-vs-Independent. The state deviation applies to all
-            # races in the state.
-            if "D" in sh:
-                swing, swing_party = mu + Z + ZS[st], "D"
-            else:
-                swing, swing_party = Z + ZS[st], "R"
+            # the environment is already in the structural margin; the
+            # simulation adds only correlated uncertainty (national + state).
+            # Races without a Democrat get the same shocks: the generic
+            # ballot says little about Republican-vs-Independent.
+            swing = Z + ZS[st]
+            swing_party = "D" if "D" in sh else "R"
             probs = win_probs(sh, swing, swing_party)
             u = RNG.random()
             acc = 0.0
@@ -452,8 +615,7 @@ def run(chamber, races, poll_map, env_margin):
         else:
             label_key = label_key[0]
         sh = sides[label_key]
-        mu = rated_env if rated[label_key] else unrated_env
-        swing, swing_party = (mu, "D") if "D" in sh else (0.0, "R")
+        swing, swing_party = (0.0, "D") if "D" in sh else (0.0, "R")
         probs = win_probs(sh, swing, swing_party)
         keys, margin = adj_margin(sh, swing, swing_party)
         # the swing can flip the lead (a Republican-leading share pair minus
@@ -545,7 +707,7 @@ def main():
     }
 
     result = {
-        "model": "600 in-house model — rating+poll informed, national-swing Monte Carlo",
+        "model": "600 in-house model — state-lean + poll fundamentals, correlated Monte Carlo",
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "environment": {
             "election": ELECTION,
@@ -553,10 +715,14 @@ def main():
             "generic_ballot_generic_margin": env,
             "n_sims": N_SIMS,
             "rating_margin_table": RATING_MARGIN,
-            "margin_method": "PVI prior placed inside the rating band (rating sets direction+strength, PVI gives continuous margin)",
+            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend; House/Governor: PVI + last result + rating band. Polls rebuilt with recency/partisan weights and an outlier guard.",
             "national_swing_sigma": NATIONAL_SIGMA,
             "state_swing_sigma": STATE_SIGMA,
-            "env_weights": ENV_WEIGHT,
+            "env_weights": {"senate": STATE_ENV_WEIGHT["senate"],
+                            "house": STATE_ENV_WEIGHT["house"],
+                            "governor": STATE_ENV_WEIGHT["governor"]},
+            "state_lean_year": STATE_LEAN_YEAR,
+            "poll_half_life_days": POLL_HALF_LIFE,
         },
         "senate": forecast["senate"],
         "house": forecast["house"],
