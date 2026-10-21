@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """House calibration harness: current PVI/last/band model vs a district
-presidential-lean structural prior, on the cached 2022/2024 races.
+presidential-lean structural prior, on the cached 2018-24 races.
 
 The feature for each cycle is the last presidential result before it:
   2022 -> 2020 by the 2022 lines; 2024 -> 2020 by the 2024 lines.
@@ -19,15 +19,18 @@ sys.path.insert(0, str(ROOT / "scraper"))
 import us_scrape_model as m
 
 CACHE = ROOT / "scraper" / ".cache"
-ELECTION = {2022: date(2022, 11, 8), 2024: date(2024, 11, 5)}
+ELECTION = {2018: date(2018, 11, 6), 2020: date(2020, 11, 3),
+            2022: date(2022, 11, 8), 2024: date(2024, 11, 5)}
 BASE = {"pres_w": 0.0, "env_w": 0.25, "last_w": 0.7, "open_w": 0.4,
         "band": 1, "inc": 1}
 
 
 def load():
     rows = []
-    for cyc in (2022, 2024):
+    for cyc in (2018, 2020, 2022, 2024):
         path = CACHE / ("us_house_bt_%d.json" % cyc)
+        if not path.is_file():
+            continue
         data = json.loads(path.read_text(encoding="utf8"))
         for r in data:
             if r.get("actual") is None:
@@ -81,9 +84,9 @@ def score_quiet(rows, p):
 
 def main():
     rows = load()
-    print("races:", len(rows),
-          "| 2022:", sum(1 for r in rows if r["cycle"] == 2022),
-          "| 2024:", sum(1 for r in rows if r["cycle"] == 2024))
+    print("races:", len(rows), "| " + " | ".join(
+        "%d: %d" % (c, sum(1 for r in rows if r["cycle"] == c))
+        for c in (2018, 2020, 2022, 2024)))
     # exact live model baseline
     n = win = 0
     mae = brier = 0.0
@@ -98,16 +101,18 @@ def main():
         win += 1 if (mu > 0) == (a > 0) else 0
     print("%-32s n=%3d  MAE %5.2f  win %3.0f%%  Brier %.4f"
           % ("live House model", n, mae / n, 100.0 * win / n, brier / n))
-    for cyc in (2022, 2024):
+    for cyc in (2018, 2020, 2022, 2024):
         sel = [r for r in rows if r["cycle"] == cyc]
+        if not sel:
+            continue
         score(sel, BASE, "param baseline %d" % cyc)
         score(sel, dict(BASE, pres_w=1.0), "pres only %d" % cyc)
         score(sel, dict(BASE, pres_w=1.0, band=0), "pres, no band %d" % cyc)
         score(sel, dict(BASE, pres_w=1.0, last_w=0.0, band=0), "pres only, no last/band %d" % cyc)
 
     if "--grid" in sys.argv:
-        print("\n== grid (fit 2022, check 2024)")
-        fit = [r for r in rows if r["cycle"] == 2022]
+        print("\n== grid (fit 2018+2020+2022, check 2024)")
+        fit = [r for r in rows if r["cycle"] in (2018, 2020, 2022)]
         check = [r for r in rows if r["cycle"] == 2024]
         best = []
         for pres_w in (0.0, 0.5, 0.75, 1.0):
@@ -123,7 +128,7 @@ def main():
                             best.append((mae_fit + mae_check, mae_fit, mae_check,
                                          pres_w, env_w, last_w, band, inc))
         best.sort()
-        print("sum MAE | 2022 | 2024 | pres_w | env | last | band | inc")
+        print("sum MAE | fit | 2024 | pres_w | env | last | band | inc")
         for b in best[:15]:
             print("%6.2f  %5.2f  %5.2f   %.2f   %.2f  %.2f   %d   %d"
                   % (b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7]))

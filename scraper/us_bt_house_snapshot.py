@@ -2,7 +2,7 @@
 """Cache the House backtest races (features + polls + actuals + the last
 presidential result by the cycle's district lines).
 
-Usage: python scraper/us_bt_house_snapshot.py [2022] [2024]
+Usage: python scraper/us_bt_house_snapshot.py [2018] [2020] [2022] [2024]
 """
 import json
 import sys
