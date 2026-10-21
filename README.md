@@ -56,7 +56,8 @@ model on 2018-24. Grid selection uses 2018-2022 only; 2024 is the holdout.
 from the 2018-22 snapshots. `scraper/us_build_state_leg.py` builds the
 2018-22 lower-chamber leans (requires `pyarrow`); `scraper/us_build_elasticity.py`
 fetches the Silver Bulletin/CCES scores; `scraper/us_house_seat_calibration.py`
-replays historical House seat distributions. `scraper/us_backtest.py` replays
+and `scraper/us_senate_seat_calibration.py` replay historical seat
+distributions. `scraper/us_backtest.py` replays
 a live cycle (`--chamber senate|house|governor --cycle 2022|2024`).
 
 Backtest caches are gitignored; rebuild them with:
