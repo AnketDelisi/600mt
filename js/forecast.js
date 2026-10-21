@@ -91,7 +91,7 @@ function raceRow(race) {
     .filter((x) => x[1]).map((x) => `${x[0]}: ${x[1]}`).join(" · ");
   const lead = race.leader || (race.margin >= 0 ? "D" : "R");
   const iBit = iv > 0.5 ? ` / ${fmt(iv)}% I` : "";
-  const modelTip = `600 model: ${race.lean} (${lead}+${fmt(Math.abs(race.margin))}) — ${fmt(race.dem_pct)}% D / ${fmt(race.rep_pct)}% R${iBit}`;
+  const modelTip = `Model: ${race.lean} (${lead}+${fmt(Math.abs(race.margin))}) — ${fmt(race.dem_pct)}% D / ${fmt(race.rep_pct)}% R${iBit}`;
   const title = rtitle ? `${modelTip} · rating inputs — ${rtitle}` : modelTip;
   return `<tr data-key="${raceKey(race)}">
     <td class="race-name">${partyBadge(race.party)}<b>${name}</b><span class="inc">${inc}</span></td>
@@ -439,7 +439,7 @@ function render() {
     <p class="note">${data.races.length} races &middot; sorted ${state.sort === "close" ? "by closeness" : state.sort === "rd" ? "by Democratic probability" : "by Republican probability"} &middot; click a row to see it on the map, click again to open the polling.</p>
     <div class="toggle-flow">${sortSel}</div>
     <table>
-      <thead><tr><th>Race</th><th>600 rating</th><th>Polling average</th><th>Win probability</th></tr></thead>
+      <thead><tr><th>Race</th><th>Model rating</th><th>Polling average</th><th>Win probability</th></tr></thead>
       <tbody>${races.map(raceRow).join("")}</tbody>
     </table>
     <div class="legend">
@@ -481,7 +481,7 @@ function render() {
       <div class="col-a">
         <div class="card">
           <div class="card-head"><span class="bar"></span><div class="t">Race for the ${state.chamber === "house" ? "U.S. House" : state.chamber === "senate" ? "U.S. Senate" : "governors' mansions"}</div></div>
-          <p class="note">The chance shown is the share of 20,000 simulated election nights in which each party wins the chamber — accounting for the ${env} environment.</p>
+          <p class="note">The chance shown is the share of simulated election nights each party wins the chamber.</p>
           ${headerCard}
         </div>
       </div>
@@ -490,18 +490,11 @@ function render() {
     ${dist}
     ${table}
     <p class="foot">
-      Method: Senate races start from the state's lean in the last presidential
-      election, adjusted for the national environment (scaled by the state's
-      historical elasticity), incumbency and trend. House races start from the
-      district's last presidential margin (The Downballot, 2026 lines), the last
-      House result and the rating band. Governor races start from the state's
-      last presidential lean, the rating band and incumbency. Polls are rebuilt from the individual
-      surveys with recency and partisan weighting and an outlier guard, then
-      blended. The simulation runs
-      (${fmt(f.environment ? f.environment.n_sims : 20000)} nights, national swing &sigma; = ${fmt(f.environment ? f.environment.national_swing_sigma : 2.5)} pts${f.environment && f.environment.poll_bias_sigma ? `, poll-bias &sigma; = ${fmt(f.environment.poll_bias_sigma)} pts` : ""}${f.environment && f.environment.state_swing_sigma ? `, plus a correlated per-state deviation &sigma; = ${fmt(f.environment.state_swing_sigma)} pts` : ""}).
-      Races without public polling are shown as &ldquo;&mdash;&rdquo;; their probability comes from the fundamentals alone.
-      Sources: Wikipedia (2026 Senate, House and gubernatorial election articles and ratings), The Downballot's district presidential results, and the generic-ballot aggregates.
-      Model generated: ${f.generated ? new Date(f.generated).toUTCString() : "—"}.
+      Method: state and district presidential lean, fundamentals, rating bands
+      and polls, run through a correlated national/region/state Monte Carlo.
+      Races without public polling use fundamentals alone. Sources: Wikipedia
+      and The Downballot. Model generated:
+      ${f.generated ? new Date(f.generated).toUTCString() : "—"}.
       Want to disagree? <a href="map.html"><b>Paint the map yourself &rarr;</b></a>
     </p>`;
 

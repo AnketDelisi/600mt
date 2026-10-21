@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AltıÇiftSıfır Midterms — 2026 U.S. Forecast</title>
-  <meta name="description" content="Race-by-race 2026 U.S. midterms forecast — Senate, House and governors — from the 600 in-house model. And a map you can paint yourself.">
+  <meta name="description" content="Race-by-race 2026 U.S. midterms forecast — Senate, House and governors — and a map you can paint yourself.">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
   <link rel="stylesheet" href="css/site.css">
 </head>
@@ -18,7 +18,6 @@
       <nav class="nav" aria-label="Primary">
         <a class="active" href="index.html">Forecast</a>
         <a href="map.html">Map Builder</a>
-        <a class="ext" href="https://anketdelisi.github.io/600/">600 &nearr;</a>
       </nav>
     </div>
   </header>
@@ -27,7 +26,7 @@
     <header class="masthead">
       <div class="kicker">2026 United States midterm elections &middot; November 3</div>
       <h1 class="display">The midterms,<br><em>race by race.</em></h1>
-      <p class="lede">Race-by-race chances for the Senate, the House and the governorships, from the 600 in-house model: the state's presidential lean and the national environment, district fundamentals, per-race polling, and a correlated national-swing simulation of 20,000 election nights.</p>
+      <p class="lede">Race-by-race chances for the Senate, the House and the governorships — presidential lean, district fundamentals, polls, and a correlated national-swing simulation of 20,000 election nights.</p>
       <div class="dateline">
         <span id="updated">Loading model&hellip;</span>
         <span>Generic ballot <b id="generic">—</b> D</span>
@@ -46,31 +45,13 @@
     <div id="pane-house" class="pane"></div>
     <div id="pane-governor" class="pane"></div>
 
-    <footer class="foot">
-      Method: Senate races start from the state's lean in the last presidential
-      election, adjusted for the national environment (scaled by the state's
-      historical elasticity), incumbency and trend. House races start from the
-      district's last presidential margin (The Downballot, 2026 lines), the last
-      House result and the rating band. Governor races start from the state's
-      last presidential lean, the rating band and incumbency. Polls are rebuilt from the individual
-      surveys with recency and partisan weighting and an outlier guard, then
-      blended. The Monte Carlo runs 20,000 nights with a national swing, a
-      correlated per-state deviation and a cycle poll-bias term. Races without
-      public polling get their probability from the fundamentals alone. Sources: Wikipedia (2026 Senate,
-      House and gubernatorial election articles and their ratings tables), The
-      Downballot's district presidential results, and the generic-ballot
-      aggregates. The map painter on <a href="map.html">the map builder</a> uses
-      the same boundaries as the forecast map.
-    </footer>
   </main>
 
   <footer class="footer">
     <div class="shell">
       <span>600mt &mdash; 2026 U.S. midterms</span>
-      <span>Model &amp; data: 600 in-house</span>
       <span class="spacer"></span>
       <a href="map.html">Map builder</a>
-      <a href="https://anketdelisi.github.io/600/">600 &nearr;</a>
     </div>
   </footer>
 

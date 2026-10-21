@@ -420,7 +420,7 @@ function loadForecast() {
   applyAll();
   tally();
   persistSoon();
-  toast(tossups ? `600 forecast loaded — ${tossups} tossups left open` : "600 forecast loaded");
+  toast(tossups ? `Forecast loaded — ${tossups} tossups left open` : "Forecast loaded");
 }
 
 /* ---------- persistence & share ---------- */
@@ -548,7 +548,7 @@ function showTip(e, el) {
   html += `<div class="m">Your call: ${labelFor(key)}</div>`;
   if (race) {
     const lead = race.leader || (race.margin >= 0 ? "D" : "R");
-    html += `<div class="m">600 forecast: ${lead}+${fmt(Math.abs(race.margin))} · ${race.lean || race.rating || "—"}</div>`;
+    html += `<div class="m">Forecast: ${lead}+${fmt(Math.abs(race.margin))} · ${race.lean || race.rating || "—"}</div>`;
     if (ch !== "house") html += `<div class="m">${fmt(race.dem_pct)}% D · ${fmt(race.rep_pct)}% R</div>`;
   } else {
     html += `<div class="m">Not on the 2026 ballot</div>`;
