@@ -16,7 +16,7 @@ const state = { forecast: null, geo: null, polls: null, chamber: "senate", sort:
 const fmt = (x) => (Math.abs(x) >= 100 ? Math.round(x) : x % 1 === 0 ? String(Math.round(x)) : x.toFixed(1));
 
 /* diverging blue/red by win probability, on the editorial palette */
-const C_NEUT = "#ECE8DD", C_D = "#2E6EA8", C_R = "#C83737", C_GRAY = "#DFD9CB",
+const C_NEUT = "#E9E7E2", C_D = "#2E6EA8", C_R = "#C83737", C_GRAY = "#DFD9CB",
   C_TOSSUP = "#D9C27A", C_I = "#6C5F86";
 function mixColor(a, b, t) {
   const r1 = (a >> 16) & 255, g1 = (a >> 8) & 255, b1 = a & 255;
@@ -389,13 +389,13 @@ function captureMap() {
   c.width = W * scale; c.height = H * scale;
   const ctx = c.getContext("2d");
   ctx.scale(scale, scale);
-  ctx.fillStyle = "#F4F1E9";
+  ctx.fillStyle = "#F2F0EC";
   ctx.fillRect(0, 0, W, H);
   const clone = svg.cloneNode(true);
   clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   clone.setAttribute("width", W); clone.setAttribute("height", H);
   const css = document.createElementNS("http://www.w3.org/2000/svg", "style");
-  css.textContent = ".st{stroke:#fff;stroke-width:0.6}.dist{stroke:#fff;stroke-width:0.4}.sub{stroke:#151515;stroke-width:1;fill:none;opacity:0.45}.land{fill:#ECE8DD;stroke:#fff;stroke-width:0.6}";
+  css.textContent = ".st{stroke:#fff;stroke-width:0.6}.dist{stroke:#fff;stroke-width:0.4}.sub{stroke:#151515;stroke-width:1;fill:none;opacity:0.45}.land{fill:#E9E7E2;stroke:#fff;stroke-width:0.6}";
   clone.insertBefore(css, clone.firstChild);
   const data = new XMLSerializer().serializeToString(clone);
   const img = new Image();
@@ -493,8 +493,7 @@ function render() {
       Method: state and district presidential lean, fundamentals, rating bands
       and polls, run through a correlated national/region/state Monte Carlo.
       Races without public polling use fundamentals alone. Sources: Wikipedia
-      and The Downballot. Model generated:
-      ${f.generated ? new Date(f.generated).toUTCString() : "—"}.
+      and The Downballot.
       Want to disagree? <a href="map.html"><b>Paint the map yourself &rarr;</b></a>
     </p>`;
 
@@ -560,8 +559,6 @@ Promise.all([
     state.forecast = f;
     state.geo = g;
     state.polls = p;
-    const up = document.getElementById("updated");
-    if (up) up.innerHTML = `Model generated <b>${new Date(f.generated).toUTCString()}</b>`;
     const gen = document.getElementById("generic");
     if (gen && f.environment) gen.textContent = fmt(f.environment.generic_ballot_generic_margin);
     render();

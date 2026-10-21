@@ -502,7 +502,7 @@ function exportPNG() {
   c.width = W * scale; c.height = H * scale;
   const ctx = c.getContext("2d");
   ctx.scale(scale, scale);
-  ctx.fillStyle = "#F4F1E9";
+  ctx.fillStyle = "#F2F0EC";
   ctx.fillRect(0, 0, W, H);
   const clone = svg.cloneNode(true);
   clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
@@ -512,7 +512,7 @@ function exportPNG() {
   css.textContent =
     ".region{stroke:#fff;stroke-width:0.5}.nopaint{opacity:0.4}" +
     ".dist{stroke:#fff;stroke-width:0.45}.sub{stroke:#151515;stroke-width:1;fill:none;opacity:0.4}" +
-    ".land{fill:#ECE8DD;stroke:#fff;stroke-width:0.6}" +
+    ".land{fill:#E9E7E2;stroke:#fff;stroke-width:0.6}" +
     ".state-label{font-family:'Source Code Pro',monospace;font-size:10px;font-weight:600;fill:#6C665B}";
   clone.insertBefore(css, clone.firstChild);
   const data = new XMLSerializer().serializeToString(clone);
