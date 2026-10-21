@@ -2,7 +2,7 @@
 """Cache the governor backtest races (features + polls + actuals + the last
 state presidential lean) for fast model iteration.
 
-Usage: python scraper/us_bt_governor_snapshot.py [2022] [2024]
+Usage: python scraper/us_bt_governor_snapshot.py [2018] [2020] [2022] [2024]
 """
 import json
 import sys
@@ -14,6 +14,7 @@ import us_scrape_model as m
 
 CACHE = Path(__file__).resolve().parent / ".cache"
 CACHE.mkdir(exist_ok=True)
+PRES_YEAR = {2018: "2016", 2020: "2016", 2022: "2020", 2024: "2020"}
 
 
 def clean_polls(p):
@@ -43,7 +44,8 @@ def main():
                 "ratings": race.get("ratings"), "last": race.get("last"),
                 "polls": clean_polls(race.get("_polls")),
                 "actual": race.get("_actual"),
-                "state_pres": m.state_lean(race, "2020"), "env": env,
+                "state_pres": m.state_lean(race, PRES_YEAR[cycle]),
+                "env": env,
             })
         path.write_text(json.dumps(rows, indent=1), encoding="utf-8")
         print("wrote", path, "races:", len(rows),
