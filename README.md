@@ -12,8 +12,8 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
   incumbency. Polls are rebuilt from the individual surveys with
   recency/partisan/sample-size/population weights, a per-firm flood cap,
   strong pollster house effects and an outlier guard, then blended, and a
-  correlated national/state Monte Carlo with a cycle poll-bias term produces
-  the seat distribution.
+  correlated national/region/state Monte Carlo with a cycle poll-bias term
+  produces the seat distribution.
 - **Map builder** (`map.html`) — a YAPMS-style painter: pick a shade, click
   districts/senate seats/governorships, watch the tally. Load the 600
   forecast as a starting point, undo, share the map by link, export a PNG.

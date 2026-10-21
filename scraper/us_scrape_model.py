@@ -30,9 +30,10 @@ Pipeline per race:
      D-R prior.
   3. National-swing Monte Carlo: the environment mean is already in the
      structural margin; each night adds a national shock (sigma_n), a
-     cycle-level poll-bias shock, and one correlated per-state deviation
-     (sigma_state), so a state's Senate seat and House districts move
-     together. A race is won by the side with the highest softmax(share/beta).
+     cycle-level poll-bias shock, one regional shock shared by the states in
+     a Census region, and a state-specific residual, so a state's Senate seat
+     and House districts move together. A race is won by the side with the
+     highest softmax(share/beta).
      Races without a Democrat get the shocks only. Seat tallies count
      Democrats, Republicans and independents separately across 20k nights;
      independents are counted with the Democratic caucus (as the Senate
@@ -76,12 +77,11 @@ NATIONAL_SIGMA = 2.5
 # national draw per night widens the chamber distribution without moving the
 # race means.
 POLL_BIAS_SIGMA = 1.5
-# per-state correlated swing deviation (points): every race in a state shares
-# one draw per simulated night, so a state's Senate seat and House districts
-# move together - the same architecture as the main site's regional swing
-# error. A state MEAN deviation would only re-encode PVI (double-count), so
-# this is mean-zero correlated noise on top of the national shock.
-STATE_SIGMA = 3.5
+# Correlated swing uncertainty: one national draw, one regional draw shared
+# by the states in a Census region, then a state-specific residual. The total
+# state deviation is held at the previous 3.5 points so this adds regional
+# clustering without changing the overall uncertainty scale.
+TOTAL_STATE_SIGMA = 3.5
 POLL_WEIGHT = 0.65
 ELECTION = "2026-11-03"
 
@@ -98,8 +98,11 @@ if SWING_PATH.exists():
     STATE_SWING = _sw.get("states") or {}
     SWING_NATIONAL = _sw.get("national_margin") or {}
 else:
+    _sw = {}
     STATE_SWING = {}
     SWING_NATIONAL = {}
+REGION_SIGMA = float(_sw.get("region_sigma", 2.3))
+STATE_SIGMA = math.sqrt(max(0.0, TOTAL_STATE_SIGMA ** 2 - REGION_SIGMA ** 2))
 STATE_LEAN_YEAR = "2024"
 STATE_ENV_WEIGHT = {"senate": 0.8, "governor": 0.25, "house": 0.25}
 PRES_PATH = OUTPUT_DIR / "pres_by_cd.json"
@@ -696,11 +699,15 @@ def run(chamber, races, poll_map, env_margin):
         Z = RNG.gauss(0.0, NATIONAL_SIGMA)
         ZB = RNG.gauss(0.0, POLL_BIAS_SIGMA)
         ZS = {}
+        ZR = {}
         dw = rw = iw = 0
         for k, sh in sides.items():
             st = state_of[k]
             if st not in ZS:
-                ZS[st] = RNG.gauss(0.0, STATE_SIGMA)
+                region = (STATE_SWING.get(st) or {}).get("region") or ""
+                if region not in ZR:
+                    ZR[region] = RNG.gauss(0.0, REGION_SIGMA)
+                ZS[st] = ZR[region] + RNG.gauss(0.0, STATE_SIGMA)
             # the environment is already in the structural margin; the
             # simulation adds only correlated uncertainty (national, cycle
             # poll bias, state). Races without a Democrat get the same shocks.
@@ -836,10 +843,12 @@ def main():
             "generic_ballot_generic_margin": env,
             "n_sims": N_SIMS,
             "rating_margin_table": RATING_MARGIN,
-            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band. Governor: state presidential lean + rating band + incumbency. Polls rebuilt with recency/partisan weights and an outlier guard.",
+            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band. Governor: state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, house effects and an outlier guard.",
             "national_swing_sigma": NATIONAL_SIGMA,
             "poll_bias_sigma": POLL_BIAS_SIGMA,
-            "state_swing_sigma": STATE_SIGMA,
+            "region_swing_sigma": round(REGION_SIGMA, 2),
+            "state_swing_sigma": round(STATE_SIGMA, 2),
+            "total_state_swing_sigma": TOTAL_STATE_SIGMA,
             "env_weights": {"senate": STATE_ENV_WEIGHT["senate"],
                             "house": STATE_ENV_WEIGHT["house"],
                             "governor": STATE_ENV_WEIGHT["governor"]},
