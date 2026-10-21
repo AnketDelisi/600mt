@@ -7,9 +7,9 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
   distributions, and every race with its polling. Senate races start from the
   state's presidential lean, the national environment (scaled by the state's
   historical elasticity), incumbency and trend; House races use the district's
-  last presidential margin, the last House result and the rating band;
-  governors use a 50/50 current/prior state presidential lean, the rating
-  band and incumbency. Polls are rebuilt from the individual surveys with
+  last presidential margin, the last House result and the rating band, with
+  the generic-ballot House vote bias corrected; governors use a 50/50
+  current/prior state presidential lean, the rating band and incumbency. Polls are rebuilt from the individual surveys with
   recency/partisan/sample-size/population weights, a per-firm flood cap,
   strong pollster house effects and an outlier guard, then blended, and a
   correlated national/region/state Monte Carlo with a cycle poll-bias term
@@ -31,6 +31,7 @@ data/us/pollster_effects.json # shrunk pollster house effects (2018-22 fit)
 data/us/state_legislative.json # lower-chamber state leans, 2018-22
 data/us/state_elasticity.json  # Silver Bulletin/CCES elasticity scores
 data/us/senate_fundraising.json # FEC Senate receipts, 2018-26
+data/us/house_fundraising.json  # FEC House receipts, 2018-26
 data/us/forecast.json   # model output: probabilities, distributions, maps of races
 data/us/geo.json        # pre-projected states + 435 districts (Census TIGERweb, 2026 vintage)
 ```
@@ -57,7 +58,7 @@ model on 2018-24. Grid selection uses 2018-2022 only; 2024 is the holdout.
 from the 2018-22 snapshots. `scraper/us_build_state_leg.py` builds the
 2018-22 lower-chamber leans (requires `pyarrow`); `scraper/us_build_elasticity.py`
 fetches the Silver Bulletin/CCES scores; `scraper/us_build_fec.py` builds
-Senate fundraising from FEC bulk data;
+Senate and House fundraising from FEC bulk data;
 `scraper/us_house_seat_calibration.py`, `scraper/us_senate_seat_calibration.py`
 and `scraper/us_governor_seat_calibration.py` replay historical seat
 distributions. `scraper/us_backtest.py` replays
