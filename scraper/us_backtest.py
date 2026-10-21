@@ -85,11 +85,13 @@ def actual_margin(soup):
     tables are skipped because their cell 1 is a candidate name, not a
     party.
     """
+    best = None
     for tbl in soup.find_all("table", class_="wikitable"):
         txt = tbl.get_text(" ", strip=True)
         if "Democratic" not in txt or "Republican" not in txt:
             continue
         by_party = {}
+        votes = 0
         rows_with = 0
         for row in tbl.find_all("tr"):
             cells = [c.get_text(" ", strip=True)
@@ -106,11 +108,20 @@ def actual_margin(soup):
             elif party.startswith("democrat"):
                 by_party["D"] = by_party.get("D", 0) + float(m2.group(1))
                 rows_with += 1
+            else:
+                continue
+            mv = re.match(r"([\d,]+)", cells[3])
+            if mv:
+                votes += int(mv.group(1).replace(",", ""))
         if (rows_with >= 2 and "D" in by_party and "R" in by_party
                 and by_party["D"] + by_party["R"] > 50):
             tot = by_party["D"] + by_party["R"]
-            return (by_party["D"] - by_party["R"]) / tot * 100
-    return None
+            margin = (by_party["D"] - by_party["R"]) / tot * 100
+            # primaries also carry D/R tables; the general election has the
+            # most votes. Pick the largest table instead of the first one.
+            if best is None or votes > best[0]:
+                best = (votes, margin)
+    return best[1] if best else None
 
 
 def generic_ballot(soup):
