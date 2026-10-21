@@ -61,7 +61,7 @@ model on 2018-24. Grid selection uses 2018-2022 only; 2024 is the holdout.
 `scraper/us_build_poll_effects.py` refits the shrunk pollster house effects
 from the 2018-22 snapshots. `scraper/us_build_pollster_ratings.py` fetches the
 Silver Bulletin ratings. `scraper/us_build_state_leg.py` builds the
-2018-22 lower-chamber leans (requires `pyarrow`); `scraper/us_build_elasticity.py`
+2018-22 lower-chamber leans (`pyarrow` is in the requirements); `scraper/us_build_elasticity.py`
 fetches the Silver Bulletin/CCES scores; `scraper/us_build_fec.py` builds
 Senate and House fundraising from FEC bulk data;
 `scraper/us_house_seat_calibration.py`, `scraper/us_senate_seat_calibration.py`

@@ -35,9 +35,9 @@ OUT = os.path.join(ROOT, "data", "us", "geo.json")
 TIGER = ("https://tigerweb.geo.census.gov/arcgis/rest/services/"
          "TIGERweb/Legislative/MapServer/0/query")
 NE_LAND = ("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/"
-           "master/geojson/ne_50m_land.geojson")
+           "v5.1.2/geojson/ne_50m_land.geojson")
 NE_LAKES = ("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/"
-            "master/geojson/ne_50m_lakes.geojson")
+            "v5.1.2/geojson/ne_50m_lakes.geojson")
 
 # lower-48 / AK / HI target rectangles inside the 975x610 viewBox. Alaska and
 # Hawaii are deliberately large (readable at a glance); the shapely overlap

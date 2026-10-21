@@ -21,7 +21,7 @@ import us_scrape_model as m
 CACHE = ROOT / "scraper" / ".cache"
 ELECTION = {2018: date(2018, 11, 6), 2020: date(2020, 11, 3),
             2022: date(2022, 11, 8), 2024: date(2024, 11, 5)}
-BASE = {"pres_w": 0.0, "env_w": 0.25, "last_w": 0.7, "open_w": 0.4,
+BASE = {"pres_w": 1.0, "env_w": 0.5, "last_w": 0.7, "open_w": 0.4,
         "band": 1, "inc": 1}
 
 

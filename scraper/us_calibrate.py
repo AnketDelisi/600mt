@@ -42,7 +42,7 @@ PRES_YEAR = {2018: "2016", 2020: "2016", 2022: "2020", 2024: "2020",
 BASE = {
     "half_life": 120, "max_age": 540, "partisan_w": 0.6, "trim": 12.0,
     "agg_sigma": 2.5, "dir_sigma": 3.0, "min_neff": 1.5,
-    "pres_w": 1.0, "env_full": 1.0, "use_inc": True,
+    "pres_w": 1.0, "env_full": 0.8, "use_inc": True,
     "last_w": {"solid": 0.0, "likely": 0.0, "lean": 0.0, "tossup": 0.0, "none": 0.0},
     "sigma_s": {"solid": 3.0, "likely": 3.75, "lean": 4.5, "tossup": 6.0, "none": 6.0},
     "band_shrink": 0.0, "trend_w": 0.2, "env_w": 0.25, "beta_env": 1.0,
@@ -196,7 +196,7 @@ def main():
         check = [r for r in rows if r["cycle"] == 2024]
         best = []
         for pres_w in (1.0,):
-            for env_full in (0.75, 1.0):
+            for env_full in (0.75, 0.8, 1.0):
                 for use_inc in (True,):
                     for last_solid in (0.0,):
                         for band in (0.0,):

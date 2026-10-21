@@ -26,8 +26,8 @@ const FILL = {
   "7": "#B6ABC8", "8": "#9284AB", "9": "#6C5F86",
   t: "#D9C27A",
 };
-const UNPAINT = "#E9E4D8";
-const NORACE = "#DAD5C8";
+const UNPAINT = "#E9E7E2";
+const NORACE = "#DCDAD5";
 const LABEL = {
   "1": "Lean Democratic", "2": "Likely Democratic", "3": "Solid Democratic",
   "4": "Lean Republican", "5": "Likely Republican", "6": "Solid Republican",
@@ -37,9 +37,9 @@ const LABEL = {
 const PARTY_OF = (code) => (code === "t" || code === "." ? null : code <= "3" ? "D" : code <= "6" ? "R" : "I");
 const BASE_OF = { D: 1, R: 4, I: 7 };
 const UP = {
-  house: { total: 435, floor: 0, majority: 218, label: "House" },
-  senate: { total: 100, floor: 65, majority: 51, label: "Senate" },
-  governor: { total: 50, floor: 14, majority: 26, label: "Governors" },
+  house: { total: 435, majority: 218, label: "House" },
+  senate: { total: 100, majority: 51, label: "Senate" },
+  governor: { total: 50, majority: 26, label: "Governors" },
 };
 
 const $ = (id) => document.getElementById(id);
@@ -121,7 +121,7 @@ function baseSeats() {
     }
     return {
       d: comp.d - up.d, r: comp.r - up.r, i: (comp.i || 0) - up.i,
-      note: `${comp.d - up.d + comp.r - up.r + (comp.i || 0) - up.i} seats are not up: ${comp.d - up.d} D &middot; ${comp.r - up.r} R${comp.i ? ` &middot; ${comp.i} I` : ""}.`,
+      note: `${comp.d - up.d + comp.r - up.r + (comp.i || 0) - up.i} seats are not up: ${comp.d - up.d} D &middot; ${comp.r - up.r} R${comp.i ? ` &middot; ${comp.i - up.i} I` : ""} (the Democratic caucus counts D + I).`,
     };
   }
   return { d: 0, r: 0, i: 0, note: `${UP.governor.total - S.order.governor.length} governorships are not up.` };
@@ -342,7 +342,7 @@ function tally() {
   if (ch === "house") {
     line = `<b>218</b> seats for a majority. ${counts.T ? `${counts.T} tossup${counts.T === 1 ? "" : "s"} counted as not called.` : "Every district is on the ballot."}`;
   } else if (ch === "senate") {
-    line = `${base.note} <b>51</b> for a Democratic majority &mdash; a 50&ndash;50 split keeps Republican control via the Vice President.`;
+    line = `${base.note} <b>51</b> for a Democratic majority &mdash; the caucus counts D + I, now <b>${dTot + iTot}</b>; a 50&ndash;50 split keeps Republican control via the Vice President.`;
   } else {
     line = `${base.note} <b>26</b> of 50 governorships for a majority.`;
   }

@@ -17,7 +17,7 @@ import us_scrape_model as m
 CACHE = ROOT / "scraper" / ".cache"
 ELECTION = {2018: date(2018, 11, 6), 2020: date(2020, 11, 3),
             2022: date(2022, 11, 8), 2024: date(2024, 11, 5)}
-BASE = {"pres_w": 0.0, "env_w": 0.25, "last_w": 0.7, "open_w": 0.4,
+BASE = {"pres_w": 1.0, "env_w": 0.25, "last_w": 0.7, "open_w": 0.4,
         "band": 1, "inc": 1}
 
 
@@ -37,7 +37,8 @@ def load():
 
 def margin(r, p, asof):
     pvi = m.pvi_margin(r.get("pvi") or 0.0)
-    pres = r.get("state_pres")
+    year = "2020" if r.get("cycle") in (2022, 2024) else "2016"
+    pres = m.state_lean(r, year, prior_weight=m.GOVERNOR_LEAN_PRIOR_WEIGHT)
     lean = (p["pres_w"] * pres + (1.0 - p["pres_w"]) * pvi
             if pres is not None else pvi)
     polls = r.get("polls")
