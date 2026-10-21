@@ -94,10 +94,10 @@ function raceRow(race) {
   const modelTip = `Model: ${race.lean} (${lead}+${fmt(Math.abs(race.margin))}) — ${fmt(race.dem_pct)}% D / ${fmt(race.rep_pct)}% R${iBit}`;
   const title = rtitle ? `${modelTip} · rating inputs — ${rtitle}` : modelTip;
   return `<tr data-key="${raceKey(race)}">
-    <td class="race-name">${partyBadge(race.party)}<b>${name}</b><span class="inc">${inc}</span></td>
-    <td><span class="rating ${ratingClass(race.lean || race.rating)}" title="${title}">${race.lean || race.rating || "No rating"}</span></td>
-    <td>${polls}</td>
-    <td>${chance}</td>
+    <td class="race-name" data-label="Race">${partyBadge(race.party)}<b>${name}</b><span class="inc">${inc}</span></td>
+    <td data-label="Model rating"><span class="rating ${ratingClass(race.lean || race.rating)}" title="${title}">${race.lean || race.rating || "No rating"}</span></td>
+    <td data-label="Polling average">${polls}</td>
+    <td data-label="Win probability">${chance}</td>
   </tr>`;
 }
 
@@ -372,9 +372,13 @@ function raceDetailHTML(race) {
       <td class="num ${col}"${style}>${lead[0]}+${margin}</td>
     </tr>`;
   }).join("");
+  const raceQuery = new URLSearchParams({
+    chamber: state.chamber, state: race.state, district: race.district || "",
+  }).toString();
   return `<div class="race-detail">
     <div class="rd-head"><span class="rd-title">Polling — ${race.state}${race.district ? " " + race.district : ""}</span>
-      <span class="rd-note">${entry.source}${entry.n_polls ? " · " + entry.n_polls + " polls" : ""}${entry.n_sponsored ? " · incl. " + entry.n_sponsored + " partisan" : ""}</span></div>
+      <span class="rd-note">${entry.source}${entry.n_polls ? " · " + entry.n_polls + " polls" : ""}${entry.n_sponsored ? " · incl. " + entry.n_sponsored + " partisan" : ""}</span>
+      <a class="race-link" href="race.html?${raceQuery}">Open race page &rarr;</a></div>
     <div class="rd-graph">${pollTrendSVG(entry.polls)}</div>
     <table class="rd-table">
       <thead><tr><th>Pollster</th><th>Dates</th><th>D</th><th>R</th>${hasI ? "<th>I</th>" : ""}<th>Margin</th></tr></thead>
@@ -440,8 +444,11 @@ function render() {
   const table = `<div class="card">
     <div class="card-head"><span class="bar"></span><div class="t">Every ${US_LABELS[state.chamber].toLowerCase()} race</div></div>
     <p class="note">${data.races.length} races &middot; sorted ${state.sort === "close" ? "by closeness" : state.sort === "rd" ? "by Democratic probability" : "by Republican probability"} &middot; click a row to see it on the map, click again to open the polling.</p>
-    <div class="toggle-flow">${sortSel}</div>
-    <table>
+    <div class="toggle-flow">${sortSel}
+      <input class="race-search" id="raceSearch" type="search"
+             placeholder="Search state, district or incumbent" aria-label="Search races">
+    </div>
+    <table class="race-table">
       <thead><tr><th>Race</th><th>Model rating</th><th>Polling average</th><th>Win probability</th></tr></thead>
       <tbody>${races.map(raceRow).join("")}</tbody>
     </table>
@@ -505,6 +512,23 @@ function render() {
     attachMap(pane, data);
   }
   attachRows(pane, data);
+  attachFilter(pane);
+}
+
+function attachFilter(pane) {
+  const input = pane.querySelector("#raceSearch");
+  if (!input) return;
+  input.addEventListener("input", () => {
+    const q = input.value.trim().toLowerCase();
+    pane.querySelectorAll("tr[data-key]").forEach((tr) => {
+      const show = !q || tr.innerText.toLowerCase().includes(q);
+      tr.style.display = show ? "" : "none";
+      const next = tr.nextElementSibling;
+      if (next && next.classList.contains("detail-row")) {
+        next.style.display = show ? "" : "none";
+      }
+    });
+  });
 }
 
 function attachRows(pane, data) {
@@ -551,21 +575,23 @@ function selectChamber(ch) {
 
 document.querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => selectChamber(t.dataset.chamber)));
 
-Promise.all([
-  fetch(US_DATA, { cache: "no-store" }),
-  fetch(US_GEO, { cache: "no-store" }),
-  fetch(US_POLLS, { cache: "no-store" }),
-])
-  .then(([rf, rg, rp]) => Promise.all([rf.json(), rg.json(), rp.json()]))
-  .then(([f, g, p]) => {
-    state.forecast = f;
-    state.geo = g;
-    state.polls = p;
-    const gen = document.getElementById("generic");
-    if (gen && f.environment) gen.textContent = fmt(f.environment.generic_ballot_generic_margin);
-    render();
-  })
-  .catch((err) => {
-    document.getElementById("pane-senate").innerHTML = '<div class="load">Could not load the forecast data.</div>';
-    console.error(err);
-  });
+if (document.getElementById("pane-senate")) {
+  Promise.all([
+    fetch(US_DATA, { cache: "no-store" }),
+    fetch(US_GEO, { cache: "no-store" }),
+    fetch(US_POLLS, { cache: "no-store" }),
+  ])
+    .then(([rf, rg, rp]) => Promise.all([rf.json(), rg.json(), rp.json()]))
+    .then(([f, g, p]) => {
+      state.forecast = f;
+      state.geo = g;
+      state.polls = p;
+      const gen = document.getElementById("generic");
+      if (gen && f.environment) gen.textContent = fmt(f.environment.generic_ballot_generic_margin);
+      render();
+    })
+    .catch((err) => {
+      document.getElementById("pane-senate").innerHTML = '<div class="load">Could not load the forecast data.</div>';
+      console.error(err);
+    });
+}

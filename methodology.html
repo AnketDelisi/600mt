@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AltıÇiftSıfır Midterms — Methodology</title>
+  <meta name="description" content="How the 600mt 2026 U.S. midterms model works: inputs, backtest results, seat simulation, limitations and sources.">
+  <meta property="og:title" content="AltıÇiftSıfır Midterms — Methodology">
+  <meta property="og:description" content="How the 600mt 2026 U.S. midterms model works: inputs, backtest results, seat simulation, limitations and sources.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://anketdelisi.github.io/600mt/methodology.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="index.html" aria-label="AltıÇiftSıfır Midterms — home">
+        <img class="brand-mark" src="img/logo.svg" alt="">
+        <span class="brand-word">AltıÇiftSıfır<em>Midterms</em></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Forecast</a>
+        <a href="map.html">Map Builder</a>
+        <a class="active" href="methodology.html">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <header class="masthead">
+      <div class="kicker">Methodology</div>
+      <h1 class="display">How the model<br><em>works.</em></h1>
+      <p class="lede">A race-by-race forecast built from presidential lean, district fundamentals, polls and a correlated national/region/state simulation — backtested on 2018–24 and run again every day.</p>
+    </header>
+
+    <section class="card">
+      <div class="card-head"><span class="bar"></span><div class="t">The forecast in one paragraph</div></div>
+      <p class="note">Senate races start from the state's presidential lean, adjusted for the national environment (scaled by the state's historical elasticity), incumbency and trend. House races start from the district's presidential margin on the 2026 lines, the last House result and the rating band, with the historical generic-ballot-to-House-vote gap corrected. Governors use a 50/50 blend of the current and prior state presidential lean, the rating band and incumbency. Polls are rebuilt from individual surveys with recency, partisan, sample-size, population, pollster-rating, one-poll-per-pollster and house-effect weights, then blended against the fundamentals with an outlier guard.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><span class="bar"></span><div class="t">How to read the numbers</div></div>
+      <p class="note"><b>Margin</b> is the model's two-party D−R margin; positive is Democratic. <b>Win probability</b> is the share of 20,000 simulated election nights the party wins the race or chamber. <b>Seat distribution</b> counts Democratic seats in those nights, in two-seat buckets; the marker is the majority line. <b>Polling average</b> is the rebuilt poll number, not a raw average. Races without public polling use fundamentals alone and show a dash.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><span class="bar"></span><div class="t">Backtest</div></div>
+      <p class="note">The 2024 cycle is held out from parameter selection; 2018–22 are the fit cycles. Margin MAE is in points; seat error is expected minus actual Democratic seats.</p>
+      <table>
+        <thead><tr><th>Chamber</th><th>2024 margin MAE</th><th>2024 seat error</th><th>Fit-cycle note</th></tr></thead>
+        <tbody>
+          <tr><td>Senate</td><td>3.53</td><td>+0.5</td><td>2018–22 MAE 5.25 / 4.62 / 4.05; 93% winners</td></tr>
+          <tr><td>House</td><td>4.56</td><td>+1.0</td><td>2018–22 seat errors −6.4 / +25.3 / −6.7</td></tr>
+          <tr><td>Governor</td><td>—</td><td>+0.3</td><td>2024 margin MAE 7.60; 2018–22 improved by the prior-lean blend</td></tr>
+        </tbody>
+      </table>
+      <p class="note">All House, Senate and Governor results fall inside the model's 90% seat intervals. The 2020 House result is the known mean outlier (+25.3 seats); it is not fitted away.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><span class="bar"></span><div class="t">Known limitations</div></div>
+      <p class="note">Poll coverage is uneven, especially in House districts. Candidate quality is only partly captured by ratings, incumbency and polls; fundraising and endorsements are not in the live model. Trend extrapolation is a small nudge, not a forecast. County projections are not model output, and MRP is not a 2026 input because no 2026 microdata exists before the election.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><span class="bar"></span><div class="t">Data &amp; cadence</div></div>
+      <p class="note">Races, ratings and generic-ballot polls: Wikipedia 2026 articles. District presidential results: The Downballot. Historical state swings: county presidential results 2008–24. Pollster ratings: Silver Bulletin. Candidate fundraising: FEC bulk data. Boundaries: Census TIGERweb, clipped to Natural Earth land and lakes. The pipeline runs daily at 07:00 UTC; the model timestamp lives in <code>data/us/forecast.json</code>.</p>
+    </section>
+
+    <p class="foot">The forecast is a model, not a prophecy — the map is yours. <a href="index.html"><b>See the forecast &rarr;</b></a> &middot; <a href="map.html"><b>Paint the map &rarr;</b></a></p>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <span>600mt &mdash; 2026 U.S. midterms</span>
+      <span class="spacer"></span>
+      <a href="index.html">Forecast</a>
+      <a href="map.html">Map builder</a>
+    </div>
+  </footer>
+</body>
+</html>
