@@ -10,9 +10,10 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
   last presidential margin, the last House result and the rating band;
   governors use the state's last presidential lean, the rating band and
   incumbency. Polls are rebuilt from the individual surveys with
-  recency/partisan weights, strong pollster house effects and an outlier
-  guard, then blended, and a correlated national/state Monte Carlo with a
-  cycle poll-bias term produces the seat distribution.
+  recency/partisan weights, a per-firm flood cap, strong pollster house
+  effects and an outlier guard, then blended, and a correlated
+  national/state Monte Carlo with a cycle poll-bias term produces the seat
+  distribution.
 - **Map builder** (`map.html`) — a YAPMS-style painter: pick a shade, click
   districts/senate seats/governorships, watch the tally. Load the 600
   forecast as a starting point, undo, share the map by link, export a PNG.

@@ -36,6 +36,16 @@ def main():
                         "dem": 90.0, "rep": 10.0}]}
     detail = m.poll_estimate_detail(stale, ASOF)
     assert detail is not None and detail[3] == "aggregate", detail
+
+    capped = {"polls": [
+        {"pollster": "A", "dates": "November 1, 2024", "dem": 50.0, "rep": 50.0},
+        {"pollster": "A", "dates": "October 31, 2024", "dem": 50.0, "rep": 50.0},
+        {"pollster": "A", "dates": "October 30, 2024", "dem": 50.0, "rep": 50.0},
+        {"pollster": "B", "dates": "November 1, 2024", "dem": 55.0, "rep": 45.0},
+    ]}
+    detail = m.poll_estimate_detail(capped, ASOF, {"pollster_cap": 0.5})
+    assert detail is not None and detail[3] == "direct", detail
+    assert abs(detail[0] - 10.0 / 3.0) < 0.01, detail
     print("poll estimator ok")
 
 

@@ -115,6 +115,7 @@ TREND_WEIGHT = 0.2
 POLL_HALF_LIFE = 120.0      # days; a poll 4 months old counts half
 POLL_MAX_AGE = 540          # 18 months; anything older is noise
 POLL_PARTISAN_W = 0.6       # partisan pollster weight
+POLLSTER_CAP = 0.5          # max share of a race average one firm can carry
 POLL_TRIM = 12.0            # drop polls >12 pts from the weighted median
 POLL_AGG_SIGMA = 2.5
 POLL_DIR_SIGMA = 4.0
@@ -394,6 +395,7 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
     agg_sigma = float(p.get("agg_sigma", POLL_AGG_SIGMA))
     dir_sigma = float(p.get("dir_sigma", POLL_DIR_SIGMA))
     min_neff = float(p.get("min_neff", POLL_MIN_NEFF))
+    pollster_cap = float(p.get("pollster_cap", POLLSTER_CAP))
     rows = []
     for pol in entry.get("polls") or []:
         if pol.get("dem") is None or pol.get("rep") is None:
@@ -411,22 +413,31 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
         w = 0.5 ** (age / half_life)
         if pol.get("partisan"):
             w *= partisan_w
-        rows.append((mar, w))
+        rows.append((mar, w, pollster_key(pol.get("pollster"))))
+    if len(rows) >= 2 and 0.0 < pollster_cap < 1.0:
+        totals = {}
+        for _, w, key in rows:
+            if key:
+                totals[key] = totals.get(key, 0.0) + w
+        full = sum(w for _, w, _ in rows)
+        rows = [(mar, w * min(1.0, pollster_cap * full / totals[key])
+                 if key else w, key) for mar, w, key in rows]
     if len(rows) >= 2:
         rows.sort(key=lambda x: x[0])
-        tot = sum(w for _, w in rows)
+        tot = sum(w for _, w, _ in rows)
         acc = 0.0
         med = rows[-1][0]
-        for mar, w in rows:
+        for mar, w, _ in rows:
             acc += w
             if acc >= tot / 2:
                 med = mar
                 break
-        keep = [(mar, w) for mar, w in rows if abs(mar - med) <= trim]
+        keep = [(mar, w, key) for mar, w, key in rows
+                if abs(mar - med) <= trim]
         if len(keep) >= 2:
-            ws = sum(w for _, w in keep)
-            mean = sum(mar * w for mar, w in keep) / ws
-            neff = ws * ws / sum(w * w for _, w in keep)
+            ws = sum(w for _, w, _ in keep)
+            mean = sum(mar * w for mar, w, _ in keep) / ws
+            neff = ws * ws / sum(w * w for _, w, _ in keep)
             if neff >= min_neff:
                 sigma = max(2.0, dir_sigma / math.sqrt(neff))
                 return mean, sigma, neff, "direct"
