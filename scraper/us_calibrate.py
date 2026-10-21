@@ -41,10 +41,10 @@ PRES_YEAR = {2018: "2016", 2020: "2016", 2022: "2020", 2024: "2020",
 
 BASE = {
     "half_life": 120, "max_age": 540, "partisan_w": 0.6, "trim": 12.0,
-    "agg_sigma": 2.5, "dir_sigma": 4.0, "min_neff": 1.5,
+    "agg_sigma": 2.5, "dir_sigma": 3.0, "min_neff": 1.5,
     "pres_w": 1.0, "env_full": 1.0, "use_inc": True,
     "last_w": {"solid": 0.0, "likely": 0.0, "lean": 0.0, "tossup": 0.0, "none": 0.0},
-    "sigma_s": {"solid": 4.0, "likely": 5.0, "lean": 6.0, "tossup": 8.0, "none": 8.0},
+    "sigma_s": {"solid": 3.0, "likely": 3.75, "lean": 4.5, "tossup": 6.0, "none": 6.0},
     "band_shrink": 0.0, "trend_w": 0.2, "env_w": 0.25, "beta_env": 1.0,
     "guard_start": 8.0, "guard_width": 8.0, "sigma_prob": 6.0,
 }

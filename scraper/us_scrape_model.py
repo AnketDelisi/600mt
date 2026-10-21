@@ -128,11 +128,11 @@ POLL_SAMPLE_POWER = 0.25    # diminishing returns to sample size
 POLL_POP_WEIGHT = {"LV": 1.0, "RV": 0.9, "V": 0.9, "A": 0.75, "PV": 0.75}
 POLL_TRIM = 12.0            # drop polls >12 pts from the weighted median
 POLL_AGG_SIGMA = 2.5
-POLL_DIR_SIGMA = 4.0
+POLL_DIR_SIGMA = 3.0
 POLL_MIN_NEFF = 1.5
 POLL_GUARD_START = 8.0
 POLL_GUARD_WIDTH = 8.0
-GRADE_SIGMA = {"solid": 4.0, "likely": 5.0, "lean": 6.0, "tossup": 8.0, "none": 8.0}
+GRADE_SIGMA = {"solid": 3.0, "likely": 3.75, "lean": 4.5, "tossup": 6.0, "none": 6.0}
 # generic-ballot margin enters the national swing at a chamber-specific weight:
 # race ratings (Cook/IE/Sabato) and polls already embed the current environment,
 # so using the full margin on top would double-count it. The Senate is far less
