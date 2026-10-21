@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-10-21T18:47:01Z",
+  "generated": "2026-10-21T19:03:37Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 13,
@@ -15,7 +15,7 @@
       "tilt": 3.0,
       "tossup": 0.0
     },
-    "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band, with the generic-ballot House vote bias corrected. Governor: 50/50 current/prior state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, house effects and an outlier guard.",
+    "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band, with the generic-ballot House vote bias corrected. Governor: 50/50 current/prior state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, pollster ratings, house effects and an outlier guard.",
     "house_env_bias": -1.8,
     "national_swing_sigma": 2.5,
     "poll_bias_sigma": 2.5,
@@ -28,7 +28,8 @@
       "governor": 0.25
     },
     "state_lean_year": "2024",
-    "poll_half_life_days": 120.0
+    "poll_half_life_days": 120.0,
+    "pollster_rating_scale": 0.5
   },
   "senate": {
     "races": [
@@ -89,7 +90,7 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 31.3,
+        "margin": 31.5,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
         "ind_pct": 0.0,
@@ -272,28 +273,6 @@
         "polls": null
       },
       {
-        "state": "Tennessee",
-        "district": "",
-        "incumbent": "Bill Hagerty",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 25.0,
-        "dem_pct": 0.1,
-        "rep_pct": 99.9,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
         "state": "Rhode Island",
         "district": "",
         "incumbent": "Jack Reed",
@@ -306,7 +285,7 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 24.9,
+        "margin": 25.0,
         "dem_pct": 99.9,
         "rep_pct": 0.1,
         "ind_pct": 0.0,
@@ -380,6 +359,28 @@
         }
       },
       {
+        "state": "Tennessee",
+        "district": "",
+        "incumbent": "Bill Hagerty",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 25.0,
+        "dem_pct": 0.1,
+        "rep_pct": 99.9,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
         "state": "Colorado",
         "district": "",
         "incumbent": "John Hickenlooper",
@@ -414,7 +415,7 @@
         },
         "lean": "Solid R",
         "leader": "R",
-        "margin": 22.6,
+        "margin": 22.5,
         "dem_pct": 0.2,
         "rep_pct": 99.8,
         "ind_pct": 0.0,
@@ -473,7 +474,7 @@
         },
         "lean": "Solid R",
         "leader": "R",
-        "margin": 22.5,
+        "margin": 22.2,
         "dem_pct": 0.2,
         "rep_pct": 99.8,
         "ind_pct": 0.0,
@@ -903,8 +904,8 @@
         "lean": "Likely R",
         "leader": "R",
         "margin": 10.4,
-        "dem_pct": 4.8,
-        "rep_pct": 95.2,
+        "dem_pct": 4.9,
+        "rep_pct": 95.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -966,9 +967,9 @@
         },
         "lean": "Likely D",
         "leader": "D",
-        "margin": 10.4,
-        "dem_pct": 95.1,
-        "rep_pct": 4.9,
+        "margin": 10.3,
+        "dem_pct": 95.0,
+        "rep_pct": 5.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -1375,9 +1376,9 @@
         },
         "lean": "Likely D",
         "leader": "D",
-        "margin": 8.2,
-        "dem_pct": 91.2,
-        "rep_pct": 8.8,
+        "margin": 8.1,
+        "dem_pct": 91.1,
+        "rep_pct": 8.9,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -1582,9 +1583,9 @@
         },
         "lean": "Likely R",
         "leader": "R",
-        "margin": 7.6,
-        "dem_pct": 10.2,
-        "rep_pct": 89.8,
+        "margin": 7.9,
+        "dem_pct": 9.6,
+        "rep_pct": 90.4,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -1762,9 +1763,9 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 6.8,
-        "dem_pct": 87.5,
-        "rep_pct": 12.5,
+        "margin": 6.9,
+        "dem_pct": 87.8,
+        "rep_pct": 12.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -2006,8 +2007,8 @@
         "lean": "Lean D",
         "leader": "D",
         "margin": 5.3,
-        "dem_pct": 82.0,
-        "rep_pct": 18.0,
+        "dem_pct": 82.1,
+        "rep_pct": 17.9,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -2184,9 +2185,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 5.2,
-        "dem_pct": 18.3,
-        "rep_pct": 81.7,
+        "margin": 5.3,
+        "dem_pct": 18.0,
+        "rep_pct": 82.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -2420,8 +2421,8 @@
         "lean": "Lean D",
         "leader": "D",
         "margin": 3.7,
-        "dem_pct": 74.3,
-        "rep_pct": 25.7,
+        "dem_pct": 74.2,
+        "rep_pct": 25.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -2656,8 +2657,8 @@
         "lean": "Lean D",
         "leader": "D",
         "margin": 3.2,
-        "dem_pct": 71.5,
-        "rep_pct": 28.5,
+        "dem_pct": 71.6,
+        "rep_pct": 28.4,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -3181,8 +3182,8 @@
         "lean": "Lean R",
         "leader": "R",
         "margin": 2.6,
-        "dem_pct": 32.3,
-        "rep_pct": 67.7,
+        "dem_pct": 32.2,
+        "rep_pct": 67.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -3432,9 +3433,9 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 1.9,
-        "dem_pct": 63.2,
-        "rep_pct": 36.8,
+        "margin": 1.8,
+        "dem_pct": 62.9,
+        "rep_pct": 37.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -3761,9 +3762,9 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 1.6,
-        "dem_pct": 61.0,
-        "rep_pct": 39.0,
+        "margin": 1.5,
+        "dem_pct": 60.8,
+        "rep_pct": 39.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -4260,9 +4261,9 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 1.2,
-        "dem_pct": 41.8,
-        "rep_pct": 58.2,
+        "margin": 1.1,
+        "dem_pct": 41.9,
+        "rep_pct": 58.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -4549,9 +4550,9 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 0.2,
-        "dem_pct": 48.7,
-        "rep_pct": 51.3,
+        "margin": 0.3,
+        "dem_pct": 48.1,
+        "rep_pct": 51.9,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -4846,8 +4847,8 @@
     "expected_r_seats": 48.3,
     "expected_i_seats": 1.1,
     "majority": {
-      "dem_pct": 69.7,
-      "rep_pct": 30.3
+      "dem_pct": 69.4,
+      "rep_pct": 30.6
     },
     "distribution_buckets": [
       {
@@ -4856,11 +4857,11 @@
       },
       {
         "seats": 47,
-        "pct": 3.6
+        "pct": 3.7
       },
       {
         "seats": 49,
-        "pct": 14.2
+        "pct": 14.4
       },
       {
         "seats": 51,
@@ -4872,11 +4873,11 @@
       },
       {
         "seats": 55,
-        "pct": 18.2
+        "pct": 18.1
       },
       {
         "seats": 57,
-        "pct": 4.7
+        "pct": 4.5
       },
       {
         "seats": 59,
@@ -10694,6 +10695,46 @@
         "polls": null
       },
       {
+        "state": "Oregon",
+        "district": "5",
+        "incumbent": "Janelle Bynum",
+        "party": "D",
+        "rating": "Solid D",
+        "ratings": {
+          "cook": "Solid D",
+          "ie": "Solid D",
+          "sabato": "Likely D"
+        },
+        "lean": "Solid D",
+        "leader": "D",
+        "margin": 16.6,
+        "dem_pct": 99.1,
+        "rep_pct": 0.9,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
+        "state": "Texas",
+        "district": "2",
+        "incumbent": "Dan Crenshaw",
+        "party": "R",
+        "rating": null,
+        "ratings": {},
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 16.5,
+        "dem_pct": 0.9,
+        "rep_pct": 99.1,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
         "state": "New Hampshire",
         "district": "2",
         "incumbent": "Maggie Goodlander",
@@ -10706,7 +10747,7 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 16.6,
+        "margin": 16.4,
         "dem_pct": 99.1,
         "rep_pct": 0.9,
         "ind_pct": 0.0,
@@ -10789,46 +10830,6 @@
             "r": "Lily Tang Williams"
           }
         }
-      },
-      {
-        "state": "Oregon",
-        "district": "5",
-        "incumbent": "Janelle Bynum",
-        "party": "D",
-        "rating": "Solid D",
-        "ratings": {
-          "cook": "Solid D",
-          "ie": "Solid D",
-          "sabato": "Likely D"
-        },
-        "lean": "Solid D",
-        "leader": "D",
-        "margin": 16.6,
-        "dem_pct": 99.1,
-        "rep_pct": 0.9,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Texas",
-        "district": "2",
-        "incumbent": "Dan Crenshaw",
-        "party": "R",
-        "rating": null,
-        "ratings": {},
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 16.5,
-        "dem_pct": 0.9,
-        "rep_pct": 99.1,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
       },
       {
         "state": "Texas",
@@ -11745,9 +11746,9 @@
         },
         "lean": "Likely D",
         "leader": "D",
-        "margin": 11.1,
-        "dem_pct": 96.0,
-        "rep_pct": 4.0,
+        "margin": 11.3,
+        "dem_pct": 96.2,
+        "rep_pct": 3.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -12385,11 +12386,11 @@
           "ie": "Tossup",
           "sabato": "Tossup"
         },
-        "lean": "Lean D",
+        "lean": "Likely D",
         "leader": "D",
-        "margin": 7.4,
-        "dem_pct": 89.3,
-        "rep_pct": 10.7,
+        "margin": 7.5,
+        "dem_pct": 89.4,
+        "rep_pct": 10.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -12465,9 +12466,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 7.0,
-        "dem_pct": 11.8,
-        "rep_pct": 88.2,
+        "margin": 7.2,
+        "dem_pct": 11.5,
+        "rep_pct": 88.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -12774,9 +12775,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 5.0,
-        "dem_pct": 19.2,
-        "rep_pct": 80.8,
+        "margin": 5.4,
+        "dem_pct": 17.5,
+        "rep_pct": 82.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -12862,9 +12863,9 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 4.8,
-        "dem_pct": 79.8,
-        "rep_pct": 20.2,
+        "margin": 5.0,
+        "dem_pct": 80.5,
+        "rep_pct": 19.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -12959,9 +12960,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 4.8,
-        "dem_pct": 20.3,
-        "rep_pct": 79.7,
+        "margin": 4.7,
+        "dem_pct": 20.9,
+        "rep_pct": 79.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13301,9 +13302,9 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 3.8,
-        "dem_pct": 74.6,
-        "rep_pct": 25.4,
+        "margin": 3.7,
+        "dem_pct": 74.5,
+        "rep_pct": 25.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13361,8 +13362,8 @@
         "lean": "Lean D",
         "leader": "D",
         "margin": 3.7,
-        "dem_pct": 74.4,
-        "rep_pct": 25.6,
+        "dem_pct": 74.3,
+        "rep_pct": 25.7,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13438,9 +13439,9 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 3.0,
-        "dem_pct": 70.2,
-        "rep_pct": 29.8,
+        "margin": 2.9,
+        "dem_pct": 69.8,
+        "rep_pct": 30.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13508,9 +13509,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 2.6,
-        "dem_pct": 31.9,
-        "rep_pct": 68.1,
+        "margin": 2.8,
+        "dem_pct": 31.1,
+        "rep_pct": 68.9,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13578,9 +13579,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 2.6,
-        "dem_pct": 31.9,
-        "rep_pct": 68.1,
+        "margin": 2.5,
+        "dem_pct": 32.8,
+        "rep_pct": 67.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13649,8 +13650,8 @@
         "lean": "Tossup",
         "leader": "D",
         "margin": 2.3,
-        "dem_pct": 65.8,
-        "rep_pct": 34.2,
+        "dem_pct": 65.6,
+        "rep_pct": 34.4,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13710,8 +13711,8 @@
         "lean": "Tossup",
         "leader": "D",
         "margin": 2.2,
-        "dem_pct": 65.1,
-        "rep_pct": 34.9,
+        "dem_pct": 65.0,
+        "rep_pct": 35.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13806,9 +13807,9 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 2.2,
-        "dem_pct": 34.5,
-        "rep_pct": 65.5,
+        "margin": 1.9,
+        "dem_pct": 36.9,
+        "rep_pct": 63.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13900,9 +13901,9 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 2.1,
-        "dem_pct": 35.7,
-        "rep_pct": 64.3,
+        "margin": 1.9,
+        "dem_pct": 37.0,
+        "rep_pct": 63.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13989,9 +13990,9 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 1.7,
-        "dem_pct": 37.8,
-        "rep_pct": 62.2,
+        "margin": 1.8,
+        "dem_pct": 37.4,
+        "rep_pct": 62.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14098,6 +14099,136 @@
         }
       },
       {
+        "state": "Pennsylvania",
+        "district": "8",
+        "incumbent": "Rob Bresnahan",
+        "party": "R",
+        "rating": "Tossup",
+        "ratings": {
+          "cook": "Tossup",
+          "ie": "Tilt D(flip)",
+          "sabato": "Tossup"
+        },
+        "lean": "Tossup",
+        "leader": "D",
+        "margin": 1.5,
+        "dem_pct": 60.2,
+        "rep_pct": 39.8,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 46.0,
+          "rep": 44.3,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 3,
+          "n_sponsored": 3,
+          "polls": [
+            {
+              "pollster": "Lake Research Partners",
+              "dates": "June 18–23, 2026",
+              "partisan": "D",
+              "sample": 400,
+              "population": "V",
+              "dem": 47.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "June 8–11, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 46.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "August 27–28, 2025",
+              "partisan": "D",
+              "sample": 615,
+              "population": "V",
+              "dem": 45.0,
+              "rep": 43.0
+            }
+          ],
+          "names": {
+            "d": "Paige Cognetti",
+            "r": "Rob Bresnahan"
+          }
+        }
+      },
+      {
+        "state": "Wisconsin",
+        "district": "1",
+        "incumbent": "Bryan Steil",
+        "party": "R",
+        "rating": "Lean R",
+        "ratings": {
+          "cook": "Lean R",
+          "ie": "Likely R",
+          "sabato": "Lean R"
+        },
+        "lean": "Tossup",
+        "leader": "R",
+        "margin": 1.5,
+        "dem_pct": 39.4,
+        "rep_pct": 60.6,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 46.2,
+          "rep": 48.5,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 4,
+          "n_sponsored": 3,
+          "polls": [
+            {
+              "pollster": "Impact Research",
+              "dates": "September 28 – October 1, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 47.0
+            },
+            {
+              "pollster": "DCCC Analytics Department",
+              "dates": "September 21–23, 2026",
+              "sample": 495,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 48.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "August 6–9, 2026",
+              "partisan": "D",
+              "sample": 400,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 49.0
+            },
+            {
+              "pollster": "Ragnar Research Partners",
+              "dates": "March 14–16, 2026",
+              "partisan": "R",
+              "sample": 400,
+              "population": "LV",
+              "dem": 41.0,
+              "rep": 50.0
+            }
+          ],
+          "names": {
+            "d": "Mitchell Berman",
+            "r": "Bryan Steil"
+          }
+        }
+      },
+      {
         "state": "Maine",
         "district": "2",
         "incumbent": "Jared Golden",
@@ -14110,9 +14241,9 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 1.5,
-        "dem_pct": 60.5,
-        "rep_pct": 39.5,
+        "margin": 1.4,
+        "dem_pct": 59.5,
+        "rep_pct": 40.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14207,136 +14338,6 @@
           "names": {
             "d": "Matt Dunlap",
             "r": "Paul LePage"
-          }
-        }
-      },
-      {
-        "state": "Wisconsin",
-        "district": "1",
-        "incumbent": "Bryan Steil",
-        "party": "R",
-        "rating": "Lean R",
-        "ratings": {
-          "cook": "Lean R",
-          "ie": "Likely R",
-          "sabato": "Lean R"
-        },
-        "lean": "Tossup",
-        "leader": "R",
-        "margin": 1.5,
-        "dem_pct": 39.2,
-        "rep_pct": 60.8,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 46.2,
-          "rep": 48.5,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 4,
-          "n_sponsored": 3,
-          "polls": [
-            {
-              "pollster": "Impact Research",
-              "dates": "September 28 – October 1, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 48.0,
-              "rep": 47.0
-            },
-            {
-              "pollster": "DCCC Analytics Department",
-              "dates": "September 21–23, 2026",
-              "sample": 495,
-              "population": "LV",
-              "dem": 48.0,
-              "rep": 48.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "August 6–9, 2026",
-              "partisan": "D",
-              "sample": 400,
-              "population": "LV",
-              "dem": 48.0,
-              "rep": 49.0
-            },
-            {
-              "pollster": "Ragnar Research Partners",
-              "dates": "March 14–16, 2026",
-              "partisan": "R",
-              "sample": 400,
-              "population": "LV",
-              "dem": 41.0,
-              "rep": 50.0
-            }
-          ],
-          "names": {
-            "d": "Mitchell Berman",
-            "r": "Bryan Steil"
-          }
-        }
-      },
-      {
-        "state": "Pennsylvania",
-        "district": "8",
-        "incumbent": "Rob Bresnahan",
-        "party": "R",
-        "rating": "Tossup",
-        "ratings": {
-          "cook": "Tossup",
-          "ie": "Tilt D(flip)",
-          "sabato": "Tossup"
-        },
-        "lean": "Tossup",
-        "leader": "D",
-        "margin": 1.4,
-        "dem_pct": 60.0,
-        "rep_pct": 40.0,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 46.0,
-          "rep": 44.3,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 3,
-          "n_sponsored": 3,
-          "polls": [
-            {
-              "pollster": "Lake Research Partners",
-              "dates": "June 18–23, 2026",
-              "partisan": "D",
-              "sample": 400,
-              "population": "V",
-              "dem": 47.0,
-              "rep": 45.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "June 8–11, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 46.0,
-              "rep": 45.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "August 27–28, 2025",
-              "partisan": "D",
-              "sample": 615,
-              "population": "V",
-              "dem": 45.0,
-              "rep": 43.0
-            }
-          ],
-          "names": {
-            "d": "Paige Cognetti",
-            "r": "Rob Bresnahan"
           }
         }
       },
@@ -14485,9 +14486,9 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 0.8,
-        "dem_pct": 55.6,
-        "rep_pct": 44.4,
+        "margin": 0.9,
+        "dem_pct": 56.3,
+        "rep_pct": 43.7,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14546,8 +14547,8 @@
         "lean": "Tossup",
         "leader": "R",
         "margin": 0.5,
-        "dem_pct": 46.5,
-        "rep_pct": 53.5,
+        "dem_pct": 46.4,
+        "rep_pct": 53.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14603,65 +14604,6 @@
         }
       },
       {
-        "state": "Alabama",
-        "district": "2",
-        "incumbent": "Shomari Figures",
-        "party": "D",
-        "rating": "Lean R",
-        "ratings": {
-          "cook": "Likely R(flip)",
-          "ie": "Lean R(flip)",
-          "sabato": "Lean R(flip)"
-        },
-        "lean": "Tossup",
-        "leader": "R",
-        "margin": 0.4,
-        "dem_pct": 47.2,
-        "rep_pct": 52.8,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 45.7,
-          "rep": 46.0,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 3,
-          "n_sponsored": 3,
-          "polls": [
-            {
-              "pollster": "Tulchin Research",
-              "dates": "August 24–31, 2026",
-              "partisan": "D",
-              "dem": 47.0,
-              "rep": 47.0
-            },
-            {
-              "pollster": "DCCC",
-              "dates": "July 29–30, 2026",
-              "partisan": "D",
-              "sample": 421,
-              "population": "LV",
-              "dem": 46.0,
-              "rep": 46.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "June 22–25, 2026",
-              "partisan": "D",
-              "sample": 400,
-              "population": "LV",
-              "dem": 44.0,
-              "rep": 45.0
-            }
-          ],
-          "names": {
-            "d": "Shomari Figures",
-            "r": "Rhett Marques"
-          }
-        }
-      },
-      {
         "state": "Michigan",
         "district": "7",
         "incumbent": "Tom Barrett",
@@ -14674,9 +14616,9 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 0.4,
-        "dem_pct": 52.9,
-        "rep_pct": 47.1,
+        "margin": 0.5,
+        "dem_pct": 53.8,
+        "rep_pct": 46.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14723,6 +14665,65 @@
         }
       },
       {
+        "state": "Alabama",
+        "district": "2",
+        "incumbent": "Shomari Figures",
+        "party": "D",
+        "rating": "Lean R",
+        "ratings": {
+          "cook": "Likely R(flip)",
+          "ie": "Lean R(flip)",
+          "sabato": "Lean R(flip)"
+        },
+        "lean": "Tossup",
+        "leader": "R",
+        "margin": 0.4,
+        "dem_pct": 47.1,
+        "rep_pct": 52.9,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 45.7,
+          "rep": 46.0,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 3,
+          "n_sponsored": 3,
+          "polls": [
+            {
+              "pollster": "Tulchin Research",
+              "dates": "August 24–31, 2026",
+              "partisan": "D",
+              "dem": 47.0,
+              "rep": 47.0
+            },
+            {
+              "pollster": "DCCC",
+              "dates": "July 29–30, 2026",
+              "partisan": "D",
+              "sample": 421,
+              "population": "LV",
+              "dem": 46.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "June 22–25, 2026",
+              "partisan": "D",
+              "sample": 400,
+              "population": "LV",
+              "dem": 44.0,
+              "rep": 45.0
+            }
+          ],
+          "names": {
+            "d": "Shomari Figures",
+            "r": "Rhett Marques"
+          }
+        }
+      },
+      {
         "state": "Virginia",
         "district": "2",
         "incumbent": "Jen Kiggans",
@@ -14758,8 +14759,8 @@
         "lean": "Tossup",
         "leader": "R",
         "margin": 0.2,
-        "dem_pct": 48.7,
-        "rep_pct": 51.3,
+        "dem_pct": 48.3,
+        "rep_pct": 51.7,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14831,75 +14832,6 @@
         }
       },
       {
-        "state": "New York",
-        "district": "17",
-        "incumbent": "Mike Lawler",
-        "party": "R",
-        "rating": "Tossup",
-        "ratings": {
-          "cook": "Tossup",
-          "ie": "Tossup",
-          "sabato": "Tossup"
-        },
-        "lean": "Tossup",
-        "leader": "R",
-        "margin": 0.2,
-        "dem_pct": 48.8,
-        "rep_pct": 51.2,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 47.8,
-          "rep": 47.8,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 4,
-          "n_sponsored": 3,
-          "polls": [
-            {
-              "pollster": "McLaughlin & Associates",
-              "dates": "September 28–30, 2026",
-              "partisan": "R",
-              "sample": 400,
-              "population": "LV",
-              "dem": 47.0,
-              "rep": 50.0
-            },
-            {
-              "pollster": "Emerson College",
-              "dates": "September 27–29, 2026",
-              "sample": 400,
-              "population": "LV",
-              "dem": 48.0,
-              "rep": 46.0
-            },
-            {
-              "pollster": "co/efficient",
-              "dates": "July 20–22, 2026",
-              "partisan": "R",
-              "sample": 1292,
-              "population": "LV",
-              "dem": 45.0,
-              "rep": 50.0
-            },
-            {
-              "pollster": "FM3 Research",
-              "dates": "June 27 – July 1, 2026",
-              "partisan": "D",
-              "sample": 509,
-              "population": "LV",
-              "dem": 51.0,
-              "rep": 45.0
-            }
-          ],
-          "names": {
-            "d": "Cait Conley",
-            "r": "Mike Lawler"
-          }
-        }
-      },
-      {
         "state": "Minnesota",
         "district": "1",
         "incumbent": "Brad Finstad",
@@ -14913,8 +14845,8 @@
         "lean": "Tossup",
         "leader": "D",
         "margin": 0.1,
-        "dem_pct": 50.9,
-        "rep_pct": 49.1,
+        "dem_pct": 50.8,
+        "rep_pct": 49.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14967,14 +14899,83 @@
             "r": "Brad Finstad"
           }
         }
+      },
+      {
+        "state": "New York",
+        "district": "17",
+        "incumbent": "Mike Lawler",
+        "party": "R",
+        "rating": "Tossup",
+        "ratings": {
+          "cook": "Tossup",
+          "ie": "Tossup",
+          "sabato": "Tossup"
+        },
+        "lean": "Tossup",
+        "leader": "D",
+        "margin": 0.1,
+        "dem_pct": 50.5,
+        "rep_pct": 49.5,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 47.8,
+          "rep": 47.8,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 4,
+          "n_sponsored": 3,
+          "polls": [
+            {
+              "pollster": "McLaughlin & Associates",
+              "dates": "September 28–30, 2026",
+              "partisan": "R",
+              "sample": 400,
+              "population": "LV",
+              "dem": 47.0,
+              "rep": 50.0
+            },
+            {
+              "pollster": "Emerson College",
+              "dates": "September 27–29, 2026",
+              "sample": 400,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "co/efficient",
+              "dates": "July 20–22, 2026",
+              "partisan": "R",
+              "sample": 1292,
+              "population": "LV",
+              "dem": 45.0,
+              "rep": 50.0
+            },
+            {
+              "pollster": "FM3 Research",
+              "dates": "June 27 – July 1, 2026",
+              "partisan": "D",
+              "sample": 509,
+              "population": "LV",
+              "dem": 51.0,
+              "rep": 45.0
+            }
+          ],
+          "names": {
+            "d": "Cait Conley",
+            "r": "Mike Lawler"
+          }
+        }
       }
     ],
     "expected_d_seats": 227.5,
     "expected_r_seats": 207.5,
     "expected_i_seats": 0.1,
     "majority": {
-      "dem_pct": 76.3,
-      "rep_pct": 23.7
+      "dem_pct": 76.2,
+      "rep_pct": 23.8
     },
     "distribution_buckets": [
       {
@@ -14995,39 +14996,39 @@
       },
       {
         "seats": 195,
-        "pct": 0.4
+        "pct": 0.3
       },
       {
         "seats": 197,
-        "pct": 0.5
+        "pct": 0.6
       },
       {
         "seats": 199,
-        "pct": 0.7
+        "pct": 0.6
       },
       {
         "seats": 201,
-        "pct": 0.8
+        "pct": 0.9
       },
       {
         "seats": 203,
-        "pct": 1.3
+        "pct": 1.2
       },
       {
         "seats": 205,
-        "pct": 1.5
+        "pct": 1.6
       },
       {
         "seats": 207,
-        "pct": 1.9
+        "pct": 1.8
       },
       {
         "seats": 209,
-        "pct": 2.1
+        "pct": 2.2
       },
       {
         "seats": 211,
-        "pct": 2.7
+        "pct": 2.6
       },
       {
         "seats": 213,
@@ -15043,15 +15044,15 @@
       },
       {
         "seats": 219,
-        "pct": 4.3
+        "pct": 4.2
       },
       {
         "seats": 221,
-        "pct": 5.0
+        "pct": 4.9
       },
       {
         "seats": 223,
-        "pct": 5.7
+        "pct": 5.8
       },
       {
         "seats": 225,
@@ -15059,11 +15060,11 @@
       },
       {
         "seats": 227,
-        "pct": 5.6
+        "pct": 5.7
       },
       {
         "seats": 229,
-        "pct": 5.7
+        "pct": 5.6
       },
       {
         "seats": 231,
@@ -15095,35 +15096,35 @@
       },
       {
         "seats": 245,
-        "pct": 2.7
+        "pct": 2.8
       },
       {
         "seats": 247,
-        "pct": 2.4
+        "pct": 2.3
       },
       {
         "seats": 249,
-        "pct": 2.0
+        "pct": 1.8
       },
       {
         "seats": 251,
-        "pct": 1.4
+        "pct": 1.6
       },
       {
         "seats": 253,
-        "pct": 1.2
+        "pct": 1.1
       },
       {
         "seats": 255,
-        "pct": 0.8
+        "pct": 0.9
       },
       {
         "seats": 257,
-        "pct": 0.7
+        "pct": 0.6
       },
       {
         "seats": 259,
-        "pct": 0.5
+        "pct": 0.4
       },
       {
         "seats": 261,
@@ -15294,7 +15295,7 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 27.2,
+        "margin": 27.3,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
         "ind_pct": 0.0,
@@ -15422,7 +15423,7 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 24.7,
+        "margin": 24.8,
         "dem_pct": 99.9,
         "rep_pct": 0.1,
         "ind_pct": 0.0,
@@ -15833,7 +15834,7 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 18.9,
+        "margin": 18.8,
         "dem_pct": 99.5,
         "rep_pct": 0.5,
         "ind_pct": 0.0,
@@ -16175,9 +16176,9 @@
         },
         "lean": "Likely D",
         "leader": "D",
-        "margin": 14.6,
-        "dem_pct": 98.5,
-        "rep_pct": 1.5,
+        "margin": 14.9,
+        "dem_pct": 98.6,
+        "rep_pct": 1.4,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -16602,9 +16603,9 @@
         },
         "lean": "Likely D",
         "leader": "D",
-        "margin": 12.2,
-        "dem_pct": 97.1,
-        "rep_pct": 2.9,
+        "margin": 12.4,
+        "dem_pct": 97.2,
+        "rep_pct": 2.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -16777,7 +16778,7 @@
         },
         "lean": "Likely D",
         "leader": "D",
-        "margin": 10.4,
+        "margin": 10.5,
         "dem_pct": 95.2,
         "rep_pct": 4.8,
         "ind_pct": 0.0,
@@ -16844,9 +16845,9 @@
         },
         "lean": "Likely R",
         "leader": "R",
-        "margin": 8.7,
-        "dem_pct": 7.6,
-        "rep_pct": 92.4,
+        "margin": 8.8,
+        "dem_pct": 7.5,
+        "rep_pct": 92.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -17033,9 +17034,9 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 7.1,
-        "dem_pct": 88.5,
-        "rep_pct": 11.5,
+        "margin": 6.9,
+        "dem_pct": 87.9,
+        "rep_pct": 12.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -17278,9 +17279,9 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 6.9,
-        "dem_pct": 87.8,
-        "rep_pct": 12.2,
+        "margin": 6.7,
+        "dem_pct": 87.3,
+        "rep_pct": 12.7,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -17467,9 +17468,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 6.2,
-        "dem_pct": 14.7,
-        "rep_pct": 85.3,
+        "margin": 6.4,
+        "dem_pct": 14.0,
+        "rep_pct": 86.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -17837,9 +17838,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 5.0,
-        "dem_pct": 19.2,
-        "rep_pct": 80.8,
+        "margin": 5.2,
+        "dem_pct": 18.5,
+        "rep_pct": 81.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -18125,9 +18126,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 4.2,
-        "dem_pct": 23.2,
-        "rep_pct": 76.8,
+        "margin": 4.5,
+        "dem_pct": 21.4,
+        "rep_pct": 78.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -18196,115 +18197,6 @@
         }
       },
       {
-        "state": "Wisconsin",
-        "district": "",
-        "incumbent": "Tony Evers",
-        "party": "D",
-        "rating": "Tossup",
-        "ratings": {
-          "cook": "Tossup",
-          "ie": "Tossup",
-          "sabato": "Lean D"
-        },
-        "lean": "Lean D",
-        "leader": "D",
-        "margin": 3.8,
-        "dem_pct": 74.6,
-        "rep_pct": 25.4,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 47.7,
-          "rep": 44.0,
-          "source": "Aggregate (Wikipedia)",
-          "polls": [
-            {
-              "pollster": "YouGov",
-              "dates": "September 22 – October 9, 2026",
-              "sample": 1715,
-              "population": "A",
-              "dem": 46.0,
-              "rep": 42.0
-            },
-            {
-              "pollster": "Z to A Research",
-              "dates": "September 28 – October 1, 2026",
-              "partisan": "D",
-              "sample": 662,
-              "population": "LV",
-              "dem": 49.0,
-              "rep": 44.0
-            },
-            {
-              "pollster": "Marquette University",
-              "dates": "September 16–23, 2026",
-              "sample": 692,
-              "population": "LV",
-              "dem": 49.0,
-              "rep": 46.0
-            },
-            {
-              "pollster": "Marquette University",
-              "dates": "August 12–20, 2026",
-              "sample": 738,
-              "population": "LV",
-              "dem": 49.0,
-              "rep": 44.0
-            },
-            {
-              "pollster": "TIPP Insights",
-              "dates": "August 14–18, 2026",
-              "partisan": "R",
-              "sample": 1199,
-              "population": "LV",
-              "dem": 47.0,
-              "rep": 43.0
-            },
-            {
-              "pollster": "Platform Communications",
-              "dates": "August 12–13, 2026",
-              "partisan": "R",
-              "sample": 500,
-              "population": "LV",
-              "dem": 48.0,
-              "rep": 44.0
-            },
-            {
-              "pollster": "GBAO",
-              "dates": "July 30 – August 3, 2026",
-              "partisan": "D",
-              "sample": 800,
-              "population": "LV",
-              "dem": 47.0,
-              "rep": 44.0
-            },
-            {
-              "pollster": "RMG Research",
-              "dates": "July 20–24, 2026",
-              "sample": 800,
-              "population": "RV",
-              "dem": 46.0,
-              "rep": 43.0
-            },
-            {
-              "pollster": "TIPP Insights",
-              "dates": "March 13–19, 2026",
-              "partisan": "R",
-              "sample": 1175,
-              "population": "LV",
-              "dem": 42.0,
-              "rep": 41.0
-            }
-          ],
-          "names": {
-            "d": "David Crowley",
-            "r": "Tom Tiffany"
-          }
-        }
-      },
-      {
         "state": "Texas",
         "district": "",
         "incumbent": "Greg Abbott",
@@ -18317,9 +18209,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 3.7,
-        "dem_pct": 25.6,
-        "rep_pct": 74.4,
+        "margin": 3.8,
+        "dem_pct": 25.5,
+        "rep_pct": 74.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -18734,59 +18626,111 @@
         }
       },
       {
-        "state": "Vermont",
+        "state": "Wisconsin",
         "district": "",
-        "incumbent": "Phil Scott",
-        "party": "R",
-        "rating": "Likely R",
+        "incumbent": "Tony Evers",
+        "party": "D",
+        "rating": "Tossup",
         "ratings": {
-          "cook": "Likely R",
-          "ie": "Likely R",
-          "sabato": "Likely R"
+          "cook": "Tossup",
+          "ie": "Tossup",
+          "sabato": "Lean D"
         },
-        "lean": "Lean R",
-        "leader": "R",
-        "margin": 3.3,
-        "dem_pct": 28.0,
-        "rep_pct": 72.0,
+        "lean": "Lean D",
+        "leader": "D",
+        "margin": 3.8,
+        "dem_pct": 74.6,
+        "rep_pct": 25.4,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 41.7,
-          "rep": 44.3,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 3,
+          "dem": 47.7,
+          "rep": 44.0,
+          "source": "Aggregate (Wikipedia)",
           "polls": [
             {
-              "pollster": "State Navigate",
-              "dates": "October 2–4, 2026",
-              "sample": 948,
+              "pollster": "YouGov",
+              "dates": "September 22 – October 9, 2026",
+              "sample": 1715,
+              "population": "A",
+              "dem": 46.0,
+              "rep": 42.0
+            },
+            {
+              "pollster": "Z to A Research",
+              "dates": "September 28 – October 1, 2026",
+              "partisan": "D",
+              "sample": 662,
               "population": "LV",
-              "dem": 43.0,
+              "dem": 49.0,
+              "rep": 44.0
+            },
+            {
+              "pollster": "Marquette University",
+              "dates": "September 16–23, 2026",
+              "sample": 692,
+              "population": "LV",
+              "dem": 49.0,
               "rep": 46.0
             },
             {
-              "pollster": "University of New Hampshire",
-              "dates": "September 17–21, 2026",
-              "sample": 829,
+              "pollster": "Marquette University",
+              "dates": "August 12–20, 2026",
+              "sample": 738,
               "population": "LV",
               "dem": 49.0,
+              "rep": 44.0
+            },
+            {
+              "pollster": "TIPP Insights",
+              "dates": "August 14–18, 2026",
+              "partisan": "R",
+              "sample": 1199,
+              "population": "LV",
+              "dem": 47.0,
               "rep": 43.0
             },
             {
-              "pollster": "University of New Hampshire",
-              "dates": "July 15–20, 2026",
-              "sample": 954,
+              "pollster": "Platform Communications",
+              "dates": "August 12–13, 2026",
+              "partisan": "R",
+              "sample": 500,
               "population": "LV",
-              "dem": 33.0,
+              "dem": 48.0,
               "rep": 44.0
+            },
+            {
+              "pollster": "GBAO",
+              "dates": "July 30 – August 3, 2026",
+              "partisan": "D",
+              "sample": 800,
+              "population": "LV",
+              "dem": 47.0,
+              "rep": 44.0
+            },
+            {
+              "pollster": "RMG Research",
+              "dates": "July 20–24, 2026",
+              "sample": 800,
+              "population": "RV",
+              "dem": 46.0,
+              "rep": 43.0
+            },
+            {
+              "pollster": "TIPP Insights",
+              "dates": "March 13–19, 2026",
+              "partisan": "R",
+              "sample": 1175,
+              "population": "LV",
+              "dem": 42.0,
+              "rep": 41.0
             }
           ],
           "names": {
-            "r": "Phil Scott",
-            "d": "Amanda Janoo"
+            "d": "David Crowley",
+            "r": "Tom Tiffany"
           }
         }
       },
@@ -18803,9 +18747,9 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 3.2,
-        "dem_pct": 71.6,
-        "rep_pct": 28.4,
+        "margin": 3.3,
+        "dem_pct": 71.7,
+        "rep_pct": 28.3,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -19068,6 +19012,63 @@
         }
       },
       {
+        "state": "Vermont",
+        "district": "",
+        "incumbent": "Phil Scott",
+        "party": "R",
+        "rating": "Likely R",
+        "ratings": {
+          "cook": "Likely R",
+          "ie": "Likely R",
+          "sabato": "Likely R"
+        },
+        "lean": "Lean R",
+        "leader": "R",
+        "margin": 3.3,
+        "dem_pct": 27.9,
+        "rep_pct": 72.1,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 41.7,
+          "rep": 44.3,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 3,
+          "polls": [
+            {
+              "pollster": "State Navigate",
+              "dates": "October 2–4, 2026",
+              "sample": 948,
+              "population": "LV",
+              "dem": 43.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "University of New Hampshire",
+              "dates": "September 17–21, 2026",
+              "sample": 829,
+              "population": "LV",
+              "dem": 49.0,
+              "rep": 43.0
+            },
+            {
+              "pollster": "University of New Hampshire",
+              "dates": "July 15–20, 2026",
+              "sample": 954,
+              "population": "LV",
+              "dem": 33.0,
+              "rep": 44.0
+            }
+          ],
+          "names": {
+            "r": "Phil Scott",
+            "d": "Amanda Janoo"
+          }
+        }
+      },
+      {
         "state": "Nevada",
         "district": "",
         "incumbent": "Joe Lombardo",
@@ -19080,9 +19081,9 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 2.4,
-        "dem_pct": 33.7,
-        "rep_pct": 66.3,
+        "margin": 2.3,
+        "dem_pct": 33.9,
+        "rep_pct": 66.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -19220,9 +19221,9 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 2.2,
-        "dem_pct": 64.9,
-        "rep_pct": 35.1,
+        "margin": 2.0,
+        "dem_pct": 64.2,
+        "rep_pct": 35.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -19315,8 +19316,8 @@
         "lean": "Tossup",
         "leader": "R",
         "margin": 0.3,
-        "dem_pct": 48.2,
-        "rep_pct": 51.8,
+        "dem_pct": 48.0,
+        "rep_pct": 52.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -19473,15 +19474,15 @@
         }
       }
     ],
-    "expected_d_seats": 20.5,
-    "expected_r_seats": 15.5,
+    "expected_d_seats": 20.4,
+    "expected_r_seats": 15.6,
     "expected_i_seats": 0.0,
     "majority": {
       "dem_pct": 0.0,
       "rep_pct": 0.0
     },
     "distribution_buckets": null,
-    "total_d_governors": 26.5,
-    "total_r_governors": 23.5
+    "total_d_governors": 26.4,
+    "total_r_governors": 23.6
   }
 }

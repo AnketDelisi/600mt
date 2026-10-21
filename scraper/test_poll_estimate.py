@@ -68,6 +68,7 @@ def main():
                                    {"pollster_cap": 1.0, "sample_power": 0.0})
     assert detail is not None and detail[3] == "direct", detail
     assert abs(detail[0] - 5.0 * 0.75 / 1.75) < 0.01, detail
+    assert m.pollster_rating_weight("The Washington Post") > 1.0
     print("poll estimator ok")
 
 

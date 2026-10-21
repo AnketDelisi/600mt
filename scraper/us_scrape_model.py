@@ -117,6 +117,10 @@ POLLSTER_EFFECTS = (json.loads(POLLSTER_PATH.read_text(encoding="utf-8"))
                     if POLLSTER_PATH.exists() else {})
 POLLSTER_MIN_N = 10
 POLLSTER_MIN_ABS = 3.0
+POLLSTER_RATING_PATH = OUTPUT_DIR / "pollster_ratings.json"
+POLLSTER_RATINGS = (json.loads(POLLSTER_RATING_PATH.read_text(encoding="utf-8"))
+                    if POLLSTER_RATING_PATH.exists() else {})
+POLLSTER_RATING_SCALE = 0.5
 HOUSE_PRES_CYCLE = "2026"
 TREND_WEIGHT = 0.2
 POLL_HALF_LIFE = 120.0      # days; a poll 4 months old counts half
@@ -380,6 +384,17 @@ def pollster_key(name):
     return " ".join((name or "").lower().split())
 
 
+def pollster_rating_weight(name):
+    """Relative weight from the Silver Bulletin predictive plus-minus."""
+    if POLLSTER_RATING_SCALE <= 0:
+        return 1.0
+    item = (POLLSTER_RATINGS.get("scores") or {}).get(pollster_key(name))
+    if not item:
+        return 1.0
+    return min(1.3, max(0.7, math.exp(-float(item.get("ppm", 0.0))
+                                          * POLLSTER_RATING_SCALE)))
+
+
 def pollster_effect(name, chamber):
     """Shrunk historical house effect (D-R points) for a pollster.
 
@@ -442,6 +457,7 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
         if sample and sample_power:
             w *= min(1.5, max(0.5, (float(sample) / sample_ref) ** sample_power))
         w *= POLL_POP_WEIGHT.get((pol.get("population") or "").upper(), 1.0)
+        w *= pollster_rating_weight(pol.get("pollster"))
         rows.append((mar, w, pollster_key(pol.get("pollster"))))
     if len(rows) >= 2 and 0.0 < pollster_cap < 1.0:
         totals = {}
@@ -862,7 +878,7 @@ def main():
             "generic_ballot_generic_margin": env,
             "n_sims": N_SIMS,
             "rating_margin_table": RATING_MARGIN,
-            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band, with the generic-ballot House vote bias corrected. Governor: 50/50 current/prior state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, house effects and an outlier guard.",
+            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band, with the generic-ballot House vote bias corrected. Governor: 50/50 current/prior state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, pollster ratings, house effects and an outlier guard.",
             "house_env_bias": HOUSE_ENV_BIAS,
             "national_swing_sigma": NATIONAL_SIGMA,
             "poll_bias_sigma": POLL_BIAS_SIGMA,
@@ -874,6 +890,7 @@ def main():
                             "governor": STATE_ENV_WEIGHT["governor"]},
             "state_lean_year": STATE_LEAN_YEAR,
             "poll_half_life_days": POLL_HALF_LIFE,
+            "pollster_rating_scale": POLLSTER_RATING_SCALE,
         },
         "senate": forecast["senate"],
         "house": forecast["house"],

@@ -9,11 +9,12 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
   historical elasticity), incumbency and trend; House races use the district's
   last presidential margin, the last House result and the rating band, with
   the generic-ballot House vote bias corrected; governors use a 50/50
-  current/prior state presidential lean, the rating band and incumbency. Polls are rebuilt from the individual surveys with
+  current/prior state presidential lean, the rating band and incumbency.
+  Polls are rebuilt from the individual surveys with
   recency/partisan/sample-size/population weights, a per-firm flood cap,
-  strong pollster house effects and an outlier guard, then blended, and a
-  correlated national/region/state Monte Carlo with a cycle poll-bias term
-  produces the seat distribution.
+  pollster ratings, strong pollster house effects and an outlier guard, then
+  blended, and a correlated national/region/state Monte Carlo with a cycle
+  poll-bias term produces the seat distribution.
 - **Map builder** (`map.html`) — a YAPMS-style painter: pick a shade, click
   districts/senate seats/governorships, watch the tally. Load the 600
   forecast as a starting point, undo, share the map by link, export a PNG.
@@ -28,6 +29,7 @@ data/us/polling.json    # per-race polling averages (senate, governor)
 data/us/state_swing.json # state presidential margins 2008-24, elasticity, trend
 data/us/pres_by_cd.json # district presidential margins (2026/2024/2022 lines)
 data/us/pollster_effects.json # shrunk pollster house effects (2018-22 fit)
+data/us/pollster_ratings.json # Silver Bulletin pollster ratings
 data/us/state_legislative.json # lower-chamber state leans, 2018-22
 data/us/state_elasticity.json  # Silver Bulletin/CCES elasticity scores
 data/us/senate_fundraising.json # FEC Senate receipts, 2018-26
@@ -55,7 +57,8 @@ House model on 2018-24; `scraper/us_calibrate_governor.py` scores the governor
 model on 2018-24. Grid selection uses 2018-2022 only; 2024 is the holdout.
 `scraper/us_seat_report.py` reports expected vs actual seats by cycle.
 `scraper/us_build_poll_effects.py` refits the shrunk pollster house effects
-from the 2018-22 snapshots. `scraper/us_build_state_leg.py` builds the
+from the 2018-22 snapshots. `scraper/us_build_pollster_ratings.py` fetches the
+Silver Bulletin ratings. `scraper/us_build_state_leg.py` builds the
 2018-22 lower-chamber leans (requires `pyarrow`); `scraper/us_build_elasticity.py`
 fetches the Silver Bulletin/CCES scores; `scraper/us_build_fec.py` builds
 Senate and House fundraising from FEC bulk data;

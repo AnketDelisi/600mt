@@ -1,0 +1,3245 @@
+{
+ "source": "Silver Bulletin pollster ratings (Datawrapper GiFps/3)",
+ "scores": {
+  "the washington post": {
+   "name": "The Washington Post",
+   "grade": "A+",
+   "ppm": -1.094,
+   "n": 98
+  },
+  "marquette university law school": {
+   "name": "Marquette University Law School",
+   "grade": "A/B",
+   "ppm": -0.998,
+   "n": 17
+  },
+  "research & polling inc.": {
+   "name": "Research & Polling Inc.",
+   "grade": "A+",
+   "ppm": -0.976,
+   "n": 44
+  },
+  "onmessage inc.": {
+   "name": "OnMessage Inc.",
+   "grade": "A",
+   "ppm": -0.866,
+   "n": 32
+  },
+  "tipp insights": {
+   "name": "TIPP Insights",
+   "grade": "A",
+   "ppm": -0.854,
+   "n": 51
+  },
+  "data orbital": {
+   "name": "Data Orbital",
+   "grade": "A/B",
+   "ppm": -0.833,
+   "n": 18
+  },
+  "cygnal": {
+   "name": "Cygnal",
+   "grade": "A",
+   "ppm": -0.809,
+   "n": 58
+  },
+  "the new york times/siena college": {
+   "name": "The New York Times/Siena College",
+   "grade": "A",
+   "ppm": -0.8,
+   "n": 116
+  },
+  "monmouth university": {
+   "name": "Monmouth University",
+   "grade": "A",
+   "ppm": -0.776,
+   "n": 131
+  },
+  "surveyusa": {
+   "name": "SurveyUSA",
+   "grade": "A",
+   "ppm": -0.659,
+   "n": 871
+  },
+  "cbs news/the new york times": {
+   "name": "CBS News/The New York Times",
+   "grade": "A",
+   "ppm": -0.655,
+   "n": 66
+  },
+  "atlasintel": {
+   "name": "AtlasIntel",
+   "grade": "A",
+   "ppm": -0.644,
+   "n": 93
+  },
+  "public opinion strategies": {
+   "name": "Public Opinion Strategies",
+   "grade": "A",
+   "ppm": -0.643,
+   "n": 80
+  },
+  "emerson college": {
+   "name": "Emerson College",
+   "grade": "A",
+   "ppm": -0.612,
+   "n": 320
+  },
+  "siena college": {
+   "name": "Siena College",
+   "grade": "A",
+   "ppm": -0.606,
+   "n": 67
+  },
+  "muhlenberg college": {
+   "name": "Muhlenberg College",
+   "grade": "A-",
+   "ppm": -0.584,
+   "n": 36
+  },
+  "echelon insights": {
+   "name": "Echelon Insights",
+   "grade": "A-",
+   "ppm": -0.547,
+   "n": 19
+  },
+  "university of north florida": {
+   "name": "University of North Florida",
+   "grade": "A/B",
+   "ppm": -0.545,
+   "n": 14
+  },
+  "hart research associates/public opinion strategies": {
+   "name": "Hart Research Associates/Public Opinion Strategies",
+   "grade": "A-",
+   "ppm": -0.534,
+   "n": 37
+  },
+  "beacon research/shaw & co. research": {
+   "name": "Beacon Research/Shaw & Co. Research",
+   "grade": "A-",
+   "ppm": -0.533,
+   "n": 63
+  },
+  "public policy institute of california": {
+   "name": "Public Policy Institute of California",
+   "grade": "A/B",
+   "ppm": -0.526,
+   "n": 18
+  },
+  "grove insight": {
+   "name": "Grove Insight",
+   "grade": "A/B",
+   "ppm": -0.52,
+   "n": 29
+  },
+  "massinc polling group": {
+   "name": "MassINC Polling Group",
+   "grade": "A/B",
+   "ppm": -0.498,
+   "n": 22
+  },
+  "suffolk university": {
+   "name": "Suffolk University",
+   "grade": "A-",
+   "ppm": -0.494,
+   "n": 112
+  },
+  "susquehanna polling & research inc.": {
+   "name": "Susquehanna Polling & Research Inc.",
+   "grade": "A-",
+   "ppm": -0.45,
+   "n": 56
+  },
+  "mason-dixon polling & strategy": {
+   "name": "Mason-Dixon Polling & Strategy",
+   "grade": "A-",
+   "ppm": -0.44,
+   "n": 446
+  },
+  "greenberg quinlan rosner": {
+   "name": "Greenberg Quinlan Rosner",
+   "grade": "A-",
+   "ppm": -0.44,
+   "n": 62
+  },
+  "landmark communications": {
+   "name": "Landmark Communications",
+   "grade": "A-",
+   "ppm": -0.411,
+   "n": 41
+  },
+  "marist college": {
+   "name": "Marist College",
+   "grade": "A-",
+   "ppm": -0.407,
+   "n": 213
+  },
+  "angus reid global": {
+   "name": "Angus Reid Global",
+   "grade": "A/B",
+   "ppm": -0.398,
+   "n": 32
+  },
+  "national journal": {
+   "name": "National Journal",
+   "grade": "A/B",
+   "ppm": -0.387,
+   "n": 12
+  },
+  "the winston group": {
+   "name": "The Winston Group",
+   "grade": "A/B",
+   "ppm": -0.384,
+   "n": 11
+  },
+  "los angeles times": {
+   "name": "Los Angeles Times",
+   "grade": "A/B",
+   "ppm": -0.382,
+   "n": 37
+  },
+  "stockton university": {
+   "name": "Stockton University",
+   "grade": "A/B",
+   "ppm": -0.379,
+   "n": 12
+  },
+  "greenberg quinlan rosner/american viewpoint": {
+   "name": "Greenberg Quinlan Rosner/American Viewpoint",
+   "grade": "A/B",
+   "ppm": -0.377,
+   "n": 8
+  },
+  "university of massachusetts lowell": {
+   "name": "University of Massachusetts Lowell",
+   "grade": "A-",
+   "ppm": -0.376,
+   "n": 38
+  },
+  "university of connecticut": {
+   "name": "University of Connecticut",
+   "grade": "A/B",
+   "ppm": -0.339,
+   "n": 11
+  },
+  "concord public opinion partners": {
+   "name": "Concord Public Opinion Partners",
+   "grade": "A/B",
+   "ppm": -0.337,
+   "n": 4
+  },
+  "elway research": {
+   "name": "Elway Research",
+   "grade": "A/B",
+   "ppm": -0.329,
+   "n": 21
+  },
+  "christopher newport university": {
+   "name": "Christopher Newport University",
+   "grade": "A/B",
+   "ppm": -0.326,
+   "n": 16
+  },
+  "tarrance group": {
+   "name": "Tarrance Group",
+   "grade": "A/B",
+   "ppm": -0.321,
+   "n": 32
+  },
+  "fairleigh dickinson university": {
+   "name": "Fairleigh Dickinson University",
+   "grade": "A/B",
+   "ppm": -0.319,
+   "n": 22
+  },
+  "field research corp. (field poll)": {
+   "name": "Field Research Corp. (Field Poll)",
+   "grade": "A/B",
+   "ppm": -0.316,
+   "n": 25
+  },
+  "garin-hart-yang research group": {
+   "name": "Garin-Hart-Yang Research Group",
+   "grade": "A-",
+   "ppm": -0.298,
+   "n": 33
+  },
+  "western new england university": {
+   "name": "Western New England University",
+   "grade": "A/B",
+   "ppm": -0.286,
+   "n": 11
+  },
+  "oh predictive insights": {
+   "name": "OH Predictive Insights",
+   "grade": "B+",
+   "ppm": -0.286,
+   "n": 22
+  },
+  "opinion dynamics": {
+   "name": "Opinion Dynamics",
+   "grade": "A/B",
+   "ppm": -0.268,
+   "n": 34
+  },
+  "princeton survey research associates international": {
+   "name": "Princeton Survey Research Associates International",
+   "grade": "A/B",
+   "ppm": -0.265,
+   "n": 35
+  },
+  "alaska survey research": {
+   "name": "Alaska Survey Research",
+   "grade": "A/B",
+   "ppm": -0.264,
+   "n": 16
+  },
+  "lake research partners/the tarrance group": {
+   "name": "Lake Research Partners/The Tarrance Group",
+   "grade": "A/B",
+   "ppm": -0.263,
+   "n": 33
+  },
+  "elon university": {
+   "name": "Elon University",
+   "grade": "A/B",
+   "ppm": -0.256,
+   "n": 8
+  },
+  "national research": {
+   "name": "National Research",
+   "grade": "A/B",
+   "ppm": -0.245,
+   "n": 15
+  },
+  "abt associates": {
+   "name": "Abt Associates",
+   "grade": "A/B",
+   "ppm": -0.235,
+   "n": 13
+  },
+  "pharos research group": {
+   "name": "Pharos Research Group",
+   "grade": "F",
+   "ppm": -0.233,
+   "n": 33
+  },
+  "university of california berkeley": {
+   "name": "University of California Berkeley",
+   "grade": "A/B",
+   "ppm": -0.228,
+   "n": 8
+  },
+  "strategic vision llc": {
+   "name": "Strategic Vision LLC",
+   "grade": "F",
+   "ppm": -0.219,
+   "n": 133
+  },
+  "gfk group": {
+   "name": "GfK Group",
+   "grade": "A/B",
+   "ppm": -0.216,
+   "n": 21
+  },
+  "quinnipiac university": {
+   "name": "Quinnipiac University",
+   "grade": "B+",
+   "ppm": -0.212,
+   "n": 229
+  },
+  "dittman research": {
+   "name": "Dittman Research",
+   "grade": "A/B",
+   "ppm": -0.203,
+   "n": 10
+  },
+  "temple university": {
+   "name": "Temple University",
+   "grade": "A/B",
+   "ppm": -0.201,
+   "n": 6
+  },
+  "michigan state university": {
+   "name": "Michigan State University",
+   "grade": "A/B",
+   "ppm": -0.188,
+   "n": 2
+  },
+  "selzer": {
+   "name": "Selzer",
+   "grade": "B+",
+   "ppm": -0.183,
+   "n": 59
+  },
+  "franklin & marshall college": {
+   "name": "Franklin & Marshall College",
+   "grade": "A/B",
+   "ppm": -0.183,
+   "n": 25
+  },
+  "krc research": {
+   "name": "KRC Research",
+   "grade": "A/B",
+   "ppm": -0.179,
+   "n": 22
+  },
+  "fabrizio, lee & associates": {
+   "name": "Fabrizio, Lee & Associates",
+   "grade": "A/B",
+   "ppm": -0.171,
+   "n": 11
+  },
+  "florida atlantic university/mainstreet research": {
+   "name": "Florida Atlantic University/Mainstreet Research",
+   "grade": "B+",
+   "ppm": -0.161,
+   "n": 25
+  },
+  "rkm research and communications inc.": {
+   "name": "RKM Research and Communications Inc.",
+   "grade": "A/B",
+   "ppm": -0.161,
+   "n": 35
+  },
+  "north star opinion research": {
+   "name": "North Star Opinion Research",
+   "grade": "A/B",
+   "ppm": -0.138,
+   "n": 13
+  },
+  "gallup": {
+   "name": "Gallup",
+   "grade": "B+",
+   "ppm": -0.127,
+   "n": 84
+  },
+  "saint anselm college": {
+   "name": "Saint Anselm College",
+   "grade": "A/B",
+   "ppm": -0.11,
+   "n": 14
+  },
+  "public religion research institute": {
+   "name": "Public Religion Research Institute",
+   "grade": "A/B",
+   "ppm": -0.109,
+   "n": 1
+  },
+  "vox populi polling": {
+   "name": "Vox Populi Polling",
+   "grade": "A/B",
+   "ppm": -0.107,
+   "n": 19
+  },
+  "public opinion strategies/hamilton campaigns (texas credit union league)": {
+   "name": "Public Opinion Strategies/Hamilton Campaigns (Texas Credit Union League)",
+   "grade": "A/B",
+   "ppm": -0.101,
+   "n": 2
+  },
+  "kaconsulting": {
+   "name": "KAConsulting",
+   "grade": "A/B",
+   "ppm": -0.101,
+   "n": 12
+  },
+  "wirthlin worldwide": {
+   "name": "Wirthlin Worldwide",
+   "grade": "A/B",
+   "ppm": -0.099,
+   "n": 4
+  },
+  "university of arkansas": {
+   "name": "University of Arkansas",
+   "grade": "A/B",
+   "ppm": -0.094,
+   "n": 10
+  },
+  "glengariff group": {
+   "name": "Glengariff Group",
+   "grade": "A/B",
+   "ppm": -0.094,
+   "n": 16
+  },
+  "belden russonello": {
+   "name": "Belden Russonello",
+   "grade": "A/B",
+   "ppm": -0.083,
+   "n": 3
+  },
+  "indiana university": {
+   "name": "Indiana University",
+   "grade": "A/B",
+   "ppm": -0.083,
+   "n": 2
+  },
+  "knowledge networks": {
+   "name": "Knowledge Networks",
+   "grade": "A/B",
+   "ppm": -0.08,
+   "n": 4
+  },
+  "louis harris & associates": {
+   "name": "Louis Harris & Associates",
+   "grade": "A/B",
+   "ppm": -0.065,
+   "n": 2
+  },
+  "rand (american life panel)": {
+   "name": "RAND (American Life Panel)",
+   "grade": "A/B",
+   "ppm": -0.06,
+   "n": 4
+  },
+  "epic-mra": {
+   "name": "EPIC-MRA",
+   "grade": "B+",
+   "ppm": -0.054,
+   "n": 58
+  },
+  "lake research partners": {
+   "name": "Lake Research Partners",
+   "grade": "A/B",
+   "ppm": -0.048,
+   "n": 12
+  },
+  "university of florida": {
+   "name": "University of Florida",
+   "grade": "A/B",
+   "ppm": -0.043,
+   "n": 1
+  },
+  "insideradvantage": {
+   "name": "InsiderAdvantage",
+   "grade": "B+",
+   "ppm": -0.041,
+   "n": 208
+  },
+  "ohio state university": {
+   "name": "Ohio State University",
+   "grade": "A/B",
+   "ppm": -0.039,
+   "n": 1
+  },
+  "gordon s. black corp.": {
+   "name": "Gordon S. Black Corp.",
+   "grade": "A/B",
+   "ppm": -0.039,
+   "n": 2
+  },
+  "rasmussen reports": {
+   "name": "Rasmussen Reports",
+   "grade": "B+",
+   "ppm": -0.028,
+   "n": 797
+  },
+  "pew research center": {
+   "name": "Pew Research Center",
+   "grade": "A/B",
+   "ppm": -0.024,
+   "n": 25
+  },
+  "public policy polling": {
+   "name": "Public Policy Polling",
+   "grade": "B+",
+   "ppm": -0.013,
+   "n": 468
+  },
+  "pan atlantic research": {
+   "name": "Pan Atlantic Research",
+   "grade": "A/B",
+   "ppm": -0.008,
+   "n": 17
+  },
+  "polling company/global strategy group": {
+   "name": "Polling Company/Global Strategy Group",
+   "grade": "A/B",
+   "ppm": -0.002,
+   "n": 4
+  },
+  "gqr research/public opinion strategies": {
+   "name": "GQR Research/Public Opinion Strategies",
+   "grade": "A/B",
+   "ppm": -0.001,
+   "n": 1
+  },
+  "harvard university": {
+   "name": "Harvard University",
+   "grade": "B/C",
+   "ppm": 0.001,
+   "n": 1
+  },
+  "fleming & associates": {
+   "name": "Fleming & Associates",
+   "grade": "B/C",
+   "ppm": 0.01,
+   "n": 18
+  },
+  "rrh elections": {
+   "name": "RRH Elections",
+   "grade": "B/C",
+   "ppm": 0.011,
+   "n": 15
+  },
+  "wpa intelligence": {
+   "name": "WPA Intelligence",
+   "grade": "B/C",
+   "ppm": 0.018,
+   "n": 20
+  },
+  "leger": {
+   "name": "Leger",
+   "grade": "B/C",
+   "ppm": 0.025,
+   "n": 13
+  },
+  "florida atlantic university": {
+   "name": "Florida Atlantic University",
+   "grade": "B/C",
+   "ppm": 0.03,
+   "n": 9
+  },
+  "university of cincinnati (ohio poll)": {
+   "name": "University of Cincinnati (Ohio Poll)",
+   "grade": "B/C",
+   "ppm": 0.047,
+   "n": 39
+  },
+  "sea polling & strategic design": {
+   "name": "SEA Polling & Strategic Design",
+   "grade": "B/C",
+   "ppm": 0.055,
+   "n": 14
+  },
+  "harper polling": {
+   "name": "Harper Polling",
+   "grade": "B/C",
+   "ppm": 0.056,
+   "n": 14
+  },
+  "research co.": {
+   "name": "Research Co.",
+   "grade": "B",
+   "ppm": 0.063,
+   "n": 85
+  },
+  "east carolina university": {
+   "name": "East Carolina University",
+   "grade": "B/C",
+   "ppm": 0.072,
+   "n": 18
+  },
+  "harstad strategic research": {
+   "name": "Harstad Strategic Research",
+   "grade": "B/C",
+   "ppm": 0.073,
+   "n": 11
+  },
+  "blueprint polling": {
+   "name": "Blueprint Polling",
+   "grade": "B/C",
+   "ppm": 0.077,
+   "n": 8
+  },
+  "new england college polling center": {
+   "name": "New England College Polling Center",
+   "grade": "B/C",
+   "ppm": 0.078,
+   "n": 19
+  },
+  "praecones analytica": {
+   "name": "Praecones Analytica",
+   "grade": "B/C",
+   "ppm": 0.078,
+   "n": 5
+  },
+  "ciruli associates": {
+   "name": "Ciruli Associates",
+   "grade": "B/C",
+   "ppm": 0.082,
+   "n": 20
+  },
+  "clemson university": {
+   "name": "Clemson University",
+   "grade": "B/C",
+   "ppm": 0.083,
+   "n": 8
+  },
+  "j.l. partners": {
+   "name": "J.L. Partners",
+   "grade": "B/C",
+   "ppm": 0.085,
+   "n": 10
+  },
+  "mellman group": {
+   "name": "Mellman Group",
+   "grade": "B/C",
+   "ppm": 0.093,
+   "n": 28
+  },
+  "st. norbert college": {
+   "name": "St. Norbert College",
+   "grade": "B/C",
+   "ppm": 0.098,
+   "n": 12
+  },
+  "strategies 360": {
+   "name": "Strategies 360",
+   "grade": "B/C",
+   "ppm": 0.101,
+   "n": 9
+  },
+  "blum & weprin associates": {
+   "name": "Blum & Weprin Associates",
+   "grade": "B/C",
+   "ppm": 0.107,
+   "n": 19
+  },
+  "lee business school (university of nevada las vegas)": {
+   "name": "Lee Business School (University of Nevada Las Vegas)",
+   "grade": "B/C",
+   "ppm": 0.108,
+   "n": 5
+  },
+  "yougov": {
+   "name": "YouGov",
+   "grade": "B",
+   "ppm": 0.109,
+   "n": 521
+  },
+  "ward research": {
+   "name": "Ward Research",
+   "grade": "B/C",
+   "ppm": 0.118,
+   "n": 15
+  },
+  "landmark communications/rosetta stone communications": {
+   "name": "Landmark Communications/Rosetta Stone Communications",
+   "grade": "B/C",
+   "ppm": 0.12,
+   "n": 11
+  },
+  "middle tennessee state university": {
+   "name": "Middle Tennessee State University",
+   "grade": "B/C",
+   "ppm": 0.137,
+   "n": 5
+  },
+  "civiqs": {
+   "name": "Civiqs",
+   "grade": "B",
+   "ppm": 0.14,
+   "n": 43
+  },
+  "research 2000": {
+   "name": "Research 2000",
+   "grade": "F",
+   "ppm": 0.144,
+   "n": 278
+  },
+  "university of georgia": {
+   "name": "University of Georgia",
+   "grade": "B/C",
+   "ppm": 0.146,
+   "n": 7
+  },
+  "clarity campaign labs": {
+   "name": "Clarity Campaign Labs",
+   "grade": "B/C",
+   "ppm": 0.163,
+   "n": 16
+  },
+  "yankelovich partners inc.": {
+   "name": "Yankelovich Partners Inc.",
+   "grade": "B/C",
+   "ppm": 0.166,
+   "n": 7
+  },
+  "trafalgar group": {
+   "name": "Trafalgar Group",
+   "grade": "B",
+   "ppm": 0.175,
+   "n": 143
+  },
+  "wick": {
+   "name": "Wick",
+   "grade": "B/C",
+   "ppm": 0.18,
+   "n": 16
+  },
+  "redfield & wilton strategies": {
+   "name": "Redfield & Wilton Strategies",
+   "grade": "B",
+   "ppm": 0.19,
+   "n": 45
+  },
+  "ipsos": {
+   "name": "Ipsos",
+   "grade": "B",
+   "ppm": 0.191,
+   "n": 116
+  },
+  "rmg research": {
+   "name": "RMG Research",
+   "grade": "B",
+   "ppm": 0.194,
+   "n": 28
+  },
+  "keating research": {
+   "name": "Keating Research",
+   "grade": "B/C",
+   "ppm": 0.195,
+   "n": 6
+  },
+  "starboard communications": {
+   "name": "Starboard Communications",
+   "grade": "B/C",
+   "ppm": 0.219,
+   "n": 4
+  },
+  "co/efficient": {
+   "name": "co/efficient",
+   "grade": "B",
+   "ppm": 0.219,
+   "n": 24
+  },
+  "gbao": {
+   "name": "GBAO",
+   "grade": "B/C",
+   "ppm": 0.24,
+   "n": 14
+  },
+  "big village": {
+   "name": "Big Village",
+   "grade": "B",
+   "ppm": 0.24,
+   "n": 107
+  },
+  "strategic national": {
+   "name": "Strategic National",
+   "grade": "B/C",
+   "ppm": 0.241,
+   "n": 4
+  },
+  "pasquines": {
+   "name": "Pasquines",
+   "grade": "B/C",
+   "ppm": 0.253,
+   "n": 4
+  },
+  "ragnar research partners": {
+   "name": "Ragnar Research Partners",
+   "grade": "B/C",
+   "ppm": 0.257,
+   "n": 3
+  },
+  "rbi strategies & research": {
+   "name": "RBI Strategies & Research",
+   "grade": "B/C",
+   "ppm": 0.265,
+   "n": 4
+  },
+  "impact research": {
+   "name": "Impact Research",
+   "grade": "B/C",
+   "ppm": 0.266,
+   "n": 22
+  },
+  "patriot polling": {
+   "name": "Patriot Polling",
+   "grade": "B",
+   "ppm": 0.274,
+   "n": 22
+  },
+  "cvoter": {
+   "name": "CVOTER",
+   "grade": "B/C",
+   "ppm": 0.274,
+   "n": 6
+  },
+  "market shares corp.": {
+   "name": "Market Shares Corp.",
+   "grade": "B/C",
+   "ppm": 0.293,
+   "n": 25
+  },
+  "optimus analytics": {
+   "name": "Optimus Analytics",
+   "grade": "B/C",
+   "ppm": 0.294,
+   "n": 17
+  },
+  "benenson strategy group": {
+   "name": "Benenson Strategy Group",
+   "grade": "B/C",
+   "ppm": 0.294,
+   "n": 12
+  },
+  "spry strategies": {
+   "name": "Spry Strategies",
+   "grade": "B/C",
+   "ppm": 0.296,
+   "n": 5
+  },
+  "roi rocket": {
+   "name": "ROI Rocket",
+   "grade": "B/C",
+   "ppm": 0.298,
+   "n": 3
+  },
+  "cardinal point analytics (cardinalgps)": {
+   "name": "Cardinal Point Analytics (CardinalGPS)",
+   "grade": "B/C",
+   "ppm": 0.298,
+   "n": 3
+  },
+  "state navigate": {
+   "name": "State Navigate",
+   "grade": "B/C",
+   "ppm": 0.311,
+   "n": 2
+  },
+  "lucid": {
+   "name": "Lucid",
+   "grade": "B/C",
+   "ppm": 0.311,
+   "n": 25
+  },
+  "university of south alabama": {
+   "name": "University of South Alabama",
+   "grade": "B/C",
+   "ppm": 0.315,
+   "n": 9
+  },
+  "frederick polls": {
+   "name": "Frederick Polls",
+   "grade": "B/C",
+   "ppm": 0.329,
+   "n": 8
+  },
+  "axis research": {
+   "name": "Axis Research",
+   "grade": "B/C",
+   "ppm": 0.332,
+   "n": 2
+  },
+  "fabrizio, lee & associates/gbao": {
+   "name": "Fabrizio, Lee & Associates/GBAO",
+   "grade": "B/C",
+   "ppm": 0.332,
+   "n": 2
+  },
+  "edgewater research/my people vote": {
+   "name": "Edgewater Research/My People Vote",
+   "grade": "B/C",
+   "ppm": 0.338,
+   "n": 3
+  },
+  "kiley & company": {
+   "name": "Kiley & Company",
+   "grade": "B/C",
+   "ppm": 0.34,
+   "n": 5
+  },
+  "university of washington": {
+   "name": "University of Washington",
+   "grade": "B/C",
+   "ppm": 0.341,
+   "n": 9
+  },
+  "maine people's resource center": {
+   "name": "Maine People's Resource Center",
+   "grade": "B/C",
+   "ppm": 0.347,
+   "n": 14
+  },
+  "rt strategies": {
+   "name": "RT Strategies",
+   "grade": "B/C",
+   "ppm": 0.347,
+   "n": 45
+  },
+  "david binder research": {
+   "name": "David Binder Research",
+   "grade": "B/C",
+   "ppm": 0.356,
+   "n": 3
+  },
+  "louisville courier-journal": {
+   "name": "Louisville Courier-Journal",
+   "grade": "B/C",
+   "ppm": 0.36,
+   "n": 10
+  },
+  "ogden & fry": {
+   "name": "Ogden & Fry",
+   "grade": "B/C",
+   "ppm": 0.361,
+   "n": 3
+  },
+  "riley research associates": {
+   "name": "Riley Research Associates",
+   "grade": "B/C",
+   "ppm": 0.364,
+   "n": 7
+  },
+  "market research institute inc.": {
+   "name": "Market Research Institute Inc.",
+   "grade": "B/C",
+   "ppm": 0.364,
+   "n": 11
+  },
+  "bsp research/shaw & company research": {
+   "name": "BSP Research/Shaw & Company Research",
+   "grade": "B/C",
+   "ppm": 0.371,
+   "n": 2
+  },
+  "schoen cooperman research": {
+   "name": "Schoen Cooperman Research",
+   "grade": "B/C",
+   "ppm": 0.38,
+   "n": 2
+  },
+  "gravis marketing/kaplan strategies": {
+   "name": "Gravis Marketing/Kaplan Strategies",
+   "grade": "B-",
+   "ppm": 0.381,
+   "n": 158
+  },
+  "tufts university": {
+   "name": "Tufts University",
+   "grade": "B/C",
+   "ppm": 0.39,
+   "n": 3
+  },
+  "dfm research": {
+   "name": "DFM Research",
+   "grade": "B/C",
+   "ppm": 0.393,
+   "n": 10
+  },
+  "iowa state university": {
+   "name": "Iowa State University",
+   "grade": "B/C",
+   "ppm": 0.395,
+   "n": 3
+  },
+  "financial dynamics": {
+   "name": "Financial Dynamics",
+   "grade": "B/C",
+   "ppm": 0.397,
+   "n": 15
+  },
+  "mckeon & associates": {
+   "name": "McKeon & Associates",
+   "grade": "B/C",
+   "ppm": 0.399,
+   "n": 3
+  },
+  "latino decisions": {
+   "name": "Latino Decisions",
+   "grade": "B/C",
+   "ppm": 0.405,
+   "n": 2
+  },
+  "richard day research": {
+   "name": "Richard Day Research",
+   "grade": "B/C",
+   "ppm": 0.405,
+   "n": 11
+  },
+  "alabama state university": {
+   "name": "Alabama State University",
+   "grade": "B/C",
+   "ppm": 0.405,
+   "n": 4
+  },
+  "tulchin research": {
+   "name": "Tulchin Research",
+   "grade": "B/C",
+   "ppm": 0.406,
+   "n": 3
+  },
+  "keating research/onsight public affairs/melanson": {
+   "name": "Keating Research/OnSight Public Affairs/Melanson",
+   "grade": "B/C",
+   "ppm": 0.42,
+   "n": 3
+  },
+  "university of new orleans": {
+   "name": "University of New Orleans",
+   "grade": "B/C",
+   "ppm": 0.43,
+   "n": 13
+  },
+  "cherry communications": {
+   "name": "Cherry Communications",
+   "grade": "B/C",
+   "ppm": 0.43,
+   "n": 8
+  },
+  "bk strategies": {
+   "name": "BK Strategies",
+   "grade": "B/C",
+   "ppm": 0.432,
+   "n": 3
+  },
+  "orion strategies": {
+   "name": "Orion Strategies",
+   "grade": "B/C",
+   "ppm": 0.433,
+   "n": 4
+  },
+  "john zogby strategies": {
+   "name": "John Zogby Strategies",
+   "grade": "B/C",
+   "ppm": 0.433,
+   "n": 4
+  },
+  "zogby analytics": {
+   "name": "Zogby Analytics",
+   "grade": "B-",
+   "ppm": 0.433,
+   "n": 495
+  },
+  "winthrop university": {
+   "name": "Winthrop University",
+   "grade": "B/C",
+   "ppm": 0.433,
+   "n": 3
+  },
+  "dccc": {
+   "name": "DCCC",
+   "grade": "B/C",
+   "ppm": 0.437,
+   "n": 10
+  },
+  "jmc analytics": {
+   "name": "JMC Analytics",
+   "grade": "B/C",
+   "ppm": 0.438,
+   "n": 13
+  },
+  "focaldata": {
+   "name": "Focaldata",
+   "grade": "B/C",
+   "ppm": 0.44,
+   "n": 9
+  },
+  "opinionworks": {
+   "name": "OpinionWorks",
+   "grade": "B/C",
+   "ppm": 0.44,
+   "n": 7
+  },
+  "gs strategy group": {
+   "name": "GS Strategy Group",
+   "grade": "B/C",
+   "ppm": 0.44,
+   "n": 2
+  },
+  "ivr polls": {
+   "name": "IVR Polls",
+   "grade": "B/C",
+   "ppm": 0.444,
+   "n": 4
+  },
+  "google consumer surveys": {
+   "name": "Google Consumer Surveys",
+   "grade": "B/C",
+   "ppm": 0.447,
+   "n": 24
+  },
+  "onpoint": {
+   "name": "OnPoint",
+   "grade": "B/C",
+   "ppm": 0.45,
+   "n": 6
+  },
+  "msr group": {
+   "name": "MSR Group",
+   "grade": "B/C",
+   "ppm": 0.451,
+   "n": 6
+  },
+  "marshall marketing": {
+   "name": "Marshall Marketing",
+   "grade": "B/C",
+   "ppm": 0.454,
+   "n": 4
+  },
+  "high point university": {
+   "name": "High Point University",
+   "grade": "B/C",
+   "ppm": 0.454,
+   "n": 5
+  },
+  "southern media & opinion research": {
+   "name": "Southern Media & Opinion Research",
+   "grade": "B/C",
+   "ppm": 0.455,
+   "n": 7
+  },
+  "wiese research associates": {
+   "name": "Wiese Research Associates",
+   "grade": "B/C",
+   "ppm": 0.457,
+   "n": 7
+  },
+  "harris insights & analytics": {
+   "name": "Harris Insights & Analytics",
+   "grade": "B-",
+   "ppm": 0.459,
+   "n": 193
+  },
+  "global strategy group": {
+   "name": "Global Strategy Group",
+   "grade": "B/C",
+   "ppm": 0.461,
+   "n": 26
+  },
+  "master image": {
+   "name": "Master Image",
+   "grade": "B/C",
+   "ppm": 0.461,
+   "n": 2
+  },
+  "douglas fulmer & associates": {
+   "name": "Douglas Fulmer & Associates",
+   "grade": "B/C",
+   "ppm": 0.461,
+   "n": 2
+  },
+  "meeting street insights": {
+   "name": "Meeting Street Insights",
+   "grade": "B/C",
+   "ppm": 0.461,
+   "n": 5
+  },
+  "dan jones & associates": {
+   "name": "Dan Jones & Associates",
+   "grade": "B/C",
+   "ppm": 0.462,
+   "n": 40
+  },
+  "aytm": {
+   "name": "AYTM",
+   "grade": "B/C",
+   "ppm": 0.462,
+   "n": 4
+  },
+  "missouri state university": {
+   "name": "Missouri State University",
+   "grade": "B/C",
+   "ppm": 0.466,
+   "n": 3
+  },
+  "northern arizona university": {
+   "name": "Northern Arizona University",
+   "grade": "B/C",
+   "ppm": 0.472,
+   "n": 4
+  },
+  "psb research": {
+   "name": "PSB Research",
+   "grade": "B/C",
+   "ppm": 0.473,
+   "n": 19
+  },
+  "mwr strategies": {
+   "name": "MWR Strategies",
+   "grade": "B/C",
+   "ppm": 0.474,
+   "n": 2
+  },
+  "potomac incorporated": {
+   "name": "Potomac Incorporated",
+   "grade": "B/C",
+   "ppm": 0.477,
+   "n": 8
+  },
+  "university of wisconsin (madison)": {
+   "name": "University of Wisconsin (Madison)",
+   "grade": "B/C",
+   "ppm": 0.479,
+   "n": 8
+  },
+  "torchlight strategies": {
+   "name": "Torchlight Strategies",
+   "grade": "B/C",
+   "ppm": 0.48,
+   "n": 1
+  },
+  "gotham polling & analytics": {
+   "name": "Gotham Polling & Analytics",
+   "grade": "B/C",
+   "ppm": 0.48,
+   "n": 1
+  },
+  "m3 strategies": {
+   "name": "M3 Strategies",
+   "grade": "B/C",
+   "ppm": 0.48,
+   "n": 1
+  },
+  "basswood research": {
+   "name": "Basswood Research",
+   "grade": "B/C",
+   "ppm": 0.48,
+   "n": 4
+  },
+  "apc research": {
+   "name": "APC Research",
+   "grade": "B/C",
+   "ppm": 0.485,
+   "n": 2
+  },
+  "voter/consumer research": {
+   "name": "Voter/Consumer Research",
+   "grade": "B/C",
+   "ppm": 0.487,
+   "n": 8
+  },
+  "cj&n": {
+   "name": "CJ&N",
+   "grade": "B/C",
+   "ppm": 0.49,
+   "n": 3
+  },
+  "stetson university": {
+   "name": "Stetson University",
+   "grade": "B/C",
+   "ppm": 0.49,
+   "n": 4
+  },
+  "el nuevo d√é¬≠a/the research office": {
+   "name": "El Nuevo D√É¬≠a/The Research Office",
+   "grade": "B/C",
+   "ppm": 0.491,
+   "n": 4
+  },
+  "moore information group": {
+   "name": "Moore Information Group",
+   "grade": "B/C",
+   "ppm": 0.493,
+   "n": 18
+  },
+  "ethridge & associates llc": {
+   "name": "Ethridge & Associates LLC",
+   "grade": "B/C",
+   "ppm": 0.501,
+   "n": 6
+  },
+  "fabrizio lee & associates/impact research": {
+   "name": "Fabrizio Lee & Associates/Impact Research",
+   "grade": "B/C",
+   "ppm": 0.501,
+   "n": 1
+  },
+  "cws research": {
+   "name": "CWS Research",
+   "grade": "B/C",
+   "ppm": 0.502,
+   "n": 1
+  },
+  "the tyson group": {
+   "name": "The Tyson Group",
+   "grade": "B/C",
+   "ppm": 0.503,
+   "n": 14
+  },
+  "mfour mobile research": {
+   "name": "MFour Mobile Research",
+   "grade": "B/C",
+   "ppm": 0.505,
+   "n": 2
+  },
+  "big ten": {
+   "name": "Big Ten",
+   "grade": "B/C",
+   "ppm": 0.505,
+   "n": 10
+  },
+  "montana state university billings": {
+   "name": "Montana State University Billings",
+   "grade": "B/C",
+   "ppm": 0.506,
+   "n": 11
+  },
+  "big data poll": {
+   "name": "Big Data Poll",
+   "grade": "F",
+   "ppm": 0.508,
+   "n": 6
+  },
+  "slingshot strategies": {
+   "name": "Slingshot Strategies",
+   "grade": "B/C",
+   "ppm": 0.511,
+   "n": 2
+  },
+  "market decisions research": {
+   "name": "Market Decisions Research",
+   "grade": "B/C",
+   "ppm": 0.511,
+   "n": 4
+  },
+  "magellan strategies": {
+   "name": "Magellan Strategies",
+   "grade": "B/C",
+   "ppm": 0.516,
+   "n": 18
+  },
+  "university of massachusetts (amherst)": {
+   "name": "University of Massachusetts (Amherst)",
+   "grade": "B/C",
+   "ppm": 0.516,
+   "n": 11
+  },
+  "american viewpoint": {
+   "name": "American Viewpoint",
+   "grade": "B/C",
+   "ppm": 0.517,
+   "n": 9
+  },
+  "newsnation": {
+   "name": "NewsNation",
+   "grade": "B/C",
+   "ppm": 0.519,
+   "n": 1
+  },
+  "blumenthal research daily": {
+   "name": "Blumenthal Research Daily",
+   "grade": "F",
+   "ppm": 0.519,
+   "n": 2
+  },
+  "park street strategies": {
+   "name": "Park Street Strategies",
+   "grade": "B/C",
+   "ppm": 0.519,
+   "n": 1
+  },
+  "data targeting": {
+   "name": "Data Targeting",
+   "grade": "B/C",
+   "ppm": 0.519,
+   "n": 1
+  },
+  "braun research": {
+   "name": "Braun Research",
+   "grade": "B/C",
+   "ppm": 0.524,
+   "n": 6
+  },
+  "virginia commonwealth university": {
+   "name": "Virginia Commonwealth University",
+   "grade": "B/C",
+   "ppm": 0.526,
+   "n": 8
+  },
+  "targoz market research": {
+   "name": "Targoz Market Research",
+   "grade": "B-",
+   "ppm": 0.528,
+   "n": 26
+  },
+  "bendixen & amandi international": {
+   "name": "Bendixen & Amandi International",
+   "grade": "B/C",
+   "ppm": 0.529,
+   "n": 2
+  },
+  "strategic research associates": {
+   "name": "Strategic Research Associates",
+   "grade": "B/C",
+   "ppm": 0.531,
+   "n": 5
+  },
+  "global strategy group/national research (philadelphia inquirer)": {
+   "name": "Global Strategy Group/National Research (Philadelphia Inquirer)",
+   "grade": "B/C",
+   "ppm": 0.533,
+   "n": 4
+  },
+  "mason strategies": {
+   "name": "Mason Strategies",
+   "grade": "B/C",
+   "ppm": 0.536,
+   "n": 1
+  },
+  "1892 polling": {
+   "name": "1892 Polling",
+   "grade": "B/C",
+   "ppm": 0.536,
+   "n": 1
+  },
+  "rethink priorities": {
+   "name": "Rethink Priorities",
+   "grade": "F",
+   "ppm": 0.536,
+   "n": 2
+  },
+  "pacific market research": {
+   "name": "Pacific Market Research",
+   "grade": "B/C",
+   "ppm": 0.537,
+   "n": 2
+  },
+  "scripps howard": {
+   "name": "Scripps Howard",
+   "grade": "B/C",
+   "ppm": 0.542,
+   "n": 5
+  },
+  "national public affairs": {
+   "name": "National Public Affairs",
+   "grade": "B/C",
+   "ppm": 0.543,
+   "n": 1
+  },
+  "the polling company inc./national research inc.": {
+   "name": "The Polling Company Inc./National Research Inc.",
+   "grade": "B/C",
+   "ppm": 0.543,
+   "n": 1
+  },
+  "csp polling": {
+   "name": "CSP Polling",
+   "grade": "F",
+   "ppm": 0.543,
+   "n": 1
+  },
+  "forward strategies": {
+   "name": "Forward Strategies",
+   "grade": "B/C",
+   "ppm": 0.543,
+   "n": 2
+  },
+  "personal marketing research": {
+   "name": "Personal Marketing Research",
+   "grade": "B/C",
+   "ppm": 0.544,
+   "n": 3
+  },
+  "university of houston": {
+   "name": "University of Houston",
+   "grade": "B/C",
+   "ppm": 0.55,
+   "n": 1
+  },
+  "targeted persuasion": {
+   "name": "Targeted Persuasion",
+   "grade": "B/C",
+   "ppm": 0.55,
+   "n": 1
+  },
+  "singularis group": {
+   "name": "Singularis Group",
+   "grade": "B/C",
+   "ppm": 0.55,
+   "n": 1
+  },
+  "imge insights": {
+   "name": "IMGE Insights",
+   "grade": "B/C",
+   "ppm": 0.551,
+   "n": 2
+  },
+  "kg polling": {
+   "name": "KG Polling",
+   "grade": "F",
+   "ppm": 0.552,
+   "n": 2
+  },
+  "drake research & strategy, inc.": {
+   "name": "Drake Research & Strategy, Inc.",
+   "grade": "B/C",
+   "ppm": 0.553,
+   "n": 8
+  },
+  "university of southern california": {
+   "name": "University of Southern California",
+   "grade": "B/C",
+   "ppm": 0.554,
+   "n": 13
+  },
+  "purple strategies": {
+   "name": "Purple Strategies",
+   "grade": "B/C",
+   "ppm": 0.556,
+   "n": 4
+  },
+  "columbus dispatch": {
+   "name": "Columbus Dispatch",
+   "grade": "B/C",
+   "ppm": 0.556,
+   "n": 22
+  },
+  "university of wisconsin-milwaukee": {
+   "name": "University of Wisconsin-Milwaukee",
+   "grade": "B/C",
+   "ppm": 0.557,
+   "n": 3
+  },
+  "remington research group": {
+   "name": "Remington Research Group",
+   "grade": "B-",
+   "ppm": 0.557,
+   "n": 55
+  },
+  "jim meader (keloland-tv)": {
+   "name": "Jim Meader (KELOLAND-TV)",
+   "grade": "B/C",
+   "ppm": 0.558,
+   "n": 4
+  },
+  "washington college": {
+   "name": "Washington College",
+   "grade": "B/C",
+   "ppm": 0.56,
+   "n": 1
+  },
+  "richmond times-dispatch": {
+   "name": "Richmond Times-Dispatch",
+   "grade": "B/C",
+   "ppm": 0.56,
+   "n": 4
+  },
+  "behavior research center (rocky mountain poll)": {
+   "name": "Behavior Research Center (Rocky Mountain Poll)",
+   "grade": "B/C",
+   "ppm": 0.561,
+   "n": 7
+  },
+  "socal research": {
+   "name": "SoCal Research",
+   "grade": "B/C",
+   "ppm": 0.561,
+   "n": 2
+  },
+  "mercyhurst university": {
+   "name": "Mercyhurst University",
+   "grade": "B/C",
+   "ppm": 0.562,
+   "n": 1
+  },
+  "odney": {
+   "name": "Odney",
+   "grade": "B/C",
+   "ppm": 0.562,
+   "n": 1
+  },
+  "montgomery research": {
+   "name": "Montgomery Research",
+   "grade": "B/C",
+   "ppm": 0.562,
+   "n": 1
+  },
+  "thirty-ninth street strategies": {
+   "name": "Thirty-Ninth Street Strategies",
+   "grade": "B/C",
+   "ppm": 0.563,
+   "n": 1
+  },
+  "university of tennessee": {
+   "name": "University of Tennessee",
+   "grade": "B/C",
+   "ppm": 0.565,
+   "n": 2
+  },
+  "university of new hampshire": {
+   "name": "University of New Hampshire",
+   "grade": "B-",
+   "ppm": 0.565,
+   "n": 150
+  },
+  "diamond state consulting group": {
+   "name": "Diamond State Consulting Group",
+   "grade": "B/C",
+   "ppm": 0.566,
+   "n": 1
+  },
+  "greatblue research": {
+   "name": "GreatBlue Research",
+   "grade": "B/C",
+   "ppm": 0.566,
+   "n": 2
+  },
+  "market solutions group": {
+   "name": "Market Solutions Group",
+   "grade": "B/C",
+   "ppm": 0.569,
+   "n": 4
+  },
+  "reconnect research/probolsky research": {
+   "name": "Reconnect Research/Probolsky Research",
+   "grade": "B/C",
+   "ppm": 0.57,
+   "n": 2
+  },
+  "frank n. magid associates inc.": {
+   "name": "Frank N. Magid Associates Inc.",
+   "grade": "B/C",
+   "ppm": 0.57,
+   "n": 5
+  },
+  "myers research & strategic services": {
+   "name": "Myers Research & Strategic Services",
+   "grade": "B/C",
+   "ppm": 0.572,
+   "n": 2
+  },
+  "valley research": {
+   "name": "Valley Research",
+   "grade": "B/C",
+   "ppm": 0.572,
+   "n": 8
+  },
+  "quest research group": {
+   "name": "Quest Research Group",
+   "grade": "B/C",
+   "ppm": 0.573,
+   "n": 5
+  },
+  "garin-hart-yang/global strategy group": {
+   "name": "Garin-Hart-Yang/Global Strategy Group",
+   "grade": "B/C",
+   "ppm": 0.573,
+   "n": 1
+  },
+  "dhm research": {
+   "name": "DHM Research",
+   "grade": "B/C",
+   "ppm": 0.573,
+   "n": 14
+  },
+  "west chester university": {
+   "name": "West Chester University",
+   "grade": "B/C",
+   "ppm": 0.574,
+   "n": 7
+  },
+  "the polling company inc.": {
+   "name": "The Polling Company Inc.",
+   "grade": "B/C",
+   "ppm": 0.574,
+   "n": 7
+  },
+  "manhattanville college": {
+   "name": "Manhattanville College",
+   "grade": "B/C",
+   "ppm": 0.575,
+   "n": 3
+  },
+  "the citadel": {
+   "name": "The Citadel",
+   "grade": "B/C",
+   "ppm": 0.575,
+   "n": 3
+  },
+  "franklin pierce university": {
+   "name": "Franklin Pierce University",
+   "grade": "B/C",
+   "ppm": 0.576,
+   "n": 17
+  },
+  "jmc analytics/bold blue campaigns": {
+   "name": "JMC Analytics/Bold Blue Campaigns",
+   "grade": "B/C",
+   "ppm": 0.578,
+   "n": 5
+  },
+  "seven letter insight": {
+   "name": "Seven Letter Insight",
+   "grade": "B/C",
+   "ppm": 0.579,
+   "n": 1
+  },
+  "baruch college survey research": {
+   "name": "Baruch College Survey Research",
+   "grade": "B/C",
+   "ppm": 0.58,
+   "n": 2
+  },
+  "crantford research": {
+   "name": "Crantford Research",
+   "grade": "B/C",
+   "ppm": 0.582,
+   "n": 1
+  },
+  "rivercity polling": {
+   "name": "Rivercity Polling",
+   "grade": "B/C",
+   "ppm": 0.582,
+   "n": 1
+  },
+  "victory research": {
+   "name": "Victory Research",
+   "grade": "B/C",
+   "ppm": 0.584,
+   "n": 11
+  },
+  "lincoln institute": {
+   "name": "Lincoln Institute",
+   "grade": "B/C",
+   "ppm": 0.584,
+   "n": 2
+  },
+  "centre college": {
+   "name": "Centre College",
+   "grade": "B/C",
+   "ppm": 0.587,
+   "n": 1
+  },
+  "florida international university/univision": {
+   "name": "Florida International University/Univision",
+   "grade": "B/C",
+   "ppm": 0.59,
+   "n": 1
+  },
+  "penta": {
+   "name": "Penta",
+   "grade": "B/C",
+   "ppm": 0.591,
+   "n": 1
+  },
+  "becker institute": {
+   "name": "Becker Institute",
+   "grade": "B/C",
+   "ppm": 0.595,
+   "n": 5
+  },
+  "war room logistics": {
+   "name": "War Room Logistics",
+   "grade": "B/C",
+   "ppm": 0.596,
+   "n": 1
+  },
+  "zimmerman & associates/marketing intelligence": {
+   "name": "Zimmerman & Associates/Marketing Intelligence",
+   "grade": "B/C",
+   "ppm": 0.596,
+   "n": 3
+  },
+  "cromer group": {
+   "name": "Cromer Group",
+   "grade": "B/C",
+   "ppm": 0.603,
+   "n": 1
+  },
+  "canisius college": {
+   "name": "Canisius College",
+   "grade": "B/C",
+   "ppm": 0.604,
+   "n": 1
+  },
+  "central surveys inc.": {
+   "name": "Central Surveys Inc.",
+   "grade": "B/C",
+   "ppm": 0.604,
+   "n": 1
+  },
+  "morningside college": {
+   "name": "Morningside College",
+   "grade": "B/C",
+   "ppm": 0.604,
+   "n": 1
+  },
+  "ourprogress (the progress campaign)": {
+   "name": "OurProgress (The Progress Campaign)",
+   "grade": "F",
+   "ppm": 0.605,
+   "n": 1
+  },
+  "wood communications group": {
+   "name": "Wood Communications Group",
+   "grade": "B/C",
+   "ppm": 0.606,
+   "n": 1
+  },
+  "bigresearch": {
+   "name": "BIGresearch",
+   "grade": "B/C",
+   "ppm": 0.606,
+   "n": 1
+  },
+  "escalent": {
+   "name": "Escalent",
+   "grade": "B/C",
+   "ppm": 0.609,
+   "n": 1
+  },
+  "cooper & secrest": {
+   "name": "Cooper & Secrest",
+   "grade": "B/C",
+   "ppm": 0.609,
+   "n": 1
+  },
+  "minneapolis star tribune": {
+   "name": "Minneapolis Star Tribune",
+   "grade": "B/C",
+   "ppm": 0.61,
+   "n": 14
+  },
+  "analytical group": {
+   "name": "Analytical Group",
+   "grade": "B/C",
+   "ppm": 0.612,
+   "n": 1
+  },
+  "rossman group": {
+   "name": "Rossman Group",
+   "grade": "B/C",
+   "ppm": 0.613,
+   "n": 1
+  },
+  "dynamics marketing": {
+   "name": "Dynamics Marketing",
+   "grade": "B/C",
+   "ppm": 0.614,
+   "n": 1
+  },
+  "vox populi communications": {
+   "name": "Vox Populi Communications",
+   "grade": "B/C",
+   "ppm": 0.614,
+   "n": 1
+  },
+  "diversified research inc": {
+   "name": "Diversified Research Inc",
+   "grade": "B/C",
+   "ppm": 0.614,
+   "n": 1
+  },
+  "qev analytics": {
+   "name": "QEV Analytics",
+   "grade": "B/C",
+   "ppm": 0.617,
+   "n": 1
+  },
+  "southeastern louisiana university": {
+   "name": "Southeastern Louisiana University",
+   "grade": "B/C",
+   "ppm": 0.617,
+   "n": 8
+  },
+  "wick communications": {
+   "name": "Wick Communications",
+   "grade": "B/C",
+   "ppm": 0.618,
+   "n": 1
+  },
+  "lauer, lalley, victoria": {
+   "name": "Lauer, Lalley, Victoria",
+   "grade": "B/C",
+   "ppm": 0.618,
+   "n": 1
+  },
+  "highground inc.": {
+   "name": "HighGround Inc.",
+   "grade": "B/C",
+   "ppm": 0.618,
+   "n": 6
+  },
+  "callfire": {
+   "name": "CallFire",
+   "grade": "B/C",
+   "ppm": 0.619,
+   "n": 4
+  },
+  "market trends pacific": {
+   "name": "Market Trends Pacific",
+   "grade": "B/C",
+   "ppm": 0.619,
+   "n": 1
+  },
+  "paradigm": {
+   "name": "Paradigm",
+   "grade": "B/C",
+   "ppm": 0.622,
+   "n": 2
+  },
+  "triumph campaigns": {
+   "name": "Triumph Campaigns",
+   "grade": "B/C",
+   "ppm": 0.622,
+   "n": 1
+  },
+  "neighborhood research and media": {
+   "name": "Neighborhood Research and Media",
+   "grade": "B/C",
+   "ppm": 0.623,
+   "n": 3
+  },
+  "20/20 insight": {
+   "name": "20/20 Insight",
+   "grade": "B/C",
+   "ppm": 0.625,
+   "n": 8
+  },
+  "victoria research & consulting": {
+   "name": "Victoria Research & Consulting",
+   "grade": "B/C",
+   "ppm": 0.628,
+   "n": 1
+  },
+  "jorge ben√é¬≠tez": {
+   "name": "Jorge Ben√É¬≠tez",
+   "grade": "B/C",
+   "ppm": 0.629,
+   "n": 4
+  },
+  "strategy research": {
+   "name": "Strategy Research",
+   "grade": "B/C",
+   "ppm": 0.631,
+   "n": 2
+  },
+  "iona university": {
+   "name": "Iona University",
+   "grade": "B/C",
+   "ppm": 0.631,
+   "n": 1
+  },
+  "asa marketing group": {
+   "name": "ASA Marketing Group",
+   "grade": "B/C",
+   "ppm": 0.632,
+   "n": 1
+  },
+  "dartmouth college": {
+   "name": "Dartmouth College",
+   "grade": "B/C",
+   "ppm": 0.632,
+   "n": 3
+  },
+  "african american research collaborative": {
+   "name": "African American Research Collaborative",
+   "grade": "B/C",
+   "ppm": 0.633,
+   "n": 1
+  },
+  "targetsmart": {
+   "name": "TargetSmart",
+   "grade": "B/C",
+   "ppm": 0.634,
+   "n": 3
+  },
+  "new mexico state university": {
+   "name": "New Mexico State University",
+   "grade": "B/C",
+   "ppm": 0.634,
+   "n": 1
+  },
+  "probolsky research": {
+   "name": "Probolsky Research",
+   "grade": "B/C",
+   "ppm": 0.634,
+   "n": 3
+  },
+  "nreca market research": {
+   "name": "NRECA Market Research",
+   "grade": "B/C",
+   "ppm": 0.634,
+   "n": 1
+  },
+  "beacon research": {
+   "name": "Beacon Research",
+   "grade": "B/C",
+   "ppm": 0.636,
+   "n": 5
+  },
+  "clarus research group": {
+   "name": "Clarus Research Group",
+   "grade": "B/C",
+   "ppm": 0.636,
+   "n": 3
+  },
+  "deltapoll": {
+   "name": "Deltapoll",
+   "grade": "B/C",
+   "ppm": 0.637,
+   "n": 1
+  },
+  "old dominion university": {
+   "name": "Old Dominion University",
+   "grade": "B/C",
+   "ppm": 0.641,
+   "n": 1
+  },
+  "west virginia research center": {
+   "name": "West Virginia Research Center",
+   "grade": "B/C",
+   "ppm": 0.641,
+   "n": 2
+  },
+  "dixie strategies": {
+   "name": "Dixie Strategies",
+   "grade": "B/C",
+   "ppm": 0.642,
+   "n": 11
+  },
+  "rice university": {
+   "name": "Rice University",
+   "grade": "B/C",
+   "ppm": 0.642,
+   "n": 2
+  },
+  "alloy analytics": {
+   "name": "Alloy Analytics",
+   "grade": "B/C",
+   "ppm": 0.642,
+   "n": 1
+  },
+  "illinois wesleyan university": {
+   "name": "Illinois Wesleyan University",
+   "grade": "B/C",
+   "ppm": 0.643,
+   "n": 3
+  },
+  "multi-quest international": {
+   "name": "Multi-Quest International",
+   "grade": "B/C",
+   "ppm": 0.643,
+   "n": 4
+  },
+  "independent market research": {
+   "name": "Independent Market Research",
+   "grade": "B/C",
+   "ppm": 0.645,
+   "n": 2
+  },
+  "global strategy group/gbao (navigator research)": {
+   "name": "Global Strategy Group/GBAO (Navigator Research)",
+   "grade": "B/C",
+   "ppm": 0.647,
+   "n": 4
+  },
+  "aspen media & market research": {
+   "name": "Aspen Media & Market Research",
+   "grade": "B/C",
+   "ppm": 0.648,
+   "n": 3
+  },
+  "the florida poll": {
+   "name": "The Florida Poll",
+   "grade": "B/C",
+   "ppm": 0.649,
+   "n": 5
+  },
+  "marketing research institute": {
+   "name": "Marketing Research Institute",
+   "grade": "B/C",
+   "ppm": 0.649,
+   "n": 1
+  },
+  "dynata": {
+   "name": "Dynata",
+   "grade": "B/C",
+   "ppm": 0.65,
+   "n": 2
+  },
+  "merrill poll": {
+   "name": "Merrill Poll",
+   "grade": "B/C",
+   "ppm": 0.65,
+   "n": 2
+  },
+  "smithjohnson opinion research": {
+   "name": "SmithJohnson Opinion Research",
+   "grade": "B/C",
+   "ppm": 0.652,
+   "n": 1
+  },
+  "harper polling/clarity campaign labs": {
+   "name": "Harper Polling/Clarity Campaign Labs",
+   "grade": "B/C",
+   "ppm": 0.657,
+   "n": 1
+  },
+  "crosstarget": {
+   "name": "CrossTarget",
+   "grade": "B/C",
+   "ppm": 0.661,
+   "n": 2
+  },
+  "tmr research": {
+   "name": "TMR Research",
+   "grade": "B/C",
+   "ppm": 0.661,
+   "n": 2
+  },
+  "hellenthal & associates": {
+   "name": "Hellenthal & Associates",
+   "grade": "B/C",
+   "ppm": 0.661,
+   "n": 5
+  },
+  "data for progress": {
+   "name": "Data for Progress",
+   "grade": "C+",
+   "ppm": 0.663,
+   "n": 114
+  },
+  "howey politics/depauw university": {
+   "name": "Howey Politics/DePauw University",
+   "grade": "B/C",
+   "ppm": 0.664,
+   "n": 7
+  },
+  "a&a research": {
+   "name": "A&A Research",
+   "grade": "B/C",
+   "ppm": 0.666,
+   "n": 1
+  },
+  "premise": {
+   "name": "Premise",
+   "grade": "B/C",
+   "ppm": 0.667,
+   "n": 1
+  },
+  "decision forecasting": {
+   "name": "Decision Forecasting",
+   "grade": "B/C",
+   "ppm": 0.667,
+   "n": 3
+  },
+  "feldman group": {
+   "name": "Feldman Group",
+   "grade": "B/C",
+   "ppm": 0.668,
+   "n": 2
+  },
+  "american pulse research & polling": {
+   "name": "American Pulse Research & Polling",
+   "grade": "B/C",
+   "ppm": 0.67,
+   "n": 2
+  },
+  "st. pete polls": {
+   "name": "St. Pete Polls",
+   "grade": "C+",
+   "ppm": 0.672,
+   "n": 31
+  },
+  "california state university, bakersfield": {
+   "name": "California State University, Bakersfield",
+   "grade": "B/C",
+   "ppm": 0.676,
+   "n": 1
+  },
+  "southern opinion research": {
+   "name": "Southern Opinion Research",
+   "grade": "B/C",
+   "ppm": 0.676,
+   "n": 2
+  },
+  "sky research": {
+   "name": "Sky Research",
+   "grade": "B/C",
+   "ppm": 0.677,
+   "n": 1
+  },
+  "university of nevada las vegas": {
+   "name": "University of Nevada Las Vegas",
+   "grade": "B/C",
+   "ppm": 0.677,
+   "n": 1
+  },
+  "swayable": {
+   "name": "Swayable",
+   "grade": "C+",
+   "ppm": 0.678,
+   "n": 89
+  },
+  "detroit free press": {
+   "name": "Detroit Free Press",
+   "grade": "B/C",
+   "ppm": 0.679,
+   "n": 1
+  },
+  "university of illinois at chicago": {
+   "name": "University of Illinois at Chicago",
+   "grade": "B/C",
+   "ppm": 0.68,
+   "n": 1
+  },
+  "southern research group": {
+   "name": "Southern Research Group",
+   "grade": "B/C",
+   "ppm": 0.681,
+   "n": 1
+  },
+  "great lakes strategies group": {
+   "name": "Great Lakes Strategies Group",
+   "grade": "B/C",
+   "ppm": 0.686,
+   "n": 1
+  },
+  "public strategies inc.": {
+   "name": "Public Strategies Inc.",
+   "grade": "B/C",
+   "ppm": 0.687,
+   "n": 6
+  },
+  "university of north carolina": {
+   "name": "University of North Carolina",
+   "grade": "B/C",
+   "ppm": 0.687,
+   "n": 1
+  },
+  "tulsa surveys": {
+   "name": "Tulsa Surveys",
+   "grade": "B/C",
+   "ppm": 0.687,
+   "n": 1
+  },
+  "abacus associates": {
+   "name": "Abacus Associates",
+   "grade": "B/C",
+   "ppm": 0.687,
+   "n": 2
+  },
+  "kimball political consulting": {
+   "name": "Kimball Political Consulting",
+   "grade": "B/C",
+   "ppm": 0.688,
+   "n": 6
+  },
+  "marketaide services inc.": {
+   "name": "MarketAide Services Inc.",
+   "grade": "B/C",
+   "ppm": 0.688,
+   "n": 1
+  },
+  "marbleport": {
+   "name": "MarblePort",
+   "grade": "B/C",
+   "ppm": 0.689,
+   "n": 2
+  },
+  "liberty opinion research": {
+   "name": "Liberty Opinion Research",
+   "grade": "B/C",
+   "ppm": 0.689,
+   "n": 1
+  },
+  "opinion consultants": {
+   "name": "Opinion Consultants",
+   "grade": "B/C",
+   "ppm": 0.692,
+   "n": 2
+  },
+  "hill research consultants": {
+   "name": "Hill Research Consultants",
+   "grade": "B/C",
+   "ppm": 0.693,
+   "n": 6
+  },
+  "socialsphere": {
+   "name": "SocialSphere",
+   "grade": "B/C",
+   "ppm": 0.694,
+   "n": 2
+  },
+  "forman center": {
+   "name": "Forman Center",
+   "grade": "B/C",
+   "ppm": 0.694,
+   "n": 2
+  },
+  "teleresearch corporation": {
+   "name": "TeleResearch Corporation",
+   "grade": "B/C",
+   "ppm": 0.695,
+   "n": 1
+  },
+  "hays research group": {
+   "name": "Hays Research Group",
+   "grade": "B/C",
+   "ppm": 0.695,
+   "n": 9
+  },
+  "normington, petts & associates": {
+   "name": "Normington, Petts & Associates",
+   "grade": "B/C",
+   "ppm": 0.695,
+   "n": 12
+  },
+  "arthur j. finkelstein & associates": {
+   "name": "Arthur J. Finkelstein & Associates",
+   "grade": "B/C",
+   "ppm": 0.696,
+   "n": 1
+  },
+  "bannon communications research": {
+   "name": "Bannon Communications Research",
+   "grade": "B/C",
+   "ppm": 0.696,
+   "n": 2
+  },
+  "patinkin research strategies": {
+   "name": "Patinkin Research Strategies",
+   "grade": "B/C",
+   "ppm": 0.697,
+   "n": 4
+  },
+  "sms research & marketing services": {
+   "name": "SMS Research & Marketing Services",
+   "grade": "B/C",
+   "ppm": 0.699,
+   "n": 1
+  },
+  "baselice & associates": {
+   "name": "Baselice & Associates",
+   "grade": "B/C",
+   "ppm": 0.701,
+   "n": 2
+  },
+  "gapundit.com": {
+   "name": "GaPundit.com",
+   "grade": "B/C",
+   "ppm": 0.701,
+   "n": 2
+  },
+  "zata3": {
+   "name": "Zata3",
+   "grade": "B/C",
+   "ppm": 0.703,
+   "n": 2
+  },
+  "castleton university": {
+   "name": "Castleton University",
+   "grade": "B/C",
+   "ppm": 0.703,
+   "n": 3
+  },
+  "glover park group": {
+   "name": "Glover Park Group",
+   "grade": "B/C",
+   "ppm": 0.708,
+   "n": 1
+  },
+  "ed renwick/loyola university new orleans": {
+   "name": "Ed Renwick/Loyola University New Orleans",
+   "grade": "B/C",
+   "ppm": 0.713,
+   "n": 10
+  },
+  "hoffman research group": {
+   "name": "Hoffman Research Group",
+   "grade": "B/C",
+   "ppm": 0.716,
+   "n": 3
+  },
+  "lit data": {
+   "name": "LIT Data",
+   "grade": "B/C",
+   "ppm": 0.719,
+   "n": 4
+  },
+  "auburn university": {
+   "name": "Auburn University",
+   "grade": "B/C",
+   "ppm": 0.721,
+   "n": 2
+  },
+  "morning consult": {
+   "name": "Morning Consult",
+   "grade": "C+",
+   "ppm": 0.724,
+   "n": 114
+  },
+  "jeffrey stonecash": {
+   "name": "Jeffrey Stonecash",
+   "grade": "B/C",
+   "ppm": 0.724,
+   "n": 1
+  },
+  "lycoming college polling institute": {
+   "name": "Lycoming College Polling Institute",
+   "grade": "B/C",
+   "ppm": 0.726,
+   "n": 3
+  },
+  "psi": {
+   "name": "PSI",
+   "grade": "B/C",
+   "ppm": 0.729,
+   "n": 3
+  },
+  "ohio university": {
+   "name": "Ohio University",
+   "grade": "B/C",
+   "ppm": 0.729,
+   "n": 2
+  },
+  "the kitchens group": {
+   "name": "The Kitchens Group",
+   "grade": "B/C",
+   "ppm": 0.73,
+   "n": 1
+  },
+  "neighbor": {
+   "name": "Neighbor",
+   "grade": "B/C",
+   "ppm": 0.731,
+   "n": 1
+  },
+  "lester & associates": {
+   "name": "Lester & Associates",
+   "grade": "B/C",
+   "ppm": 0.733,
+   "n": 1
+  },
+  "cometrends": {
+   "name": "Cometrends",
+   "grade": "B/C",
+   "ppm": 0.734,
+   "n": 1
+  },
+  "rainmaker media group": {
+   "name": "Rainmaker Media Group",
+   "grade": "B/C",
+   "ppm": 0.734,
+   "n": 1
+  },
+  "gonzales research & marketing strategies inc.": {
+   "name": "Gonzales Research & Marketing Strategies Inc.",
+   "grade": "B/C",
+   "ppm": 0.737,
+   "n": 10
+  },
+  "lauer johnson research": {
+   "name": "Lauer Johnson Research",
+   "grade": "B/C",
+   "ppm": 0.738,
+   "n": 1
+  },
+  "brilliant corners research & strategies": {
+   "name": "brilliant corners Research & Strategies",
+   "grade": "B/C",
+   "ppm": 0.738,
+   "n": 1
+  },
+  "consumer logic": {
+   "name": "Consumer Logic",
+   "grade": "B/C",
+   "ppm": 0.739,
+   "n": 2
+  },
+  "gazette communications": {
+   "name": "Gazette Communications",
+   "grade": "B/C",
+   "ppm": 0.741,
+   "n": 2
+  },
+  "overtime politics": {
+   "name": "Overtime Politics",
+   "grade": "F",
+   "ppm": 0.741,
+   "n": 12
+  },
+  "university of colorado (boulder)": {
+   "name": "University of Colorado (Boulder)",
+   "grade": "B/C",
+   "ppm": 0.741,
+   "n": 2
+  },
+  "st. cloud state university": {
+   "name": "St. Cloud State University",
+   "grade": "B/C",
+   "ppm": 0.742,
+   "n": 17
+  },
+  "change research": {
+   "name": "Change Research",
+   "grade": "C+",
+   "ppm": 0.742,
+   "n": 115
+  },
+  "university of texas at tyler": {
+   "name": "University of Texas at Tyler",
+   "grade": "B/C",
+   "ppm": 0.743,
+   "n": 10
+  },
+  "minnesota state university": {
+   "name": "Minnesota State University",
+   "grade": "B/C",
+   "ppm": 0.748,
+   "n": 4
+  },
+  "y2 analytics": {
+   "name": "Y2 Analytics",
+   "grade": "B/C",
+   "ppm": 0.749,
+   "n": 8
+  },
+  "a2 insights": {
+   "name": "A2 Insights",
+   "grade": "B/C",
+   "ppm": 0.751,
+   "n": 2
+  },
+  "univision/latino decisions/north star opinion research": {
+   "name": "Univision/Latino Decisions/North Star Opinion Research",
+   "grade": "B/C",
+   "ppm": 0.751,
+   "n": 7
+  },
+  "data west polling": {
+   "name": "Data West Polling",
+   "grade": "B/C",
+   "ppm": 0.754,
+   "n": 2
+  },
+  "wcia-tv": {
+   "name": "WCIA-TV",
+   "grade": "B/C",
+   "ppm": 0.757,
+   "n": 2
+  },
+  "datamar analytics": {
+   "name": "Datamar Analytics",
+   "grade": "B/C",
+   "ppm": 0.757,
+   "n": 8
+  },
+  "new frontier strategy": {
+   "name": "New Frontier Strategy",
+   "grade": "B/C",
+   "ppm": 0.76,
+   "n": 2
+  },
+  "university of alabama at birmingham": {
+   "name": "University of Alabama at Birmingham",
+   "grade": "B/C",
+   "ppm": 0.761,
+   "n": 2
+  },
+  "nelson research": {
+   "name": "Nelson Research",
+   "grade": "B/C",
+   "ppm": 0.762,
+   "n": 1
+  },
+  "digital research": {
+   "name": "Digital Research",
+   "grade": "B/C",
+   "ppm": 0.762,
+   "n": 21
+  },
+  "bold decision": {
+   "name": "Bold Decision",
+   "grade": "B/C",
+   "ppm": 0.764,
+   "n": 1
+  },
+  "vcreek/amg": {
+   "name": "VCreek/AMG",
+   "grade": "B/C",
+   "ppm": 0.765,
+   "n": 1
+  },
+  "emc research": {
+   "name": "EMC Research",
+   "grade": "B/C",
+   "ppm": 0.768,
+   "n": 15
+  },
+  "hunt research": {
+   "name": "Hunt Research",
+   "grade": "B/C",
+   "ppm": 0.769,
+   "n": 1
+  },
+  "hickman analytics": {
+   "name": "Hickman Analytics",
+   "grade": "B/C",
+   "ppm": 0.769,
+   "n": 1
+  },
+  "saguaro strategies": {
+   "name": "Saguaro Strategies",
+   "grade": "B/C",
+   "ppm": 0.777,
+   "n": 2
+  },
+  "consultor√é¬≠a acad√é¬©mica e investigaci√é¬≥n social llc": {
+   "name": "Consultor√É¬≠a Acad√É¬©mica e Investigaci√É¬≥n Social LLC",
+   "grade": "B/C",
+   "ppm": 0.779,
+   "n": 2
+  },
+  "open model project": {
+   "name": "Open Model Project",
+   "grade": "B/C",
+   "ppm": 0.779,
+   "n": 2
+  },
+  "rms research": {
+   "name": "RMS Research",
+   "grade": "B/C",
+   "ppm": 0.78,
+   "n": 3
+  },
+  "victory insights": {
+   "name": "Victory Insights",
+   "grade": "B/C",
+   "ppm": 0.781,
+   "n": 9
+  },
+  "east tennessee state university": {
+   "name": "East Tennessee State University",
+   "grade": "B/C",
+   "ppm": 0.783,
+   "n": 2
+  },
+  "colby college": {
+   "name": "Colby College",
+   "grade": "B/C",
+   "ppm": 0.784,
+   "n": 6
+  },
+  "ssrs": {
+   "name": "SSRS",
+   "grade": "C+",
+   "ppm": 0.787,
+   "n": 47
+  },
+  "opinium": {
+   "name": "Opinium",
+   "grade": "B/C",
+   "ppm": 0.801,
+   "n": 2
+  },
+  "zia poll": {
+   "name": "Zia Poll",
+   "grade": "B/C",
+   "ppm": 0.802,
+   "n": 4
+  },
+  "thomas partners strategies/optimus": {
+   "name": "Thomas Partners Strategies/Optimus",
+   "grade": "B/C",
+   "ppm": 0.803,
+   "n": 2
+  },
+  "global marketing research services": {
+   "name": "Global Marketing Research Services",
+   "grade": "B/C",
+   "ppm": 0.803,
+   "n": 1
+  },
+  "capital survey research center": {
+   "name": "Capital Survey Research Center",
+   "grade": "B/C",
+   "ppm": 0.805,
+   "n": 13
+  },
+  "the justice collaborative institute": {
+   "name": "The Justice Collaborative Institute",
+   "grade": "B/C",
+   "ppm": 0.823,
+   "n": 2
+  },
+  "baydoun consulting": {
+   "name": "Baydoun Consulting",
+   "grade": "B/C",
+   "ppm": 0.827,
+   "n": 6
+  },
+  "arizona state university": {
+   "name": "Arizona State University",
+   "grade": "B/C",
+   "ppm": 0.835,
+   "n": 8
+  },
+  "bluegrass community and technical college": {
+   "name": "Bluegrass Community and Technical College",
+   "grade": "B/C",
+   "ppm": 0.837,
+   "n": 2
+  },
+  "marketing resource group (mrg)": {
+   "name": "Marketing Resource Group (MRG)",
+   "grade": "B/C",
+   "ppm": 0.838,
+   "n": 10
+  },
+  "phillips academy": {
+   "name": "Phillips Academy",
+   "grade": "B/C",
+   "ppm": 0.846,
+   "n": 7
+  },
+  "victory enterprises": {
+   "name": "Victory Enterprises",
+   "grade": "B/C",
+   "ppm": 0.849,
+   "n": 1
+  },
+  "gcr & associates": {
+   "name": "GCR & Associates",
+   "grade": "B/C",
+   "ppm": 0.85,
+   "n": 1
+  },
+  "clout research": {
+   "name": "Clout Research",
+   "grade": "B/C",
+   "ppm": 0.851,
+   "n": 16
+  },
+  "brandwatch qriously": {
+   "name": "Brandwatch Qriously",
+   "grade": "B/C",
+   "ppm": 0.855,
+   "n": 3
+  },
+  "schapiro group": {
+   "name": "Schapiro Group",
+   "grade": "B/C",
+   "ppm": 0.867,
+   "n": 2
+  },
+  "millersville university": {
+   "name": "Millersville University",
+   "grade": "B/C",
+   "ppm": 0.87,
+   "n": 5
+  },
+  "miami univerity": {
+   "name": "Miami Univerity",
+   "grade": "B/C",
+   "ppm": 0.87,
+   "n": 2
+  },
+  "hampton university": {
+   "name": "Hampton University",
+   "grade": "B/C",
+   "ppm": 0.876,
+   "n": 4
+  },
+  "bainbridge media group": {
+   "name": "Bainbridge Media Group",
+   "grade": "B/C",
+   "ppm": 0.882,
+   "n": 1
+  },
+  "loras college": {
+   "name": "Loras College",
+   "grade": "B/C",
+   "ppm": 0.897,
+   "n": 18
+  },
+  "massie & associates": {
+   "name": "Massie & Associates",
+   "grade": "B/C",
+   "ppm": 0.897,
+   "n": 2
+  },
+  "university of iowa": {
+   "name": "University of Iowa",
+   "grade": "B/C",
+   "ppm": 0.905,
+   "n": 3
+  },
+  "survation": {
+   "name": "Survation",
+   "grade": "B/C",
+   "ppm": 0.912,
+   "n": 2
+  },
+  "constituent dynamics": {
+   "name": "Constituent Dynamics",
+   "grade": "B/C",
+   "ppm": 0.914,
+   "n": 7
+  },
+  "desales university": {
+   "name": "DeSales University",
+   "grade": "B/C",
+   "ppm": 0.924,
+   "n": 1
+  },
+  "greg smith & associates": {
+   "name": "Greg Smith & Associates",
+   "grade": "B/C",
+   "ppm": 0.924,
+   "n": 5
+  },
+  "cole hargrave snodgrass & associates": {
+   "name": "Cole Hargrave Snodgrass & Associates",
+   "grade": "B/C",
+   "ppm": 0.929,
+   "n": 5
+  },
+  "roanoke college": {
+   "name": "Roanoke College",
+   "grade": "B/C",
+   "ppm": 0.942,
+   "n": 23
+  },
+  "hendrix college": {
+   "name": "Hendrix College",
+   "grade": "B/C",
+   "ppm": 0.943,
+   "n": 18
+  },
+  "kiaer research": {
+   "name": "Kiaer Research",
+   "grade": "B/C",
+   "ppm": 0.946,
+   "n": 2
+  },
+  "marketing workshop": {
+   "name": "Marketing Workshop",
+   "grade": "B/C",
+   "ppm": 0.947,
+   "n": 8
+  },
+  "momentum analysis": {
+   "name": "Momentum Analysis",
+   "grade": "B/C",
+   "ppm": 0.953,
+   "n": 3
+  },
+  "craciun research group": {
+   "name": "Craciun Research Group",
+   "grade": "B/C",
+   "ppm": 0.954,
+   "n": 1
+  },
+  "western kentucky university": {
+   "name": "Western Kentucky University",
+   "grade": "B/C",
+   "ppm": 0.97,
+   "n": 4
+  },
+  "market research insight": {
+   "name": "Market Research Insight",
+   "grade": "B/C",
+   "ppm": 0.971,
+   "n": 27
+  },
+  "citizen data": {
+   "name": "Citizen Data",
+   "grade": "B/C",
+   "ppm": 0.986,
+   "n": 12
+  },
+  "izq strategies": {
+   "name": "IZQ Strategies",
+   "grade": "B/C",
+   "ppm": 0.988,
+   "n": 1
+  },
+  "truedot": {
+   "name": "Truedot",
+   "grade": "B/C",
+   "ppm": 1.04,
+   "n": 2
+  },
+  "baldwin wallace university": {
+   "name": "Baldwin Wallace University",
+   "grade": "B/C",
+   "ppm": 1.045,
+   "n": 4
+  },
+  "amber integrated": {
+   "name": "Amber Integrated",
+   "grade": "B/C",
+   "ppm": 1.063,
+   "n": 8
+  },
+  "quantus polls and news": {
+   "name": "Quantus Polls and News",
+   "grade": "B/C",
+   "ppm": 1.067,
+   "n": 3
+  },
+  "bwd global": {
+   "name": "BWD Global",
+   "grade": "B/C",
+   "ppm": 1.083,
+   "n": 2
+  },
+  "rutgers university": {
+   "name": "Rutgers University",
+   "grade": "B/C",
+   "ppm": 1.09,
+   "n": 19
+  },
+  "repass": {
+   "name": "Repass",
+   "grade": "B/C",
+   "ppm": 1.094,
+   "n": 4
+  },
+  "we ask america": {
+   "name": "We Ask America",
+   "grade": "C",
+   "ppm": 1.094,
+   "n": 56
+  },
+  "carroll strategies": {
+   "name": "Carroll Strategies",
+   "grade": "B/C",
+   "ppm": 1.101,
+   "n": 5
+  },
+  "glascock group": {
+   "name": "Glascock Group",
+   "grade": "B/C",
+   "ppm": 1.114,
+   "n": 2
+  },
+  "tomahawk strategies": {
+   "name": "Tomahawk Strategies",
+   "grade": "B/C",
+   "ppm": 1.116,
+   "n": 1
+  },
+  "ccadvertising": {
+   "name": "ccAdvertising",
+   "grade": "B/C",
+   "ppm": 1.13,
+   "n": 33
+  },
+  "center street pac": {
+   "name": "Center Street PAC",
+   "grade": "B/C",
+   "ppm": 1.137,
+   "n": 4
+  },
+  "thomas partners strategies": {
+   "name": "Thomas Partners Strategies",
+   "grade": "B/C",
+   "ppm": 1.141,
+   "n": 2
+  },
+  "american research group": {
+   "name": "American Research Group",
+   "grade": "C",
+   "ppm": 1.141,
+   "n": 280
+  },
+  "dane & associates": {
+   "name": "Dane & Associates",
+   "grade": "B/C",
+   "ppm": 1.157,
+   "n": 2
+  },
+  "gop calls": {
+   "name": "GOP Calls",
+   "grade": "B/C",
+   "ppm": 1.157,
+   "n": 2
+  },
+  "mitchell research & communications": {
+   "name": "Mitchell Research & Communications",
+   "grade": "C",
+   "ppm": 1.161,
+   "n": 82
+  },
+  "mclaughlin & associates": {
+   "name": "McLaughlin & Associates",
+   "grade": "B/C",
+   "ppm": 1.163,
+   "n": 29
+  },
+  "meredith college": {
+   "name": "Meredith College",
+   "grade": "B/C",
+   "ppm": 1.17,
+   "n": 6
+  },
+  "riggs research services": {
+   "name": "Riggs Research Services",
+   "grade": "B/C",
+   "ppm": 1.171,
+   "n": 1
+  },
+  "fm3 research": {
+   "name": "FM3 Research",
+   "grade": "B/C",
+   "ppm": 1.183,
+   "n": 11
+  },
+  "saint leo university polling institute": {
+   "name": "Saint Leo University Polling Institute",
+   "grade": "B/C",
+   "ppm": 1.195,
+   "n": 6
+  },
+  "soonerpoll.com": {
+   "name": "SoonerPoll.com",
+   "grade": "B/C",
+   "ppm": 1.195,
+   "n": 26
+  },
+  "cpec": {
+   "name": "CPEC",
+   "grade": "B/C",
+   "ppm": 1.202,
+   "n": 2
+  },
+  "targetpoint": {
+   "name": "TargetPoint",
+   "grade": "B/C",
+   "ppm": 1.212,
+   "n": 2
+  },
+  "university of minnesota": {
+   "name": "University of Minnesota",
+   "grade": "B/C",
+   "ppm": 1.255,
+   "n": 10
+  },
+  "elucd": {
+   "name": "Elucd",
+   "grade": "B/C",
+   "ppm": 1.258,
+   "n": 4
+  },
+  "target insyght": {
+   "name": "Target Insyght",
+   "grade": "B/C",
+   "ppm": 1.26,
+   "n": 6
+  },
+  "island analytics & marketing, llc": {
+   "name": "Island Analytics & Marketing, LLC",
+   "grade": "B/C",
+   "ppm": 1.269,
+   "n": 1
+  },
+  "opinion research associates": {
+   "name": "Opinion Research Associates",
+   "grade": "B/C",
+   "ppm": 1.29,
+   "n": 14
+  },
+  "capen analytics": {
+   "name": "Capen Analytics",
+   "grade": "B/C",
+   "ppm": 1.295,
+   "n": 1
+  },
+  "merriman river group": {
+   "name": "Merriman River Group",
+   "grade": "C/D",
+   "ppm": 1.323,
+   "n": 25
+  },
+  "trafalgar group/insider advantage": {
+   "name": "Trafalgar Group/Insider Advantage",
+   "grade": "C/D",
+   "ppm": 1.323,
+   "n": 3
+  },
+  "brigham young university": {
+   "name": "Brigham Young University",
+   "grade": "C/D",
+   "ppm": 1.376,
+   "n": 4
+  },
+  "triton polling & research": {
+   "name": "Triton Polling & Research",
+   "grade": "C/D",
+   "ppm": 1.387,
+   "n": 3
+  },
+  "university of wyoming": {
+   "name": "University of Wyoming",
+   "grade": "C/D",
+   "ppm": 1.465,
+   "n": 5
+  },
+  "raba research": {
+   "name": "RABA Research",
+   "grade": "C/D",
+   "ppm": 1.473,
+   "n": 9
+  },
+  "point blank political": {
+   "name": "Point Blank Political",
+   "grade": "C/D",
+   "ppm": 1.498,
+   "n": 6
+  },
+  "the political matrix/the listener group": {
+   "name": "The Political Matrix/The Listener Group",
+   "grade": "C/D",
+   "ppm": 1.515,
+   "n": 12
+  },
+  "surveymonkey": {
+   "name": "SurveyMonkey",
+   "grade": "D+",
+   "ppm": 1.633,
+   "n": 268
+  },
+  "tcj research": {
+   "name": "TCJ Research",
+   "grade": "F",
+   "ppm": 1.648,
+   "n": 132
+  },
+  "brown university": {
+   "name": "Brown University",
+   "grade": "C/D",
+   "ppm": 1.677,
+   "n": 14
+  },
+  "indiana university-purdue university fort wayne (downs center)": {
+   "name": "Indiana University-Purdue University Fort Wayne (Downs Center)",
+   "grade": "C/D",
+   "ppm": 1.771,
+   "n": 3
+  },
+  "long island university": {
+   "name": "Long Island University",
+   "grade": "C/D",
+   "ppm": 1.774,
+   "n": 4
+  },
+  "nielson brothers polling": {
+   "name": "Nielson Brothers Polling",
+   "grade": "C/D",
+   "ppm": 2.006,
+   "n": 11
+  },
+  "ascend action": {
+   "name": "Ascend Action",
+   "grade": "C/D",
+   "ppm": 2.238,
+   "n": 6
+  },
+  "jayhawk consulting services": {
+   "name": "Jayhawk Consulting Services",
+   "grade": "C/D",
+   "ppm": 2.298,
+   "n": 2
+  },
+  "fort hays state university": {
+   "name": "Fort Hays State University",
+   "grade": "C/D",
+   "ppm": 2.499,
+   "n": 6
+  },
+  "the dartmouth poll": {
+   "name": "The Dartmouth Poll",
+   "grade": "C/D",
+   "ppm": 3.689,
+   "n": 4
+  }
+ }
+}
