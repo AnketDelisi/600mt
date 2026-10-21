@@ -281,9 +281,11 @@ function selectRace(pane, key) {
 
 /* ---- race detail: poll table + trend ---- */
 function racePollEntry(race) {
-  if (state.chamber === "house") return null;
   const pool = state.polls ? state.polls[state.chamber] : null;
   if (!pool) return null;
+  if (state.chamber === "house") {
+    return pool[`${race.state} ${race.district}`] || null;
+  }
   return pool[race.state] || null;
 }
 
@@ -292,11 +294,11 @@ function parsePollDate(str) {
   const year = +(str.match(/(\d{4})$/) || [])[1];
   if (!year) return null;
   const monMap = { january: 0, february: 1, march: 2, april: 3, may: 4, june: 5, july: 6, august: 7, september: 8, october: 9, november: 10, december: 11 };
-  const lastMonthMatch = str.match(/([A-Za-z]+)\s+\d{1,2}(?:\s*[–-]\s*\d{1,2})?,\s*(\d{4})$/);
+  const lastMonthMatch = str.match(/([A-Za-z]+)\s+(\d{1,2})(?:\s*[–-]\s*(\d{1,2}))?,\s*(\d{4})$/);
   if (!lastMonthMatch) return null;
   const mon = monMap[lastMonthMatch[1].toLowerCase()];
   if (mon === undefined) return null;
-  return new Date(year, mon, 1);
+  return new Date(year, mon, +(lastMonthMatch[3] || lastMonthMatch[2] || 1));
 }
 
 function pollTrendSVG(polls) {
@@ -310,6 +312,7 @@ function pollTrendSVG(polls) {
     if (p.ind != null) hasI = true;
     pts.push({ t: dt.getTime(), d: p.dem, r: p.rep, i: p.ind, dates: p.dates });
   }
+  pts.sort((a, b) => a.t - b.t);
   if (pts.length < 2) return `<div style="font-size:11px;color:var(--muted);padding:8px 0">Not enough dated polls to plot.</div>`;
   const tMin = pts[0].t, tMax = pts[pts.length - 1].t;
   let vMin = 20, vMax = 70;
@@ -449,7 +452,6 @@ function render() {
     </div>
   </div>`;
 
-  const env = f.environment ? `generic ballot ${fmt(f.environment.generic_ballot_generic_margin)} D` : "";
   const maj = data.majority || {};
   const govD = data.total_d_governors, govR = data.total_r_governors;
   const hasMajPct = maj.dem_pct != null;
@@ -532,7 +534,7 @@ function toggleRaceDetail(tr, race) {
   if (existing && existing.classList.contains("detail-row")) { existing.remove(); return; }
   const detail = document.createElement("tr");
   detail.className = "detail-row";
-  detail.innerHTML = `<td colspan="6">${raceDetailHTML(race)}</td>`;
+  detail.innerHTML = `<td colspan="4">${raceDetailHTML(race)}</td>`;
   tr.after(detail);
   tr.scrollIntoView({ behavior: "smooth", block: "center" });
 }

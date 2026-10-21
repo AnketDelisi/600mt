@@ -81,8 +81,8 @@ def build():
     national = {}
     for year in YEARS:
         sel = agg[agg.year == year]
-        national[str(year)] = round(
-            (sel.d.sum() - sel.r.sum()) / (sel.d.sum() + sel.r.sum()) * 100.0, 2)
+        national[str(year)] = float(round(
+            (sel.d.sum() - sel.r.sum()) / (sel.d.sum() + sel.r.sum()) * 100.0, 2))
     agg["lean"] = agg.margin - agg.year.map(
         {int(y): v for y, v in national.items()})
     states = {}

@@ -16,7 +16,6 @@ f.addEventListener('load', () => {
     while (n < 120 && !d.querySelector('#pane-senate table tbody tr')) { await T(250); n++; }
     await T(1200);
     const out = {};
-    out.updated = (d.getElementById('updated') || {}).textContent || '';
     out.generic = (d.getElementById('generic') || {}).textContent || '';
     out.senateRows = d.querySelectorAll('#pane-senate table tbody tr[data-key]').length;
     out.senateMap = d.querySelectorAll('#pane-senate .map-svg path.st').length;

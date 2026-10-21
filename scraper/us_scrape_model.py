@@ -471,7 +471,8 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
             continue
         rows.append((mar, w, key))
     if POLL_ONE_PER_POLLSTER:
-        rows = [(mar, w, key) for key, (_, mar, w) in seen.items()]
+        rows = ([(mar, w, key) for key, (_, mar, w) in seen.items()]
+                + [r for r in rows if not r[2]])
     if len(rows) >= 2 and 0.0 < pollster_cap < 1.0:
         totals = {}
         for _, w, key in rows:
@@ -865,7 +866,8 @@ def _buckets(dist):
 def main():
     base = json.loads((OUTPUT_DIR / "races.json").read_text(encoding="utf-8"))
     polls = json.loads((OUTPUT_DIR / "polling.json").read_text(encoding="utf-8"))
-    gb = [g for g in base.get("generic_ballot") or [] if g["pollster"].lower() != "average"]
+    gb = [g for g in base.get("generic_ballot") or []
+          if (g.get("pollster") or "").lower() != "average"]
     env = round(sum(g["dem"] - g["rep"] for g in gb) / len(gb), 1) if gb else None
 
     import datetime as _dt
