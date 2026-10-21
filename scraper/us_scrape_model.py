@@ -105,7 +105,7 @@ REGION_SIGMA = float(_sw.get("region_sigma", 2.3))
 STATE_SIGMA = math.sqrt(max(0.0, TOTAL_STATE_SIGMA ** 2 - REGION_SIGMA ** 2))
 STATE_LEAN_YEAR = "2024"
 GOVERNOR_LEAN_PRIOR_WEIGHT = 0.5
-STATE_ENV_WEIGHT = {"senate": 0.8, "governor": 0.25, "house": 0.25}
+STATE_ENV_WEIGHT = {"senate": 0.8, "governor": 0.25, "house": 0.5}
 # The generic ballot historically overstates the House two-party vote: the
 # 2018-22 gap averaged about 1.8 points (2018 -0.1, 2020 +3.7, 2022 +1.8).
 HOUSE_ENV_BIAS = -1.8
