@@ -72,7 +72,8 @@ python scraper/us_bt_governor_snapshot.py 2018 2020 2022 2024
 
 - The state-legislative lean and Silver/CCES elasticity inputs are built and
   tested but are not in the live model: neither improved the 2024 holdout.
-  The 2020 House result remains outside the model's 90% seat interval.
+  The 2020 House mean remains an outlier, but the 2.5-point cycle-bias sigma
+  keeps all four House results inside the 90% seat interval.
 - Sources: Wikipedia (2026 Senate / House / gubernatorial election and
   ratings articles), The Downballot's district presidential results,
   generic-ballot aggregates, Elections sources linked in the articles.

@@ -62,6 +62,9 @@ def main():
     sims = N_SIMS
     if "--sims" in sys.argv:
         sims = int(sys.argv[sys.argv.index("--sims") + 1])
+    if "--poll-bias" in sys.argv:
+        m.POLL_BIAS_SIGMA = float(
+            sys.argv[sys.argv.index("--poll-bias") + 1])
     print("House seat distribution | sims %d | national %.1f region %.1f state %.1f"
           % (sims, m.NATIONAL_SIGMA, m.REGION_SIGMA, m.STATE_SIGMA))
     for cycle in (2018, 2020, 2022, 2024):

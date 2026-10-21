@@ -72,11 +72,11 @@ RATING_ORDER = ("cook", "ie", "sabato")
 LOGISTIC_BETA = {"senate": 3.5, "house": 3.5, "governor": 3.5}
 NATIONAL_SIGMA = 2.5
 # A cycle-level poll bias can move every race the same way even when the
-# generic-ballot mean is right: the 2018-24 Senate backtest missed the seat
-# count by -1.0, +2.8, -1.8 and +0.1 (2020 over-D, 2022 under-D). One extra
-# national draw per night widens the chamber distribution without moving the
-# race means.
-POLL_BIAS_SIGMA = 1.5
+# generic-ballot mean is right. The 2018-24 House seat check put 2020 just
+# outside the 90% interval at sigma 1.5; 2.5 covers all four cycles without
+# moving any race mean (a mean correction helped margins but wrecked the
+# 2018/2022/2024 seat counts).
+POLL_BIAS_SIGMA = 2.5
 # Correlated swing uncertainty: one national draw, one regional draw shared
 # by the states in a Census region, then a state-specific residual. The total
 # state deviation is held at the previous 3.5 points so this adds regional
