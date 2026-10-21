@@ -44,7 +44,7 @@ NE_LAKES = ("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/"
 # check at the end of main() fails loudly if a rect grows into the lower-48.
 CONUS_RECT = (73.0, 20.0, 975.0, 590.0)
 AK_RECT = (0.0, 452.0, 330.0, 600.0)
-HI_RECT = (240.0, 468.0, 405.0, 580.0)
+HI_RECT = (248.0, 472.0, 393.0, 572.0)
 # island trimming (deg^2): Alaska's Aleutian chain spans ~359 degrees of
 # longitude and Hawaii's northwestern atolls stretch 24 degrees, both of
 # which cap the inset scale; parts below these areas are dropped so the
