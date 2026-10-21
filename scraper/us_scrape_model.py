@@ -116,6 +116,8 @@ POLL_HALF_LIFE = 120.0      # days; a poll 4 months old counts half
 POLL_MAX_AGE = 540          # 18 months; anything older is noise
 POLL_PARTISAN_W = 0.6       # partisan pollster weight
 POLLSTER_CAP = 0.5          # max share of a race average one firm can carry
+POLL_SAMPLE_REF = 600.0     # typical poll sample
+POLL_SAMPLE_POWER = 0.25    # diminishing returns to sample size
 POLL_TRIM = 12.0            # drop polls >12 pts from the weighted median
 POLL_AGG_SIGMA = 2.5
 POLL_DIR_SIGMA = 4.0
@@ -396,6 +398,8 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
     dir_sigma = float(p.get("dir_sigma", POLL_DIR_SIGMA))
     min_neff = float(p.get("min_neff", POLL_MIN_NEFF))
     pollster_cap = float(p.get("pollster_cap", POLLSTER_CAP))
+    sample_ref = float(p.get("sample_ref", POLL_SAMPLE_REF))
+    sample_power = float(p.get("sample_power", POLL_SAMPLE_POWER))
     rows = []
     for pol in entry.get("polls") or []:
         if pol.get("dem") is None or pol.get("rep") is None:
@@ -413,6 +417,9 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
         w = 0.5 ** (age / half_life)
         if pol.get("partisan"):
             w *= partisan_w
+        sample = pol.get("sample")
+        if sample and sample_power:
+            w *= min(1.5, max(0.5, (float(sample) / sample_ref) ** sample_power))
         rows.append((mar, w, pollster_key(pol.get("pollster"))))
     if len(rows) >= 2 and 0.0 < pollster_cap < 1.0:
         totals = {}

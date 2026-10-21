@@ -120,6 +120,21 @@ def sponsor_of(cell):
     return m.group(1) if m else None
 
 
+def sample_of(header, cells):
+    """(sample_size, population) from the table's sample-size column."""
+    for i, h in enumerate(header):
+        if "sample" not in h.lower() and h.strip().lower() != "n":
+            continue
+        if i >= len(cells):
+            return None, None
+        text = cells[i]
+        m = re.search(r"(\d[\d,]*)", text)
+        n = int(m.group(1).replace(",", "")) if m else None
+        p = re.search(r"\b(LV|RV|PV|A|V)\b", text.upper())
+        return n, (p.group(1) if p else None)
+    return None, None
+
+
 MONTHS = {m: i for i, m in enumerate(
     ["january", "february", "march", "april", "may", "june", "july",
      "august", "september", "october", "november", "december"], 1)}
@@ -324,9 +339,14 @@ def parse_individual(soup, tables=None):
                 or pollster.startswith("1,")
             ):
                 continue
+            sample, population = sample_of(header, cells)
             entry = {"pollster": pollster, "dates": dates}
             if partisan:
                 entry["partisan"] = partisan
+            if sample is not None:
+                entry["sample"] = sample
+            if population:
+                entry["population"] = population
             entry.update({key_of(k): round(v, 1) for k, v in vals.items()})
             out.append(entry)
         if len(out) < 3:
