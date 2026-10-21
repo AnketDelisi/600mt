@@ -39,9 +39,11 @@ function ratingClass(rating) {
   if (!rating) return "none";
   const w = rating.toLowerCase();
   if (w.includes("tossup")) return "t";
-  if (w.includes("d")) return "d";
-  if (w.includes("r")) return "r";
-  return "t";
+  // "Solid R" contains a "d" inside "solid"; read the party token, not any d.
+  const party = w.trim().split(/\s+/).pop();
+  if (party === "d" || party.startsWith("dem")) return "d";
+  if (party === "r" || party.startsWith("rep")) return "r";
+  return "none";
 }
 
 function partyBadge(party) {

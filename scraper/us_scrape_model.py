@@ -167,14 +167,14 @@ def rating_band(raw):
         return (-2.5, 2.5, 0.0)
     key = f"{strength} {party}"
     BANDS = {
-        "solid d": (15.0, 35.0, 22.0),
+        "solid d": (15.0, 60.0, 22.0),
         "likely d": (7.5, 15.0, 10.0),
         "lean d": (2.5, 7.5, 5.0),
         "tilt d": (1.0, 3.0, 2.0),
         "tilt r": (-3.0, -1.0, -2.0),
         "lean r": (-7.5, -2.5, -5.0),
         "likely r": (-15.0, -7.5, -10.0),
-        "solid r": (-35.0, -15.0, -22.0),
+        "solid r": (-60.0, -15.0, -22.0),
     }
     return BANDS.get(key)
 

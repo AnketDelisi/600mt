@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-10-21T11:00:58Z",
+  "generated": "2026-10-21T11:27:14Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 13,
@@ -4974,6 +4974,28 @@
         "polls": null
       },
       {
+        "state": "Washington",
+        "district": "4",
+        "incumbent": "Dan Newhouse",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 49.1,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
         "state": "Michigan",
         "district": "12",
         "incumbent": "Rashida Tlaib",
@@ -5424,6 +5446,28 @@
         "polls": null
       },
       {
+        "state": "Wyoming",
+        "district": "at-large",
+        "incumbent": "Harriet Hageman",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Likely R",
+          "sabato": "Safe R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 42.0,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
         "state": "Illinois",
         "district": "3",
         "incumbent": "Delia Ramirez",
@@ -5435,6 +5479,28 @@
         "margin": 41.8,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
+        "state": "North Carolina",
+        "district": "3",
+        "incumbent": "Greg Murphy",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Likely R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 41.6,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -6318,28 +6384,6 @@
       },
       {
         "state": "Florida",
-        "district": "12",
-        "incumbent": "Gus Bilirakis",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Likely R"
-        },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 32.9,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Florida",
         "district": "26",
         "incumbent": "Mario Díaz-Balart",
         "party": "R",
@@ -6351,7 +6395,7 @@
         },
         "lean": "Solid R",
         "leader": "R",
-        "margin": 32.9,
+        "margin": 33.7,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
         "ind_pct": 0.0,
@@ -6361,59 +6405,15 @@
         "polls": null
       },
       {
-        "state": "North Carolina",
-        "district": "3",
-        "incumbent": "Greg Murphy",
+        "state": "Florida",
+        "district": "12",
+        "incumbent": "Gus Bilirakis",
         "party": "R",
         "rating": "Solid R",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
           "sabato": "Likely R"
-        },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 32.9,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Washington",
-        "district": "4",
-        "incumbent": "Dan Newhouse",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 32.9,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Wyoming",
-        "district": "at-large",
-        "incumbent": "Harriet Hageman",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Likely R",
-          "sabato": "Safe R"
         },
         "lean": "Solid R",
         "leader": "R",
@@ -13912,21 +13912,21 @@
   "governor": {
     "races": [
       {
-        "state": "Maryland",
+        "state": "Wyoming",
         "district": "",
-        "incumbent": "Wes Moore",
-        "party": "D",
-        "rating": "Solid D",
+        "incumbent": "Mark Gordon",
+        "party": "R",
+        "rating": "Solid R",
         "ratings": {
-          "cook": "Solid D",
-          "ie": "Solid D",
-          "sabato": "Safe D"
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
         },
-        "lean": "Solid D",
-        "leader": "D",
-        "margin": 37.0,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 43.2,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13946,7 +13946,7 @@
         },
         "lean": "Solid R",
         "leader": "R",
-        "margin": 32.9,
+        "margin": 37.0,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
         "ind_pct": 0.0,
@@ -13956,21 +13956,21 @@
         "polls": null
       },
       {
-        "state": "Wyoming",
+        "state": "Maryland",
         "district": "",
-        "incumbent": "Mark Gordon",
-        "party": "R",
-        "rating": "Solid R",
+        "incumbent": "Wes Moore",
+        "party": "D",
+        "rating": "Solid D",
         "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
+          "cook": "Solid D",
+          "ie": "Solid D",
+          "sabato": "Safe D"
         },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 32.9,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
+        "lean": "Solid D",
+        "leader": "D",
+        "margin": 37.0,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
