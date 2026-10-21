@@ -34,6 +34,10 @@ OUT = os.path.join(ROOT, "data", "us", "geo.json")
 
 TIGER = ("https://tigerweb.geo.census.gov/arcgis/rest/services/"
          "TIGERweb/Legislative/MapServer/0/query")
+NE_LAND = ("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/"
+           "master/geojson/ne_50m_land.geojson")
+NE_LAKES = ("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/"
+            "master/geojson/ne_50m_lakes.geojson")
 
 # lower-48 / AK / HI target rectangles inside the 975x610 viewBox. Alaska and
 # Hawaii are deliberately large (readable at a glance); the shapely overlap
@@ -78,6 +82,38 @@ def fetch_state(fips, force):
         r.raise_for_status()
         open(path, "wb").write(r.content)
     return json.loads(open(path, encoding="utf8").read())
+
+
+def fetch_geojson(url, name, force):
+    path = os.path.join(CACHE, name)
+    if force or not os.path.isfile(path):
+        r = requests.get(url, headers={"User-Agent": "600-us-midterms/1.0"},
+                         timeout=300)
+        r.raise_for_status()
+        open(path, "wb").write(r.content)
+    return json.loads(open(path, encoding="utf8").read())
+
+
+def fetch_land(force):
+    """Natural Earth land minus lakes, in lon/lat, as one shapely geometry."""
+    land = fetch_geojson(NE_LAND, "ne_50m_land.geojson", force)
+    lakes = fetch_geojson(NE_LAKES, "ne_50m_lakes.geojson", force)
+    land_geom = unary_union([shape(f["geometry"])
+                             for f in land.get("features", [])])
+    lake_geom = unary_union([shape(f["geometry"])
+                             for f in lakes.get("features", [])])
+    return land_geom.difference(lake_geom)
+
+
+def polygonal(geom):
+    """Keep only Polygon parts of an intersection result."""
+    if geom.is_empty:
+        return geom
+    if geom.geom_type in ("Polygon", "MultiPolygon"):
+        return geom
+    parts = [g for g in getattr(geom, "geoms", [])
+             if g.geom_type in ("Polygon", "MultiPolygon")]
+    return unary_union(parts) if parts else geom
 
 
 def albers(lon, lat, lat1, lat2, lon0):
@@ -139,6 +175,7 @@ def drop_small_parts(geom, thr):
 def main():
     force = "--force" in sys.argv
     os.makedirs(CACHE, exist_ok=True)
+    land = fetch_land(force)
 
     raw = {}      # fips -> list of (cd, shapely geometry in lon/lat)
     counts = {}
@@ -158,7 +195,7 @@ def main():
                 # "Congressional Districts not defined" water/territory
                 # features (CT, IL, NH have one each)
                 continue
-            geom = shape(f["geometry"])
+            geom = polygonal(shape(f["geometry"]).intersection(land))
             geom = drop_small_parts(geom, ISLAND_MIN_AREA.get(fips))
             feats.append((cd, geom))
         raw[fips] = feats

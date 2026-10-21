@@ -49,7 +49,8 @@ python scraper/us_scrape_model.py
 ```
 
 `scraper/us_build_geo.py` rebuilds the boundaries (only needed when the
-districts change). `scraper/us_build_swing.py` rebuilds the static state
+districts change); it clips the Census lines to Natural Earth land minus lakes
+so the map does not bleed into water. `scraper/us_build_swing.py` rebuilds the static state
 swing data (county presidential results 2008-24); `scraper/us_build_pres_cd.py`
 rebuilds the district presidential lookup from The Downballot's tables.
 `scraper/us_calibrate.py` scores the Senate model on the cached 2018-24
