@@ -130,6 +130,8 @@ POLLSTER_CAP = 0.5          # max share of a race average one firm can carry
 POLL_SAMPLE_REF = 600.0     # typical poll sample
 POLL_SAMPLE_POWER = 0.25    # diminishing returns to sample size
 POLL_POP_WEIGHT = {"LV": 1.0, "RV": 0.9, "V": 0.9, "A": 0.75, "PV": 0.75}
+POLL_ONE_PER_POLLSTER = True
+POLL_RV_SHIFT = -2.0
 POLL_TRIM = 12.0            # drop polls >12 pts from the weighted median
 POLL_AGG_SIGMA = 2.5
 POLL_DIR_SIGMA = 3.0
@@ -437,6 +439,7 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
     sample_ref = float(p.get("sample_ref", POLL_SAMPLE_REF))
     sample_power = float(p.get("sample_power", POLL_SAMPLE_POWER))
     rows = []
+    seen = {}
     for pol in entry.get("polls") or []:
         if pol.get("dem") is None or pol.get("rep") is None:
             continue
@@ -450,6 +453,8 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
         if mar is None:
             continue
         mar -= pollster_effect(pol.get("pollster"), chamber)
+        if (pol.get("population") or "").upper() == "RV":
+            mar += POLL_RV_SHIFT
         w = 0.5 ** (age / half_life)
         if pol.get("partisan"):
             w *= partisan_w
@@ -458,7 +463,15 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
             w *= min(1.5, max(0.5, (float(sample) / sample_ref) ** sample_power))
         w *= POLL_POP_WEIGHT.get((pol.get("population") or "").upper(), 1.0)
         w *= pollster_rating_weight(pol.get("pollster"))
-        rows.append((mar, w, pollster_key(pol.get("pollster"))))
+        key = pollster_key(pol.get("pollster"))
+        if POLL_ONE_PER_POLLSTER and key:
+            prev = seen.get(key)
+            if prev is None or age < prev[0]:
+                seen[key] = (age, mar, w)
+            continue
+        rows.append((mar, w, key))
+    if POLL_ONE_PER_POLLSTER:
+        rows = [(mar, w, key) for key, (_, mar, w) in seen.items()]
     if len(rows) >= 2 and 0.0 < pollster_cap < 1.0:
         totals = {}
         for _, w, key in rows:
@@ -878,7 +891,7 @@ def main():
             "generic_ballot_generic_margin": env,
             "n_sims": N_SIMS,
             "rating_margin_table": RATING_MARGIN,
-            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band, with the generic-ballot House vote bias corrected. Governor: 50/50 current/prior state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, pollster ratings, house effects and an outlier guard.",
+            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band, with the generic-ballot House vote bias corrected. Governor: 50/50 current/prior state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, one survey per pollster, an RV-to-LV shift, pollster ratings, house effects and an outlier guard.",
             "house_env_bias": HOUSE_ENV_BIAS,
             "national_swing_sigma": NATIONAL_SIGMA,
             "poll_bias_sigma": POLL_BIAS_SIGMA,
@@ -891,6 +904,8 @@ def main():
             "state_lean_year": STATE_LEAN_YEAR,
             "poll_half_life_days": POLL_HALF_LIFE,
             "pollster_rating_scale": POLLSTER_RATING_SCALE,
+            "poll_one_per_pollster": POLL_ONE_PER_POLLSTER,
+            "poll_rv_shift": POLL_RV_SHIFT,
         },
         "senate": forecast["senate"],
         "house": forecast["house"],

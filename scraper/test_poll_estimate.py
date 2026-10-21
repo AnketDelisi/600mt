@@ -18,6 +18,8 @@ POLLS = [
 
 
 def main():
+    m.POLL_ONE_PER_POLLSTER = False
+    m.POLL_RV_SHIFT = 0.0
     with_polls = {"dem": 60.0, "rep": 40.0, "source": "Aggregate (Wikipedia)",
                   "polls": POLLS}
     detail = m.poll_estimate_detail(with_polls, ASOF)
@@ -69,6 +71,27 @@ def main():
     assert detail is not None and detail[3] == "direct", detail
     assert abs(detail[0] - 5.0 * 0.75 / 1.75) < 0.01, detail
     assert m.pollster_rating_weight("The Washington Post") > 1.0
+
+    m.POLL_ONE_PER_POLLSTER = True
+    one = {"polls": [
+        {"pollster": "A", "dates": "November 1, 2024", "dem": 50.0, "rep": 50.0},
+        {"pollster": "A", "dates": "October 30, 2024", "dem": 60.0, "rep": 40.0},
+        {"pollster": "B", "dates": "November 1, 2024", "dem": 50.0, "rep": 50.0},
+    ]}
+    detail = m.poll_estimate_detail(one, ASOF, {"pollster_cap": 1.0})
+    assert detail is not None and abs(detail[0]) < 0.01, detail
+
+    m.POLL_ONE_PER_POLLSTER = False
+    m.POLL_RV_SHIFT = -2.0
+    rv = {"polls": [
+        {"pollster": "A", "dates": "November 1, 2024", "dem": 55.0,
+         "rep": 45.0, "population": "RV"},
+        {"pollster": "B", "dates": "November 1, 2024", "dem": 50.0,
+         "rep": 50.0, "population": "LV"},
+    ]}
+    detail = m.poll_estimate_detail(rv, ASOF, {"pollster_cap": 1.0})
+    assert detail is not None and abs(detail[0] - 8.0 * 0.9 / 1.9) < 0.01, detail
+    m.POLL_RV_SHIFT = 0.0
     print("poll estimator ok")
 
 
