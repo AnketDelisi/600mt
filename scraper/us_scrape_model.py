@@ -19,11 +19,12 @@ Pipeline per race:
        incumbency for unpolled races. The 2022/2024 margin MAE fell from
        11.3/14.6 to 8.3/12.0; the band keeps candidate-specific races
        (Phil Scott in Vermont) from being washed out.
-  2. Polling blend: the average is rebuilt from the individual polls with a
-     120-day recency half-life, a partisan-poll discount, a weighted-median
-     trim and an effective-sample floor; it is then precision-weighted
-     against the prior with an outlier guard so a stale poll cannot drag a
-     safe seat. Entries with an aggregate use it directly.
+   2. Polling blend: the average is rebuilt from the individual polls with a
+      120-day recency half-life, a partisan-poll discount, a weighted-median
+      trim and an effective-sample floor; it is then precision-weighted
+      against the prior with an outlier guard so a stale poll cannot drag a
+      safe seat. An aggregate is only a fallback when fewer than two usable
+      individual polls exist (never a short-circuit past the poll rows).
      Races with a serious independent (NE/ID/SD/MT Senate, Alaska House) use
      the poll shares for their sides; without polls they fall back to the
      D-R prior.
@@ -346,21 +347,25 @@ def two_party(d, r):
     return (d - r) / (d + r) * 100.0 if (d + r) > 0 else None
 
 
-def poll_estimate(entry, asof):
-    """(margin, sigma) from an aggregate or from the individual polls.
+def poll_estimate_detail(entry, asof, params=None):
+    """(margin, sigma, n_eff, source) from the individual polls first.
 
     Rebuilds the average with recency (120-day half-life), partisan-poll
     discount, a weighted-median trim and an effective-sample floor, so a
-    2022/2023 poll cannot drag a 2024/2026 race.
+    2022/2023 poll cannot drag a 2024/2026 race. An aggregate is only a
+    fallback when fewer than two usable individual polls exist; it never
+    bypasses the poll rows.
     """
     if not entry:
         return None
-    dem, rep = entry.get("dem"), entry.get("rep")
-    if dem is not None and rep is not None:
-        mar = two_party(dem, rep)
-        src = (entry.get("source") or "").lower()
-        if mar is not None and "aggregate" in src:
-            return mar, POLL_AGG_SIGMA
+    p = params or {}
+    half_life = float(p.get("half_life", POLL_HALF_LIFE))
+    max_age = int(p.get("max_age", POLL_MAX_AGE))
+    partisan_w = float(p.get("partisan_w", POLL_PARTISAN_W))
+    trim = float(p.get("trim", POLL_TRIM))
+    agg_sigma = float(p.get("agg_sigma", POLL_AGG_SIGMA))
+    dir_sigma = float(p.get("dir_sigma", POLL_DIR_SIGMA))
+    min_neff = float(p.get("min_neff", POLL_MIN_NEFF))
     rows = []
     for pol in entry.get("polls") or []:
         if pol.get("dem") is None or pol.get("rep") is None:
@@ -369,39 +374,45 @@ def poll_estimate(entry, asof):
         if not dt:
             continue
         age = (asof - dt).days
-        if age < -10 or age > POLL_MAX_AGE:
+        if age < -10 or age > max_age:
             continue
         mar = two_party(pol["dem"], pol["rep"])
         if mar is None:
             continue
-        w = 0.5 ** (age / POLL_HALF_LIFE)
+        w = 0.5 ** (age / half_life)
         if pol.get("partisan"):
-            w *= POLL_PARTISAN_W
+            w *= partisan_w
         rows.append((mar, w))
-    if len(rows) < 2:
-        if dem is not None and rep is not None:
-            mar = two_party(dem, rep)
-            return (mar, POLL_DIR_SIGMA) if mar is not None else None
-        return None
-    rows.sort(key=lambda x: x[0])
-    tot = sum(w for _, w in rows)
-    acc = 0.0
-    med = rows[-1][0]
-    for mar, w in rows:
-        acc += w
-        if acc >= tot / 2:
-            med = mar
-            break
-    keep = [(mar, w) for mar, w in rows if abs(mar - med) <= POLL_TRIM]
-    if len(keep) < 2:
-        return None
-    ws = sum(w for _, w in keep)
-    mean = sum(mar * w for mar, w in keep) / ws
-    neff = ws * ws / sum(w * w for _, w in keep)
-    if neff < POLL_MIN_NEFF:
-        return None
-    sigma = max(2.0, POLL_DIR_SIGMA / math.sqrt(neff))
-    return mean, sigma
+    if len(rows) >= 2:
+        rows.sort(key=lambda x: x[0])
+        tot = sum(w for _, w in rows)
+        acc = 0.0
+        med = rows[-1][0]
+        for mar, w in rows:
+            acc += w
+            if acc >= tot / 2:
+                med = mar
+                break
+        keep = [(mar, w) for mar, w in rows if abs(mar - med) <= trim]
+        if len(keep) >= 2:
+            ws = sum(w for _, w in keep)
+            mean = sum(mar * w for mar, w in keep) / ws
+            neff = ws * ws / sum(w * w for _, w in keep)
+            if neff >= min_neff:
+                sigma = max(2.0, dir_sigma / math.sqrt(neff))
+                return mean, sigma, neff, "direct"
+    dem, rep = entry.get("dem"), entry.get("rep")
+    if dem is not None and rep is not None:
+        mar = two_party(dem, rep)
+        if mar is not None:
+            return mar, agg_sigma, 3.0, "aggregate"
+    return None
+
+
+def poll_estimate(entry, asof):
+    """(margin, sigma) from poll_estimate_detail, or None."""
+    detail = poll_estimate_detail(entry, asof)
+    return detail[:2] if detail else None
 
 
 def grade_of(race):

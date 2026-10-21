@@ -58,24 +58,26 @@ def margin(r, p, asof):
     return lean
 
 
-def score(rows, p, label=""):
+def score(rows, p, label="", quiet=False):
     n = win = 0
-    mae = brier = 0.0
+    mae = bias = brier = 0.0
     for r in rows:
         mu = margin(r, p, ELECTION[r["cycle"]])
         a = r["actual"]
         n += 1
         mae += abs(mu - a)
+        bias += mu - a
         pw = 1.0 / (1.0 + math.exp(-mu / m.LOGISTIC_BETA["governor"]))
         brier += (pw - (1.0 if a > 0 else 0.0)) ** 2
         win += 1 if (mu > 0) == (a > 0) else 0
-    print("%-34s n=%2d  MAE %5.2f  win %3.0f%%  Brier %.4f"
-          % (label, n, mae / n, 100.0 * win / n, brier / n))
+    if not quiet:
+        print("%-34s n=%2d  bias %+4.1f  MAE %5.2f  win %3.0f%%  Brier %.4f"
+              % (label, n, bias / n, mae / n, 100.0 * win / n, brier / n))
     return mae / n, brier / n
 
 
 def score_quiet(rows, p):
-    return score(rows, p, "tmp")[0]
+    return score(rows, p, quiet=True)[0]
 
 
 def main():
@@ -121,10 +123,10 @@ def main():
                                      band=band, inc=inc)
                             mae_fit = score_quiet(fit, p)
                             mae_check = score_quiet(check, p)
-                            best.append((mae_fit + mae_check, mae_fit, mae_check,
+                            best.append((mae_fit, mae_fit, mae_check,
                                          pres_w, env_w, last_w, band, inc))
         best.sort()
-        print("\nsum MAE | fit | 2024 | pres_w | env | last | band | inc")
+        print("\nfit MAE | 2024 holdout | pres_w | env | last | band | inc")
         for b in best[:15]:
             print("%6.2f  %5.2f  %5.2f   %.2f   %.2f  %.2f   %d   %d"
                   % (b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7]))

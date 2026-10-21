@@ -28,7 +28,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scraper"))
 import us_scrape_model as m
-import us_scrape_polls as pp
 
 CACHE = ROOT / "scraper" / ".cache"
 SW = json.loads((ROOT / "data" / "us" / "state_swing.json").read_text(encoding="utf8"))
@@ -55,67 +54,9 @@ def norm_cdf(x):
     return 0.5 * (1.0 + math.erf(x / math.sqrt(2.0)))
 
 
-def poll_date(s):
-    y, mo, d = pp.date_key(s)
-    if not y:
-        return None
-    return date(y, mo, d)
-
-
-def two_party(d, r):
-    return (d - r) / (d + r) * 100.0 if (d + r) > 0 else None
-
-
 def poll_est(entry, asof, p):
-    """(margin, sigma, n_eff, source) from an aggregate or individual polls."""
-    if not entry:
-        return None
-    dem, rep = entry.get("dem"), entry.get("rep")
-    if dem is not None and rep is not None:
-        src = entry.get("source") or ""
-        if "aggregate" in src.lower():
-            mar = two_party(dem, rep)
-            return (mar, p["agg_sigma"], 3.0, "aggregate") if mar is not None else None
-    polls = entry.get("polls") or []
-    rows = []
-    for pol in polls:
-        if pol.get("dem") is None or pol.get("rep") is None:
-            continue
-        dt = poll_date(pol.get("dates"))
-        if not dt:
-            continue
-        age = (asof - dt).days
-        if age < -10 or age > p["max_age"]:
-            continue
-        mar = two_party(pol["dem"], pol["rep"])
-        if mar is None:
-            continue
-        w = 0.5 ** (age / p["half_life"])
-        if pol.get("partisan"):
-            w *= p["partisan_w"]
-        rows.append((mar, w))
-    if len(rows) < 2:
-        return None
-    rows.sort(key=lambda x: x[0])
-    # weighted median, then trim polls far from it
-    tot = sum(w for _, w in rows)
-    acc = 0.0
-    med = rows[-1][0]
-    for mar, w in rows:
-        acc += w
-        if acc >= tot / 2:
-            med = mar
-            break
-    keep = [(mar, w) for mar, w in rows if abs(mar - med) <= p["trim"]]
-    if len(keep) < 2:
-        return None
-    ws = sum(w for _, w in keep)
-    mean = sum(mar * w for mar, w in keep) / ws
-    neff = ws * ws / sum(w * w for _, w in keep)
-    if neff < p["min_neff"]:
-        return None
-    sigma = max(2.0, p["dir_sigma"] / math.sqrt(neff))
-    return (mean, sigma, neff, "direct")
+    """Shared estimator: individual polls first, aggregate only as fallback."""
+    return m.poll_estimate_detail(entry, asof, p)
 
 
 def grade_of(race):
@@ -275,11 +216,11 @@ def main():
                                         p["beta_env"] = beta_env
                                         mae_fit = score_quiet(fit, p)
                                         mae_check = score_quiet(check, p)
-                                        best.append((mae_fit + mae_check, mae_fit, mae_check,
+                                        best.append((mae_fit, mae_fit, mae_check,
                                                      pres_w, env_full, use_inc, last_solid,
                                                      band, guard, trend, beta_env))
         best.sort()
-        print("sum MAE | fit | 2024 | pres_w | env | inc | last | band | guard | trend | beta")
+        print("fit MAE | 2024 holdout | pres_w | env | inc | last | band | guard | trend | beta")
         for b in best[:12]:
             print("%6.2f  %5.2f  %5.2f   %.2f   %.2f  %s  %.2f  %.2f  %.1f  %.1f  %.1f"
                   % (b[0], b[1], b[2], b[3], b[4], "Y" if b[5] else "n",

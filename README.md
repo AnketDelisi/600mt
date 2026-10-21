@@ -46,7 +46,9 @@ rebuilds the district presidential lookup from The Downballot's tables.
 `scraper/us_calibrate.py` scores the Senate model on the cached 2018-24
 backtest (and `--grid` / `--diag`); `scraper/us_calibrate_house.py` scores the
 House model on 2018-24; `scraper/us_calibrate_governor.py` scores the governor
-model on 2018-24. `scraper/us_backtest.py` replays a live cycle
+model on 2018-24. Grid selection uses 2018-2022 only; 2024 is the holdout.
+`scraper/us_seat_report.py` reports expected vs actual seats by cycle.
+`scraper/us_backtest.py` replays a live cycle
 (`--chamber senate|house|governor --cycle 2022|2024`).
 
 Backtest caches are gitignored; rebuild them with:
