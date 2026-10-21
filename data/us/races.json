@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-20T10:54:23Z",
+  "scraped_at": "2026-10-21T12:46:24Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -337,7 +337,7 @@
           "party": "D"
         },
         "ratings": {
-          "cook": "Likely D",
+          "cook": "Lean D",
           "ie": "Lean D",
           "sabato": "Lean D"
         }
@@ -354,7 +354,7 @@
           "party": "R"
         },
         "ratings": {
-          "cook": "Solid R",
+          "cook": "Likely R",
           "ie": "Solid R",
           "sabato": "Likely R"
         }
@@ -532,7 +532,7 @@
         "party": "R",
         "last": null,
         "ratings": {
-          "cook": "Likely R",
+          "cook": "Lean R",
           "ie": "Lean R",
           "sabato": "Likely R"
         }
@@ -757,7 +757,7 @@
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "last": {
           "pct": 51.9,
@@ -836,7 +836,7 @@
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "last": {
           "pct": 50.0,
@@ -1096,7 +1096,7 @@
         "ratings": {
           "cook": "Lean D",
           "ie": "Tilt D",
-          "sabato": "Lean D"
+          "sabato": "Likely D"
         },
         "last": {
           "pct": 50.0,
@@ -1513,7 +1513,7 @@
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
-          "sabato": "Lean D(flip)"
+          "sabato": "Likely D(flip)"
         },
         "last": {
           "pct": 59.3,
@@ -1617,7 +1617,7 @@
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
-          "sabato": "Likely R"
+          "sabato": "Lean R"
         },
         "last": {
           "pct": 53.6,
@@ -1677,7 +1677,7 @@
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "last": {
           "pct": 49.0,
@@ -2331,15 +2331,7 @@
         "inc_status": "open",
         "party": "R",
         "status": "Incumbent retiring torun for U.S. Senate",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 63.1,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Georgia",
@@ -2704,7 +2696,7 @@
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
-          "sabato": "Safe R"
+          "sabato": "Likely R"
         },
         "last": {
           "pct": 56.6,
@@ -2786,7 +2778,7 @@
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "last": {
           "pct": 57.1,
@@ -2805,7 +2797,7 @@
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "last": {
           "pct": 51.9,
@@ -2846,7 +2838,7 @@
         "ratings": {
           "cook": "Likely R",
           "ie": "Solid R",
-          "sabato": "Safe R"
+          "sabato": "Likely R"
         },
         "last": {
           "pct": 57.1,
@@ -3065,7 +3057,7 @@
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
-          "sabato": "Safe R"
+          "sabato": "Likely R"
         },
         "last": {
           "pct": 59.4,
@@ -3451,7 +3443,7 @@
         "ratings": {
           "cook": "Lean R",
           "ie": "Likely R",
-          "sabato": "Likely R"
+          "sabato": "Lean R"
         },
         "last": {
           "pct": 58.6,
@@ -3733,7 +3725,7 @@
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
-          "sabato": "Safe R"
+          "sabato": "Likely R"
         },
         "last": {
           "pct": 60.1,
@@ -3801,7 +3793,7 @@
         "ratings": {
           "cook": "Likely R",
           "ie": "Lean R",
-          "sabato": "Likely R"
+          "sabato": "Lean R"
         },
         "last": {
           "pct": 55.0,
@@ -3820,7 +3812,7 @@
         "ratings": {
           "cook": "Likely D",
           "ie": "Lean D",
-          "sabato": "Lean D"
+          "sabato": "Likely D"
         },
         "last": {
           "pct": 51.4,
@@ -3858,7 +3850,7 @@
         "ratings": {
           "cook": "Likely D",
           "ie": "Lean D",
-          "sabato": "Lean D"
+          "sabato": "Likely D"
         },
         "last": {
           "pct": 54.0,
@@ -3907,7 +3899,7 @@
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
-          "sabato": "Safe R"
+          "sabato": "Likely R"
         },
         "last": {
           "pct": 58.0,
@@ -4150,7 +4142,7 @@
         "ratings": {
           "cook": "Likely D",
           "ie": "Tilt D",
-          "sabato": "Lean D"
+          "sabato": "Likely D"
         },
         "last": {
           "pct": 51.1,
@@ -4361,7 +4353,7 @@
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
-          "sabato": "Likely R"
+          "sabato": "Lean R"
         },
         "last": {
           "pct": 62.1,
@@ -4388,15 +4380,7 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 65.8,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "New York",
@@ -4443,7 +4427,7 @@
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
-          "sabato": "Tossup"
+          "sabato": "Lean D"
         },
         "last": {
           "pct": 49.5,
@@ -4617,7 +4601,7 @@
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "last": {
           "pct": 56.8,
@@ -4696,7 +4680,7 @@
         "ratings": {
           "cook": "Likely D",
           "ie": "Tilt D",
-          "sabato": "Lean D"
+          "sabato": "Likely D"
         },
         "last": {
           "pct": 54.6,
@@ -4914,15 +4898,7 @@
         "inc_status": "open",
         "party": "R",
         "status": "Incumbent retiring torun for U.S. Senate",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 60.4,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Oklahoma",
@@ -5185,7 +5161,7 @@
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tossup",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "last": {
           "pct": 50.6,
@@ -5201,15 +5177,7 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 62.9,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Pennsylvania",
@@ -5311,7 +5279,7 @@
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
-          "sabato": "Likely R"
+          "sabato": "Lean R"
         },
         "last": {
           "pct": 58.3,
@@ -5579,15 +5547,7 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 64.1,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Texas",
@@ -5825,7 +5785,7 @@
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
-          "sabato": "Likely R"
+          "sabato": "Lean R"
         },
         "last": {
           "pct": 62.3,
@@ -5942,15 +5902,7 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 64.5,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Texas",
@@ -6010,7 +5962,7 @@
         "ratings": {
           "cook": "Lean R(flip)",
           "ie": "Lean R(flip)",
-          "sabato": "Lean R(flip)"
+          "sabato": "Tossup"
         },
         "last": null
       },
@@ -6045,15 +5997,7 @@
         "inc_status": "open",
         "party": "R",
         "status": "Incumbent retiring torun for U.S. Senate",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 62.7,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Utah",
@@ -6335,7 +6279,7 @@
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
-          "sabato": "Safe R"
+          "sabato": "Likely R"
         },
         "last": {
           "pct": 60.6,
@@ -6461,7 +6405,7 @@
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "last": {
           "pct": 51.4,
