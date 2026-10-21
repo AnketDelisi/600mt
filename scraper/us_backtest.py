@@ -91,7 +91,7 @@ def actual_margin(soup):
         if "Democratic" not in txt or "Republican" not in txt:
             continue
         by_party = {}
-        votes = 0
+        d_votes = r_votes = 0
         rows_with = 0
         for row in tbl.find_all("tr"):
             cells = [c.get_text(" ", strip=True)
@@ -102,21 +102,27 @@ def actual_margin(soup):
             m2 = re.match(r"([\d.]+)\s*%?", cells[4])
             if not m2:
                 continue
+            mv = re.match(r"([\d,]+)", cells[3])
+            v = int(mv.group(1).replace(",", "")) if mv else 0
             if party.startswith("republic"):
                 by_party["R"] = by_party.get("R", 0) + float(m2.group(1))
+                r_votes += v
                 rows_with += 1
             elif party.startswith("democrat"):
                 by_party["D"] = by_party.get("D", 0) + float(m2.group(1))
+                d_votes += v
                 rows_with += 1
-            else:
-                continue
-            mv = re.match(r"([\d,]+)", cells[3])
-            if mv:
-                votes += int(mv.group(1).replace(",", ""))
         if (rows_with >= 2 and "D" in by_party and "R" in by_party
                 and by_party["D"] + by_party["R"] > 50):
-            tot = by_party["D"] + by_party["R"]
-            margin = (by_party["D"] - by_party["R"]) / tot * 100
+            if d_votes + r_votes > 0:
+                # county tables list each county's percentages; weighting by
+                # votes gives the statewide margin instead of an unweighted
+                # average of county margins.
+                margin = ((d_votes - r_votes) / (d_votes + r_votes)) * 100
+            else:
+                tot = by_party["D"] + by_party["R"]
+                margin = (by_party["D"] - by_party["R"]) / tot * 100
+            votes = d_votes + r_votes
             # primaries also carry D/R tables; the general election has the
             # most votes. Pick the largest table instead of the first one.
             if best is None or votes > best[0]:
