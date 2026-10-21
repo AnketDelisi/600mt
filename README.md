@@ -88,7 +88,7 @@ python scraper/us_bt_governor_snapshot.py 2018 2020 2022 2024
   sigma keeps all four House results inside the 90% seat interval.
 - Sources: Wikipedia (2026 Senate / House / gubernatorial election and
   ratings articles), The Downballot's district presidential results,
-  generic-ballot aggregates, Elections sources linked in the articles.
+  quality-weighted generic-ballot aggregates, Elections sources linked in the articles.
 - The forecast is a model, not a prophecy. The map is yours.
 - Sibling site: [600](https://anketdelisi.github.io/600/) — 43 country
   election models.

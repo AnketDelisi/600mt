@@ -148,6 +148,12 @@ ENV_WEIGHT = {"senate": 0.25, "house": 0.25, "governor": 0.25}
 # races WITHOUT a rating use PVI alone, which is a neutral-year lean — the full
 # generic-ballot environment applies to them.
 UNRATED_ENV_WEIGHT = {"senate": 1.0, "house": 1.0, "governor": 1.0}
+# Source-quality weights for the generic-ballot aggregator rows.
+GENERIC_BALLOT_WEIGHTS = {
+    "silver bulletin": 2.0,
+    "realclearpolitics": 1.5,
+    "fiftyplusone": 1.25,
+}
 # last-election result weight in the fundamentals; open seats (retiring /
 # term-limited / new) lose most of the incumbent's personal vote, so their
 # prior leans more on the structural PVI.
@@ -863,12 +869,28 @@ def _buckets(dist):
     return out
 
 
+def generic_ballot_margin(base):
+    """Quality-weighted mean of the generic-ballot aggregator rows."""
+    rows = []
+    for g in base.get("generic_ballot") or []:
+        name = (g.get("pollster") or "").lower()
+        if name == "average" or g.get("dem") is None or g.get("rep") is None:
+            continue
+        weight = 1.0
+        for key, value in GENERIC_BALLOT_WEIGHTS.items():
+            if key in name:
+                weight = value
+                break
+        rows.append((g["dem"] - g["rep"], weight))
+    if not rows:
+        return None
+    return round(sum(m * w for m, w in rows) / sum(w for _, w in rows), 1)
+
+
 def main():
     base = json.loads((OUTPUT_DIR / "races.json").read_text(encoding="utf-8"))
     polls = json.loads((OUTPUT_DIR / "polling.json").read_text(encoding="utf-8"))
-    gb = [g for g in base.get("generic_ballot") or []
-          if (g.get("pollster") or "").lower() != "average"]
-    env = round(sum(g["dem"] - g["rep"] for g in gb) / len(gb), 1) if gb else None
+    env = generic_ballot_margin(base)
 
     import datetime as _dt
     days = max(0.0, (_dt.date.fromisoformat(ELECTION)
@@ -891,6 +913,7 @@ def main():
             "election": ELECTION,
             "days_to_election": days,
             "generic_ballot_generic_margin": env,
+            "generic_ballot_method": "quality-weighted aggregator average",
             "n_sims": N_SIMS,
             "rating_margin_table": RATING_MARGIN,
             "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band, with the generic-ballot House vote bias corrected. Governor: 50/50 current/prior state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, one survey per pollster, an RV-to-LV shift, pollster ratings, house effects and an outlier guard.",
