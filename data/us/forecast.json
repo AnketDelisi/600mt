@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-10-21T10:37:18Z",
+  "generated": "2026-10-21T10:49:00Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 13,
@@ -15,7 +15,7 @@
       "tilt": 3.0,
       "tossup": 0.0
     },
-    "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band. Governor: PVI + last result + rating band. Polls rebuilt with recency/partisan weights and an outlier guard.",
+    "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band. Governor: state presidential lean + rating band + incumbency. Polls rebuilt with recency/partisan weights and an outlier guard.",
     "national_swing_sigma": 2.5,
     "state_swing_sigma": 3.5,
     "env_weights": {
@@ -13903,28 +13903,6 @@
   "governor": {
     "races": [
       {
-        "state": "Wyoming",
-        "district": "",
-        "incumbent": "Mark Gordon",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 31.0,
-        "dem_pct": 0.0,
-        "rep_pct": 100.0,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
         "state": "Maryland",
         "district": "",
         "incumbent": "Wes Moore",
@@ -13937,9 +13915,75 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 28.0,
+        "margin": 37.0,
         "dem_pct": 100.0,
         "rep_pct": 0.0,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
+        "state": "Idaho",
+        "district": "",
+        "incumbent": "Brad Little",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 32.9,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
+        "state": "Wyoming",
+        "district": "",
+        "incumbent": "Mark Gordon",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 32.9,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
+        "state": "Arkansas",
+        "district": "",
+        "incumbent": "Sarah Huckabee Sanders",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 31.3,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13959,9 +14003,31 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 25.6,
-        "dem_pct": 99.9,
-        "rep_pct": 0.1,
+        "margin": 31.1,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
+        "state": "South Dakota",
+        "district": "",
+        "incumbent": "Larry Rhoden",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 29.9,
+        "dem_pct": 0.0,
+        "rep_pct": 100.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13981,7 +14047,7 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 23.7,
+        "margin": 24.9,
         "dem_pct": 99.9,
         "rep_pct": 0.1,
         "ind_pct": 0.0,
@@ -14224,98 +14290,6 @@
         }
       },
       {
-        "state": "Arkansas",
-        "district": "",
-        "incumbent": "Sarah Huckabee Sanders",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 21.7,
-        "dem_pct": 0.2,
-        "rep_pct": 99.8,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Rhode Island",
-        "district": "",
-        "incumbent": "Dan McKee",
-        "party": "D",
-        "rating": "Solid D",
-        "ratings": {
-          "cook": "Solid D",
-          "ie": "Solid D",
-          "sabato": "Safe D"
-        },
-        "lean": "Solid D",
-        "leader": "D",
-        "margin": 20.9,
-        "dem_pct": 99.7,
-        "rep_pct": 0.0,
-        "ind_pct": 0.3,
-        "dem_name": "Helena Foulkes",
-        "rep_name": "Aaron Guckian",
-        "ind_name": "Ken Block",
-        "polls": {
-          "dem": 42.4,
-          "rep": 17.2,
-          "ind": 24.8,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 5,
-          "polls": [
-            {
-              "pollster": "Emerson College / WPRI-TV",
-              "dates": "October 8–11, 2026",
-              "dem": 44.0,
-              "rep": 10.0,
-              "ind": 35.0
-            },
-            {
-              "pollster": "Opinion Diagnostics",
-              "dates": "September 23–25, 2026",
-              "dem": 41.0,
-              "rep": 19.0,
-              "ind": 24.0
-            },
-            {
-              "pollster": "University of New Hampshire",
-              "dates": "September 17–21, 2026",
-              "dem": 44.0,
-              "rep": 17.0,
-              "ind": 25.0
-            },
-            {
-              "pollster": "Emerson College / WPRI-TV",
-              "dates": "August 21–22, 2026",
-              "dem": 45.0,
-              "rep": 18.0,
-              "ind": 21.0
-            },
-            {
-              "pollster": "University of New Hampshire",
-              "dates": "June 18–23, 2026",
-              "dem": 38.0,
-              "rep": 22.0,
-              "ind": 19.0
-            }
-          ],
-          "names": {
-            "d": "Helena Foulkes",
-            "r": "Aaron Guckian",
-            "i": "Ken Block"
-          }
-        }
-      },
-      {
         "state": "California",
         "district": "",
         "incumbent": "Gavin Newsom",
@@ -14328,9 +14302,9 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 20.4,
-        "dem_pct": 99.7,
-        "rep_pct": 0.3,
+        "margin": 22.5,
+        "dem_pct": 99.8,
+        "rep_pct": 0.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14421,9 +14395,9 @@
         }
       },
       {
-        "state": "South Dakota",
+        "state": "Alabama",
         "district": "",
-        "incumbent": "Larry Rhoden",
+        "incumbent": "Kay Ivey",
         "party": "R",
         "rating": "Solid R",
         "ratings": {
@@ -14433,14 +14407,116 @@
         },
         "lean": "Solid R",
         "leader": "R",
-        "margin": 20.3,
-        "dem_pct": 0.3,
-        "rep_pct": 99.7,
+        "margin": 21.1,
+        "dem_pct": 0.2,
+        "rep_pct": 99.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
         "ind_name": null,
-        "polls": null
+        "polls": {
+          "dem": 37.3,
+          "rep": 50.7,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 3,
+          "n_sponsored": 2,
+          "polls": [
+            {
+              "pollster": "RMG Research",
+              "dates": "September 21–25, 2026",
+              "partisan": "R",
+              "dem": 37.0,
+              "rep": 50.0
+            },
+            {
+              "pollster": "yes. every kid.",
+              "dates": "July 8–11, 2026",
+              "dem": 41.0,
+              "rep": 49.0
+            },
+            {
+              "pollster": "Cygnal",
+              "dates": "November 12–13, 2025",
+              "partisan": "R",
+              "dem": 34.0,
+              "rep": 53.0
+            }
+          ],
+          "names": {
+            "r": "Tommy Tuberville",
+            "d": "Doug Jones"
+          }
+        }
+      },
+      {
+        "state": "Rhode Island",
+        "district": "",
+        "incumbent": "Dan McKee",
+        "party": "D",
+        "rating": "Solid D",
+        "ratings": {
+          "cook": "Solid D",
+          "ie": "Solid D",
+          "sabato": "Safe D"
+        },
+        "lean": "Solid D",
+        "leader": "D",
+        "margin": 20.9,
+        "dem_pct": 99.7,
+        "rep_pct": 0.0,
+        "ind_pct": 0.3,
+        "dem_name": "Helena Foulkes",
+        "rep_name": "Aaron Guckian",
+        "ind_name": "Ken Block",
+        "polls": {
+          "dem": 42.4,
+          "rep": 17.2,
+          "ind": 24.8,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 5,
+          "polls": [
+            {
+              "pollster": "Emerson College / WPRI-TV",
+              "dates": "October 8–11, 2026",
+              "dem": 44.0,
+              "rep": 10.0,
+              "ind": 35.0
+            },
+            {
+              "pollster": "Opinion Diagnostics",
+              "dates": "September 23–25, 2026",
+              "dem": 41.0,
+              "rep": 19.0,
+              "ind": 24.0
+            },
+            {
+              "pollster": "University of New Hampshire",
+              "dates": "September 17–21, 2026",
+              "dem": 44.0,
+              "rep": 17.0,
+              "ind": 25.0
+            },
+            {
+              "pollster": "Emerson College / WPRI-TV",
+              "dates": "August 21–22, 2026",
+              "dem": 45.0,
+              "rep": 18.0,
+              "ind": 21.0
+            },
+            {
+              "pollster": "University of New Hampshire",
+              "dates": "June 18–23, 2026",
+              "dem": 38.0,
+              "rep": 22.0,
+              "ind": 19.0
+            }
+          ],
+          "names": {
+            "d": "Helena Foulkes",
+            "r": "Aaron Guckian",
+            "i": "Ken Block"
+          }
+        }
       },
       {
         "state": "Tennessee",
@@ -14510,21 +14586,21 @@
         }
       },
       {
-        "state": "Idaho",
+        "state": "Illinois",
         "district": "",
-        "incumbent": "Brad Little",
-        "party": "R",
-        "rating": "Solid R",
+        "incumbent": "JB Pritzker",
+        "party": "D",
+        "rating": "Solid D",
         "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
+          "cook": "Solid D",
+          "ie": "Solid D",
+          "sabato": "Safe D"
         },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 19.0,
-        "dem_pct": 0.4,
-        "rep_pct": 99.6,
+        "lean": "Solid D",
+        "leader": "D",
+        "margin": 18.4,
+        "dem_pct": 99.5,
+        "rep_pct": 0.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14544,9 +14620,9 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 17.2,
-        "dem_pct": 99.3,
-        "rep_pct": 0.7,
+        "margin": 17.6,
+        "dem_pct": 99.4,
+        "rep_pct": 0.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -14651,82 +14727,6 @@
         "rep_name": null,
         "ind_name": null,
         "polls": null
-      },
-      {
-        "state": "Illinois",
-        "district": "",
-        "incumbent": "JB Pritzker",
-        "party": "D",
-        "rating": "Solid D",
-        "ratings": {
-          "cook": "Solid D",
-          "ie": "Solid D",
-          "sabato": "Safe D"
-        },
-        "lean": "Solid D",
-        "leader": "D",
-        "margin": 17.1,
-        "dem_pct": 99.2,
-        "rep_pct": 0.8,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Alabama",
-        "district": "",
-        "incumbent": "Kay Ivey",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "lean": "Likely R",
-        "leader": "R",
-        "margin": 14.9,
-        "dem_pct": 1.4,
-        "rep_pct": 98.6,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 37.3,
-          "rep": 50.7,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 3,
-          "n_sponsored": 2,
-          "polls": [
-            {
-              "pollster": "RMG Research",
-              "dates": "September 21–25, 2026",
-              "partisan": "R",
-              "dem": 37.0,
-              "rep": 50.0
-            },
-            {
-              "pollster": "yes. every kid.",
-              "dates": "July 8–11, 2026",
-              "dem": 41.0,
-              "rep": 49.0
-            },
-            {
-              "pollster": "Cygnal",
-              "dates": "November 12–13, 2025",
-              "partisan": "R",
-              "dem": 34.0,
-              "rep": 53.0
-            }
-          ],
-          "names": {
-            "r": "Tommy Tuberville",
-            "d": "Doug Jones"
-          }
-        }
       },
       {
         "state": "Maine",
@@ -15084,9 +15084,9 @@
         },
         "lean": "Likely R",
         "leader": "R",
-        "margin": 12.5,
-        "dem_pct": 2.7,
-        "rep_pct": 97.3,
+        "margin": 12.9,
+        "dem_pct": 2.4,
+        "rep_pct": 97.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -15106,9 +15106,9 @@
         },
         "lean": "Likely R",
         "leader": "R",
-        "margin": 11.5,
-        "dem_pct": 3.6,
-        "rep_pct": 96.4,
+        "margin": 12.0,
+        "dem_pct": 3.2,
+        "rep_pct": 96.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -16059,6 +16059,83 @@
         }
       },
       {
+        "state": "Kansas",
+        "district": "",
+        "incumbent": "Laura Kelly",
+        "party": "D",
+        "rating": "Lean R",
+        "ratings": {
+          "cook": "Lean R(flip)",
+          "ie": "Tilt R(flip)",
+          "sabato": "Lean R(flip)"
+        },
+        "lean": "Lean R",
+        "leader": "R",
+        "margin": 5.6,
+        "dem_pct": 16.8,
+        "rep_pct": 83.2,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 44.5,
+          "rep": 49.8,
+          "source": "Aggregate (Wikipedia)",
+          "polls": [
+            {
+              "pollster": "YouGov",
+              "dates": "September 24 – October 4, 2026",
+              "dem": 44.0,
+              "rep": 47.0
+            },
+            {
+              "pollster": "New York Times / Siena University",
+              "dates": "September 22–30, 2026",
+              "dem": 44.0,
+              "rep": 49.0
+            },
+            {
+              "pollster": "Wedgewood Polls",
+              "dates": "September 22–24, 2026",
+              "dem": 48.0,
+              "rep": 52.0
+            },
+            {
+              "pollster": "Emerson College",
+              "dates": "September 15–16, 2026",
+              "dem": 44.0,
+              "rep": 51.0
+            },
+            {
+              "pollster": "Global Strategy Group",
+              "dates": "September 13–16, 2026",
+              "partisan": "D",
+              "dem": 49.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "co/efficient",
+              "dates": "September 8–10, 2026",
+              "partisan": "R",
+              "dem": 43.0,
+              "rep": 51.0
+            },
+            {
+              "pollster": "Global Strategy Group",
+              "dates": "August 13–16, 2026",
+              "partisan": "D",
+              "dem": 47.0,
+              "rep": 46.0
+            }
+          ],
+          "names": {
+            "d": "Cindy Holscher",
+            "r": "Ty Masterson"
+          }
+        }
+      },
+      {
         "state": "Florida",
         "district": "",
         "incumbent": "Ron DeSantis",
@@ -16265,134 +16342,6 @@
           "names": {
             "r": "Byron Donalds",
             "d": "David Jolly"
-          }
-        }
-      },
-      {
-        "state": "Kansas",
-        "district": "",
-        "incumbent": "Laura Kelly",
-        "party": "D",
-        "rating": "Lean R",
-        "ratings": {
-          "cook": "Lean R(flip)",
-          "ie": "Tilt R(flip)",
-          "sabato": "Lean R(flip)"
-        },
-        "lean": "Lean R",
-        "leader": "R",
-        "margin": 5.2,
-        "dem_pct": 18.3,
-        "rep_pct": 81.7,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 44.5,
-          "rep": 49.8,
-          "source": "Aggregate (Wikipedia)",
-          "polls": [
-            {
-              "pollster": "YouGov",
-              "dates": "September 24 – October 4, 2026",
-              "dem": 44.0,
-              "rep": 47.0
-            },
-            {
-              "pollster": "New York Times / Siena University",
-              "dates": "September 22–30, 2026",
-              "dem": 44.0,
-              "rep": 49.0
-            },
-            {
-              "pollster": "Wedgewood Polls",
-              "dates": "September 22–24, 2026",
-              "dem": 48.0,
-              "rep": 52.0
-            },
-            {
-              "pollster": "Emerson College",
-              "dates": "September 15–16, 2026",
-              "dem": 44.0,
-              "rep": 51.0
-            },
-            {
-              "pollster": "Global Strategy Group",
-              "dates": "September 13–16, 2026",
-              "partisan": "D",
-              "dem": 49.0,
-              "rep": 46.0
-            },
-            {
-              "pollster": "co/efficient",
-              "dates": "September 8–10, 2026",
-              "partisan": "R",
-              "dem": 43.0,
-              "rep": 51.0
-            },
-            {
-              "pollster": "Global Strategy Group",
-              "dates": "August 13–16, 2026",
-              "partisan": "D",
-              "dem": 47.0,
-              "rep": 46.0
-            }
-          ],
-          "names": {
-            "d": "Cindy Holscher",
-            "r": "Ty Masterson"
-          }
-        }
-      },
-      {
-        "state": "Vermont",
-        "district": "",
-        "incumbent": "Phil Scott",
-        "party": "R",
-        "rating": "Likely R",
-        "ratings": {
-          "cook": "Likely R",
-          "ie": "Likely R",
-          "sabato": "Likely R"
-        },
-        "lean": "Lean R",
-        "leader": "R",
-        "margin": 5.1,
-        "dem_pct": 18.9,
-        "rep_pct": 81.1,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 41.7,
-          "rep": 44.3,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 3,
-          "polls": [
-            {
-              "pollster": "State Navigate",
-              "dates": "October 2–4, 2026",
-              "dem": 43.0,
-              "rep": 46.0
-            },
-            {
-              "pollster": "University of New Hampshire",
-              "dates": "September 17–21, 2026",
-              "dem": 49.0,
-              "rep": 43.0
-            },
-            {
-              "pollster": "University of New Hampshire",
-              "dates": "July 15–20, 2026",
-              "dem": 33.0,
-              "rep": 44.0
-            }
-          ],
-          "names": {
-            "r": "Phil Scott",
-            "d": "Amanda Janoo"
           }
         }
       },
@@ -16726,6 +16675,57 @@
           "names": {
             "d": "David Crowley",
             "r": "Tom Tiffany"
+          }
+        }
+      },
+      {
+        "state": "Vermont",
+        "district": "",
+        "incumbent": "Phil Scott",
+        "party": "R",
+        "rating": "Likely R",
+        "ratings": {
+          "cook": "Likely R",
+          "ie": "Likely R",
+          "sabato": "Likely R"
+        },
+        "lean": "Lean R",
+        "leader": "R",
+        "margin": 3.1,
+        "dem_pct": 29.4,
+        "rep_pct": 70.6,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 41.7,
+          "rep": 44.3,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 3,
+          "polls": [
+            {
+              "pollster": "State Navigate",
+              "dates": "October 2–4, 2026",
+              "dem": 43.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "University of New Hampshire",
+              "dates": "September 17–21, 2026",
+              "dem": 49.0,
+              "rep": 43.0
+            },
+            {
+              "pollster": "University of New Hampshire",
+              "dates": "July 15–20, 2026",
+              "dem": 33.0,
+              "rep": 44.0
+            }
+          ],
+          "names": {
+            "r": "Phil Scott",
+            "d": "Amanda Janoo"
           }
         }
       },
@@ -17083,9 +17083,9 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 1.7,
-        "dem_pct": 38.4,
-        "rep_pct": 61.6,
+        "margin": 1.5,
+        "dem_pct": 39.6,
+        "rep_pct": 60.4,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -17204,6 +17204,86 @@
         }
       },
       {
+        "state": "Oregon",
+        "district": "",
+        "incumbent": "Tina Kotek",
+        "party": "D",
+        "rating": "Lean D",
+        "ratings": {
+          "cook": "Lean D",
+          "ie": "Lean D",
+          "sabato": "Lean D"
+        },
+        "lean": "Tossup",
+        "leader": "D",
+        "margin": 1.4,
+        "dem_pct": 60.2,
+        "rep_pct": 39.8,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 45.0,
+          "rep": 45.2,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 5,
+          "n_sponsored": 2,
+          "polls": [
+            {
+              "pollster": "GBAO",
+              "dates": "October 1–4, 2026",
+              "partisan": "D",
+              "dem": 46.0,
+              "rep": 42.0
+            },
+            {
+              "pollster": "DHM Research",
+              "dates": "September 24 – October 1, 2026",
+              "dem": 46.0,
+              "rep": 44.0
+            },
+            {
+              "pollster": "DHM Research",
+              "dates": "September 17–27, 2026",
+              "dem": 46.0,
+              "rep": 47.0
+            },
+            {
+              "pollster": "DHM Research",
+              "dates": "September 3–9, 2026",
+              "dem": 43.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "Public Opinion Strategies",
+              "dates": "June 22–24, 2026",
+              "partisan": "R",
+              "dem": 44.0,
+              "rep": 48.0
+            },
+            {
+              "pollster": "Hoffman Research Group",
+              "dates": "May 11–12, 2026",
+              "partisan": "R",
+              "dem": 45.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "FM3 Research",
+              "dates": "January 28 – February 4, 2026",
+              "partisan": "D",
+              "dem": 45.0,
+              "rep": 40.0
+            }
+          ],
+          "names": {
+            "d": "Tina Kotek",
+            "r": "Christine Drazan"
+          }
+        }
+      },
+      {
         "state": "Nevada",
         "district": "",
         "incumbent": "Joe Lombardo",
@@ -17216,9 +17296,9 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 0.9,
-        "dem_pct": 43.9,
-        "rep_pct": 56.1,
+        "margin": 1.1,
+        "dem_pct": 42.2,
+        "rep_pct": 57.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -17326,97 +17406,17 @@
             "d": "Aaron Ford"
           }
         }
-      },
-      {
-        "state": "Oregon",
-        "district": "",
-        "incumbent": "Tina Kotek",
-        "party": "D",
-        "rating": "Lean D",
-        "ratings": {
-          "cook": "Lean D",
-          "ie": "Lean D",
-          "sabato": "Lean D"
-        },
-        "lean": "Tossup",
-        "leader": "D",
-        "margin": 0.7,
-        "dem_pct": 55.3,
-        "rep_pct": 44.7,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 45.0,
-          "rep": 45.2,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 5,
-          "n_sponsored": 2,
-          "polls": [
-            {
-              "pollster": "GBAO",
-              "dates": "October 1–4, 2026",
-              "partisan": "D",
-              "dem": 46.0,
-              "rep": 42.0
-            },
-            {
-              "pollster": "DHM Research",
-              "dates": "September 24 – October 1, 2026",
-              "dem": 46.0,
-              "rep": 44.0
-            },
-            {
-              "pollster": "DHM Research",
-              "dates": "September 17–27, 2026",
-              "dem": 46.0,
-              "rep": 47.0
-            },
-            {
-              "pollster": "DHM Research",
-              "dates": "September 3–9, 2026",
-              "dem": 43.0,
-              "rep": 45.0
-            },
-            {
-              "pollster": "Public Opinion Strategies",
-              "dates": "June 22–24, 2026",
-              "partisan": "R",
-              "dem": 44.0,
-              "rep": 48.0
-            },
-            {
-              "pollster": "Hoffman Research Group",
-              "dates": "May 11–12, 2026",
-              "partisan": "R",
-              "dem": 45.0,
-              "rep": 45.0
-            },
-            {
-              "pollster": "FM3 Research",
-              "dates": "January 28 – February 4, 2026",
-              "partisan": "D",
-              "dem": 45.0,
-              "rep": 40.0
-            }
-          ],
-          "names": {
-            "d": "Tina Kotek",
-            "r": "Christine Drazan"
-          }
-        }
       }
     ],
-    "expected_d_seats": 20.2,
-    "expected_r_seats": 15.8,
+    "expected_d_seats": 20.3,
+    "expected_r_seats": 15.7,
     "expected_i_seats": 0.0,
     "majority": {
       "dem_pct": 0.0,
       "rep_pct": 0.0
     },
     "distribution_buckets": null,
-    "total_d_governors": 26.2,
-    "total_r_governors": 23.8
+    "total_d_governors": 26.3,
+    "total_r_governors": 23.7
   }
 }

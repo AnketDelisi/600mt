@@ -492,8 +492,8 @@ function render() {
       election, adjusted for the national environment (scaled by the state's
       historical elasticity), incumbency and trend. House races start from the
       district's last presidential margin (The Downballot, 2026 lines), the last
-      House result and the rating band. Governor races start from state PVI, the
-      last result and the rating band. Polls are rebuilt from the individual
+      House result and the rating band. Governor races start from the state's
+      last presidential lean, the rating band and incumbency. Polls are rebuilt from the individual
       surveys with recency and partisan weighting and an outlier guard, then
       blended. The simulation runs
       (${fmt(f.environment ? f.environment.n_sims : 20000)} nights, national swing &sigma; = ${fmt(f.environment ? f.environment.national_swing_sigma : 2.5)} pts${f.environment && f.environment.state_swing_sigma ? `, plus a correlated per-state deviation &sigma; = ${fmt(f.environment.state_swing_sigma)} pts` : ""}).
