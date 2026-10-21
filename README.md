@@ -8,8 +8,8 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
   state's presidential lean, the national environment (scaled by the state's
   historical elasticity), incumbency and trend; House races use the district's
   last presidential margin, the last House result and the rating band;
-  governors use the state's last presidential lean, the rating band and
-  incumbency. Polls are rebuilt from the individual surveys with
+  governors use a 50/50 current/prior state presidential lean, the rating
+  band and incumbency. Polls are rebuilt from the individual surveys with
   recency/partisan/sample-size/population weights, a per-firm flood cap,
   strong pollster house effects and an outlier guard, then blended, and a
   correlated national/region/state Monte Carlo with a cycle poll-bias term
@@ -76,9 +76,10 @@ python scraper/us_bt_governor_snapshot.py 2018 2020 2022 2024
 
 - The state-legislative lean, Silver/CCES elasticity and FEC fundraising
   inputs are built and tested but are not in the live model: none improved
-  the 2024 holdout consistently. The 2020 House mean remains an outlier, but
-  the 2.5-point cycle-bias sigma keeps all four House results inside the 90%
-  seat interval.
+  the 2024 holdout consistently. A Governor-only 50/50 current/prior
+  presidential lean did improve 2020/2022/2024 (2018 was 0.09 worse) and is
+  live. The 2020 House mean remains an outlier, but the 2.5-point cycle-bias
+  sigma keeps all four House results inside the 90% seat interval.
 - Sources: Wikipedia (2026 Senate / House / gubernatorial election and
   ratings articles), The Downballot's district presidential results,
   generic-ballot aggregates, Elections sources linked in the articles.

@@ -104,6 +104,7 @@ else:
 REGION_SIGMA = float(_sw.get("region_sigma", 2.3))
 STATE_SIGMA = math.sqrt(max(0.0, TOTAL_STATE_SIGMA ** 2 - REGION_SIGMA ** 2))
 STATE_LEAN_YEAR = "2024"
+GOVERNOR_LEAN_PRIOR_WEIGHT = 0.5
 STATE_ENV_WEIGHT = {"senate": 0.8, "governor": 0.25, "house": 0.25}
 PRES_PATH = OUTPUT_DIR / "pres_by_cd.json"
 PRES_BY_CD = (json.loads(PRES_PATH.read_text(encoding="utf-8"))
@@ -337,14 +338,27 @@ def state_swing(race):
     return STATE_SWING.get((race.get("state") or "").replace("_", " ")) or {}
 
 
-def state_lean(race, lean_year=None):
-    """State presidential lean vs the nation in the last presidential race."""
+def state_lean(race, lean_year=None, prior_weight=0.0):
+    """State presidential lean vs the nation in the last presidential race.
+
+    Governors optionally blend in the prior presidential lean; their races are
+    more candidate-specific and the 50/50 blend improved the 2020/2022/2024
+    governor backtest (2018 was 0.09 worse).
+    """
     st = state_swing(race)
     year = lean_year or STATE_LEAN_YEAR
     pres = (st.get("margins") or {}).get(year)
     nat = SWING_NATIONAL.get(year)
     if pres is not None and nat is not None:
-        return pres - nat
+        lean = pres - nat
+        if prior_weight:
+            prior_year = str(int(year) - 4)
+            prior = (st.get("margins") or {}).get(prior_year)
+            prior_nat = SWING_NATIONAL.get(prior_year)
+            if prior is not None and prior_nat is not None:
+                lean = ((1.0 - prior_weight) * lean
+                        + prior_weight * (prior - prior_nat))
+        return lean
     return pvi_margin(race.get("pvi") or 0.0)
 
 
@@ -504,7 +518,7 @@ def structural_margin(race, chamber, env, polls, lean_year=None):
         # rating band (and the incumbency term for unpolled races): ratings
         # and candidate quality still matter a lot here. The 2022/2024
         # backtest improved the margin MAE from 11.3/14.6 to 8.3/12.0.
-        rm = state_lean(race, lean_year)
+        rm = state_lean(race, lean_year, GOVERNOR_LEAN_PRIOR_WEIGHT)
         if polls is None:
             rm += incumbency_adj(race)
         band = consensus_band(race.get("ratings"))
@@ -843,7 +857,7 @@ def main():
             "generic_ballot_generic_margin": env,
             "n_sims": N_SIMS,
             "rating_margin_table": RATING_MARGIN,
-            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band. Governor: state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, house effects and an outlier guard.",
+            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band. Governor: 50/50 current/prior state presidential lean + rating band + incumbency. Polls rebuilt from individual surveys with recency, partisan, sample-size and population weights, a firm cap, house effects and an outlier guard.",
             "national_swing_sigma": NATIONAL_SIGMA,
             "poll_bias_sigma": POLL_BIAS_SIGMA,
             "region_swing_sigma": round(REGION_SIGMA, 2),
