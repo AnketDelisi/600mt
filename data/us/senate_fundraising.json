@@ -1,0 +1,2986 @@
+{
+ "source": "FEC bulk weball<cycle>.zip (candidate financial summaries)",
+ "method": "highest-receipts Democrat and Republican per state/cycle",
+ "cycles": {
+  "2018": {
+   "Iowa": {
+    "REP": {
+     "name": "YOUNG, DAVID",
+     "receipts": 2842345.87,
+     "candidate_id": "S4IA00103"
+    },
+    "DEM": {
+     "name": "FIEGEN, THOMAS L",
+     "receipts": 847.0,
+     "candidate_id": "S0IA00119"
+    }
+   },
+   "Alaska": {
+    "REP": {
+     "name": "SULLIVAN, DAN",
+     "receipts": 1332146.29,
+     "candidate_id": "S4AK00214"
+    }
+   },
+   "Alabama": {
+    "DEM": {
+     "name": "JONES, DOUG",
+     "receipts": 25688282.13,
+     "candidate_id": "S0AL00156"
+    },
+    "REP": {
+     "name": "STRANGE, LUTHER J III",
+     "receipts": 5492899.0,
+     "candidate_id": "S8AL00308"
+    }
+   },
+   "Arkansas": {
+    "REP": {
+     "name": "COTTON, THOMAS",
+     "receipts": 2678691.66,
+     "candidate_id": "S4AR00103"
+    }
+   },
+   "Arizona": {
+    "DEM": {
+     "name": "SINEMA, KYRSTEN",
+     "receipts": 22643275.25,
+     "candidate_id": "S8AZ00197"
+    },
+    "REP": {
+     "name": "MCSALLY, MARTHA",
+     "receipts": 21876369.89,
+     "candidate_id": "S8AZ00221"
+    }
+   },
+   "California": {
+    "DEM": {
+     "name": "FEINSTEIN, DIANNE",
+     "receipts": 18618681.59,
+     "candidate_id": "S0CA00199"
+    },
+    "REP": {
+     "name": "DE LA FUENTE, ROQUE ROCKY",
+     "receipts": 1410760.98,
+     "candidate_id": "S8CA00598"
+    }
+   },
+   "Colorado": {
+    "DEM": {
+     "name": "BENNET, MICHAEL F",
+     "receipts": 775877.14,
+     "candidate_id": "S0CO00211"
+    },
+    "REP": {
+     "name": "GARDNER, CORY",
+     "receipts": 1925424.27,
+     "candidate_id": "S4CO00395"
+    }
+   },
+   "Connecticut": {
+    "DEM": {
+     "name": "MURPHY, CHRISTOPHER S MR",
+     "receipts": 12522264.41,
+     "candidate_id": "S2CT00132"
+    },
+    "REP": {
+     "name": "RAPINI, DOMINIC",
+     "receipts": 198123.57,
+     "candidate_id": "S8CT00113"
+    }
+   },
+   "Delaware": {
+    "DEM": {
+     "name": "CARPER, THOMAS R",
+     "receipts": 3236955.45,
+     "candidate_id": "S8DE00079"
+    },
+    "REP": {
+     "name": "BOYCE, HENRY CHARLES  \"CHUCK\"  JR",
+     "receipts": 381647.0,
+     "candidate_id": "S8DE00103"
+    }
+   },
+   "Florida": {
+    "DEM": {
+     "name": "NELSON, BILL",
+     "receipts": 32401758.29,
+     "candidate_id": "S8FL00166"
+    },
+    "REP": {
+     "name": "SCOTT, RICK GOV",
+     "receipts": 85231716.47,
+     "candidate_id": "S8FL00273"
+    }
+   },
+   "Georgia": {
+    "DEM": {
+     "name": "BARKSDALE, JAMES FREEMAN",
+     "receipts": 19115.0,
+     "candidate_id": "S6GA00200"
+    },
+    "REP": {
+     "name": "PERDUE, DAVID",
+     "receipts": 2500726.78,
+     "candidate_id": "S4GA11285"
+    }
+   },
+   "Hawaii": {
+    "DEM": {
+     "name": "HIRONO, MAZIE K",
+     "receipts": 3275240.47,
+     "candidate_id": "S2HI00106"
+    },
+    "REP": {
+     "name": "CURTIS , RON",
+     "receipts": 19925.0,
+     "candidate_id": "S8HI00210"
+    }
+   },
+   "Idaho": {
+    "REP": {
+     "name": "CRAPO, MICHAEL D",
+     "receipts": 1777035.04,
+     "candidate_id": "S8ID00027"
+    }
+   },
+   "Illinois": {
+    "DEM": {
+     "name": "DUCKWORTH, L TAMMY",
+     "receipts": 2250456.91,
+     "candidate_id": "S6IL00292"
+    },
+    "REP": {
+     "name": "MARTER, JAMES THOMAS",
+     "receipts": 290.0,
+     "candidate_id": "S6IL00334"
+    }
+   },
+   "Indiana": {
+    "DEM": {
+     "name": "DONNELLY, JOSEPH S",
+     "receipts": 14585917.72,
+     "candidate_id": "S2IN00091"
+    },
+    "REP": {
+     "name": "BRAUN, MIKE",
+     "receipts": 19759939.59,
+     "candidate_id": "S8IN00171"
+    }
+   },
+   "Kansas": {
+    "DEM": {
+     "name": "ADAMS, ELLIOTT",
+     "receipts": 1234.2,
+     "candidate_id": "S0KS00190"
+    },
+    "REP": {
+     "name": "MORAN, JERRY",
+     "receipts": 718688.49,
+     "candidate_id": "S0KS00091"
+    }
+   },
+   "Kentucky": {
+    "DEM": {
+     "name": "GRAY, JIM P",
+     "receipts": 65981.0,
+     "candidate_id": "S6KY00120"
+    },
+    "REP": {
+     "name": "MCCONNELL, MITCH",
+     "receipts": 3703218.82,
+     "candidate_id": "S2KY00012"
+    }
+   },
+   "Louisiana": {
+    "DEM": {
+     "name": "CAMPBELL, FOSTER LONNNIE II",
+     "receipts": 110426.0,
+     "candidate_id": "S6LA00359"
+    },
+    "REP": {
+     "name": "KENNEDY, JOHN NEELY",
+     "receipts": 2941943.14,
+     "candidate_id": "S4LA00065"
+    }
+   },
+   "Massachusetts": {
+    "DEM": {
+     "name": "WARREN, ELIZABETH",
+     "receipts": 25825246.34,
+     "candidate_id": "S2MA00170"
+    },
+    "REP": {
+     "name": "KINGSTON, JOHN MR",
+     "receipts": 6759223.51,
+     "candidate_id": "S8MA00318"
+    }
+   },
+   "Maryland": {
+    "DEM": {
+     "name": "CARDIN, BENJAMIN L",
+     "receipts": 4067153.24,
+     "candidate_id": "S6MD03177"
+    },
+    "REP": {
+     "name": "CAMPBELL, ANTONO WADE",
+     "receipts": 197638.11,
+     "candidate_id": "S8MD00328"
+    }
+   },
+   "Maine": {
+    "DEM": {
+     "name": "RINGELSTEIN, ZACKARY (ZAK)",
+     "receipts": 390114.5,
+     "candidate_id": "S8ME00155"
+    },
+    "REP": {
+     "name": "POLIQUIN, BRUCE L",
+     "receipts": 4233235.05,
+     "candidate_id": "S2ME00158"
+    }
+   },
+   "Michigan": {
+    "DEM": {
+     "name": "STABENOW, DEBBIE",
+     "receipts": 13467045.34,
+     "candidate_id": "S8MI00281"
+    },
+    "REP": {
+     "name": "JAMES, JOHN",
+     "receipts": 12551466.52,
+     "candidate_id": "S8MI00372"
+    }
+   },
+   "Minnesota": {
+    "DEM": {
+     "name": "SMITH, TINA",
+     "receipts": 9221473.92,
+     "candidate_id": "S8MN00578"
+    },
+    "REP": {
+     "name": "HOUSLEY, KARIN",
+     "receipts": 4697809.09,
+     "candidate_id": "S8MN00586"
+    }
+   },
+   "Missouri": {
+    "DEM": {
+     "name": "MCCASKILL, CLAIRE",
+     "receipts": 37714657.65,
+     "candidate_id": "S6MO00305"
+    },
+    "REP": {
+     "name": "HAWLEY, JOSHUA DAVID",
+     "receipts": 11946032.34,
+     "candidate_id": "S8MO00160"
+    }
+   },
+   "Mississippi": {
+    "DEM": {
+     "name": "ESPY, MICHAEL",
+     "receipts": 7488521.96,
+     "candidate_id": "S8MS00287"
+    },
+    "REP": {
+     "name": "WICKER, ROGER F",
+     "receipts": 6113589.06,
+     "candidate_id": "S8MS00196"
+    }
+   },
+   "Montana": {
+    "DEM": {
+     "name": "TESTER, JON",
+     "receipts": 18686615.43,
+     "candidate_id": "S6MT00162"
+    },
+    "REP": {
+     "name": "ROSENDALE, MATT",
+     "receipts": 5994022.92,
+     "candidate_id": "S8MT00234"
+    }
+   },
+   "North Carolina": {
+    "DEM": {
+     "name": "ROSS, DEBORAH K",
+     "receipts": 154470.73,
+     "candidate_id": "S6NC00266"
+    },
+    "REP": {
+     "name": "TILLIS, THOM R",
+     "receipts": 2389872.26,
+     "candidate_id": "S4NC00162"
+    }
+   },
+   "North Dakota": {
+    "DEM": {
+     "name": "HEITKAMP, HEIDI",
+     "receipts": 29525599.65,
+     "candidate_id": "S2ND00099"
+    },
+    "REP": {
+     "name": "CRAMER, KEVIN MR.",
+     "receipts": 6031115.66,
+     "candidate_id": "S8ND00120"
+    }
+   },
+   "Nebraska": {
+    "DEM": {
+     "name": "RAYBOULD, JANE",
+     "receipts": 2106074.58,
+     "candidate_id": "S8NE00182"
+    },
+    "REP": {
+     "name": "FISCHER, DEBRA S",
+     "receipts": 4508637.55,
+     "candidate_id": "S2NE00094"
+    }
+   },
+   "New Hampshire": {
+    "DEM": {
+     "name": "HASSAN, MARGARET WOOD",
+     "receipts": 1285289.17,
+     "candidate_id": "S6NH00091"
+    },
+    "REP": {
+     "name": "AYOTTE, KELLY A",
+     "receipts": 62422.0,
+     "candidate_id": "S0NH00235"
+    }
+   },
+   "New Jersey": {
+    "DEM": {
+     "name": "MENENDEZ, ROBERT",
+     "receipts": 9579191.36,
+     "candidate_id": "S6NJ00289"
+    },
+    "REP": {
+     "name": "HUGIN, ROBERT",
+     "receipts": 39236111.14,
+     "candidate_id": "S8NJ00509"
+    }
+   },
+   "New Mexico": {
+    "DEM": {
+     "name": "HEINRICH, MARTIN TREVOR",
+     "receipts": 6377069.86,
+     "candidate_id": "S2NM00088"
+    },
+    "REP": {
+     "name": "RICH, MICK",
+     "receipts": 968899.39,
+     "candidate_id": "S8NM00200"
+    }
+   },
+   "Nevada": {
+    "DEM": {
+     "name": "ROSEN, JACKY",
+     "receipts": 26242152.35,
+     "candidate_id": "S8NV00156"
+    },
+    "REP": {
+     "name": "HELLER, DEAN",
+     "receipts": 12888327.96,
+     "candidate_id": "S2NV00183"
+    }
+   },
+   "New York": {
+    "DEM": {
+     "name": "GILLIBRAND, KIRSTEN ELIZABETH",
+     "receipts": 17940045.06,
+     "candidate_id": "S0NY00410"
+    },
+    "REP": {
+     "name": "FARLEY, CHELE CHIAVACCI",
+     "receipts": 1400439.99,
+     "candidate_id": "S8NY00215"
+    }
+   },
+   "Ohio": {
+    "DEM": {
+     "name": "BROWN, SHERROD",
+     "receipts": 22766559.45,
+     "candidate_id": "S6OH00163"
+    },
+    "REP": {
+     "name": "RENACCI, JAMES B.",
+     "receipts": 12061786.51,
+     "candidate_id": "S8OH00102"
+    }
+   },
+   "Oklahoma": {
+    "DEM": {
+     "name": "JOHNSON, CONSTANCE NEVLIN",
+     "receipts": 4763.0,
+     "candidate_id": "S4OK00307"
+    },
+    "REP": {
+     "name": "INHOFE, JAMES M",
+     "receipts": 837090.89,
+     "candidate_id": "S4OK00083"
+    }
+   },
+   "Oregon": {
+    "DEM": {
+     "name": "MERKLEY, JEFFREY ALAN",
+     "receipts": 3824786.98,
+     "candidate_id": "S8OR00207"
+    },
+    "REP": {
+     "name": "CALLAHAN, MARK ALLEN",
+     "receipts": 0.0,
+     "candidate_id": "S4OR00172"
+    }
+   },
+   "Pennsylvania": {
+    "DEM": {
+     "name": "CASEY, ROBERT P JR",
+     "receipts": 17816254.19,
+     "candidate_id": "S6PA00217"
+    },
+    "REP": {
+     "name": "BARLETTA, LOU",
+     "receipts": 7407078.74,
+     "candidate_id": "S8PA00320"
+    }
+   },
+   "Rhode Island": {
+    "DEM": {
+     "name": "WHITEHOUSE, SHELDON II",
+     "receipts": 5190199.3,
+     "candidate_id": "S6RI00221"
+    },
+    "REP": {
+     "name": "FLANDERS, ROBERT MR",
+     "receipts": 1211499.82,
+     "candidate_id": "S8RI00128"
+    }
+   },
+   "South Carolina": {
+    "DEM": {
+     "name": "DIXON, THOMAS ALAN",
+     "receipts": 0.06,
+     "candidate_id": "S6SC04148"
+    },
+    "REP": {
+     "name": "GRAHAM, LINDSEY O",
+     "receipts": 3978947.72,
+     "candidate_id": "S0SC00149"
+    }
+   },
+   "South Dakota": {
+    "DEM": {
+     "name": "JOHNSON, TIM",
+     "receipts": 7764.29,
+     "candidate_id": "S6SD00051"
+    },
+    "REP": {
+     "name": "THUNE, JOHN",
+     "receipts": 2540817.36,
+     "candidate_id": "S2SD00068"
+    }
+   },
+   "Tennessee": {
+    "DEM": {
+     "name": "BREDESEN, PHILIP",
+     "receipts": 19621771.52,
+     "candidate_id": "S8TN00386"
+    },
+    "REP": {
+     "name": "BLACKBURN, MARSHA MRS.",
+     "receipts": 14634619.97,
+     "candidate_id": "S8TN00337"
+    }
+   },
+   "Texas": {
+    "DEM": {
+     "name": "O'ROURKE, ROBERT (BETO)",
+     "receipts": 80344836.34,
+     "candidate_id": "S8TX00285"
+    },
+    "REP": {
+     "name": "CRUZ, RAFAEL EDWARD  TED",
+     "receipts": 35409076.68,
+     "candidate_id": "S2TX00312"
+    }
+   },
+   "Utah": {
+    "DEM": {
+     "name": "WILSON, JENNY",
+     "receipts": 960796.1,
+     "candidate_id": "S8UT00143"
+    },
+    "REP": {
+     "name": "ROMNEY, MITT WILLARD MR",
+     "receipts": 5552040.26,
+     "candidate_id": "S8UT00176"
+    }
+   },
+   "Virginia": {
+    "DEM": {
+     "name": "KAINE, TIMOTHY MICHAEL",
+     "receipts": 16943971.83,
+     "candidate_id": "S2VA00142"
+    },
+    "REP": {
+     "name": "STEWART, COREY ALAN",
+     "receipts": 2814961.24,
+     "candidate_id": "S8VA00297"
+    }
+   },
+   "Vermont": {
+    "DEM": {
+     "name": "LEAHY, PATRICK J",
+     "receipts": 462076.85,
+     "candidate_id": "S4VT00017"
+    },
+    "REP": {
+     "name": "ZUPAN, LAWRENCE",
+     "receipts": 168278.39,
+     "candidate_id": "S8VT00141"
+    }
+   },
+   "Washington": {
+    "DEM": {
+     "name": "CANTWELL, MARIA",
+     "receipts": 9399420.74,
+     "candidate_id": "S8WA00194"
+    },
+    "REP": {
+     "name": "HUTCHISON, SUSAN",
+     "receipts": 1933255.94,
+     "candidate_id": "S8WA00319"
+    }
+   },
+   "Wisconsin": {
+    "DEM": {
+     "name": "BALDWIN, TAMMY",
+     "receipts": 27758852.65,
+     "candidate_id": "S2WI00219"
+    },
+    "REP": {
+     "name": "VUKMIR, LEAH",
+     "receipts": 5852699.03,
+     "candidate_id": "S8WI00224"
+    }
+   },
+   "West Virginia": {
+    "DEM": {
+     "name": "MANCHIN III, JOE",
+     "receipts": 8420591.86,
+     "candidate_id": "S0WV00090"
+    },
+    "REP": {
+     "name": "MORRISEY, PATRICK MR",
+     "receipts": 6200876.51,
+     "candidate_id": "S8WV00143"
+    }
+   },
+   "Wyoming": {
+    "DEM": {
+     "name": "TRAUNER, GARY",
+     "receipts": 910722.7,
+     "candidate_id": "S8WY00189"
+    },
+    "REP": {
+     "name": "BARRASSO, JOHN A",
+     "receipts": 5667279.48,
+     "candidate_id": "S6WY00068"
+    }
+   }
+  },
+  "2020": {
+   "Iowa": {
+    "REP": {
+     "name": "ERNST, JONI K",
+     "receipts": 27693029.26,
+     "candidate_id": "S4IA00129"
+    },
+    "DEM": {
+     "name": "GREENFIELD, THERESA",
+     "receipts": 56358302.21,
+     "candidate_id": "S0IA00176"
+    }
+   },
+   "Alaska": {
+    "REP": {
+     "name": "SULLIVAN, DAN",
+     "receipts": 8978098.94,
+     "candidate_id": "S4AK00214"
+    }
+   },
+   "Alabama": {
+    "DEM": {
+     "name": "JONES, DOUG",
+     "receipts": 31053566.07,
+     "candidate_id": "S0AL00156"
+    },
+    "REP": {
+     "name": "TUBERVILLE, THOMAS H",
+     "receipts": 9605815.13,
+     "candidate_id": "S0AL00230"
+    }
+   },
+   "Arkansas": {
+    "DEM": {
+     "name": "MAHONY, JOSHUA MR.",
+     "receipts": 372735.13,
+     "candidate_id": "S0AR00200"
+    },
+    "REP": {
+     "name": "COTTON, THOMAS",
+     "receipts": 9141301.91,
+     "candidate_id": "S4AR00103"
+    }
+   },
+   "Arizona": {
+    "DEM": {
+     "name": "KELLY, MARK",
+     "receipts": 101106583.88,
+     "candidate_id": "S0AZ00350"
+    },
+    "REP": {
+     "name": "MCSALLY, MARTHA",
+     "receipts": 73553299.4,
+     "candidate_id": "S8AZ00221"
+    }
+   },
+   "California": {
+    "DEM": {
+     "name": "HARRIS, KAMALA D",
+     "receipts": 521161.53,
+     "candidate_id": "S6CA00584"
+    },
+    "REP": {
+     "name": "DE LA FUENTE, ROQUE ROCKY",
+     "receipts": 14267716.1,
+     "candidate_id": "S8CA00598"
+    }
+   },
+   "Colorado": {
+    "DEM": {
+     "name": "HICKENLOOPER, JOHN W.",
+     "receipts": 44246118.41,
+     "candidate_id": "S0CO00575"
+    },
+    "REP": {
+     "name": "GARDNER, CORY",
+     "receipts": 26161851.26,
+     "candidate_id": "S4CO00395"
+    }
+   },
+   "Connecticut": {
+    "DEM": {
+     "name": "MURPHY, CHRISTOPHER S",
+     "receipts": 1671376.73,
+     "candidate_id": "S2CT00132"
+    },
+    "REP": {
+     "name": "FLYNN, JOHN J",
+     "receipts": 13360.11,
+     "candidate_id": "S2CT00264"
+    }
+   },
+   "Delaware": {
+    "DEM": {
+     "name": "COONS, CHRISTOPHER A.",
+     "receipts": 6081414.85,
+     "candidate_id": "S0DE00092"
+    },
+    "REP": {
+     "name": "WITZKE, LAUREN ELENA",
+     "receipts": 479515.11,
+     "candidate_id": "S0DE00183"
+    }
+   },
+   "Florida": {
+    "DEM": {
+     "name": "NELSON, BILL",
+     "receipts": 722904.95,
+     "candidate_id": "S8FL00166"
+    },
+    "REP": {
+     "name": "RUBIO, MARCO",
+     "receipts": 4653132.95,
+     "candidate_id": "S0FL00338"
+    }
+   },
+   "Georgia": {
+    "DEM": {
+     "name": "OSSOFF, T. JONATHAN",
+     "receipts": 156146537.53,
+     "candidate_id": "S8GA00180"
+    },
+    "REP": {
+     "name": "PERDUE, DAVID",
+     "receipts": 99202974.13,
+     "candidate_id": "S4GA11285"
+    }
+   },
+   "Hawaii": {
+    "DEM": {
+     "name": "SCHATZ, BRIAN",
+     "receipts": 1188435.33,
+     "candidate_id": "S4HI00136"
+    }
+   },
+   "Idaho": {
+    "DEM": {
+     "name": "JORDAN, PAULETTE",
+     "receipts": 1124856.87,
+     "candidate_id": "S0ID00180"
+    },
+    "REP": {
+     "name": "RISCH, JAMES E",
+     "receipts": 2937292.77,
+     "candidate_id": "S8ID00092"
+    }
+   },
+   "Illinois": {
+    "DEM": {
+     "name": "DURBIN, RICHARD J.",
+     "receipts": 7326799.36,
+     "candidate_id": "S6IL00151"
+    },
+    "REP": {
+     "name": "OBERWEIS, JAMES D \"JIM\"",
+     "receipts": 3260718.65,
+     "candidate_id": "S2IL00119"
+    }
+   },
+   "Indiana": {
+    "DEM": {
+     "name": "DONNELLY, JOSEPH S",
+     "receipts": 226032.09,
+     "candidate_id": "S2IN00091"
+    },
+    "REP": {
+     "name": "YOUNG, TODD CHRISTOPHER",
+     "receipts": 3293430.51,
+     "candidate_id": "S6IN00191"
+    }
+   },
+   "Kansas": {
+    "DEM": {
+     "name": "BOLLIER, BARBARA",
+     "receipts": 29004665.0,
+     "candidate_id": "S0KS00323"
+    },
+    "REP": {
+     "name": "MARSHALL, ROGER W",
+     "receipts": 6772872.34,
+     "candidate_id": "S0KS00315"
+    }
+   },
+   "Kentucky": {
+    "DEM": {
+     "name": "MCGRATH, AMY",
+     "receipts": 96331682.31,
+     "candidate_id": "S0KY00339"
+    },
+    "REP": {
+     "name": "MCCONNELL, MITCH",
+     "receipts": 68094902.86,
+     "candidate_id": "S2KY00012"
+    }
+   },
+   "Louisiana": {
+    "DEM": {
+     "name": "PERKINS, ADRIAN",
+     "receipts": 2806583.4,
+     "candidate_id": "S0LA00386"
+    },
+    "REP": {
+     "name": "CASSIDY, WILLIAM M.",
+     "receipts": 7447725.9,
+     "candidate_id": "S4LA00107"
+    }
+   },
+   "Massachusetts": {
+    "DEM": {
+     "name": "MARKEY, EDWARD J. SEN.",
+     "receipts": 11823465.97,
+     "candidate_id": "S4MA00028"
+    },
+    "REP": {
+     "name": "AYYADURAI, SHIVA DR",
+     "receipts": 1811516.85,
+     "candidate_id": "S8MA00268"
+    }
+   },
+   "Maryland": {
+    "DEM": {
+     "name": "VAN HOLLEN, CHRIS",
+     "receipts": 1649167.09,
+     "candidate_id": "S6MD03441"
+    },
+    "REP": {
+     "name": "HOWARD, ALBERT BINYAHMIN",
+     "receipts": 0.0,
+     "candidate_id": "S8MD00310"
+    }
+   },
+   "Maine": {
+    "DEM": {
+     "name": "GIDEON, SARA",
+     "receipts": 75629137.16,
+     "candidate_id": "S0ME00111"
+    },
+    "REP": {
+     "name": "COLLINS, SUSAN M.",
+     "receipts": 27867541.38,
+     "candidate_id": "S6ME00159"
+    }
+   },
+   "Michigan": {
+    "DEM": {
+     "name": "PETERS, GARY",
+     "receipts": 50113274.67,
+     "candidate_id": "S4MI00355"
+    },
+    "REP": {
+     "name": "JAMES, JOHN",
+     "receipts": 48764414.44,
+     "candidate_id": "S8MI00372"
+    }
+   },
+   "Minnesota": {
+    "DEM": {
+     "name": "SMITH, TINA",
+     "receipts": 16468404.53,
+     "candidate_id": "S8MN00578"
+    },
+    "REP": {
+     "name": "LEWIS, JASON",
+     "receipts": 7091526.74,
+     "candidate_id": "S0MN00328"
+    }
+   },
+   "Missouri": {
+    "REP": {
+     "name": "HAWLEY, JOSHUA DAVID",
+     "receipts": 2182461.6,
+     "candidate_id": "S8MO00160"
+    }
+   },
+   "Mississippi": {
+    "DEM": {
+     "name": "ESPY, MICHAEL",
+     "receipts": 12320919.34,
+     "candidate_id": "S8MS00287"
+    },
+    "REP": {
+     "name": "HYDE-SMITH, CINDY",
+     "receipts": 3407099.27,
+     "candidate_id": "S8MS00261"
+    }
+   },
+   "Montana": {
+    "DEM": {
+     "name": "BULLOCK, STEVE",
+     "receipts": 49522119.85,
+     "candidate_id": "S0MT00173"
+    },
+    "REP": {
+     "name": "DAINES, STEVE",
+     "receipts": 31883793.77,
+     "candidate_id": "S2MT00096"
+    }
+   },
+   "North Carolina": {
+    "DEM": {
+     "name": "CUNNINGHAM, CAL",
+     "receipts": 52569133.75,
+     "candidate_id": "S0NC00202"
+    },
+    "REP": {
+     "name": "TILLIS, THOM R. SEN.",
+     "receipts": 23280646.68,
+     "candidate_id": "S4NC00162"
+    }
+   },
+   "North Dakota": {
+    "DEM": {
+     "name": "HEITKAMP, HEIDI",
+     "receipts": 230624.71,
+     "candidate_id": "S2ND00099"
+    },
+    "REP": {
+     "name": "HOEVEN, JOHN",
+     "receipts": 745918.47,
+     "candidate_id": "S0ND00093"
+    }
+   },
+   "Nebraska": {
+    "DEM": {
+     "name": "JANICEK, CHRIS EDWARD MR",
+     "receipts": 159630.3,
+     "candidate_id": "S8NE00216"
+    },
+    "REP": {
+     "name": "SASSE, BENJAMIN E",
+     "receipts": 4530024.67,
+     "candidate_id": "S4NE00090"
+    }
+   },
+   "New Hampshire": {
+    "DEM": {
+     "name": "SHAHEEN, JEANNE",
+     "receipts": 18172382.69,
+     "candidate_id": "S0NH00219"
+    },
+    "REP": {
+     "name": "MESSNER, BRYANT 'CORKY' S.",
+     "receipts": 7150052.78,
+     "candidate_id": "S0NH00334"
+    }
+   },
+   "New Jersey": {
+    "DEM": {
+     "name": "BOOKER, CORY A.",
+     "receipts": 8290750.95,
+     "candidate_id": "S4NJ00185"
+    },
+    "REP": {
+     "name": "SINGH, HIRSH V",
+     "receipts": 694015.88,
+     "candidate_id": "S0NJ00191"
+    }
+   },
+   "New Mexico": {
+    "DEM": {
+     "name": "LUJAN, BEN RAY",
+     "receipts": 9295577.6,
+     "candidate_id": "S0NM00058"
+    },
+    "REP": {
+     "name": "RONCHETTI, MARK V.",
+     "receipts": 3977162.91,
+     "candidate_id": "S0NM00124"
+    }
+   },
+   "Nevada": {
+    "DEM": {
+     "name": "CORTEZ MASTO, CATHERINE",
+     "receipts": 4036581.99,
+     "candidate_id": "S6NV00200"
+    },
+    "REP": {
+     "name": "HELLER, DEAN",
+     "receipts": 271371.29,
+     "candidate_id": "S2NV00183"
+    }
+   },
+   "New York": {
+    "DEM": {
+     "name": "SCHUMER, CHARLES E",
+     "receipts": 3007905.44,
+     "candidate_id": "S8NY00082"
+    },
+    "REP": {
+     "name": "FARLEY, CHELE CHIAVACCI",
+     "receipts": 7.66,
+     "candidate_id": "S8NY00215"
+    }
+   },
+   "Ohio": {
+    "DEM": {
+     "name": "BROWN, SHERROD",
+     "receipts": 2479979.82,
+     "candidate_id": "S6OH00163"
+    },
+    "REP": {
+     "name": "PORTMAN, ROB THE HONORA",
+     "receipts": 4285422.07,
+     "candidate_id": "S0OH00133"
+    }
+   },
+   "Oklahoma": {
+    "DEM": {
+     "name": "BROYLES, ABBY",
+     "receipts": 2089401.41,
+     "candidate_id": "S0OK00370"
+    },
+    "REP": {
+     "name": "INHOFE, JAMES M. SEN.",
+     "receipts": 4670324.27,
+     "candidate_id": "S4OK00083"
+    }
+   },
+   "Oregon": {
+    "DEM": {
+     "name": "MERKLEY, JEFFREY ALAN",
+     "receipts": 6410830.47,
+     "candidate_id": "S8OR00207"
+    },
+    "REP": {
+     "name": "PERKINS, JO RAE",
+     "receipts": 142923.6,
+     "candidate_id": "S4OR00156"
+    }
+   },
+   "Pennsylvania": {
+    "DEM": {
+     "name": "CASEY, ROBERT P. JR.",
+     "receipts": 2212851.86,
+     "candidate_id": "S6PA00217"
+    },
+    "REP": {
+     "name": "TOOMEY, PATRICK JOSEPH",
+     "receipts": 4310881.72,
+     "candidate_id": "S4PA00121"
+    }
+   },
+   "Rhode Island": {
+    "DEM": {
+     "name": "REED, JOHN F.",
+     "receipts": 2964445.84,
+     "candidate_id": "S6RI00163"
+    },
+    "REP": {
+     "name": "WATERS, ALLEN",
+     "receipts": 29725.75,
+     "candidate_id": "S0RI00067"
+    }
+   },
+   "South Carolina": {
+    "DEM": {
+     "name": "HARRISON, JAIME",
+     "receipts": 132685669.57,
+     "candidate_id": "S0SC00289"
+    },
+    "REP": {
+     "name": "GRAHAM, LINDSEY O.",
+     "receipts": 107747533.78,
+     "candidate_id": "S0SC00149"
+    }
+   },
+   "South Dakota": {
+    "DEM": {
+     "name": "AHLERS, DAN",
+     "receipts": 273832.8,
+     "candidate_id": "S0SD00070"
+    },
+    "REP": {
+     "name": "ROUNDS, MIKE",
+     "receipts": 3663084.5,
+     "candidate_id": "S4SD00049"
+    }
+   },
+   "Tennessee": {
+    "DEM": {
+     "name": "MACKLER, JAMES",
+     "receipts": 2291057.55,
+     "candidate_id": "S8TN00311"
+    },
+    "REP": {
+     "name": "HAGERTY, BILL",
+     "receipts": 15772577.38,
+     "candidate_id": "S0TN00169"
+    }
+   },
+   "Texas": {
+    "DEM": {
+     "name": "HEGAR, MARY JENNINGS MJ",
+     "receipts": 29597569.83,
+     "candidate_id": "S0TX00233"
+    },
+    "REP": {
+     "name": "CORNYN, JOHN SEN",
+     "receipts": 28614523.43,
+     "candidate_id": "S2TX00106"
+    }
+   },
+   "Utah": {
+    "DEM": {
+     "name": "WILSON, JENNY",
+     "receipts": 1480.15,
+     "candidate_id": "S8UT00143"
+    },
+    "REP": {
+     "name": "LEE, MIKE",
+     "receipts": 1140180.24,
+     "candidate_id": "S0UT00165"
+    }
+   },
+   "Virginia": {
+    "DEM": {
+     "name": "WARNER, MARK ROBERT",
+     "receipts": 13227445.93,
+     "candidate_id": "S6VA00093"
+    },
+    "REP": {
+     "name": "GADE, DANIEL MACARTHUR MR.",
+     "receipts": 4925967.31,
+     "candidate_id": "S0VA00146"
+    }
+   },
+   "Vermont": {
+    "DEM": {
+     "name": "LEAHY, PATRICK J",
+     "receipts": 418415.39,
+     "candidate_id": "S4VT00017"
+    },
+    "REP": {
+     "name": "BRITTON, LEONARD WHEELER",
+     "receipts": 0.0,
+     "candidate_id": "S0VT00114"
+    }
+   },
+   "Washington": {
+    "DEM": {
+     "name": "MURRAY, PATTY",
+     "receipts": 2481118.82,
+     "candidate_id": "S2WA00189"
+    },
+    "REP": {
+     "name": "GIBSON, JOSEPH",
+     "receipts": 6780.0,
+     "candidate_id": "S8WA00244"
+    }
+   },
+   "Wisconsin": {
+    "DEM": {
+     "name": "BALDWIN, TAMMY",
+     "receipts": 4701211.78,
+     "candidate_id": "S2WI00219"
+    },
+    "REP": {
+     "name": "JOHNSON, RONALD HAROLD",
+     "receipts": 590172.27,
+     "candidate_id": "S0WI00197"
+    }
+   },
+   "West Virginia": {
+    "DEM": {
+     "name": "SWEARENGIN, PAULA JEAN",
+     "receipts": 2064982.41,
+     "candidate_id": "S0WV00215"
+    },
+    "REP": {
+     "name": "CAPITO, SHELLEY MOORE",
+     "receipts": 4945799.43,
+     "candidate_id": "S4WV00159"
+    }
+   },
+   "Wyoming": {
+    "DEM": {
+     "name": "BEN DAVID, MERAV",
+     "receipts": 559626.26,
+     "candidate_id": "S0WY00152"
+    },
+    "REP": {
+     "name": "LUMMIS, CYNTHIA MARIE MRS.",
+     "receipts": 3003787.92,
+     "candidate_id": "S0WY00137"
+    }
+   }
+  },
+  "2022": {
+   "Iowa": {
+    "REP": {
+     "name": "GRASSLEY, CHARLES E",
+     "receipts": 9533640.63,
+     "candidate_id": "S0IA00028"
+    },
+    "DEM": {
+     "name": "FRANKEN, MICHAEL T",
+     "receipts": 11468780.34,
+     "candidate_id": "S2IA00172"
+    }
+   },
+   "Alaska": {
+    "DEM": {
+     "name": "CHESBRO, PATRICIA",
+     "receipts": 188577.24,
+     "candidate_id": "S2AK00226"
+    },
+    "REP": {
+     "name": "MURKOWSKI, LISA",
+     "receipts": 9319257.3,
+     "candidate_id": "S4AK00099"
+    }
+   },
+   "Alabama": {
+    "DEM": {
+     "name": "BOYD, WILLIE EUGENE DR. JR.",
+     "receipts": 134567.28,
+     "candidate_id": "S2AL00251"
+    },
+    "REP": {
+     "name": "BRITT, KATIE BOYD",
+     "receipts": 11452928.7,
+     "candidate_id": "S2AL00145"
+    }
+   },
+   "Arkansas": {
+    "DEM": {
+     "name": "JAMES, NATALIE",
+     "receipts": 81480.89,
+     "candidate_id": "S2AR00115"
+    },
+    "REP": {
+     "name": "BOOZMAN, SEN. JOHN",
+     "receipts": 6769987.02,
+     "candidate_id": "S0AR00150"
+    }
+   },
+   "Arizona": {
+    "DEM": {
+     "name": "KELLY, MARK",
+     "receipts": 92771344.07,
+     "candidate_id": "S0AZ00350"
+    },
+    "REP": {
+     "name": "LAMON, JIM MR",
+     "receipts": 19564450.37,
+     "candidate_id": "S2AZ00331"
+    }
+   },
+   "California": {
+    "DEM": {
+     "name": "PADILLA, ALEX",
+     "receipts": 11784617.88,
+     "candidate_id": "S2CA00955"
+    },
+    "REP": {
+     "name": "MEUSER, MARK",
+     "receipts": 1052436.88,
+     "candidate_id": "S2CA01060"
+    }
+   },
+   "Colorado": {
+    "DEM": {
+     "name": "BENNET, MICHAEL F.",
+     "receipts": 20720493.62,
+     "candidate_id": "S0CO00211"
+    },
+    "REP": {
+     "name": "O'DEA, JOSEPH MATTHEW",
+     "receipts": 10234964.77,
+     "candidate_id": "S2CO00241"
+    }
+   },
+   "Connecticut": {
+    "DEM": {
+     "name": "BLUMENTHAL, RICHARD",
+     "receipts": 7272349.12,
+     "candidate_id": "S0CT00177"
+    },
+    "REP": {
+     "name": "LEVY, LEORA",
+     "receipts": 3075949.62,
+     "candidate_id": "S2CT00314"
+    }
+   },
+   "Delaware": {
+    "DEM": {
+     "name": "COONS, CHRISTOPHER A.",
+     "receipts": 979328.91,
+     "candidate_id": "S0DE00092"
+    },
+    "REP": {
+     "name": "TRUONO, EUGENE (GENE) J JR",
+     "receipts": 9552.0,
+     "candidate_id": "S8DE00129"
+    }
+   },
+   "Florida": {
+    "DEM": {
+     "name": "DEMINGS, VAL",
+     "receipts": 81084464.15,
+     "candidate_id": "S2FL00631"
+    },
+    "REP": {
+     "name": "RUBIO, MARCO",
+     "receipts": 43477113.48,
+     "candidate_id": "S0FL00338"
+    }
+   },
+   "Georgia": {
+    "DEM": {
+     "name": "WARNOCK, RAPHAEL",
+     "receipts": 206593947.75,
+     "candidate_id": "S0GA00559"
+    },
+    "REP": {
+     "name": "WALKER, HERSCHEL MR.",
+     "receipts": 73748652.12,
+     "candidate_id": "S2GA00225"
+    }
+   },
+   "Hawaii": {
+    "DEM": {
+     "name": "SCHATZ, BRIAN",
+     "receipts": 2507733.56,
+     "candidate_id": "S4HI00136"
+    },
+    "REP": {
+     "name": "DALHOUSE, TIMOTHY ALAN MR.",
+     "receipts": 257958.35,
+     "candidate_id": "S2HI00197"
+    }
+   },
+   "Idaho": {
+    "DEM": {
+     "name": "ROTH, DAVID JORDAN",
+     "receipts": 99856.87,
+     "candidate_id": "S2ID00178"
+    },
+    "REP": {
+     "name": "CRAPO, MICHAEL D",
+     "receipts": 4821698.11,
+     "candidate_id": "S8ID00027"
+    }
+   },
+   "Illinois": {
+    "DEM": {
+     "name": "DUCKWORTH, L. TAMMY",
+     "receipts": 14799221.88,
+     "candidate_id": "S6IL00292"
+    },
+    "REP": {
+     "name": "SALVI, KATHY RAYE",
+     "receipts": 1348614.89,
+     "candidate_id": "S2IL00267"
+    }
+   },
+   "Indiana": {
+    "DEM": {
+     "name": "MCDERMOTT, THOMAS M. JR",
+     "receipts": 1362606.43,
+     "candidate_id": "S2IN00208"
+    },
+    "REP": {
+     "name": "YOUNG, TODD CHRISTOPHER",
+     "receipts": 10976445.53,
+     "candidate_id": "S6IN00191"
+    }
+   },
+   "Kansas": {
+    "DEM": {
+     "name": "HOLLAND, MARK R. REV.",
+     "receipts": 905074.24,
+     "candidate_id": "S2KS00113"
+    },
+    "REP": {
+     "name": "MORAN, JERRY",
+     "receipts": 5531189.35,
+     "candidate_id": "S0KS00091"
+    }
+   },
+   "Kentucky": {
+    "DEM": {
+     "name": "BOOKER, CHARLES",
+     "receipts": 6556072.38,
+     "candidate_id": "S0KY00420"
+    },
+    "REP": {
+     "name": "PAUL, RAND",
+     "receipts": 25042402.65,
+     "candidate_id": "S0KY00156"
+    }
+   },
+   "Louisiana": {
+    "DEM": {
+     "name": "MIXON, LUKE",
+     "receipts": 2319898.73,
+     "candidate_id": "S2LA00135"
+    },
+    "REP": {
+     "name": "KENNEDY, JOHN NEELY",
+     "receipts": 34338881.57,
+     "candidate_id": "S4LA00065"
+    }
+   },
+   "Massachusetts": {
+    "DEM": {
+     "name": "WARREN, ELIZABETH",
+     "receipts": 5423023.99,
+     "candidate_id": "S2MA00170"
+    },
+    "REP": {
+     "name": "AYYADURAI, SHIVA DR",
+     "receipts": 7464.83,
+     "candidate_id": "S8MA00268"
+    }
+   },
+   "Maryland": {
+    "DEM": {
+     "name": "VAN HOLLEN, CHRIS",
+     "receipts": 6615217.92,
+     "candidate_id": "S6MD03441"
+    },
+    "REP": {
+     "name": "TARANTIN, JAMES",
+     "receipts": 184871.86,
+     "candidate_id": "S2MD00552"
+    }
+   },
+   "Maine": {
+    "DEM": {
+     "name": "GIDEON, SARA",
+     "receipts": 1172814.27,
+     "candidate_id": "S0ME00111"
+    },
+    "REP": {
+     "name": "COLLINS, SUSAN M.",
+     "receipts": 1136249.1,
+     "candidate_id": "S6ME00159"
+    }
+   },
+   "Michigan": {
+    "DEM": {
+     "name": "PETERS, GARY",
+     "receipts": 4349233.84,
+     "candidate_id": "S4MI00355"
+    },
+    "REP": {
+     "name": "JAMES, JOHN",
+     "receipts": 301290.28,
+     "candidate_id": "S8MI00372"
+    }
+   },
+   "Minnesota": {
+    "DEM": {
+     "name": "SMITH, TINA",
+     "receipts": 1543714.66,
+     "candidate_id": "S8MN00578"
+    },
+    "REP": {
+     "name": "LEWIS, JASON",
+     "receipts": 7727.82,
+     "candidate_id": "S0MN00328"
+    }
+   },
+   "Missouri": {
+    "DEM": {
+     "name": "BUSCH VALENTINE, TRUDY",
+     "receipts": 18322281.62,
+     "candidate_id": "S2MO00692"
+    },
+    "REP": {
+     "name": "HAWLEY, JOSHUA DAVID SEN",
+     "receipts": 11477018.76,
+     "candidate_id": "S8MO00160"
+    }
+   },
+   "Mississippi": {
+    "DEM": {
+     "name": "ESPY, MICHAEL",
+     "receipts": 336781.98,
+     "candidate_id": "S8MS00287"
+    },
+    "REP": {
+     "name": "WICKER, ROGER SEN.",
+     "receipts": 1826343.95,
+     "candidate_id": "S8MS00196"
+    }
+   },
+   "Montana": {
+    "DEM": {
+     "name": "TESTER, R. JON",
+     "receipts": 2847846.36,
+     "candidate_id": "S6MT00162"
+    },
+    "REP": {
+     "name": "ROSENDALE, MATT",
+     "receipts": 2284637.89,
+     "candidate_id": "S8MT00234"
+    }
+   },
+   "North Carolina": {
+    "DEM": {
+     "name": "BEASLEY, CHERI",
+     "receipts": 38948343.76,
+     "candidate_id": "S2NC00497"
+    },
+    "REP": {
+     "name": "BUDD, THEODORE P",
+     "receipts": 14904162.55,
+     "candidate_id": "S2NC00505"
+    }
+   },
+   "North Dakota": {
+    "DEM": {
+     "name": "HEITKAMP, HEIDI",
+     "receipts": 175164.41,
+     "candidate_id": "S2ND00099"
+    },
+    "REP": {
+     "name": "HOEVEN, JOHN",
+     "receipts": 3320462.86,
+     "candidate_id": "S0ND00093"
+    }
+   },
+   "Nebraska": {
+    "DEM": {
+     "name": "SHELTON, ALISHA",
+     "receipts": 340913.94,
+     "candidate_id": "S0NE00098"
+    },
+    "REP": {
+     "name": "FISCHER, DEBRA S.",
+     "receipts": 1238406.34,
+     "candidate_id": "S2NE00094"
+    }
+   },
+   "New Hampshire": {
+    "DEM": {
+     "name": "HASSAN, MARGARET WOOD",
+     "receipts": 37045597.33,
+     "candidate_id": "S6NH00091"
+    },
+    "REP": {
+     "name": "BOLDUC, DONALD C.",
+     "receipts": 4181564.45,
+     "candidate_id": "S0NH00326"
+    }
+   },
+   "New Jersey": {
+    "DEM": {
+     "name": "BOOKER, CORY A.",
+     "receipts": 6715393.45,
+     "candidate_id": "S4NJ00185"
+    },
+    "REP": {
+     "name": "MEHTA, RIKIN",
+     "receipts": 182777.78,
+     "candidate_id": "S0NJ00217"
+    }
+   },
+   "New Mexico": {
+    "DEM": {
+     "name": "HEINRICH, MARTIN",
+     "receipts": 1818160.68,
+     "candidate_id": "S2NM00088"
+    },
+    "REP": {
+     "name": "RONCHETTI, MARK V.",
+     "receipts": 6923.77,
+     "candidate_id": "S0NM00124"
+    }
+   },
+   "Nevada": {
+    "DEM": {
+     "name": "CORTEZ MASTO, CATHERINE",
+     "receipts": 60613860.94,
+     "candidate_id": "S6NV00200"
+    },
+    "REP": {
+     "name": "LAXALT, ADAM",
+     "receipts": 19108847.34,
+     "candidate_id": "S2NV00324"
+    }
+   },
+   "New York": {
+    "DEM": {
+     "name": "SCHUMER, CHARLES E.",
+     "receipts": 37885457.97,
+     "candidate_id": "S8NY00082"
+    },
+    "REP": {
+     "name": "PINION, JOSEPH III",
+     "receipts": 592671.29,
+     "candidate_id": "S2NY00499"
+    }
+   },
+   "Ohio": {
+    "DEM": {
+     "name": "RYAN, TIMOTHY",
+     "receipts": 57770819.94,
+     "candidate_id": "S2OH00402"
+    },
+    "REP": {
+     "name": "GIBBONS, MICHAEL",
+     "receipts": 19308077.25,
+     "candidate_id": "S8OH00086"
+    }
+   },
+   "Oklahoma": {
+    "DEM": {
+     "name": "HORN, KENDRA",
+     "receipts": 1903985.66,
+     "candidate_id": "S2OK00228"
+    },
+    "REP": {
+     "name": "LANKFORD, JAMES PAUL",
+     "receipts": 5868351.84,
+     "candidate_id": "S4OK00232"
+    }
+   },
+   "Oregon": {
+    "DEM": {
+     "name": "WYDEN, RONALD LEE",
+     "receipts": 10512321.06,
+     "candidate_id": "S6OR00110"
+    },
+    "REP": {
+     "name": "HARBICK, DARIN",
+     "receipts": 343724.94,
+     "candidate_id": "S2OR00168"
+    }
+   },
+   "Pennsylvania": {
+    "DEM": {
+     "name": "FETTERMAN, JOHN KARL",
+     "receipts": 76336560.56,
+     "candidate_id": "S6PA00274"
+    },
+    "REP": {
+     "name": "OZ, MEHMET DR",
+     "receipts": 51080108.65,
+     "candidate_id": "S2PA00638"
+    }
+   },
+   "Rhode Island": {
+    "DEM": {
+     "name": "WHITEHOUSE, SHELDON",
+     "receipts": 1612622.08,
+     "candidate_id": "S6RI00221"
+    },
+    "REP": {
+     "name": "WATERS, ALLEN",
+     "receipts": 45441.69,
+     "candidate_id": "S0RI00067"
+    }
+   },
+   "South Carolina": {
+    "DEM": {
+     "name": "HARRISON, JAIME",
+     "receipts": 1904715.84,
+     "candidate_id": "S0SC00289"
+    },
+    "REP": {
+     "name": "SCOTT, TIMOTHY E.",
+     "receipts": 43127151.37,
+     "candidate_id": "S4SC00240"
+    }
+   },
+   "South Dakota": {
+    "DEM": {
+     "name": "BENGS, BRIAN L",
+     "receipts": 497968.04,
+     "candidate_id": "S2SD00126"
+    },
+    "REP": {
+     "name": "THUNE, JOHN R.",
+     "receipts": 7547602.66,
+     "candidate_id": "S2SD00068"
+    }
+   },
+   "Tennessee": {
+    "DEM": {
+     "name": "MACKLER, JAMES",
+     "receipts": 35860.25,
+     "candidate_id": "S8TN00311"
+    },
+    "REP": {
+     "name": "HAGERTY, BILL",
+     "receipts": 3898661.75,
+     "candidate_id": "S0TN00169"
+    }
+   },
+   "Texas": {
+    "DEM": {
+     "name": "HEGAR, MARY JENNINGS MJ",
+     "receipts": 232569.26,
+     "candidate_id": "S0TX00233"
+    },
+    "REP": {
+     "name": "CRUZ, RAFAEL EDWARD  TED",
+     "receipts": 19404179.67,
+     "candidate_id": "S2TX00312"
+    }
+   },
+   "Utah": {
+    "DEM": {
+     "name": "WESTON, JOHN",
+     "receipts": 96430.94,
+     "candidate_id": "S2UT00385"
+    },
+    "REP": {
+     "name": "LEE, MIKE",
+     "receipts": 10885232.67,
+     "candidate_id": "S0UT00165"
+    }
+   },
+   "Virginia": {
+    "DEM": {
+     "name": "WARNER, MARK ROBERT",
+     "receipts": 3004374.0,
+     "candidate_id": "S6VA00093"
+    },
+    "REP": {
+     "name": "GARCIA, EDWARD",
+     "receipts": 32725.0,
+     "candidate_id": "S4VA00239"
+    }
+   },
+   "Vermont": {
+    "DEM": {
+     "name": "WELCH, PETER",
+     "receipts": 5390836.54,
+     "candidate_id": "S2VT00235"
+    },
+    "REP": {
+     "name": "NOLAN, CHRISTINA",
+     "receipts": 405146.04,
+     "candidate_id": "S2VT00268"
+    }
+   },
+   "Washington": {
+    "DEM": {
+     "name": "MURRAY, PATTY",
+     "receipts": 16112355.03,
+     "candidate_id": "S2WA00189"
+    },
+    "REP": {
+     "name": "SMILEY, TIFFANY",
+     "receipts": 21007197.75,
+     "candidate_id": "S2WA00387"
+    }
+   },
+   "Wisconsin": {
+    "DEM": {
+     "name": "BARNES, MANDELA",
+     "receipts": 42336589.43,
+     "candidate_id": "S2WI00441"
+    },
+    "REP": {
+     "name": "JOHNSON, RON HAROLD MR.",
+     "receipts": 34920572.47,
+     "candidate_id": "S0WI00197"
+    }
+   },
+   "West Virginia": {
+    "DEM": {
+     "name": "MANCHIN, JOE III",
+     "receipts": 8181290.99,
+     "candidate_id": "S0WV00090"
+    },
+    "REP": {
+     "name": "MOONEY, ALEXANDER X",
+     "receipts": 1094289.56,
+     "candidate_id": "S4WV00324"
+    }
+   },
+   "Wyoming": {
+    "DEM": {
+     "name": "LUDWIG, YANA",
+     "receipts": 0.0,
+     "candidate_id": "S0WY00129"
+    },
+    "REP": {
+     "name": "BARRASSO, JOHN A",
+     "receipts": 1881044.42,
+     "candidate_id": "S6WY00068"
+    }
+   }
+  },
+  "2024": {
+   "Alaska": {
+    "DEM": {
+     "name": "CHESBRO, PATRICIA",
+     "receipts": 7.0,
+     "candidate_id": "S2AK00226"
+    },
+    "REP": {
+     "name": "SULLIVAN, DAN",
+     "receipts": 1893775.09,
+     "candidate_id": "S4AK00214"
+    }
+   },
+   "Alabama": {
+    "DEM": {
+     "name": "BOYD, WILLIE EUGENE DR. JR.",
+     "receipts": 255.15,
+     "candidate_id": "S2AL00251"
+    },
+    "REP": {
+     "name": "BRITT, KATIE BOYD",
+     "receipts": 3907112.1,
+     "candidate_id": "S2AL00145"
+    }
+   },
+   "Arkansas": {
+    "DEM": {
+     "name": "WHITFIELD, DANIEL ALLEN",
+     "receipts": 2034.71,
+     "candidate_id": "S0AR00218"
+    },
+    "REP": {
+     "name": "COTTON, THOMAS",
+     "receipts": 2488964.09,
+     "candidate_id": "S4AR00103"
+    }
+   },
+   "Arizona": {
+    "DEM": {
+     "name": "GALLEGO, RUBEN",
+     "receipts": 64657199.96,
+     "candidate_id": "S4AZ00139"
+    },
+    "REP": {
+     "name": "LAKE, KARI",
+     "receipts": 26252199.2,
+     "candidate_id": "S4AZ00220"
+    }
+   },
+   "California": {
+    "DEM": {
+     "name": "SCHIFF, ADAM",
+     "receipts": 48149196.78,
+     "candidate_id": "S4CA00555"
+    },
+    "REP": {
+     "name": "GARVEY, STEVE",
+     "receipts": 20356132.85,
+     "candidate_id": "S4CA00803"
+    }
+   },
+   "Colorado": {
+    "DEM": {
+     "name": "BENNET, MICHAEL F.",
+     "receipts": 1181527.92,
+     "candidate_id": "S0CO00211"
+    },
+    "REP": {
+     "name": "AADLAND, ERIK",
+     "receipts": 222.82,
+     "candidate_id": "S2CO00175"
+    }
+   },
+   "Connecticut": {
+    "DEM": {
+     "name": "MURPHY, CHRISTOPHER S",
+     "receipts": 12786118.05,
+     "candidate_id": "S2CT00132"
+    },
+    "REP": {
+     "name": "COREY, MATTHEW MCKINNON",
+     "receipts": 257655.82,
+     "candidate_id": "S8CT00121"
+    }
+   },
+   "Delaware": {
+    "DEM": {
+     "name": "BLUNT ROCHESTER, LISA",
+     "receipts": 9934497.35,
+     "candidate_id": "S4DE00060"
+    },
+    "REP": {
+     "name": "HANSEN, ERIC",
+     "receipts": 1015951.4,
+     "candidate_id": "S4DE00094"
+    }
+   },
+   "Florida": {
+    "DEM": {
+     "name": "MUCARSEL-POWELL, DEBBIE",
+     "receipts": 36616416.21,
+     "candidate_id": "S4FL00611"
+    },
+    "REP": {
+     "name": "SCOTT, RICK SEN",
+     "receipts": 36696093.1,
+     "candidate_id": "S8FL00273"
+    }
+   },
+   "Georgia": {
+    "DEM": {
+     "name": "OSSOFF, T. JONATHAN",
+     "receipts": 7199991.41,
+     "candidate_id": "S8GA00180"
+    },
+    "REP": {
+     "name": "WALKER, HERSCHEL MR.",
+     "receipts": 1071890.77,
+     "candidate_id": "S2GA00225"
+    }
+   },
+   "Hawaii": {
+    "DEM": {
+     "name": "HIRONO, MAZIE K.",
+     "receipts": 3292048.88,
+     "candidate_id": "S2HI00106"
+    },
+    "REP": {
+     "name": "MCDERMOTT, ROBERT",
+     "receipts": 23225.25,
+     "candidate_id": "S2HI00155"
+    }
+   },
+   "Iowa": {
+    "DEM": {
+     "name": "FINKENAUER, ABBY",
+     "receipts": 86850.99,
+     "candidate_id": "S2IA00164"
+    },
+    "REP": {
+     "name": "ERNST, JONI K",
+     "receipts": 2921862.7,
+     "candidate_id": "S4IA00129"
+    }
+   },
+   "Idaho": {
+    "DEM": {
+     "name": "ROTH, DAVID JORDAN",
+     "receipts": 0.0,
+     "candidate_id": "S2ID00178"
+    },
+    "REP": {
+     "name": "CRAPO, MICHAEL D",
+     "receipts": 1131919.91,
+     "candidate_id": "S8ID00027"
+    }
+   },
+   "Illinois": {
+    "DEM": {
+     "name": "DUCKWORTH, L. TAMMY",
+     "receipts": 4571747.48,
+     "candidate_id": "S6IL00292"
+    },
+    "REP": {
+     "name": "BENNETT, DOUGLAS",
+     "receipts": 12000.0,
+     "candidate_id": "S6IL00391"
+    }
+   },
+   "Indiana": {
+    "DEM": {
+     "name": "BAYH, EVAN",
+     "receipts": 503519.3,
+     "candidate_id": "S8IN00049"
+    },
+    "REP": {
+     "name": "BANKS, JAMES E. HON.",
+     "receipts": 7337226.72,
+     "candidate_id": "S4IN00196"
+    }
+   },
+   "Kansas": {
+    "DEM": {
+     "name": "HOLLAND, MARK R. REV.",
+     "receipts": 3184.21,
+     "candidate_id": "S2KS00113"
+    },
+    "REP": {
+     "name": "MORAN, JERRY",
+     "receipts": 1805895.59,
+     "candidate_id": "S0KS00091"
+    }
+   },
+   "Kentucky": {
+    "DEM": {
+     "name": "BOOKER, CHARLES",
+     "receipts": 147125.06,
+     "candidate_id": "S0KY00420"
+    },
+    "REP": {
+     "name": "PAUL, RAND",
+     "receipts": 8490873.16,
+     "candidate_id": "S0KY00156"
+    }
+   },
+   "Louisiana": {
+    "DEM": {
+     "name": "MIXON, LUKE",
+     "receipts": 176.54,
+     "candidate_id": "S2LA00135"
+    },
+    "REP": {
+     "name": "KENNEDY, JOHN NEELY",
+     "receipts": 15625987.97,
+     "candidate_id": "S4LA00065"
+    }
+   },
+   "Massachusetts": {
+    "DEM": {
+     "name": "WARREN, ELIZABETH",
+     "receipts": 9039537.78,
+     "candidate_id": "S2MA00170"
+    },
+    "REP": {
+     "name": "DEATON, JOHN",
+     "receipts": 2244282.53,
+     "candidate_id": "S4MA00358"
+    }
+   },
+   "Maryland": {
+    "DEM": {
+     "name": "TRONE, DAVID",
+     "receipts": 63833136.59,
+     "candidate_id": "S4MD00319"
+    },
+    "REP": {
+     "name": "HOGAN, LARRY",
+     "receipts": 12249553.37,
+     "candidate_id": "S4MD00483"
+    }
+   },
+   "Maine": {
+    "DEM": {
+     "name": "GIDEON, SARA",
+     "receipts": 261781.51,
+     "candidate_id": "S0ME00111"
+    },
+    "REP": {
+     "name": "COLLINS, SUSAN M.",
+     "receipts": 1624001.46,
+     "candidate_id": "S6ME00159"
+    }
+   },
+   "Michigan": {
+    "DEM": {
+     "name": "SLOTKIN, ELISSA",
+     "receipts": 51937060.2,
+     "candidate_id": "S4MI00470"
+    },
+    "REP": {
+     "name": "ROGERS, MICHAEL J",
+     "receipts": 13247396.66,
+     "candidate_id": "S4MI00595"
+    }
+   },
+   "Minnesota": {
+    "DEM": {
+     "name": "SMITH, TINA",
+     "receipts": 1464674.23,
+     "candidate_id": "S8MN00578"
+    },
+    "REP": {
+     "name": "WHITE, ROYCE",
+     "receipts": 1621744.66,
+     "candidate_id": "S4MN00502"
+    }
+   },
+   "Missouri": {
+    "DEM": {
+     "name": "BELL, WESLEY",
+     "receipts": 5386197.6,
+     "candidate_id": "S4MO00250"
+    },
+    "REP": {
+     "name": "HAWLEY, JOSHUA DAVID SEN",
+     "receipts": 13808806.06,
+     "candidate_id": "S8MO00160"
+    }
+   },
+   "Mississippi": {
+    "DEM": {
+     "name": "PINKINS, TY",
+     "receipts": 1047155.67,
+     "candidate_id": "S4MS00187"
+    },
+    "REP": {
+     "name": "WICKER, ROGER SEN.",
+     "receipts": 7420578.92,
+     "candidate_id": "S8MS00196"
+    }
+   },
+   "Montana": {
+    "DEM": {
+     "name": "TESTER, R. JON",
+     "receipts": 93570122.72,
+     "candidate_id": "S6MT00162"
+    },
+    "REP": {
+     "name": "SHEEHY, TIM",
+     "receipts": 30015786.32,
+     "candidate_id": "S4MT00183"
+    }
+   },
+   "North Carolina": {
+    "DEM": {
+     "name": "NICKEL, WILEY",
+     "receipts": 2383094.47,
+     "candidate_id": "S6NC00340"
+    },
+    "REP": {
+     "name": "TILLIS, THOM R. SEN.",
+     "receipts": 2474642.46,
+     "candidate_id": "S4NC00162"
+    }
+   },
+   "North Dakota": {
+    "DEM": {
+     "name": "CHRISTIANSEN, KATRINA",
+     "receipts": 3066029.91,
+     "candidate_id": "S2ND00123"
+    },
+    "REP": {
+     "name": "CRAMER, KEVIN MR.",
+     "receipts": 5562461.74,
+     "candidate_id": "S8ND00120"
+    }
+   },
+   "Nebraska": {
+    "DEM": {
+     "name": "LOVE, PRESTON JR",
+     "receipts": 283232.43,
+     "candidate_id": "S4NE00223"
+    },
+    "REP": {
+     "name": "FISCHER, DEBRA S.",
+     "receipts": 6555361.2,
+     "candidate_id": "S2NE00094"
+    }
+   },
+   "New Hampshire": {
+    "DEM": {
+     "name": "HASSAN, MARGARET WOOD",
+     "receipts": 2900607.97,
+     "candidate_id": "S6NH00091"
+    },
+    "REP": {
+     "name": "MANSHARAMANI, VIKRAM",
+     "receipts": 539918.85,
+     "candidate_id": "S2NH00272"
+    }
+   },
+   "New Jersey": {
+    "DEM": {
+     "name": "KIM, ANDY",
+     "receipts": 12441003.62,
+     "candidate_id": "S4NJ00466"
+    },
+    "REP": {
+     "name": "BASHAW, CURTIS",
+     "receipts": 4249567.71,
+     "candidate_id": "S4NJ00540"
+    }
+   },
+   "New Mexico": {
+    "DEM": {
+     "name": "HEINRICH, MARTIN",
+     "receipts": 10731410.2,
+     "candidate_id": "S2NM00088"
+    },
+    "REP": {
+     "name": "DOMENICI, NELLA LOUISE LOUISE",
+     "receipts": 7013192.46,
+     "candidate_id": "S4NM00183"
+    }
+   },
+   "Nevada": {
+    "DEM": {
+     "name": "ROSEN, JACKY",
+     "receipts": 43915245.2,
+     "candidate_id": "S8NV00156"
+    },
+    "REP": {
+     "name": "BROWN, SAM",
+     "receipts": 24063366.48,
+     "candidate_id": "S2NV00308"
+    }
+   },
+   "New York": {
+    "DEM": {
+     "name": "GILLIBRAND, KIRSTEN",
+     "receipts": 9798986.57,
+     "candidate_id": "S0NY00410"
+    },
+    "REP": {
+     "name": "SAPRAICONE, MICHAEL",
+     "receipts": 1417733.96,
+     "candidate_id": "S4NY00404"
+    }
+   },
+   "Ohio": {
+    "DEM": {
+     "name": "BROWN, SHERROD",
+     "receipts": 96530240.72,
+     "candidate_id": "S6OH00163"
+    },
+    "REP": {
+     "name": "MORENO, BERNIE",
+     "receipts": 26920693.53,
+     "candidate_id": "S4OH00192"
+    }
+   },
+   "Oklahoma": {
+    "DEM": {
+     "name": "HORN, MADISON",
+     "receipts": 591403.83,
+     "candidate_id": "S2OK00152"
+    },
+    "REP": {
+     "name": "MULLIN, MARKWAYNE",
+     "receipts": 1659789.12,
+     "candidate_id": "S2OK00186"
+    }
+   },
+   "Oregon": {
+    "DEM": {
+     "name": "WYDEN, RONALD L.",
+     "receipts": 1533627.54,
+     "candidate_id": "S6OR00110"
+    },
+    "REP": {
+     "name": "HARBICK, DARIN",
+     "receipts": 140442.11,
+     "candidate_id": "S2OR00168"
+    }
+   },
+   "Pennsylvania": {
+    "DEM": {
+     "name": "CASEY, ROBERT P. JR.",
+     "receipts": 58147345.34,
+     "candidate_id": "S6PA00217"
+    },
+    "REP": {
+     "name": "MCCORMICK, DAVE",
+     "receipts": 35970836.83,
+     "candidate_id": "S2PA00661"
+    }
+   },
+   "Rhode Island": {
+    "DEM": {
+     "name": "WHITEHOUSE, SHELDON",
+     "receipts": 4859870.01,
+     "candidate_id": "S6RI00221"
+    },
+    "REP": {
+     "name": "MORGAN, PATRICIA L",
+     "receipts": 296201.28,
+     "candidate_id": "S4RI00085"
+    }
+   },
+   "South Carolina": {
+    "DEM": {
+     "name": "HARRISON, JAIME",
+     "receipts": 985737.15,
+     "candidate_id": "S0SC00289"
+    },
+    "REP": {
+     "name": "SCOTT, TIMOTHY E.",
+     "receipts": 18856383.18,
+     "candidate_id": "S4SC00240"
+    }
+   },
+   "South Dakota": {
+    "DEM": {
+     "name": "BENGS, BRIAN L",
+     "receipts": 2835.34,
+     "candidate_id": "S2SD00126"
+    },
+    "REP": {
+     "name": "THUNE, JOHN R.",
+     "receipts": 4163983.31,
+     "candidate_id": "S2SD00068"
+    }
+   },
+   "Tennessee": {
+    "DEM": {
+     "name": "JOHNSON, GLORIA",
+     "receipts": 7585464.44,
+     "candidate_id": "S4TN00526"
+    },
+    "REP": {
+     "name": "BLACKBURN, MARSHA MRS.",
+     "receipts": 13571274.34,
+     "candidate_id": "S8TN00337"
+    }
+   },
+   "Texas": {
+    "DEM": {
+     "name": "ALLRED, COLIN",
+     "receipts": 94674182.67,
+     "candidate_id": "S4TX00722"
+    },
+    "REP": {
+     "name": "CRUZ, RAFAEL EDWARD  TED",
+     "receipts": 74050030.94,
+     "candidate_id": "S2TX00312"
+    }
+   },
+   "Utah": {
+    "DEM": {
+     "name": "GLEICH, CAROLINE",
+     "receipts": 1236418.9,
+     "candidate_id": "S4UT00308"
+    },
+    "REP": {
+     "name": "CURTIS, JOHN",
+     "receipts": 5748063.58,
+     "candidate_id": "S4UT00282"
+    }
+   },
+   "Virginia": {
+    "DEM": {
+     "name": "KAINE, TIMOTHY MICHAEL",
+     "receipts": 18308453.68,
+     "candidate_id": "S2VA00142"
+    },
+    "REP": {
+     "name": "CAO, HUNG",
+     "receipts": 9832460.01,
+     "candidate_id": "S4VA00353"
+    }
+   },
+   "Vermont": {
+    "DEM": {
+     "name": "WELCH, PETER",
+     "receipts": 330882.07,
+     "candidate_id": "S2VT00235"
+    },
+    "REP": {
+     "name": "MALLOY, GERALD",
+     "receipts": 662959.83,
+     "candidate_id": "S2VT00292"
+    }
+   },
+   "Washington": {
+    "DEM": {
+     "name": "CANTWELL, MARIA",
+     "receipts": 11147595.82,
+     "candidate_id": "S8WA00194"
+    },
+    "REP": {
+     "name": "SMILEY, TIFFANY",
+     "receipts": 943567.78,
+     "candidate_id": "S2WA00387"
+    }
+   },
+   "Wisconsin": {
+    "DEM": {
+     "name": "BALDWIN, TAMMY",
+     "receipts": 50228545.14,
+     "candidate_id": "S2WI00219"
+    },
+    "REP": {
+     "name": "HOVDE, ERIC D",
+     "receipts": 31958333.2,
+     "candidate_id": "S2WI00268"
+    }
+   },
+   "West Virginia": {
+    "DEM": {
+     "name": "MANCHIN, JOE III",
+     "receipts": 2997445.59,
+     "candidate_id": "S0WV00090"
+    },
+    "REP": {
+     "name": "JUSTICE, JAMES CONLEY II",
+     "receipts": 4587416.08,
+     "candidate_id": "S4WV00332"
+    }
+   },
+   "Wyoming": {
+    "DEM": {
+     "name": "MORROW, SCOTT D MR",
+     "receipts": 45707.29,
+     "candidate_id": "S4WY00188"
+    },
+    "REP": {
+     "name": "BARRASSO, JOHN A",
+     "receipts": 7761388.01,
+     "candidate_id": "S6WY00068"
+    }
+   }
+  },
+  "2026": {
+   "Alaska": {
+    "DEM": {
+     "name": "PELTOLA, MARY",
+     "receipts": 32623721.76,
+     "candidate_id": "S6AK00276"
+    },
+    "REP": {
+     "name": "SULLIVAN, DAN",
+     "receipts": 11161123.71,
+     "candidate_id": "S4AK00214"
+    }
+   },
+   "Alabama": {
+    "DEM": {
+     "name": "SWEETSER, KYLE",
+     "receipts": 166364.36,
+     "candidate_id": "S6AL00435"
+    },
+    "REP": {
+     "name": "MOORE, FELIX BARRY",
+     "receipts": 4492066.3,
+     "candidate_id": "S6AL00476"
+    }
+   },
+   "Arkansas": {
+    "DEM": {
+     "name": "SHOFFNER, HALLIE",
+     "receipts": 3682225.59,
+     "candidate_id": "S6AR00199"
+    },
+    "REP": {
+     "name": "COTTON, THOMAS",
+     "receipts": 6989606.24,
+     "candidate_id": "S4AR00103"
+    }
+   },
+   "Arizona": {
+    "DEM": {
+     "name": "KELLY, MARK",
+     "receipts": 47539201.61,
+     "candidate_id": "S0AZ00350"
+    },
+    "REP": {
+     "name": "LAKE, KARI",
+     "receipts": 393507.24,
+     "candidate_id": "S4AZ00220"
+    }
+   },
+   "California": {
+    "DEM": {
+     "name": "SCHIFF, ADAM",
+     "receipts": 10403471.65,
+     "candidate_id": "S4CA00555"
+    },
+    "REP": {
+     "name": "BRADLEY, JAMES",
+     "receipts": 1325.01,
+     "candidate_id": "S8CA00515"
+    }
+   },
+   "Colorado": {
+    "DEM": {
+     "name": "HICKENLOOPER, JOHN W.",
+     "receipts": 9325922.41,
+     "candidate_id": "S0CO00575"
+    },
+    "REP": {
+     "name": "JOSHI, JANAK",
+     "receipts": 485987.2,
+     "candidate_id": "S6CO00440"
+    }
+   },
+   "Connecticut": {
+    "DEM": {
+     "name": "MURPHY, CHRISTOPHER S",
+     "receipts": 14020487.66,
+     "candidate_id": "S2CT00132"
+    },
+    "REP": {
+     "name": "HYDE, ROBERT FINLEY",
+     "receipts": 0.0,
+     "candidate_id": "S2CT00256"
+    }
+   },
+   "Delaware": {
+    "DEM": {
+     "name": "COONS, CHRISTOPHER A.",
+     "receipts": 4837552.16,
+     "candidate_id": "S0DE00092"
+    },
+    "REP": {
+     "name": "KATZ, MICHAEL S DR.",
+     "receipts": 176647.12,
+     "candidate_id": "S6DE00206"
+    }
+   },
+   "Florida": {
+    "DEM": {
+     "name": "VINDMAN, ALEXANDER",
+     "receipts": 20487915.65,
+     "candidate_id": "S6FL00855"
+    },
+    "REP": {
+     "name": "MOODY, ASHLEY",
+     "receipts": 13338185.45,
+     "candidate_id": "S6FL00640"
+    }
+   },
+   "Georgia": {
+    "DEM": {
+     "name": "OSSOFF, T. JONATHAN",
+     "receipts": 110426537.75,
+     "candidate_id": "S8GA00180"
+    },
+    "REP": {
+     "name": "COLLINS, MICHAEL A JR",
+     "receipts": 10249716.29,
+     "candidate_id": "S6GA00390"
+    }
+   },
+   "Hawaii": {
+    "DEM": {
+     "name": "SCHATZ, BRIAN",
+     "receipts": 1794749.41,
+     "candidate_id": "S4HI00136"
+    },
+    "REP": {
+     "name": "MCDERMOTT, ROBERT",
+     "receipts": 184.5,
+     "candidate_id": "S2HI00155"
+    }
+   },
+   "Iowa": {
+    "DEM": {
+     "name": "TUREK, JOSHUA",
+     "receipts": 20152882.38,
+     "candidate_id": "S6IA00298"
+    },
+    "REP": {
+     "name": "ARENHOLZ, ASHLEY HINSON",
+     "receipts": 13472386.27,
+     "candidate_id": "S6IA00314"
+    }
+   },
+   "Idaho": {
+    "DEM": {
+     "name": "ROTH, DAVID JORDAN",
+     "receipts": 14626.74,
+     "candidate_id": "S6ID00138"
+    },
+    "REP": {
+     "name": "CRAPO, MICHAEL D",
+     "receipts": 1306491.6,
+     "candidate_id": "S8ID00027"
+    }
+   },
+   "Illinois": {
+    "DEM": {
+     "name": "KRISHNAMOORTHI, S",
+     "receipts": 31560942.64,
+     "candidate_id": "S6IL00482"
+    },
+    "REP": {
+     "name": "TRACY, DON",
+     "receipts": 4145964.36,
+     "candidate_id": "S6IL00615"
+    }
+   },
+   "Indiana": {
+    "DEM": {
+     "name": "BAYH, EVAN",
+     "receipts": 357737.54,
+     "candidate_id": "S8IN00049"
+    },
+    "REP": {
+     "name": "YOUNG, TODD CHRISTOPHER",
+     "receipts": 5078129.48,
+     "candidate_id": "S6IN00191"
+    }
+   },
+   "Kansas": {
+    "DEM": {
+     "name": "HAMILTON, ADAM",
+     "receipts": 13533710.93,
+     "candidate_id": "S6KS00312"
+    },
+    "REP": {
+     "name": "MARSHALL, ROGER W",
+     "receipts": 4809692.25,
+     "candidate_id": "S0KS00315"
+    }
+   },
+   "Kentucky": {
+    "DEM": {
+     "name": "MCGRATH, AMY",
+     "receipts": 2384956.02,
+     "candidate_id": "S0KY00339"
+    },
+    "REP": {
+     "name": "BARR, GARLAND ANDY",
+     "receipts": 12046429.44,
+     "candidate_id": "S6KY00286"
+    }
+   },
+   "Louisiana": {
+    "DEM": {
+     "name": "DAVIS, JAMIE",
+     "receipts": 4015530.31,
+     "candidate_id": "S6LA00615"
+    },
+    "REP": {
+     "name": "FLEMING, JOHN C. JR.",
+     "receipts": 12336653.07,
+     "candidate_id": "S6LA00318"
+    }
+   },
+   "Massachusetts": {
+    "DEM": {
+     "name": "MOULTON, SETH",
+     "receipts": 6669667.62,
+     "candidate_id": "S6MA00296"
+    },
+    "REP": {
+     "name": "DEATON, JOHN",
+     "receipts": 1648103.72,
+     "candidate_id": "S6MA00304"
+    }
+   },
+   "Maryland": {
+    "DEM": {
+     "name": "TRONE, DAVID",
+     "receipts": 26216747.35,
+     "candidate_id": "S4MD00319"
+    },
+    "REP": {
+     "name": "HOGAN, LARRY",
+     "receipts": 142947.61,
+     "candidate_id": "S4MD00483"
+    }
+   },
+   "Maine": {
+    "DEM": {
+     "name": "JACKSON, TROY DALE",
+     "receipts": 20431280.18,
+     "candidate_id": "S6ME00464"
+    },
+    "REP": {
+     "name": "COLLINS, SUSAN M.",
+     "receipts": 21371159.7,
+     "candidate_id": "S6ME00159"
+    }
+   },
+   "Michigan": {
+    "DEM": {
+     "name": "EL-SAYED, ABDUL",
+     "receipts": 45175566.89,
+     "candidate_id": "S6MI00418"
+    },
+    "REP": {
+     "name": "ROGERS, MICHAEL J",
+     "receipts": 20565706.38,
+     "candidate_id": "S4MI00595"
+    }
+   },
+   "Minnesota": {
+    "DEM": {
+     "name": "CRAIG, ANGIE",
+     "receipts": 13380880.33,
+     "candidate_id": "S6MN00499"
+    },
+    "REP": {
+     "name": "TAFOYA, MICHELE",
+     "receipts": 9661128.52,
+     "candidate_id": "S6MN00556"
+    }
+   },
+   "Missouri": {
+    "DEM": {
+     "name": "BELL, WESLEY",
+     "receipts": 4010235.18,
+     "candidate_id": "S4MO00250"
+    },
+    "REP": {
+     "name": "SCHMITT, ERIC",
+     "receipts": 4180607.29,
+     "candidate_id": "S2MO00544"
+    }
+   },
+   "Mississippi": {
+    "DEM": {
+     "name": "COLOM, SCOTT",
+     "receipts": 3926491.15,
+     "candidate_id": "S6MS00133"
+    },
+    "REP": {
+     "name": "HYDE-SMITH, CINDY",
+     "receipts": 4512940.95,
+     "candidate_id": "S8MS00261"
+    }
+   },
+   "Montana": {
+    "DEM": {
+     "name": "NEILL, REILLY",
+     "receipts": 306624.74,
+     "candidate_id": "S6MT00238"
+    },
+    "REP": {
+     "name": "DAINES, STEVE",
+     "receipts": 4779230.01,
+     "candidate_id": "S2MT00096"
+    }
+   },
+   "North Carolina": {
+    "DEM": {
+     "name": "COOPER, ROY",
+     "receipts": 47190466.06,
+     "candidate_id": "S6NC00407"
+    },
+    "REP": {
+     "name": "WHATLEY, MICHAEL",
+     "receipts": 13415721.2,
+     "candidate_id": "S6NC00415"
+    }
+   },
+   "North Dakota": {
+    "DEM": {
+     "name": "CHRISTIANSEN, KATRINA",
+     "receipts": 8432.24,
+     "candidate_id": "S2ND00123"
+    },
+    "REP": {
+     "name": "CRAMER, KEVIN MR.",
+     "receipts": 1331451.93,
+     "candidate_id": "S8ND00120"
+    }
+   },
+   "Nebraska": {
+    "DEM": {
+     "name": "NELSON, E BENJAMIN",
+     "receipts": 3927.22,
+     "candidate_id": "S6NE00095"
+    },
+    "REP": {
+     "name": "RICKETTS, PETE",
+     "receipts": 13405556.47,
+     "candidate_id": "S6NE00129"
+    }
+   },
+   "New Hampshire": {
+    "DEM": {
+     "name": "PAPPAS, CHRIS",
+     "receipts": 21500073.11,
+     "candidate_id": "S6NH00141"
+    },
+    "REP": {
+     "name": "SUNUNU, JOHN E",
+     "receipts": 5334886.01,
+     "candidate_id": "S6NH00208"
+    }
+   },
+   "New Jersey": {
+    "DEM": {
+     "name": "BOOKER, CORY A.",
+     "receipts": 20663770.94,
+     "candidate_id": "S4NJ00185"
+    },
+    "REP": {
+     "name": "LEBOVICS, ROBERT",
+     "receipts": 178218.82,
+     "candidate_id": "S6NJ00438"
+    }
+   },
+   "New Mexico": {
+    "DEM": {
+     "name": "LUJAN, BEN RAY",
+     "receipts": 6405516.36,
+     "candidate_id": "S0NM00058"
+    },
+    "REP": {
+     "name": "MARKER, LARRY E",
+     "receipts": 99229.65,
+     "candidate_id": "S6NM01186"
+    }
+   },
+   "Nevada": {
+    "DEM": {
+     "name": "CORTEZ MASTO, CATHERINE",
+     "receipts": 2625969.9,
+     "candidate_id": "S6NV00200"
+    },
+    "REP": {
+     "name": "GUNTER, JEFF DR",
+     "receipts": 2047.52,
+     "candidate_id": "S4NV00304"
+    }
+   },
+   "New York": {
+    "DEM": {
+     "name": "GILLIBRAND, KIRSTEN",
+     "receipts": 3526563.67,
+     "candidate_id": "S0NY00410"
+    },
+    "REP": {
+     "name": "SAPRAICONE, MICHAEL",
+     "receipts": 12698.81,
+     "candidate_id": "S4NY00404"
+    }
+   },
+   "Ohio": {
+    "DEM": {
+     "name": "BROWN, SHERROD",
+     "receipts": 61686819.69,
+     "candidate_id": "S6OH00163"
+    },
+    "REP": {
+     "name": "HUSTED, JON",
+     "receipts": 19208763.22,
+     "candidate_id": "S6OH00304"
+    }
+   },
+   "Oklahoma": {
+    "DEM": {
+     "name": "PRIEST, JIM",
+     "receipts": 427161.63,
+     "candidate_id": "S6OK04197"
+    },
+    "REP": {
+     "name": "HERN, KEVIN",
+     "receipts": 10765916.36,
+     "candidate_id": "S6OK04247"
+    }
+   },
+   "Oregon": {
+    "DEM": {
+     "name": "MERKLEY, JEFFREY ALAN",
+     "receipts": 5206884.43,
+     "candidate_id": "S8OR00207"
+    },
+    "REP": {
+     "name": "SMITH, DAVID BROCK",
+     "receipts": 290737.88,
+     "candidate_id": "S6OR05218"
+    }
+   },
+   "Pennsylvania": {
+    "DEM": {
+     "name": "FETTERMAN, JOHN KARL",
+     "receipts": 2960756.56,
+     "candidate_id": "S6PA00274"
+    },
+    "REP": {
+     "name": "MCCORMICK, DAVE",
+     "receipts": 6695301.67,
+     "candidate_id": "S2PA00661"
+    }
+   },
+   "Rhode Island": {
+    "DEM": {
+     "name": "REED, JOHN F.",
+     "receipts": 3649513.55,
+     "candidate_id": "S6RI00163"
+    },
+    "REP": {
+     "name": "MCKAY, RAYMOND TYLER MR",
+     "receipts": 196100.52,
+     "candidate_id": "S4RI00051"
+    }
+   },
+   "South Carolina": {
+    "DEM": {
+     "name": "ANDREWS, ANNIE",
+     "receipts": 20173696.89,
+     "candidate_id": "S6SC04239"
+    },
+    "REP": {
+     "name": "GRAHAM, LINDSEY O.",
+     "receipts": 6890957.5,
+     "candidate_id": "S0SC00149"
+    }
+   },
+   "South Dakota": {
+    "DEM": {
+     "name": "BEAUDION, JULIAN C",
+     "receipts": 247595.86,
+     "candidate_id": "S6SD01125"
+    },
+    "REP": {
+     "name": "THUNE, JOHN R.",
+     "receipts": 4679035.63,
+     "candidate_id": "S2SD00068"
+    }
+   },
+   "Tennessee": {
+    "DEM": {
+     "name": "BRADSHAW, MARQUITA",
+     "receipts": 29158.19,
+     "candidate_id": "S0TN00342"
+    },
+    "REP": {
+     "name": "HAGERTY, BILL",
+     "receipts": 8230660.03,
+     "candidate_id": "S0TN00169"
+    }
+   },
+   "Texas": {
+    "DEM": {
+     "name": "TALARICO, JAMES",
+     "receipts": 128772835.42,
+     "candidate_id": "S6TX00479"
+    },
+    "REP": {
+     "name": "PAXTON, WARREN KENNETH JR.",
+     "receipts": 19497809.76,
+     "candidate_id": "S6TX00388"
+    }
+   },
+   "Utah": {
+    "DEM": {
+     "name": "YAHNE, RUSSELL JAY",
+     "receipts": 3165.57,
+     "candidate_id": "S8UT00341"
+    },
+    "REP": {
+     "name": "LEE, MIKE",
+     "receipts": 2530363.19,
+     "candidate_id": "S0UT00165"
+    }
+   },
+   "Virginia": {
+    "DEM": {
+     "name": "WARNER, MARK ROBERT",
+     "receipts": 19903654.18,
+     "candidate_id": "S6VA00093"
+    },
+    "REP": {
+     "name": "MIZUSAWA, BERT K",
+     "receipts": 1034543.26,
+     "candidate_id": "S8VA00321"
+    }
+   },
+   "Vermont": {
+    "DEM": {
+     "name": "WELCH, PETER",
+     "receipts": 248839.28,
+     "candidate_id": "S2VT00235"
+    },
+    "REP": {
+     "name": "MALLOY, GERALD",
+     "receipts": 18303.05,
+     "candidate_id": "S2VT00292"
+    }
+   },
+   "Washington": {
+    "DEM": {
+     "name": "MURRAY, PATTY",
+     "receipts": 3591671.12,
+     "candidate_id": "S2WA00189"
+    },
+    "REP": {
+     "name": "LAWSON, LEON MR",
+     "receipts": 18171.23,
+     "candidate_id": "S2WA00486"
+    }
+   },
+   "Wisconsin": {
+    "DEM": {
+     "name": "BALDWIN, TAMMY",
+     "receipts": 3479827.95,
+     "candidate_id": "S2WI00219"
+    },
+    "REP": {
+     "name": "JOHNSON, RON HAROLD MR.",
+     "receipts": 1227611.02,
+     "candidate_id": "S0WI00197"
+    }
+   },
+   "West Virginia": {
+    "DEM": {
+     "name": "SHREWSBURY, ZACHARY C",
+     "receipts": 511958.82,
+     "candidate_id": "S4WV00357"
+    },
+    "REP": {
+     "name": "CAPITO, SHELLEY MOORE",
+     "receipts": 5269965.77,
+     "candidate_id": "S4WV00159"
+    }
+   },
+   "Wyoming": {
+    "DEM": {
+     "name": "BYRD, JAMES WILLARD MR.",
+     "receipts": 41359.94,
+     "candidate_id": "S6WY00217"
+    },
+    "REP": {
+     "name": "HAGEMAN, HARRIET",
+     "receipts": 2678888.54,
+     "candidate_id": "S6WY00209"
+    }
+   }
+  }
+ }
+}

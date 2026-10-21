@@ -30,6 +30,7 @@ data/us/pres_by_cd.json # district presidential margins (2026/2024/2022 lines)
 data/us/pollster_effects.json # shrunk pollster house effects (2018-22 fit)
 data/us/state_legislative.json # lower-chamber state leans, 2018-22
 data/us/state_elasticity.json  # Silver Bulletin/CCES elasticity scores
+data/us/senate_fundraising.json # FEC Senate receipts, 2018-26
 data/us/forecast.json   # model output: probabilities, distributions, maps of races
 data/us/geo.json        # pre-projected states + 435 districts (Census TIGERweb, 2026 vintage)
 ```
@@ -55,7 +56,8 @@ model on 2018-24. Grid selection uses 2018-2022 only; 2024 is the holdout.
 `scraper/us_build_poll_effects.py` refits the shrunk pollster house effects
 from the 2018-22 snapshots. `scraper/us_build_state_leg.py` builds the
 2018-22 lower-chamber leans (requires `pyarrow`); `scraper/us_build_elasticity.py`
-fetches the Silver Bulletin/CCES scores;
+fetches the Silver Bulletin/CCES scores; `scraper/us_build_fec.py` builds
+Senate fundraising from FEC bulk data;
 `scraper/us_house_seat_calibration.py`, `scraper/us_senate_seat_calibration.py`
 and `scraper/us_governor_seat_calibration.py` replay historical seat
 distributions. `scraper/us_backtest.py` replays
@@ -72,10 +74,11 @@ python scraper/us_bt_governor_snapshot.py 2018 2020 2022 2024
 
 ## Notes
 
-- The state-legislative lean and Silver/CCES elasticity inputs are built and
-  tested but are not in the live model: neither improved the 2024 holdout.
-  The 2020 House mean remains an outlier, but the 2.5-point cycle-bias sigma
-  keeps all four House results inside the 90% seat interval.
+- The state-legislative lean, Silver/CCES elasticity and FEC fundraising
+  inputs are built and tested but are not in the live model: none improved
+  the 2024 holdout consistently. The 2020 House mean remains an outlier, but
+  the 2.5-point cycle-bias sigma keeps all four House results inside the 90%
+  seat interval.
 - Sources: Wikipedia (2026 Senate / House / gubernatorial election and
   ratings articles), The Downballot's district presidential results,
   generic-ballot aggregates, Elections sources linked in the articles.
