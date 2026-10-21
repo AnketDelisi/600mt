@@ -57,6 +57,17 @@ def main():
                                    {"pollster_cap": 1.0, "sample_power": 0.25})
     assert detail is not None and detail[3] == "direct", detail
     assert 3.2 < detail[0] < 3.3, detail
+
+    population = {"polls": [
+        {"pollster": "A", "dates": "November 1, 2024", "dem": 50.0,
+         "rep": 50.0, "sample": 600, "population": "LV"},
+        {"pollster": "B", "dates": "November 1, 2024", "dem": 52.5,
+         "rep": 47.5, "sample": 600, "population": "A"},
+    ]}
+    detail = m.poll_estimate_detail(population, ASOF,
+                                   {"pollster_cap": 1.0, "sample_power": 0.0})
+    assert detail is not None and detail[3] == "direct", detail
+    assert abs(detail[0] - 5.0 * 0.75 / 1.75) < 0.01, detail
     print("poll estimator ok")
 
 

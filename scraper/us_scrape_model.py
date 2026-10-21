@@ -118,6 +118,7 @@ POLL_PARTISAN_W = 0.6       # partisan pollster weight
 POLLSTER_CAP = 0.5          # max share of a race average one firm can carry
 POLL_SAMPLE_REF = 600.0     # typical poll sample
 POLL_SAMPLE_POWER = 0.25    # diminishing returns to sample size
+POLL_POP_WEIGHT = {"LV": 1.0, "RV": 0.9, "V": 0.9, "A": 0.75, "PV": 0.75}
 POLL_TRIM = 12.0            # drop polls >12 pts from the weighted median
 POLL_AGG_SIGMA = 2.5
 POLL_DIR_SIGMA = 4.0
@@ -420,6 +421,7 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
         sample = pol.get("sample")
         if sample and sample_power:
             w *= min(1.5, max(0.5, (float(sample) / sample_ref) ** sample_power))
+        w *= POLL_POP_WEIGHT.get((pol.get("population") or "").upper(), 1.0)
         rows.append((mar, w, pollster_key(pol.get("pollster"))))
     if len(rows) >= 2 and 0.0 < pollster_cap < 1.0:
         totals = {}
