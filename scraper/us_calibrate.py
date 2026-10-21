@@ -56,7 +56,7 @@ def norm_cdf(x):
 
 def poll_est(entry, asof, p):
     """Shared estimator: individual polls first, aggregate only as fallback."""
-    return m.poll_estimate_detail(entry, asof, p)
+    return m.poll_estimate_detail(entry, asof, p, chamber="senate")
 
 
 def grade_of(race):

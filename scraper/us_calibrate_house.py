@@ -58,7 +58,7 @@ def margin(r, p, asof):
     env_w = p["env_w"] if band is not None else 1.0
     lean += env_w * (r.get("env") or 0.0)
     if polls:
-        lean = m.blend_poll(lean, polls, asof, m.grade_of(r))
+        lean = m.blend_poll(lean, polls, asof, m.grade_of(r), "house")
     return lean
 
 

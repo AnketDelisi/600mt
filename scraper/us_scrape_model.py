@@ -105,6 +105,11 @@ STATE_ENV_WEIGHT = {"senate": 0.8, "governor": 0.25, "house": 0.25}
 PRES_PATH = OUTPUT_DIR / "pres_by_cd.json"
 PRES_BY_CD = (json.loads(PRES_PATH.read_text(encoding="utf-8"))
               if PRES_PATH.exists() else {})
+POLLSTER_PATH = OUTPUT_DIR / "pollster_effects.json"
+POLLSTER_EFFECTS = (json.loads(POLLSTER_PATH.read_text(encoding="utf-8"))
+                    if POLLSTER_PATH.exists() else {})
+POLLSTER_MIN_N = 10
+POLLSTER_MIN_ABS = 3.0
 HOUSE_PRES_CYCLE = "2026"
 TREND_WEIGHT = 0.2
 POLL_HALF_LIFE = 120.0      # days; a poll 4 months old counts half
@@ -347,14 +352,37 @@ def two_party(d, r):
     return (d - r) / (d + r) * 100.0 if (d + r) > 0 else None
 
 
-def poll_estimate_detail(entry, asof, params=None):
+def pollster_key(name):
+    return " ".join((name or "").lower().split())
+
+
+def pollster_effect(name, chamber):
+    """Shrunk historical house effect (D-R points) for a pollster.
+
+    Only well-observed, non-trivial effects are applied; small or one-off
+    effects stay at zero so the holdout gain is not bought with noise.
+    """
+    key = pollster_key(name)
+    if not key or not POLLSTER_EFFECTS:
+        return 0.0
+    effects = POLLSTER_EFFECTS.get("effects") or {}
+    for table in (effects.get(chamber) or {}, effects.get("all") or {}):
+        item = table.get(key)
+        if (item and item.get("n", 0) >= POLLSTER_MIN_N
+                and abs(item.get("effect", 0.0)) >= POLLSTER_MIN_ABS):
+            return float(item["effect"])
+    return 0.0
+
+
+def poll_estimate_detail(entry, asof, params=None, chamber=None):
     """(margin, sigma, n_eff, source) from the individual polls first.
 
     Rebuilds the average with recency (120-day half-life), partisan-poll
     discount, a weighted-median trim and an effective-sample floor, so a
     2022/2023 poll cannot drag a 2024/2026 race. An aggregate is only a
     fallback when fewer than two usable individual polls exist; it never
-    bypasses the poll rows.
+    bypasses the poll rows. Individual polls get their shrunk pollster house
+    effect removed before averaging.
     """
     if not entry:
         return None
@@ -379,6 +407,7 @@ def poll_estimate_detail(entry, asof, params=None):
         mar = two_party(pol["dem"], pol["rep"])
         if mar is None:
             continue
+        mar -= pollster_effect(pol.get("pollster"), chamber)
         w = 0.5 ** (age / half_life)
         if pol.get("partisan"):
             w *= partisan_w
@@ -409,9 +438,9 @@ def poll_estimate_detail(entry, asof, params=None):
     return None
 
 
-def poll_estimate(entry, asof):
+def poll_estimate(entry, asof, chamber=None):
     """(margin, sigma) from poll_estimate_detail, or None."""
-    detail = poll_estimate_detail(entry, asof)
+    detail = poll_estimate_detail(entry, asof, chamber=chamber)
     return detail[:2] if detail else None
 
 
@@ -499,8 +528,8 @@ def structural_margin(race, chamber, env, polls, lean_year=None):
     return rm
 
 
-def blend_poll(prior, entry, asof, grade):
-    pe = poll_estimate(entry, asof)
+def blend_poll(prior, entry, asof, grade, chamber=None):
+    pe = poll_estimate(entry, asof, chamber)
     if pe is None:
         return prior
     P, sig = pe
@@ -515,7 +544,7 @@ def final_margin(race, polls, chamber, env=0.0, asof=None, lean_year=None):
     asof = asof or date.today()
     rm = structural_margin(race, chamber, env, polls, lean_year)
     if polls:
-        rm = blend_poll(rm, polls, asof, grade_of(race))
+        rm = blend_poll(rm, polls, asof, grade_of(race), chamber)
     return rm
 
 

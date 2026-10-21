@@ -1,0 +1,5495 @@
+{
+ "source": "600 pollster house effects from 2018-22 snapshots",
+ "fit_cycles": [
+  2018,
+  2020,
+  2022
+ ],
+ "shrink": 5.0,
+ "min_race_polls": 2,
+ "effects": {
+  "all": {
+   "long island university": {
+    "effect": 6.18,
+    "n": 3,
+    "name": "Long Island University"
+   },
+   "american research group": {
+    "effect": 5.98,
+    "n": 9,
+    "name": "American Research Group"
+   },
+   "public policy polling (d-garcia)": {
+    "effect": 5.16,
+    "n": 3,
+    "name": "Public Policy Polling (D-Garcia)"
+   },
+   "redfield & wilton strategies": {
+    "effect": 5.12,
+    "n": 24,
+    "name": "Redfield & Wilton Strategies"
+   },
+   "liberty opinion research (r-reform party)": {
+    "effect": -5.11,
+    "n": 2,
+    "name": "Liberty Opinion Research (R-Reform Party)"
+   },
+   "thomas partners strategies": {
+    "effect": -4.62,
+    "n": 8,
+    "name": "Thomas Partners Strategies"
+   },
+   "university of nevada, reno": {
+    "effect": 4.44,
+    "n": 3,
+    "name": "University of Nevada, Reno"
+   },
+   "soonerpoll": {
+    "effect": 4.37,
+    "n": 16,
+    "name": "SoonerPoll"
+   },
+   "luntz global": {
+    "effect": -4.3,
+    "n": 1,
+    "name": "Luntz Global"
+   },
+   "we ask america": {
+    "effect": -3.96,
+    "n": 4,
+    "name": "We Ask America"
+   },
+   "target insyght": {
+    "effect": 3.89,
+    "n": 6,
+    "name": "Target Insyght"
+   },
+   "mitchell research": {
+    "effect": -3.8,
+    "n": 14,
+    "name": "Mitchell Research"
+   },
+   "st. cloud state university": {
+    "effect": 3.72,
+    "n": 4,
+    "name": "St. Cloud State University"
+   },
+   "remington (r-marshall)": {
+    "effect": -3.41,
+    "n": 1,
+    "name": "Remington (R-Marshall)"
+   },
+   "desales university": {
+    "effect": 3.34,
+    "n": 3,
+    "name": "DeSales University"
+   },
+   "mclaughlin & associates (r-woodall)": {
+    "effect": -3.1,
+    "n": 1,
+    "name": "McLaughlin & Associates (R-Woodall)"
+   },
+   "patriot polling": {
+    "effect": -3.03,
+    "n": 5,
+    "name": "Patriot Polling"
+   },
+   "phillips academy": {
+    "effect": -2.99,
+    "n": 8,
+    "name": "Phillips Academy"
+   },
+   "uc berkeley": {
+    "effect": 2.93,
+    "n": 12,
+    "name": "UC Berkeley"
+   },
+   "change research (d-thompson)": {
+    "effect": 2.92,
+    "n": 1,
+    "name": "Change Research (D-Thompson)"
+   },
+   "john zogby strategies": {
+    "effect": 2.84,
+    "n": 4,
+    "name": "John Zogby Strategies"
+   },
+   "grassroots targeting (r-ohio first)": {
+    "effect": -2.82,
+    "n": 2,
+    "name": "Grassroots Targeting (R-Ohio First)"
+   },
+   "mclaughlin & associates (r-salazar)": {
+    "effect": -2.81,
+    "n": 2,
+    "name": "McLaughlin & Associates (R-Salazar)"
+   },
+   "university of montana": {
+    "effect": 2.75,
+    "n": 4,
+    "name": "University of Montana"
+   },
+   "public policy polling (d-ohio democratic party)": {
+    "effect": 2.73,
+    "n": 3,
+    "name": "Public Policy Polling (D-Ohio Democratic Party)"
+   },
+   "jayhawk consulting (d-lapolice)": {
+    "effect": 2.71,
+    "n": 2,
+    "name": "Jayhawk Consulting (D-LaPolice)"
+   },
+   "franklin & marshall college": {
+    "effect": 2.7,
+    "n": 14,
+    "name": "Franklin & Marshall College"
+   },
+   "the phillips academy": {
+    "effect": -2.64,
+    "n": 2,
+    "name": "The Phillips Academy"
+   },
+   "targoz market research": {
+    "effect": -2.63,
+    "n": 15,
+    "name": "Targoz Market Research"
+   },
+   "kiaer research": {
+    "effect": 2.57,
+    "n": 2,
+    "name": "Kiaer Research"
+   },
+   "redfield and wilton strategies": {
+    "effect": 2.54,
+    "n": 3,
+    "name": "Redfield and Wilton Strategies"
+   },
+   "fm3 research": {
+    "effect": 2.52,
+    "n": 1,
+    "name": "FM3 Research"
+   },
+   "glengariff group": {
+    "effect": 2.52,
+    "n": 10,
+    "name": "Glengariff Group"
+   },
+   "wpa intelligence (r-cruz)": {
+    "effect": -2.46,
+    "n": 1,
+    "name": "WPA Intelligence (R-Cruz)"
+   },
+   "epstein group": {
+    "effect": -2.43,
+    "n": 1,
+    "name": "Epstein Group"
+   },
+   "probolsky research": {
+    "effect": -2.4,
+    "n": 2,
+    "name": "Probolsky Research"
+   },
+   "harper polling": {
+    "effect": 2.35,
+    "n": 1,
+    "name": "Harper Polling"
+   },
+   "american viewpoint (r-braun)": {
+    "effect": -2.34,
+    "n": 3,
+    "name": "American Viewpoint (R-Braun)"
+   },
+   "middle tennessee state university": {
+    "effect": 2.33,
+    "n": 1,
+    "name": "Middle Tennessee State University"
+   },
+   "garin-hart-yang (d-bredesen)": {
+    "effect": 2.29,
+    "n": 2,
+    "name": "Garin-Hart-Yang (D-Bredesen)"
+   },
+   "saint leo university": {
+    "effect": -2.29,
+    "n": 7,
+    "name": "Saint Leo University"
+   },
+   "garin-hart-yang (d-abrams)": {
+    "effect": 2.26,
+    "n": 2,
+    "name": "Garin-Hart-Yang (D-Abrams)"
+   },
+   "dhm research": {
+    "effect": 2.23,
+    "n": 3,
+    "name": "DHM Research"
+   },
+   "the polling company (r-citizens united)": {
+    "effect": -2.22,
+    "n": 3,
+    "name": "The Polling Company (R-Citizens United)"
+   },
+   "east carolina university": {
+    "effect": -2.22,
+    "n": 25,
+    "name": "East Carolina University"
+   },
+   "tulchin research (d-bourdeaux)": {
+    "effect": 2.22,
+    "n": 1,
+    "name": "Tulchin Research (D-Bourdeaux)"
+   },
+   "florida atlantic university": {
+    "effect": -2.22,
+    "n": 12,
+    "name": "Florida Atlantic University"
+   },
+   "public opinion strategies (r-harkey)": {
+    "effect": -2.2,
+    "n": 2,
+    "name": "Public Opinion Strategies (R-Harkey)"
+   },
+   "change research": {
+    "effect": -2.18,
+    "n": 28,
+    "name": "Change Research"
+   },
+   "targetpoint (r-fung)": {
+    "effect": -2.15,
+    "n": 1,
+    "name": "TargetPoint (R-Fung)"
+   },
+   "gravis marketing": {
+    "effect": 2.15,
+    "n": 62,
+    "name": "Gravis Marketing"
+   },
+   "research america": {
+    "effect": 2.14,
+    "n": 2,
+    "name": "Research America"
+   },
+   "meredith college": {
+    "effect": 2.14,
+    "n": 9,
+    "name": "Meredith College"
+   },
+   "change research (d-nh democratic party)": {
+    "effect": 2.14,
+    "n": 1,
+    "name": "Change Research (D-NH Democratic Party)"
+   },
+   "civiqs / data for progress": {
+    "effect": -2.12,
+    "n": 1,
+    "name": "Civiqs / Data for Progress"
+   },
+   "cnn / ssrs": {
+    "effect": 2.12,
+    "n": 37,
+    "name": "CNN / SSRS"
+   },
+   "wpa intelligence (r-cdp pac)": {
+    "effect": -2.11,
+    "n": 2,
+    "name": "WPA Intelligence (R-CDP PAC)"
+   },
+   "montana state university bozeman": {
+    "effect": 2.1,
+    "n": 5,
+    "name": "Montana State University Bozeman"
+   },
+   "fabrizio ward": {
+    "effect": -2.08,
+    "n": 3,
+    "name": "Fabrizio Ward"
+   },
+   "carroll strategies": {
+    "effect": -2.07,
+    "n": 8,
+    "name": "Carroll Strategies"
+   },
+   "onmessage inc. (r-edwards)": {
+    "effect": -2.07,
+    "n": 1,
+    "name": "OnMessage Inc. (R-Edwards)"
+   },
+   "onmessage inc. (r-scott)": {
+    "effect": -2.06,
+    "n": 2,
+    "name": "OnMessage Inc. (R-Scott)"
+   },
+   "garin-hart-yang research group (d-luria)": {
+    "effect": 2.06,
+    "n": 1,
+    "name": "Garin-Hart-Yang Research Group (D-Luria)"
+   },
+   "tulchin research (d-cisneros)": {
+    "effect": 2.04,
+    "n": 2,
+    "name": "Tulchin Research (D-Cisneros)"
+   },
+   "fabrizio, lee and associates (r-nrsc)": {
+    "effect": -2.03,
+    "n": 1,
+    "name": "Fabrizio, Lee and Associates (R-NRSC)"
+   },
+   "wick insights": {
+    "effect": -1.99,
+    "n": 7,
+    "name": "Wick Insights"
+   },
+   "targetsmart (d-progressnow az)": {
+    "effect": 1.99,
+    "n": 1,
+    "name": "TargetSmart (D-ProgressNow AZ)"
+   },
+   "thomas partner strategies": {
+    "effect": -1.99,
+    "n": 2,
+    "name": "Thomas Partner Strategies"
+   },
+   "trafalgar group": {
+    "effect": -1.96,
+    "n": 2,
+    "name": "Trafalgar Group"
+   },
+   "lighthouse research / salt lake tribune": {
+    "effect": -1.96,
+    "n": 1,
+    "name": "Lighthouse Research / Salt Lake Tribune"
+   },
+   "abby broyles": {
+    "effect": 1.95,
+    "n": 1,
+    "name": "Abby Broyles"
+   },
+   "remington research group / missouri scout": {
+    "effect": -1.93,
+    "n": 9,
+    "name": "Remington Research Group / Missouri Scout"
+   },
+   "pan atlantic research": {
+    "effect": -1.91,
+    "n": 12,
+    "name": "Pan Atlantic Research"
+   },
+   "gs strategy group (r-clf)": {
+    "effect": -1.9,
+    "n": 1,
+    "name": "GS Strategy Group (R-CLF)"
+   },
+   "colby college": {
+    "effect": 1.89,
+    "n": 5,
+    "name": "Colby College"
+   },
+   "big data poll": {
+    "effect": -1.87,
+    "n": 3,
+    "name": "Big Data Poll"
+   },
+   "harrisx": {
+    "effect": -1.87,
+    "n": 63,
+    "name": "HarrisX"
+   },
+   "university of arkansas": {
+    "effect": 1.85,
+    "n": 2,
+    "name": "University of Arkansas"
+   },
+   "pulse opinion research / rasmussen reports": {
+    "effect": -1.85,
+    "n": 4,
+    "name": "Pulse Opinion Research / Rasmussen Reports"
+   },
+   "public policy polling (d-protect our care)": {
+    "effect": 1.83,
+    "n": 9,
+    "name": "Public Policy Polling (D-Protect Our Care)"
+   },
+   "alg research (d-hegar)": {
+    "effect": 1.81,
+    "n": 1,
+    "name": "ALG Research (D-Hegar)"
+   },
+   "marist college / nbc news": {
+    "effect": 1.79,
+    "n": 2,
+    "name": "Marist College / NBC News"
+   },
+   "siena college / the new york times": {
+    "effect": 1.78,
+    "n": 3,
+    "name": "Siena College / The New York Times"
+   },
+   "remington research (r-yoder)": {
+    "effect": -1.76,
+    "n": 1,
+    "name": "Remington Research (R-Yoder)"
+   },
+   "wpa intelligence (r-king)": {
+    "effect": -1.76,
+    "n": 1,
+    "name": "WPA Intelligence (R-King)"
+   },
+   "the polling company (r-blum)": {
+    "effect": -1.75,
+    "n": 2,
+    "name": "The Polling Company (R-Blum)"
+   },
+   "raba research": {
+    "effect": 1.75,
+    "n": 4,
+    "name": "RABA Research"
+   },
+   "alg research (d-eggman)": {
+    "effect": -1.75,
+    "n": 1,
+    "name": "ALG Research (D-Eggman)"
+   },
+   "the phillips academy poll": {
+    "effect": -1.74,
+    "n": 2,
+    "name": "The Phillips Academy Poll"
+   },
+   "goucher college": {
+    "effect": -1.73,
+    "n": 3,
+    "name": "Goucher College"
+   },
+   "latino decisions": {
+    "effect": 1.73,
+    "n": 2,
+    "name": "Latino Decisions"
+   },
+   "remington (r-laxalt)": {
+    "effect": -1.72,
+    "n": 1,
+    "name": "Remington (R-Laxalt)"
+   },
+   "ohio northern university / lucid": {
+    "effect": -1.69,
+    "n": 2,
+    "name": "Ohio Northern University / Lucid"
+   },
+   "trz communications (r-wtpc)": {
+    "effect": -1.68,
+    "n": 2,
+    "name": "TRZ Communications (R-WTPC)"
+   },
+   "washington post / schar school": {
+    "effect": 1.68,
+    "n": 3,
+    "name": "Washington Post / Schar School"
+   },
+   "triton polling & research (r-carpenter)": {
+    "effect": -1.67,
+    "n": 1,
+    "name": "Triton Polling & Research (R-Carpenter)"
+   },
+   "baldwin wallace university": {
+    "effect": 1.65,
+    "n": 12,
+    "name": "Baldwin Wallace University"
+   },
+   "alg research (d-sutton)": {
+    "effect": -1.62,
+    "n": 3,
+    "name": "ALG Research (D-Sutton)"
+   },
+   "usc dornsife / los angeles times": {
+    "effect": 1.62,
+    "n": 1,
+    "name": "USC Dornsife / Los Angeles Times"
+   },
+   "alaska survey research": {
+    "effect": 1.61,
+    "n": 7,
+    "name": "Alaska Survey Research"
+   },
+   "university of utah": {
+    "effect": -1.61,
+    "n": 6,
+    "name": "University of Utah"
+   },
+   "fabrizio ward / aarp": {
+    "effect": -1.61,
+    "n": 1,
+    "name": "Fabrizio Ward / AARP"
+   },
+   "wpa intelligence (r-club for growth)": {
+    "effect": -1.6,
+    "n": 3,
+    "name": "WPA Intelligence (R-Club For Growth)"
+   },
+   "nbc news / marist college": {
+    "effect": 1.6,
+    "n": 3,
+    "name": "NBC News / Marist College"
+   },
+   "firehouse strategies/0ptimus": {
+    "effect": -1.59,
+    "n": 1,
+    "name": "Firehouse Strategies/0ptimus"
+   },
+   "target-insyght p": {
+    "effect": 1.58,
+    "n": 1,
+    "name": "Target-Insyght  P"
+   },
+   "human agency / missouri scout": {
+    "effect": -1.57,
+    "n": 1,
+    "name": "Human Agency / Missouri Scout"
+   },
+   "emerson college": {
+    "effect": -1.55,
+    "n": 203,
+    "name": "Emerson College"
+   },
+   "montana state university billings": {
+    "effect": 1.55,
+    "n": 3,
+    "name": "Montana State University Billings"
+   },
+   "gravis marketing (i-a)": {
+    "effect": 1.53,
+    "n": 1,
+    "name": "Gravis Marketing (I-A)"
+   },
+   "michigan state university": {
+    "effect": -1.53,
+    "n": 3,
+    "name": "Michigan State University"
+   },
+   "wpa intelligence (r-nrsc)": {
+    "effect": -1.52,
+    "n": 1,
+    "name": "WPA Intelligence (R-NRSC)"
+   },
+   "target-insyght": {
+    "effect": -1.51,
+    "n": 7,
+    "name": "Target-Insyght"
+   },
+   "dixie strategies": {
+    "effect": -1.51,
+    "n": 7,
+    "name": "Dixie Strategies"
+   },
+   "gba strategies (d-pureval)": {
+    "effect": 1.5,
+    "n": 2,
+    "name": "GBA Strategies (D-Pureval)"
+   },
+   "yougov / cbs news": {
+    "effect": -1.5,
+    "n": 11,
+    "name": "YouGov / CBS News"
+   },
+   "mclaughlin & associates (r-comstock)": {
+    "effect": -1.47,
+    "n": 1,
+    "name": "McLaughlin & Associates (R-Comstock)"
+   },
+   "tulchin research (d-mcmurray)": {
+    "effect": 1.47,
+    "n": 2,
+    "name": "Tulchin Research (D-McMurray)"
+   },
+   "the tarrance group (r-carter)": {
+    "effect": -1.46,
+    "n": 1,
+    "name": "The Tarrance Group (R-Carter)"
+   },
+   "susquehanna polling & research": {
+    "effect": 1.44,
+    "n": 1,
+    "name": "Susquehanna Polling & Research"
+   },
+   "public opinion strategies (r-nrsc)": {
+    "effect": -1.43,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-NRSC)"
+   },
+   "bendixen & amandi international": {
+    "effect": -1.42,
+    "n": 1,
+    "name": "Bendixen & Amandi International"
+   },
+   "hendrix college": {
+    "effect": 1.4,
+    "n": 7,
+    "name": "Hendrix College"
+   },
+   "y2 analytics / salt lake tribune": {
+    "effect": 1.39,
+    "n": 2,
+    "name": "Y2 Analytics / Salt Lake Tribune"
+   },
+   "keating research / onsight public affairs / melanson": {
+    "effect": 1.39,
+    "n": 2,
+    "name": "Keating Research / OnSight Public Affairs / Melanson"
+   },
+   "zogby analytics": {
+    "effect": 1.38,
+    "n": 4,
+    "name": "Zogby Analytics"
+   },
+   "university of new hampshire": {
+    "effect": -1.38,
+    "n": 53,
+    "name": "University of New Hampshire"
+   },
+   "tulchin research (d-campa-najjar)": {
+    "effect": 1.37,
+    "n": 3,
+    "name": "Tulchin Research (D-Campa-Najjar)"
+   },
+   "saint anselm college": {
+    "effect": -1.37,
+    "n": 22,
+    "name": "Saint Anselm College"
+   },
+   "university of georgia": {
+    "effect": -1.36,
+    "n": 8,
+    "name": "University of Georgia"
+   },
+   "baselice & associates (r-tlrpac)": {
+    "effect": -1.35,
+    "n": 1,
+    "name": "Baselice & Associates (R-TLRPAC)"
+   },
+   "highground inc.": {
+    "effect": -1.34,
+    "n": 5,
+    "name": "HighGround Inc."
+   },
+   "virginia commonwealth university": {
+    "effect": 1.34,
+    "n": 3,
+    "name": "Virginia Commonwealth University"
+   },
+   "slingshot strategies (i-hayes)": {
+    "effect": 1.34,
+    "n": 2,
+    "name": "Slingshot Strategies (I-Hayes)"
+   },
+   "strategic research associates": {
+    "effect": -1.33,
+    "n": 8,
+    "name": "Strategic Research Associates"
+   },
+   "strategies unlimited": {
+    "effect": 1.33,
+    "n": 1,
+    "name": "Strategies Unlimited"
+   },
+   "onmessage inc. (r-hawley)": {
+    "effect": -1.32,
+    "n": 2,
+    "name": "OnMessage Inc. (R-Hawley)"
+   },
+   "garin-hart-yang (d-jealous)": {
+    "effect": 1.32,
+    "n": 1,
+    "name": "Garin-Hart-Yang (D-Jealous)"
+   },
+   "benenson strategy group / gs strategy group": {
+    "effect": -1.32,
+    "n": 3,
+    "name": "Benenson Strategy Group / GS Strategy Group"
+   },
+   "change research (d-innovation ohio)": {
+    "effect": -1.31,
+    "n": 2,
+    "name": "Change Research (D-Innovation Ohio)"
+   },
+   "research co.": {
+    "effect": -1.31,
+    "n": 41,
+    "name": "Research Co."
+   },
+   "gravis marketing (r-petersen)": {
+    "effect": -1.3,
+    "n": 1,
+    "name": "Gravis Marketing (R-Petersen)"
+   },
+   "fallon research": {
+    "effect": -1.29,
+    "n": 4,
+    "name": "Fallon Research"
+   },
+   "alg research (d-stevens)": {
+    "effect": 1.28,
+    "n": 1,
+    "name": "ALG Research (D-Stevens)"
+   },
+   "data for progress": {
+    "effect": 1.27,
+    "n": 17,
+    "name": "Data for Progress"
+   },
+   "sachs media": {
+    "effect": 1.26,
+    "n": 3,
+    "name": "Sachs Media"
+   },
+   "abc news / washington post": {
+    "effect": -1.25,
+    "n": 1,
+    "name": "ABC News / Washington Post"
+   },
+   "fabrizio ward / hart research associates": {
+    "effect": -1.25,
+    "n": 4,
+    "name": "Fabrizio Ward / Hart Research Associates"
+   },
+   "highground public affairs": {
+    "effect": -1.24,
+    "n": 4,
+    "name": "HighGround Public Affairs"
+   },
+   "massinc polling group": {
+    "effect": 1.24,
+    "n": 1,
+    "name": "MassINC Polling Group"
+   },
+   "global strategy group (d-smp)": {
+    "effect": 1.22,
+    "n": 2,
+    "name": "Global Strategy Group (D-SMP)"
+   },
+   "garin-hart-yang (d-dscc)": {
+    "effect": 1.2,
+    "n": 1,
+    "name": "Garin-Hart-Yang (D-DSCC)"
+   },
+   "jmc analytics and polling": {
+    "effect": 1.2,
+    "n": 1,
+    "name": "JMC Analytics and Polling"
+   },
+   "quinnipiac university": {
+    "effect": 1.2,
+    "n": 68,
+    "name": "Quinnipiac University"
+   },
+   "university of iowa": {
+    "effect": 1.19,
+    "n": 1,
+    "name": "University of Iowa"
+   },
+   "public opinion strategies (r-fitzpatrick)": {
+    "effect": -1.18,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-Fitzpatrick)"
+   },
+   "axis research (r-nrsc)": {
+    "effect": -1.15,
+    "n": 1,
+    "name": "Axis Research (R-NRSC)"
+   },
+   "national research inc. (r-hugin)": {
+    "effect": -1.15,
+    "n": 1,
+    "name": "National Research Inc. (R-Hugin)"
+   },
+   "digital research inc.": {
+    "effect": -1.15,
+    "n": 1,
+    "name": "Digital Research Inc."
+   },
+   "marquette university": {
+    "effect": -1.14,
+    "n": 20,
+    "name": "Marquette University"
+   },
+   "gqr research (d-slotkin)": {
+    "effect": 1.13,
+    "n": 1,
+    "name": "GQR Research (D-Slotkin)"
+   },
+   "alg research (d-axne)": {
+    "effect": 1.13,
+    "n": 1,
+    "name": "ALG Research (D-Axne)"
+   },
+   "yougov / ut": {
+    "effect": -1.13,
+    "n": 5,
+    "name": "YouGov / UT"
+   },
+   "public policy polling (d-heckroth)": {
+    "effect": -1.11,
+    "n": 1,
+    "name": "Public Policy Polling (D-Heckroth)"
+   },
+   "causeway solutions (r-no supermajorities pac)": {
+    "effect": -1.11,
+    "n": 1,
+    "name": "Causeway Solutions (R-No Supermajorities PAC)"
+   },
+   "marketing resource group": {
+    "effect": 1.11,
+    "n": 2,
+    "name": "Marketing Resource Group"
+   },
+   "vox populi polling": {
+    "effect": 1.09,
+    "n": 20,
+    "name": "Vox Populi Polling"
+   },
+   "strategies 360 (d-hill)": {
+    "effect": -1.09,
+    "n": 1,
+    "name": "Strategies 360 (D-Hill)"
+   },
+   "fabrizio, lee & associates (r-clf)": {
+    "effect": 1.08,
+    "n": 2,
+    "name": "Fabrizio, Lee & Associates (R-CLF)"
+   },
+   "marist college / nbc": {
+    "effect": 1.07,
+    "n": 3,
+    "name": "Marist College / NBC"
+   },
+   "citizen data [ failed verification ]": {
+    "effect": 1.07,
+    "n": 1,
+    "name": "Citizen Data  [ failed verification ]"
+   },
+   "crosswind media & public relations": {
+    "effect": 1.06,
+    "n": 2,
+    "name": "Crosswind Media & Public Relations"
+   },
+   "mwr research / consumer energy alliance": {
+    "effect": -1.03,
+    "n": 2,
+    "name": "MWR Research / Consumer Energy Alliance"
+   },
+   "y2 analytics (r-love)": {
+    "effect": -1.03,
+    "n": 1,
+    "name": "Y2 Analytics (R-Love)"
+   },
+   "selzer & co. / des moines register": {
+    "effect": -1.02,
+    "n": 1,
+    "name": "Selzer & Co. / Des Moines Register"
+   },
+   "patinkin research strategies (i-walker)": {
+    "effect": -1.02,
+    "n": 1,
+    "name": "Patinkin Research Strategies (I-Walker)"
+   },
+   "hoffman research group": {
+    "effect": 1.02,
+    "n": 2,
+    "name": "Hoffman Research Group"
+   },
+   "public opinion strategies (r-walters)": {
+    "effect": -1.01,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-Walters)"
+   },
+   "alg research (d-shalala)": {
+    "effect": 0.99,
+    "n": 1,
+    "name": "ALG Research (D-Shalala)"
+   },
+   "starboard communications": {
+    "effect": -0.98,
+    "n": 1,
+    "name": "Starboard Communications"
+   },
+   "univision / arizona state university": {
+    "effect": 0.96,
+    "n": 1,
+    "name": "Univision / Arizona State University"
+   },
+   "arw strategies": {
+    "effect": 0.95,
+    "n": 1,
+    "name": "ARW Strategies"
+   },
+   "selzer & company": {
+    "effect": -0.95,
+    "n": 3,
+    "name": "Selzer & Company"
+   },
+   "jmc analytics": {
+    "effect": 0.94,
+    "n": 1,
+    "name": "JMC Analytics"
+   },
+   "univision / university of houston / latino decisions / latino decisions/north star opinion research": {
+    "effect": 0.94,
+    "n": 2,
+    "name": "Univision / University of Houston / Latino Decisions / Latino Decisions/North Star Opinion Research"
+   },
+   "nelson research": {
+    "effect": -0.93,
+    "n": 2,
+    "name": "Nelson Research"
+   },
+   "public policy polling (d-health care voter)": {
+    "effect": 0.92,
+    "n": 2,
+    "name": "Public Policy Polling (D-Health Care Voter)"
+   },
+   "swayable": {
+    "effect": 0.92,
+    "n": 20,
+    "name": "Swayable"
+   },
+   "triton polling and research": {
+    "effect": -0.92,
+    "n": 1,
+    "name": "Triton Polling and Research"
+   },
+   "auburn university at montgomery": {
+    "effect": 0.91,
+    "n": 3,
+    "name": "Auburn University At Montgomery"
+   },
+   "the tarrance group (r-coffman)": {
+    "effect": -0.91,
+    "n": 1,
+    "name": "The Tarrance Group (R-Coffman)"
+   },
+   "the glengariff group, inc.": {
+    "effect": 0.91,
+    "n": 7,
+    "name": "The Glengariff Group, Inc."
+   },
+   "moore information (r-hardy)": {
+    "effect": -0.9,
+    "n": 1,
+    "name": "Moore Information (R-Hardy)"
+   },
+   "ut tyler": {
+    "effect": -0.9,
+    "n": 9,
+    "name": "UT Tyler"
+   },
+   "the tarrance group (r-slf)": {
+    "effect": -0.9,
+    "n": 1,
+    "name": "The Tarrance Group (R-SLF)"
+   },
+   "atlasintel": {
+    "effect": 0.9,
+    "n": 2,
+    "name": "AtlasIntel"
+   },
+   "change research (d-reason to believe pac)": {
+    "effect": 0.9,
+    "n": 2,
+    "name": "Change Research (D-Reason to Believe PAC)"
+   },
+   "yougov / cbs": {
+    "effect": 0.9,
+    "n": 9,
+    "name": "YouGov / CBS"
+   },
+   "mclaughlin & associates (r-laxalt)": {
+    "effect": -0.89,
+    "n": 1,
+    "name": "McLaughlin & Associates (R-Laxalt)"
+   },
+   "saint louis university": {
+    "effect": 0.89,
+    "n": 1,
+    "name": "Saint Louis University"
+   },
+   "texas lyceum": {
+    "effect": 0.89,
+    "n": 3,
+    "name": "Texas Lyceum"
+   },
+   "public policy polling (d-biss)": {
+    "effect": -0.89,
+    "n": 1,
+    "name": "Public Policy Polling (D-Biss)"
+   },
+   "tyson group": {
+    "effect": 0.89,
+    "n": 1,
+    "name": "Tyson Group"
+   },
+   "kaiser family foundation / co health foundation / ssrs": {
+    "effect": 0.87,
+    "n": 1,
+    "name": "Kaiser Family Foundation / CO Health Foundation / SSRS"
+   },
+   "research consultants (r-farmpac)": {
+    "effect": 0.87,
+    "n": 1,
+    "name": "Research Consultants (R-FarmPAC)"
+   },
+   "ascend action": {
+    "effect": 0.87,
+    "n": 1,
+    "name": "Ascend Action"
+   },
+   "the mellman group": {
+    "effect": 0.86,
+    "n": 2,
+    "name": "The Mellman Group"
+   },
+   "grand canyon battleground poll": {
+    "effect": -0.86,
+    "n": 1,
+    "name": "Grand Canyon Battleground Poll"
+   },
+   "national research inc. (r-macarthur)": {
+    "effect": -0.85,
+    "n": 1,
+    "name": "National Research Inc. (R-MacArthur)"
+   },
+   "surveyusa": {
+    "effect": 0.85,
+    "n": 84,
+    "name": "SurveyUSA"
+   },
+   "open model project": {
+    "effect": -0.85,
+    "n": 1,
+    "name": "Open Model Project"
+   },
+   "remington research group": {
+    "effect": -0.85,
+    "n": 1,
+    "name": "Remington Research Group"
+   },
+   "siena research / nyt": {
+    "effect": -0.85,
+    "n": 4,
+    "name": "Siena Research / NYT"
+   },
+   "massinc": {
+    "effect": -0.85,
+    "n": 13,
+    "name": "MassINC"
+   },
+   "the mellman group (d-golden)": {
+    "effect": 0.84,
+    "n": 2,
+    "name": "The Mellman Group (D-Golden)"
+   },
+   "public policy polling (d-duty and country pac)": {
+    "effect": 0.83,
+    "n": 1,
+    "name": "Public Policy Polling (D-Duty and Country Pac)"
+   },
+   "tulchin research (d-janz)": {
+    "effect": 0.83,
+    "n": 1,
+    "name": "Tulchin Research (D-Janz)"
+   },
+   "triton polling & research": {
+    "effect": -0.83,
+    "n": 2,
+    "name": "Triton Polling & Research"
+   },
+   "change research (d-garcia)": {
+    "effect": 0.82,
+    "n": 1,
+    "name": "Change Research (D-Garcia)"
+   },
+   "amber integrated": {
+    "effect": -0.8,
+    "n": 3,
+    "name": "Amber Integrated"
+   },
+   "echelon insights": {
+    "effect": 0.8,
+    "n": 20,
+    "name": "Echelon Insights"
+   },
+   "glengariff group / detroit news": {
+    "effect": -0.8,
+    "n": 1,
+    "name": "Glengariff Group / Detroit News"
+   },
+   "garin-hart-yang research group (d-mcgrath)": {
+    "effect": 0.8,
+    "n": 3,
+    "name": "Garin-Hart-Yang Research Group (D-McGrath)"
+   },
+   "embold research": {
+    "effect": -0.79,
+    "n": 1,
+    "name": "Embold Research"
+   },
+   "rutgers university": {
+    "effect": 0.79,
+    "n": 1,
+    "name": "Rutgers University"
+   },
+   "global strategy group": {
+    "effect": -0.79,
+    "n": 1,
+    "name": "Global Strategy Group"
+   },
+   "gqr research (d-kim)": {
+    "effect": -0.79,
+    "n": 1,
+    "name": "GQR Research (D-Kim)"
+   },
+   "global strategy group (d-horsford)": {
+    "effect": 0.78,
+    "n": 1,
+    "name": "Global Strategy Group (D-Horsford)"
+   },
+   "rbi strategies & research": {
+    "effect": 0.77,
+    "n": 1,
+    "name": "RBI Strategies & Research"
+   },
+   "abc / washington post": {
+    "effect": -0.77,
+    "n": 2,
+    "name": "ABC / Washington Post"
+   },
+   "nyt upshot / siena college": {
+    "effect": 0.77,
+    "n": 92,
+    "name": "NYT Upshot / Siena College"
+   },
+   "fleming & associates": {
+    "effect": -0.77,
+    "n": 8,
+    "name": "Fleming & Associates"
+   },
+   "triumph campaigns": {
+    "effect": -0.77,
+    "n": 2,
+    "name": "Triumph Campaigns"
+   },
+   "change research [ better source needed ]": {
+    "effect": -0.77,
+    "n": 1,
+    "name": "Change Research  [ better source needed ]"
+   },
+   "yougov / umass amherst": {
+    "effect": 0.76,
+    "n": 3,
+    "name": "YouGov / UMass Amherst"
+   },
+   "yougov / txhpf": {
+    "effect": 0.76,
+    "n": 2,
+    "name": "YouGov / TXHPF"
+   },
+   "gqr research (d-coleman)": {
+    "effect": 0.76,
+    "n": 1,
+    "name": "GQR Research (D-Coleman)"
+   },
+   "bendixen & amandi research (d-shalala)": {
+    "effect": 0.75,
+    "n": 1,
+    "name": "Bendixen & Amandi Research (D-Shalala)"
+   },
+   "y2 analytics": {
+    "effect": -0.74,
+    "n": 1,
+    "name": "Y2 Analytics"
+   },
+   "data orbital": {
+    "effect": -0.74,
+    "n": 8,
+    "name": "Data Orbital"
+   },
+   "wick": {
+    "effect": -0.74,
+    "n": 2,
+    "name": "Wick"
+   },
+   "public policy polling (d-levine)": {
+    "effect": 0.74,
+    "n": 1,
+    "name": "Public Policy Polling (D-Levine)"
+   },
+   "global strategy group (d-crow)": {
+    "effect": -0.73,
+    "n": 1,
+    "name": "Global Strategy Group (D-Crow)"
+   },
+   "clearview research": {
+    "effect": -0.72,
+    "n": 1,
+    "name": "Clearview Research"
+   },
+   "morning consult": {
+    "effect": 0.72,
+    "n": 75,
+    "name": "Morning Consult"
+   },
+   "mellman group (d-mcadams)": {
+    "effect": 0.72,
+    "n": 3,
+    "name": "Mellman Group (D-McAdams)"
+   },
+   "sacred heart university": {
+    "effect": -0.72,
+    "n": 5,
+    "name": "Sacred Heart University"
+   },
+   "florida southern college": {
+    "effect": -0.71,
+    "n": 2,
+    "name": "Florida Southern College"
+   },
+   "fort hays state university": {
+    "effect": 0.71,
+    "n": 1,
+    "name": "Fort Hays State University"
+   },
+   "siena college / new york times": {
+    "effect": 0.71,
+    "n": 1,
+    "name": "Siena College / New York Times"
+   },
+   "rutgers-eagleton": {
+    "effect": -0.7,
+    "n": 1,
+    "name": "Rutgers-Eagleton"
+   },
+   "sooner poll": {
+    "effect": 0.69,
+    "n": 1,
+    "name": "Sooner Poll"
+   },
+   "critical insights": {
+    "effect": 0.68,
+    "n": 5,
+    "name": "Critical Insights"
+   },
+   "alg research (d-shapiro)": {
+    "effect": 0.67,
+    "n": 1,
+    "name": "ALG Research (D-Shapiro)"
+   },
+   "southern illinois university": {
+    "effect": 0.67,
+    "n": 2,
+    "name": "Southern Illinois University"
+   },
+   "feldman group (d-levin)": {
+    "effect": -0.66,
+    "n": 1,
+    "name": "Feldman Group (D-Levin)"
+   },
+   "nson opinion strategy (l)": {
+    "effect": -0.66,
+    "n": 1,
+    "name": "NSON Opinion Strategy (L)"
+   },
+   "gqr research (d-eastman)": {
+    "effect": 0.66,
+    "n": 1,
+    "name": "GQR Research (D-Eastman)"
+   },
+   "muhlenberg college": {
+    "effect": 0.66,
+    "n": 11,
+    "name": "Muhlenberg College"
+   },
+   "citizen data": {
+    "effect": 0.66,
+    "n": 3,
+    "name": "Citizen Data"
+   },
+   "siena college / nyt upshot": {
+    "effect": -0.66,
+    "n": 25,
+    "name": "Siena College / NYT Upshot"
+   },
+   "public policy polling": {
+    "effect": 0.65,
+    "n": 36,
+    "name": "Public Policy Polling"
+   },
+   "vanderbilt university / ssrs": {
+    "effect": 0.65,
+    "n": 2,
+    "name": "Vanderbilt University / SSRS"
+   },
+   "insideradvantage": {
+    "effect": -0.64,
+    "n": 4,
+    "name": "InsiderAdvantage"
+   },
+   "global strategy group (d-bryce)": {
+    "effect": 0.64,
+    "n": 2,
+    "name": "Global Strategy Group (D-Bryce)"
+   },
+   "university of maryland": {
+    "effect": 0.64,
+    "n": 3,
+    "name": "University of Maryland"
+   },
+   "oh predictive insights": {
+    "effect": -0.64,
+    "n": 34,
+    "name": "OH Predictive Insights"
+   },
+   "spectrum news / siena": {
+    "effect": 0.63,
+    "n": 4,
+    "name": "Spectrum News / Siena"
+   },
+   "marist college": {
+    "effect": 0.62,
+    "n": 45,
+    "name": "Marist College"
+   },
+   "the tarrance group (r-rga)": {
+    "effect": -0.62,
+    "n": 1,
+    "name": "The Tarrance Group (R-RGA)"
+   },
+   "dfm research": {
+    "effect": 0.62,
+    "n": 3,
+    "name": "DFM Research"
+   },
+   "mclaughlin (r-missouri rising action)": {
+    "effect": -0.61,
+    "n": 2,
+    "name": "McLaughlin (R-Missouri Rising Action)"
+   },
+   "garin-hart-yang (d-smith)": {
+    "effect": 0.61,
+    "n": 1,
+    "name": "Garin-Hart-Yang (D-Smith)"
+   },
+   "merriman river group": {
+    "effect": -0.61,
+    "n": 1,
+    "name": "Merriman River Group"
+   },
+   "strategies 360": {
+    "effect": -0.6,
+    "n": 4,
+    "name": "Strategies 360"
+   },
+   "global strategy group (d-davids)": {
+    "effect": -0.6,
+    "n": 1,
+    "name": "Global Strategy Group (D-Davids)"
+   },
+   "university of texas tyler": {
+    "effect": -0.6,
+    "n": 2,
+    "name": "University of Texas Tyler"
+   },
+   "magellan strategies": {
+    "effect": -0.59,
+    "n": 2,
+    "name": "Magellan Strategies"
+   },
+   "public opinion strategies (r-barr)": {
+    "effect": -0.59,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-Barr)"
+   },
+   "yougov / uh": {
+    "effect": 0.58,
+    "n": 2,
+    "name": "YouGov / UH"
+   },
+   "ipsos / reuters": {
+    "effect": -0.58,
+    "n": 14,
+    "name": "Ipsos / Reuters"
+   },
+   "university of colorado / yougov": {
+    "effect": 0.57,
+    "n": 1,
+    "name": "University of Colorado / YouGov"
+   },
+   "research america inc.": {
+    "effect": -0.55,
+    "n": 4,
+    "name": "Research America Inc."
+   },
+   "public policy institute of california": {
+    "effect": 0.55,
+    "n": 5,
+    "name": "Public Policy Institute of California"
+   },
+   "rmg research / deseret news / hinckley institute of politics": {
+    "effect": 0.55,
+    "n": 1,
+    "name": "RMG Research / Deseret News / Hinckley Institute of Politics"
+   },
+   "cygnal": {
+    "effect": 0.55,
+    "n": 4,
+    "name": "Cygnal"
+   },
+   "yougov / ut / tt": {
+    "effect": -0.55,
+    "n": 1,
+    "name": "YouGov / UT / TT"
+   },
+   "bsp research / shaw & co.": {
+    "effect": -0.54,
+    "n": 4,
+    "name": "BSP Research / Shaw & Co."
+   },
+   "opinionworks": {
+    "effect": 0.54,
+    "n": 1,
+    "name": "OpinionWorks"
+   },
+   "hart research associates (d-dscc)": {
+    "effect": 0.54,
+    "n": 1,
+    "name": "Hart Research Associates (D-DSCC)"
+   },
+   "selzer / des moines register": {
+    "effect": 0.53,
+    "n": 2,
+    "name": "Selzer / Des Moines Register"
+   },
+   "gba strategies (d-heinrich)": {
+    "effect": 0.53,
+    "n": 1,
+    "name": "GBA Strategies (D-Heinrich)"
+   },
+   "fox news": {
+    "effect": -0.53,
+    "n": 48,
+    "name": "FOX News"
+   },
+   "yougov / perryundem": {
+    "effect": 0.52,
+    "n": 1,
+    "name": "YouGov / PerryUndem"
+   },
+   "civiqs": {
+    "effect": 0.52,
+    "n": 32,
+    "name": "Civiqs"
+   },
+   "icitizen": {
+    "effect": -0.51,
+    "n": 1,
+    "name": "iCitizen"
+   },
+   "stockton university": {
+    "effect": -0.51,
+    "n": 5,
+    "name": "Stockton University"
+   },
+   "mclaughlin & associates (r-nr pac)": {
+    "effect": -0.51,
+    "n": 1,
+    "name": "McLaughlin & Associates (R-NR PAC)"
+   },
+   "bsp research / ut": {
+    "effect": 0.5,
+    "n": 1,
+    "name": "BSP Research / UT"
+   },
+   "harper polling (r-35th pac)": {
+    "effect": -0.5,
+    "n": 1,
+    "name": "Harper Polling (R-35th PAC)"
+   },
+   "university of mary washington / ssrs": {
+    "effect": -0.5,
+    "n": 1,
+    "name": "University of Mary Washington / SSRS"
+   },
+   "gba strategies (d-gershon)": {
+    "effect": 0.49,
+    "n": 1,
+    "name": "GBA Strategies (D-Gershon)"
+   },
+   "rmg research": {
+    "effect": 0.48,
+    "n": 26,
+    "name": "RMG Research"
+   },
+   "christopher newport university": {
+    "effect": 0.48,
+    "n": 6,
+    "name": "Christopher Newport University"
+   },
+   "expedition strategies (d-scholten)": {
+    "effect": 0.48,
+    "n": 1,
+    "name": "Expedition Strategies (D-Scholten)"
+   },
+   "victory research": {
+    "effect": -0.48,
+    "n": 5,
+    "name": "Victory Research"
+   },
+   "university of texas at tyler / dallas morning news": {
+    "effect": -0.48,
+    "n": 1,
+    "name": "University of Texas at Tyler / Dallas Morning News"
+   },
+   "global strategy group (d-manchin)": {
+    "effect": 0.48,
+    "n": 2,
+    "name": "Global Strategy Group (D-Manchin)"
+   },
+   "university of illinois springfield": {
+    "effect": -0.48,
+    "n": 1,
+    "name": "University of Illinois Springfield"
+   },
+   "bk strategies": {
+    "effect": -0.47,
+    "n": 1,
+    "name": "BK Strategies"
+   },
+   "reuters / ipsos": {
+    "effect": -0.47,
+    "n": 3,
+    "name": "Reuters / Ipsos"
+   },
+   "yougov": {
+    "effect": -0.47,
+    "n": 15,
+    "name": "YouGov"
+   },
+   "landmark communications": {
+    "effect": -0.46,
+    "n": 4,
+    "name": "Landmark Communications"
+   },
+   "blueprint polling": {
+    "effect": -0.46,
+    "n": 1,
+    "name": "Blueprint Polling"
+   },
+   "surveymonkey": {
+    "effect": -0.46,
+    "n": 4,
+    "name": "SurveyMonkey"
+   },
+   "national research inc. (r-webber)": {
+    "effect": -0.46,
+    "n": 1,
+    "name": "National Research Inc. (R-Webber)"
+   },
+   "change research / cnbc": {
+    "effect": -0.46,
+    "n": 27,
+    "name": "Change Research / CNBC"
+   },
+   "change research (d-bryce)": {
+    "effect": 0.45,
+    "n": 1,
+    "name": "Change Research (D-Bryce)"
+   },
+   "research & polling, inc.": {
+    "effect": 0.45,
+    "n": 7,
+    "name": "Research & Polling, Inc."
+   },
+   "targoz market research / pollsmart": {
+    "effect": 0.45,
+    "n": 2,
+    "name": "Targoz Market Research / PollSmart"
+   },
+   "stetson university": {
+    "effect": 0.43,
+    "n": 1,
+    "name": "Stetson University"
+   },
+   "jayhawk consulting": {
+    "effect": 0.43,
+    "n": 1,
+    "name": "Jayhawk Consulting"
+   },
+   "rmg research / politicaliq": {
+    "effect": 0.41,
+    "n": 3,
+    "name": "RMG Research / PoliticalIQ"
+   },
+   "cbs news / yougov": {
+    "effect": -0.39,
+    "n": 8,
+    "name": "CBS News / YouGov"
+   },
+   "echleon insights": {
+    "effect": -0.38,
+    "n": 1,
+    "name": "Echleon Insights"
+   },
+   "public policy polling (d-pottawatomie county dems)": {
+    "effect": -0.38,
+    "n": 1,
+    "name": "Public Policy Polling (D-Pottawatomie County Dems)"
+   },
+   "public policy polling (d-knea pac)": {
+    "effect": -0.38,
+    "n": 1,
+    "name": "Public Policy Polling (D-KNEA PAC)"
+   },
+   "jmc analytics (r-red metrics group)": {
+    "effect": 0.38,
+    "n": 2,
+    "name": "JMC Analytics (R-Red Metrics Group)"
+   },
+   "gba strategies (d-allred)": {
+    "effect": -0.38,
+    "n": 1,
+    "name": "GBA Strategies (D-Allred)"
+   },
+   "umass amherst / yougov": {
+    "effect": -0.37,
+    "n": 1,
+    "name": "UMass Amherst / YouGov"
+   },
+   "elway research": {
+    "effect": -0.37,
+    "n": 4,
+    "name": "Elway Research"
+   },
+   "cole, snodgrass & associates / soonerpoll": {
+    "effect": -0.37,
+    "n": 1,
+    "name": "Cole, Snodgrass & Associates / SoonerPoll"
+   },
+   "mellman group": {
+    "effect": 0.36,
+    "n": 1,
+    "name": "Mellman Group"
+   },
+   "reconnect research / probolsky research": {
+    "effect": -0.35,
+    "n": 1,
+    "name": "Reconnect Research / Probolsky Research"
+   },
+   "strategic national": {
+    "effect": 0.35,
+    "n": 1,
+    "name": "Strategic National"
+   },
+   "gqr research (d-mucarsel-powell)": {
+    "effect": 0.35,
+    "n": 1,
+    "name": "GQR Research (D-Mucarsel-Powell)"
+   },
+   "university of mary washington / psrai": {
+    "effect": -0.34,
+    "n": 1,
+    "name": "University of Mary Washington / PSRAI"
+   },
+   "maine people's resource center": {
+    "effect": 0.34,
+    "n": 1,
+    "name": "Maine People's Resource Center"
+   },
+   "siena college": {
+    "effect": 0.34,
+    "n": 41,
+    "name": "Siena College"
+   },
+   "fm3 research (d-brown)": {
+    "effect": 0.34,
+    "n": 1,
+    "name": "FM3 Research (D-Brown)"
+   },
+   "gqr research (d-carlson)": {
+    "effect": 0.34,
+    "n": 2,
+    "name": "GQR Research (D-Carlson)"
+   },
+   "rasmussen reports / pulse opinion research": {
+    "effect": -0.34,
+    "n": 1,
+    "name": "Rasmussen Reports / Pulse Opinion Research"
+   },
+   "gba strategies (d-end citizens united)": {
+    "effect": 0.34,
+    "n": 1,
+    "name": "GBA Strategies (D-End Citizens United)"
+   },
+   "umass lowell / yougov": {
+    "effect": 0.34,
+    "n": 4,
+    "name": "UMass Lowell / YouGov"
+   },
+   "gqr research (d-tmi)": {
+    "effect": -0.33,
+    "n": 1,
+    "name": "GQR Research (D-TMI)"
+   },
+   "surveymonkey / axios": {
+    "effect": -0.33,
+    "n": 20,
+    "name": "SurveyMonkey / Axios"
+   },
+   "university of nevada las vegas lee business school": {
+    "effect": -0.33,
+    "n": 1,
+    "name": "University of Nevada Las Vegas Lee Business School"
+   },
+   "rasmussen reports": {
+    "effect": -0.33,
+    "n": 5,
+    "name": "Rasmussen Reports"
+   },
+   "harstad strategic research": {
+    "effect": -0.33,
+    "n": 1,
+    "name": "Harstad Strategic Research"
+   },
+   "tulchin research (d-moveon)": {
+    "effect": 0.32,
+    "n": 1,
+    "name": "Tulchin Research (D-MoveOn)"
+   },
+   "chism strategies (d-reform austin)": {
+    "effect": 0.32,
+    "n": 1,
+    "name": "Chism Strategies (D-Reform Austin)"
+   },
+   "meeting street research (r-bacon)": {
+    "effect": -0.32,
+    "n": 1,
+    "name": "Meeting Street Research (R-Bacon)"
+   },
+   "normington, petts & associates (d-dinicola)": {
+    "effect": -0.31,
+    "n": 1,
+    "name": "Normington, Petts & Associates (D-DiNicola)"
+   },
+   "fairleigh dickinson university": {
+    "effect": -0.31,
+    "n": 1,
+    "name": "Fairleigh Dickinson University"
+   },
+   "alg research": {
+    "effect": 0.31,
+    "n": 1,
+    "name": "ALG Research"
+   },
+   "roanoke college": {
+    "effect": -0.31,
+    "n": 4,
+    "name": "Roanoke College"
+   },
+   "hendrix college / talkbusiness": {
+    "effect": -0.3,
+    "n": 1,
+    "name": "Hendrix College / TalkBusiness"
+   },
+   "meeting street research (r-fischer)": {
+    "effect": -0.3,
+    "n": 1,
+    "name": "Meeting Street Research (R-Fischer)"
+   },
+   "dittman research": {
+    "effect": -0.3,
+    "n": 1,
+    "name": "Dittman Research"
+   },
+   "civiqs / daily kos": {
+    "effect": 0.3,
+    "n": 17,
+    "name": "Civiqs / Daily Kos"
+   },
+   "neighbourhood research & media": {
+    "effect": 0.29,
+    "n": 1,
+    "name": "Neighbourhood Research & Media"
+   },
+   "east tennessee state university": {
+    "effect": 0.29,
+    "n": 2,
+    "name": "East Tennessee State University"
+   },
+   "bold decision": {
+    "effect": 0.29,
+    "n": 1,
+    "name": "Bold Decision"
+   },
+   "ipsos": {
+    "effect": 0.28,
+    "n": 33,
+    "name": "Ipsos"
+   },
+   "chism strategies": {
+    "effect": -0.28,
+    "n": 1,
+    "name": "Chism Strategies"
+   },
+   "climate nexus": {
+    "effect": 0.28,
+    "n": 1,
+    "name": "Climate Nexus"
+   },
+   "the tarrance group (r-nrsc)": {
+    "effect": 0.28,
+    "n": 1,
+    "name": "The Tarrance Group (R-NRSC)"
+   },
+   "pacific market research": {
+    "effect": 0.27,
+    "n": 1,
+    "name": "Pacific Market Research"
+   },
+   "jmc analytics / bold blue campaigns": {
+    "effect": 0.27,
+    "n": 2,
+    "name": "JMC Analytics / Bold Blue Campaigns"
+   },
+   "strategies 360 (d-janz)": {
+    "effect": 0.26,
+    "n": 2,
+    "name": "Strategies 360 (D-Janz)"
+   },
+   "public policy polling (d-porter)": {
+    "effect": 0.26,
+    "n": 2,
+    "name": "Public Policy Polling (D-Porter)"
+   },
+   "epic-mra": {
+    "effect": -0.26,
+    "n": 16,
+    "name": "EPIC-MRA"
+   },
+   "colby college / socialsphere": {
+    "effect": -0.26,
+    "n": 3,
+    "name": "Colby College / SocialSphere"
+   },
+   "activote": {
+    "effect": 0.26,
+    "n": 4,
+    "name": "ActiVote"
+   },
+   "pulse research": {
+    "effect": -0.25,
+    "n": 1,
+    "name": "Pulse Research"
+   },
+   "civiqs (d-crawford county dems)": {
+    "effect": 0.25,
+    "n": 1,
+    "name": "Civiqs (D-Crawford County Dems)"
+   },
+   "yougov / university of colorado": {
+    "effect": -0.25,
+    "n": 1,
+    "name": "YouGov / University of Colorado"
+   },
+   "strategies 360 / nbcmt": {
+    "effect": -0.25,
+    "n": 1,
+    "name": "Strategies 360 / NBCMT"
+   },
+   "tulchin research (d-rouda)": {
+    "effect": -0.24,
+    "n": 1,
+    "name": "Tulchin Research (D-Rouda)"
+   },
+   "–(l)": {
+    "effect": 0.24,
+    "n": 3,
+    "name": "–(L)"
+   },
+   "pulse opinion research": {
+    "effect": -0.23,
+    "n": 1,
+    "name": "Pulse Opinion Research"
+   },
+   "dan jones & associates": {
+    "effect": 0.23,
+    "n": 11,
+    "name": "Dan Jones & Associates"
+   },
+   "florida state university / yougov": {
+    "effect": 0.23,
+    "n": 2,
+    "name": "Florida State University / YouGov"
+   },
+   "kaiser family foundation / ssrs": {
+    "effect": -0.22,
+    "n": 4,
+    "name": "Kaiser Family Foundation / SSRS"
+   },
+   "yougov / umass lowell": {
+    "effect": 0.22,
+    "n": 8,
+    "name": "YouGov / UMass Lowell"
+   },
+   "mason-dixon": {
+    "effect": 0.22,
+    "n": 30,
+    "name": "Mason-Dixon"
+   },
+   "monmouth university": {
+    "effect": 0.22,
+    "n": 45,
+    "name": "Monmouth University"
+   },
+   "global strategy group (d-porter)": {
+    "effect": -0.22,
+    "n": 2,
+    "name": "Global Strategy Group (D-Porter)"
+   },
+   "surveyusa / wral-tv": {
+    "effect": -0.22,
+    "n": 1,
+    "name": "SurveyUSA / WRAL-TV"
+   },
+   "victory insights": {
+    "effect": 0.22,
+    "n": 2,
+    "name": "Victory Insights"
+   },
+   "keating research / magellan strategies": {
+    "effect": 0.2,
+    "n": 3,
+    "name": "Keating Research / Magellan Strategies"
+   },
+   "nbc news / marist": {
+    "effect": -0.2,
+    "n": 17,
+    "name": "NBC News / Marist"
+   },
+   "baris/ peach state battleground poll": {
+    "effect": 0.2,
+    "n": 1,
+    "name": "Baris/ Peach State Battleground Poll"
+   },
+   "ipsos / reutuers": {
+    "effect": -0.2,
+    "n": 1,
+    "name": "Ipsos / Reutuers"
+   },
+   "frederick polls": {
+    "effect": -0.19,
+    "n": 1,
+    "name": "Frederick Polls"
+   },
+   "public policy polling (d-scott)": {
+    "effect": -0.18,
+    "n": 1,
+    "name": "Public Policy Polling (D-Scott)"
+   },
+   "ogden & fry (r-liberty principles pac)": {
+    "effect": 0.18,
+    "n": 1,
+    "name": "Ogden & Fry (R-Liberty Principles PAC)"
+   },
+   "yougov / university of texas / texas tribune": {
+    "effect": -0.18,
+    "n": 1,
+    "name": "YouGov / University of Texas / Texas Tribune"
+   },
+   "schar school / washington post": {
+    "effect": 0.18,
+    "n": 1,
+    "name": "Schar School / Washington Post"
+   },
+   "opinion insight / american action forum": {
+    "effect": -0.17,
+    "n": 2,
+    "name": "Opinion Insight / American Action Forum"
+   },
+   "lake research partners (d-long)": {
+    "effect": -0.17,
+    "n": 3,
+    "name": "Lake Research Partners (D-Long)"
+   },
+   "keating research / onsight public affairs / colorado sun": {
+    "effect": 0.17,
+    "n": 1,
+    "name": "Keating Research / Onsight Public Affairs / Colorado Sun"
+   },
+   "keating research": {
+    "effect": 0.17,
+    "n": 1,
+    "name": "Keating Research"
+   },
+   "public policy polling (d-co democratic party)": {
+    "effect": -0.17,
+    "n": 1,
+    "name": "Public Policy Polling (D-CO Democratic Party)"
+   },
+   "public policy polling (d-western states strategies)": {
+    "effect": -0.17,
+    "n": 1,
+    "name": "Public Policy Polling (D-Western States Strategies)"
+   },
+   "yougov / texas hispanic policy foundation / rice university's baker institute": {
+    "effect": -0.17,
+    "n": 1,
+    "name": "YouGov / Texas Hispanic Policy Foundation / Rice University's Baker Institute"
+   },
+   "alg research (d-forward illinois)": {
+    "effect": -0.16,
+    "n": 1,
+    "name": "ALG Research (D-Forward Illinois)"
+   },
+   "american viewpoint (r-clf)": {
+    "effect": -0.16,
+    "n": 1,
+    "name": "American Viewpoint (R-CLF)"
+   },
+   "public policy polling (d-dinicola)": {
+    "effect": -0.16,
+    "n": 1,
+    "name": "Public Policy Polling (D-DiNicola)"
+   },
+   "public policy polling (d-change course ct pac)": {
+    "effect": -0.15,
+    "n": 1,
+    "name": "Public Policy Polling (D-Change Course CT PAC)"
+   },
+   "mason-dixon polling & strategy": {
+    "effect": 0.15,
+    "n": 4,
+    "name": "Mason-Dixon Polling & Strategy"
+   },
+   "unlv lee business school": {
+    "effect": -0.15,
+    "n": 1,
+    "name": "UNLV Lee Business School"
+   },
+   "gqr research (d-malinowski)": {
+    "effect": -0.15,
+    "n": 1,
+    "name": "GQR Research (D-Malinowski)"
+   },
+   "cu boulder / yougov": {
+    "effect": 0.15,
+    "n": 2,
+    "name": "CU Boulder / YouGov"
+   },
+   "public policy polling (d-tmi)": {
+    "effect": 0.14,
+    "n": 1,
+    "name": "Public Policy Polling (D-TMI)"
+   },
+   "neighborhood research and media": {
+    "effect": 0.14,
+    "n": 1,
+    "name": "Neighborhood Research and Media"
+   },
+   "public policy polling (d-end citizens united)": {
+    "effect": 0.14,
+    "n": 3,
+    "name": "Public Policy Polling (D-End Citizens United)"
+   },
+   "gonzales research": {
+    "effect": -0.14,
+    "n": 4,
+    "name": "Gonzales Research"
+   },
+   "cherry communications": {
+    "effect": -0.14,
+    "n": 6,
+    "name": "Cherry Communications"
+   },
+   "university of north florida": {
+    "effect": -0.13,
+    "n": 13,
+    "name": "University of North Florida"
+   },
+   "harrisx / the hill": {
+    "effect": -0.13,
+    "n": 1,
+    "name": "HarrisX / The Hill"
+   },
+   "umass lowell": {
+    "effect": -0.12,
+    "n": 3,
+    "name": "UMass Lowell"
+   },
+   "st. pete polls": {
+    "effect": -0.12,
+    "n": 20,
+    "name": "St. Pete Polls"
+   },
+   "university of texas / yougov": {
+    "effect": 0.11,
+    "n": 4,
+    "name": "University of Texas / YouGov"
+   },
+   "vcreek / amg (r-russell)": {
+    "effect": 0.1,
+    "n": 3,
+    "name": "VCreek / AMG (R-Russell)"
+   },
+   "reconnect research / roanoke college": {
+    "effect": 0.1,
+    "n": 1,
+    "name": "Reconnect Research / Roanoke College"
+   },
+   "roanoke college / reconnect research": {
+    "effect": 0.1,
+    "n": 1,
+    "name": "Roanoke College / Reconnect Research"
+   },
+   "bluegrass community & technical college": {
+    "effect": -0.1,
+    "n": 1,
+    "name": "Bluegrass Community & Technical College"
+   },
+   "muhlenberg college / morning call": {
+    "effect": 0.09,
+    "n": 1,
+    "name": "Muhlenberg College / Morning Call"
+   },
+   "public policy polling (d-edge comms.)": {
+    "effect": 0.09,
+    "n": 3,
+    "name": "Public Policy Polling (D-EDGE Comms.)"
+   },
+   "public policy polling (d-georgia engaged)": {
+    "effect": -0.08,
+    "n": 1,
+    "name": "Public Policy Polling (D-Georgia Engaged)"
+   },
+   "selzer & co.": {
+    "effect": -0.08,
+    "n": 7,
+    "name": "Selzer & Co."
+   },
+   "public policy polling (d-giffords)": {
+    "effect": -0.08,
+    "n": 1,
+    "name": "Public Policy Polling (D-Giffords)"
+   },
+   "siena college / nyt": {
+    "effect": -0.08,
+    "n": 3,
+    "name": "Siena College / NYT"
+   },
+   "yougov / slu": {
+    "effect": 0.08,
+    "n": 1,
+    "name": "YouGov / SLU"
+   },
+   "usc": {
+    "effect": -0.08,
+    "n": 2,
+    "name": "USC"
+   },
+   "unlv business school": {
+    "effect": 0.08,
+    "n": 1,
+    "name": "UNLV Business School"
+   },
+   "susquehanna polling and research": {
+    "effect": 0.07,
+    "n": 1,
+    "name": "Susquehanna Polling and Research"
+   },
+   "research & polling inc.": {
+    "effect": 0.06,
+    "n": 7,
+    "name": "Research & Polling Inc."
+   },
+   "keating research / onsight public affairs / martin campaigns": {
+    "effect": -0.06,
+    "n": 1,
+    "name": "Keating Research / OnSight Public Affairs / Martin Campaigns"
+   },
+   "gqr research (d-end citizens united)": {
+    "effect": -0.06,
+    "n": 1,
+    "name": "GQR Research (D-End Citizens United)"
+   },
+   "vcreek/amg": {
+    "effect": -0.06,
+    "n": 1,
+    "name": "VCreek/AMG"
+   },
+   "public opinion strategies (r-fha)": {
+    "effect": 0.04,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-FHA)"
+   },
+   "texas hispanic policy foundation": {
+    "effect": 0.03,
+    "n": 1,
+    "name": "Texas Hispanic Policy Foundation"
+   },
+   "socialsphere": {
+    "effect": -0.03,
+    "n": 4,
+    "name": "SocialSphere"
+   },
+   "seven letter insight": {
+    "effect": -0.03,
+    "n": 1,
+    "name": "Seven Letter Insight"
+   },
+   "national research inc": {
+    "effect": 0.02,
+    "n": 1,
+    "name": "National Research Inc"
+   },
+   "yougov / uh / tsu": {
+    "effect": -0.02,
+    "n": 1,
+    "name": "YouGov / UH / TSU"
+   },
+   "public opinion strategies (r-bishop)": {
+    "effect": 0.01,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-Bishop)"
+   },
+   "western new england university": {
+    "effect": -0.01,
+    "n": 4,
+    "name": "Western New England University"
+   },
+   "thirty-ninth street strategies (d-mcbath)": {
+    "effect": -0.01,
+    "n": 2,
+    "name": "Thirty-Ninth Street Strategies (D-McBath)"
+   },
+   "suffolk university": {
+    "effect": -0.01,
+    "n": 67,
+    "name": "Suffolk University"
+   },
+   "yougov / university of houston": {
+    "effect": -0.01,
+    "n": 1,
+    "name": "YouGov / University of Houston"
+   },
+   "opinion savvy": {
+    "effect": 0.01,
+    "n": 2,
+    "name": "Opinion Savvy"
+   },
+   "kaiser family foundation / cook political report": {
+    "effect": 0.01,
+    "n": 3,
+    "name": "Kaiser Family Foundation / Cook Political Report"
+   },
+   "go right strategies (r-rogers)": {
+    "effect": -0.01,
+    "n": 2,
+    "name": "Go Right Strategies (R-Rogers)"
+   },
+   "gba strategies (d-o'connor)": {
+    "effect": -0.01,
+    "n": 2,
+    "name": "GBA Strategies (D-O'Connor)"
+   },
+   "lighthouse research": {
+    "effect": -0.0,
+    "n": 5,
+    "name": "Lighthouse Research"
+   },
+   "riley research associates": {
+    "effect": -0.0,
+    "n": 1,
+    "name": "Riley Research Associates"
+   }
+  },
+  "senate": {
+   "redfield & wilton strategies": {
+    "effect": 5.04,
+    "n": 16,
+    "name": "Redfield & Wilton Strategies"
+   },
+   "university of nevada, reno": {
+    "effect": 4.96,
+    "n": 2,
+    "name": "University of Nevada, Reno"
+   },
+   "change research": {
+    "effect": -3.86,
+    "n": 12,
+    "name": "Change Research"
+   },
+   "university of montana": {
+    "effect": 3.84,
+    "n": 3,
+    "name": "University of Montana"
+   },
+   "long island university": {
+    "effect": 3.84,
+    "n": 2,
+    "name": "Long Island University"
+   },
+   "pan atlantic research": {
+    "effect": -3.59,
+    "n": 2,
+    "name": "Pan Atlantic Research"
+   },
+   "east carolina university": {
+    "effect": -3.37,
+    "n": 14,
+    "name": "East Carolina University"
+   },
+   "mitchell research": {
+    "effect": -3.28,
+    "n": 6,
+    "name": "Mitchell Research"
+   },
+   "soonerpoll": {
+    "effect": 3.23,
+    "n": 6,
+    "name": "SoonerPoll"
+   },
+   "grassroots targeting (r-ohio first)": {
+    "effect": -2.81,
+    "n": 2,
+    "name": "Grassroots Targeting (R-Ohio First)"
+   },
+   "saint leo university": {
+    "effect": -2.78,
+    "n": 4,
+    "name": "Saint Leo University"
+   },
+   "raba research": {
+    "effect": 2.64,
+    "n": 3,
+    "name": "RABA Research"
+   },
+   "florida atlantic university": {
+    "effect": -2.62,
+    "n": 9,
+    "name": "Florida Atlantic University"
+   },
+   "redfield and wilton strategies": {
+    "effect": 2.6,
+    "n": 2,
+    "name": "Redfield and Wilton Strategies"
+   },
+   "kiaer research": {
+    "effect": 2.58,
+    "n": 2,
+    "name": "Kiaer Research"
+   },
+   "wpa intelligence (r-cruz)": {
+    "effect": -2.53,
+    "n": 1,
+    "name": "WPA Intelligence (R-Cruz)"
+   },
+   "baldwin wallace university": {
+    "effect": 2.48,
+    "n": 7,
+    "name": "Baldwin Wallace University"
+   },
+   "liberty opinion research (r-reform party)": {
+    "effect": -2.47,
+    "n": 1,
+    "name": "Liberty Opinion Research (R-Reform Party)"
+   },
+   "st. cloud state university": {
+    "effect": 2.4,
+    "n": 2,
+    "name": "St. Cloud State University"
+   },
+   "american viewpoint (r-braun)": {
+    "effect": -2.39,
+    "n": 3,
+    "name": "American Viewpoint (R-Braun)"
+   },
+   "harper polling": {
+    "effect": 2.33,
+    "n": 1,
+    "name": "Harper Polling"
+   },
+   "montana state university bozeman": {
+    "effect": 2.31,
+    "n": 4,
+    "name": "Montana State University Bozeman"
+   },
+   "middle tennessee state university": {
+    "effect": 2.28,
+    "n": 1,
+    "name": "Middle Tennessee State University"
+   },
+   "rmg research": {
+    "effect": 2.24,
+    "n": 12,
+    "name": "RMG Research"
+   },
+   "garin-hart-yang (d-bredesen)": {
+    "effect": 2.22,
+    "n": 2,
+    "name": "Garin-Hart-Yang (D-Bredesen)"
+   },
+   "glengariff group": {
+    "effect": 2.19,
+    "n": 7,
+    "name": "Glengariff Group"
+   },
+   "wpa intelligence (r-cdp pac)": {
+    "effect": -2.18,
+    "n": 2,
+    "name": "WPA Intelligence (R-CDP PAC)"
+   },
+   "fabrizio ward": {
+    "effect": -2.15,
+    "n": 3,
+    "name": "Fabrizio Ward"
+   },
+   "civiqs / data for progress": {
+    "effect": -2.13,
+    "n": 1,
+    "name": "Civiqs / Data for Progress"
+   },
+   "targoz market research": {
+    "effect": -2.04,
+    "n": 8,
+    "name": "Targoz Market Research"
+   },
+   "fabrizio, lee and associates (r-nrsc)": {
+    "effect": -2.04,
+    "n": 1,
+    "name": "Fabrizio, Lee and Associates (R-NRSC)"
+   },
+   "trafalgar group": {
+    "effect": -2.02,
+    "n": 2,
+    "name": "Trafalgar Group"
+   },
+   "pulse opinion research / rasmussen reports": {
+    "effect": -1.92,
+    "n": 4,
+    "name": "Pulse Opinion Research / Rasmussen Reports"
+   },
+   "abby broyles": {
+    "effect": 1.87,
+    "n": 1,
+    "name": "Abby Broyles"
+   },
+   "gravis marketing": {
+    "effect": 1.82,
+    "n": 42,
+    "name": "Gravis Marketing"
+   },
+   "public policy polling (d-protect our care)": {
+    "effect": 1.8,
+    "n": 8,
+    "name": "Public Policy Polling (D-Protect Our Care)"
+   },
+   "nyt upshot / siena college": {
+    "effect": -1.75,
+    "n": 7,
+    "name": "NYT Upshot / Siena College"
+   },
+   "yougov": {
+    "effect": -1.75,
+    "n": 9,
+    "name": "YouGov"
+   },
+   "cnn / ssrs": {
+    "effect": 1.66,
+    "n": 21,
+    "name": "CNN / SSRS"
+   },
+   "wpa intelligence (r-club for growth)": {
+    "effect": -1.65,
+    "n": 3,
+    "name": "WPA Intelligence (R-Club For Growth)"
+   },
+   "fabrizio ward / aarp": {
+    "effect": -1.64,
+    "n": 1,
+    "name": "Fabrizio Ward / AARP"
+   },
+   "harrisx": {
+    "effect": -1.61,
+    "n": 42,
+    "name": "HarrisX"
+   },
+   "emerson college": {
+    "effect": -1.6,
+    "n": 89,
+    "name": "Emerson College"
+   },
+   "firehouse strategies/0ptimus": {
+    "effect": -1.6,
+    "n": 1,
+    "name": "Firehouse Strategies/0ptimus"
+   },
+   "target-insyght p": {
+    "effect": 1.57,
+    "n": 1,
+    "name": "Target-Insyght  P"
+   },
+   "triton polling & research": {
+    "effect": -1.56,
+    "n": 1,
+    "name": "Triton Polling & Research"
+   },
+   "patriot polling": {
+    "effect": -1.54,
+    "n": 2,
+    "name": "Patriot Polling"
+   },
+   "nbc news / marist college": {
+    "effect": 1.54,
+    "n": 3,
+    "name": "NBC News / Marist College"
+   },
+   "wpa intelligence (r-nrsc)": {
+    "effect": -1.53,
+    "n": 1,
+    "name": "WPA Intelligence (R-NRSC)"
+   },
+   "siena college": {
+    "effect": 1.51,
+    "n": 14,
+    "name": "Siena College"
+   },
+   "change research (d-innovation ohio)": {
+    "effect": -1.51,
+    "n": 1,
+    "name": "Change Research (D-Innovation Ohio)"
+   },
+   "trz communications (r-wtpc)": {
+    "effect": -1.49,
+    "n": 1,
+    "name": "TRZ Communications (R-WTPC)"
+   },
+   "phillips academy": {
+    "effect": -1.49,
+    "n": 4,
+    "name": "Phillips Academy"
+   },
+   "highground inc.": {
+    "effect": -1.46,
+    "n": 3,
+    "name": "HighGround Inc."
+   },
+   "bendixen & amandi international": {
+    "effect": -1.45,
+    "n": 1,
+    "name": "Bendixen & Amandi International"
+   },
+   "public opinion strategies (r-nrsc)": {
+    "effect": -1.45,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-NRSC)"
+   },
+   "baselice & associates (r-tlrpac)": {
+    "effect": -1.42,
+    "n": 1,
+    "name": "Baselice & Associates (R-TLRPAC)"
+   },
+   "keating research / onsight public affairs / melanson": {
+    "effect": 1.37,
+    "n": 2,
+    "name": "Keating Research / OnSight Public Affairs / Melanson"
+   },
+   "benenson strategy group / gs strategy group": {
+    "effect": -1.36,
+    "n": 3,
+    "name": "Benenson Strategy Group / GS Strategy Group"
+   },
+   "swayable": {
+    "effect": 1.36,
+    "n": 17,
+    "name": "Swayable"
+   },
+   "virginia commonwealth university": {
+    "effect": 1.35,
+    "n": 3,
+    "name": "Virginia Commonwealth University"
+   },
+   "onmessage inc. (r-hawley)": {
+    "effect": -1.34,
+    "n": 2,
+    "name": "OnMessage Inc. (R-Hawley)"
+   },
+   "gravis marketing (r-petersen)": {
+    "effect": -1.32,
+    "n": 1,
+    "name": "Gravis Marketing (R-Petersen)"
+   },
+   "saint anselm college": {
+    "effect": -1.3,
+    "n": 6,
+    "name": "Saint Anselm College"
+   },
+   "michigan state university": {
+    "effect": -1.29,
+    "n": 1,
+    "name": "Michigan State University"
+   },
+   "the polling company (r-citizens united)": {
+    "effect": -1.28,
+    "n": 2,
+    "name": "The Polling Company (R-Citizens United)"
+   },
+   "abc news / washington post": {
+    "effect": -1.28,
+    "n": 1,
+    "name": "ABC News / Washington Post"
+   },
+   "national research inc. (r-hugin)": {
+    "effect": -1.25,
+    "n": 1,
+    "name": "National Research Inc. (R-Hugin)"
+   },
+   "massinc": {
+    "effect": 1.24,
+    "n": 7,
+    "name": "MassINC"
+   },
+   "onmessage inc. (r-scott)": {
+    "effect": -1.23,
+    "n": 1,
+    "name": "OnMessage Inc. (R-Scott)"
+   },
+   "global strategy group (d-smp)": {
+    "effect": 1.2,
+    "n": 2,
+    "name": "Global Strategy Group (D-SMP)"
+   },
+   "jmc analytics and polling": {
+    "effect": 1.2,
+    "n": 1,
+    "name": "JMC Analytics and Polling"
+   },
+   "data for progress": {
+    "effect": 1.19,
+    "n": 17,
+    "name": "Data for Progress"
+   },
+   "axis research (r-nrsc)": {
+    "effect": -1.17,
+    "n": 1,
+    "name": "Axis Research (R-NRSC)"
+   },
+   "fallon research": {
+    "effect": 1.16,
+    "n": 2,
+    "name": "Fallon Research"
+   },
+   "garin-hart-yang (d-dscc)": {
+    "effect": 1.15,
+    "n": 1,
+    "name": "Garin-Hart-Yang (D-DSCC)"
+   },
+   "the phillips academy": {
+    "effect": -1.1,
+    "n": 1,
+    "name": "The Phillips Academy"
+   },
+   "–(l)": {
+    "effect": -1.06,
+    "n": 2,
+    "name": "–(L)"
+   },
+   "starboard communications": {
+    "effect": -1.05,
+    "n": 1,
+    "name": "Starboard Communications"
+   },
+   "elway research": {
+    "effect": 1.01,
+    "n": 2,
+    "name": "Elway Research"
+   },
+   "fleming & associates": {
+    "effect": -1.01,
+    "n": 2,
+    "name": "Fleming & Associates"
+   },
+   "selzer & co. / des moines register": {
+    "effect": -1.0,
+    "n": 1,
+    "name": "Selzer & Co. / Des Moines Register"
+   },
+   "citizen data [ failed verification ]": {
+    "effect": 1.0,
+    "n": 1,
+    "name": "Citizen Data  [ failed verification ]"
+   },
+   "wick insights": {
+    "effect": -0.98,
+    "n": 2,
+    "name": "Wick Insights"
+   },
+   "mason-dixon": {
+    "effect": 0.96,
+    "n": 13,
+    "name": "Mason-Dixon"
+   },
+   "carroll strategies": {
+    "effect": -0.96,
+    "n": 1,
+    "name": "Carroll Strategies"
+   },
+   "triumph campaigns": {
+    "effect": -0.94,
+    "n": 2,
+    "name": "Triumph Campaigns"
+   },
+   "univision / arizona state university": {
+    "effect": 0.93,
+    "n": 1,
+    "name": "Univision / Arizona State University"
+   },
+   "jmc analytics": {
+    "effect": 0.93,
+    "n": 1,
+    "name": "JMC Analytics"
+   },
+   "the tarrance group (r-slf)": {
+    "effect": -0.91,
+    "n": 1,
+    "name": "The Tarrance Group (R-SLF)"
+   },
+   "univision / university of houston / latino decisions / latino decisions/north star opinion research": {
+    "effect": 0.91,
+    "n": 2,
+    "name": "Univision / University of Houston / Latino Decisions / Latino Decisions/North Star Opinion Research"
+   },
+   "university of north florida": {
+    "effect": 0.91,
+    "n": 7,
+    "name": "University of North Florida"
+   },
+   "atlasintel": {
+    "effect": 0.91,
+    "n": 2,
+    "name": "AtlasIntel"
+   },
+   "sachs media": {
+    "effect": 0.9,
+    "n": 1,
+    "name": "Sachs Media"
+   },
+   "auburn university at montgomery": {
+    "effect": 0.9,
+    "n": 3,
+    "name": "Auburn University At Montgomery"
+   },
+   "grand canyon battleground poll": {
+    "effect": -0.89,
+    "n": 1,
+    "name": "Grand Canyon Battleground Poll"
+   },
+   "yougov / cbs news": {
+    "effect": -0.88,
+    "n": 4,
+    "name": "YouGov / CBS News"
+   },
+   "montana state university billings": {
+    "effect": 0.88,
+    "n": 2,
+    "name": "Montana State University Billings"
+   },
+   "quinnipiac university": {
+    "effect": 0.88,
+    "n": 40,
+    "name": "Quinnipiac University"
+   },
+   "open model project": {
+    "effect": -0.86,
+    "n": 1,
+    "name": "Open Model Project"
+   },
+   "remington research group": {
+    "effect": -0.86,
+    "n": 1,
+    "name": "Remington Research Group"
+   },
+   "tyson group": {
+    "effect": 0.86,
+    "n": 1,
+    "name": "Tyson Group"
+   },
+   "public policy polling (d-health care voter)": {
+    "effect": 0.85,
+    "n": 2,
+    "name": "Public Policy Polling (D-Health Care Voter)"
+   },
+   "wick": {
+    "effect": -0.84,
+    "n": 1,
+    "name": "Wick"
+   },
+   "yougov / cbs": {
+    "effect": 0.84,
+    "n": 9,
+    "name": "YouGov / CBS"
+   },
+   "arw strategies": {
+    "effect": 0.84,
+    "n": 1,
+    "name": "ARW Strategies"
+   },
+   "research co.": {
+    "effect": -0.82,
+    "n": 21,
+    "name": "Research Co."
+   },
+   "change research (d-reason to believe pac)": {
+    "effect": 0.82,
+    "n": 2,
+    "name": "Change Research (D-Reason to Believe PAC)"
+   },
+   "research america": {
+    "effect": 0.81,
+    "n": 1,
+    "name": "Research America"
+   },
+   "yougov / umass amherst": {
+    "effect": 0.81,
+    "n": 1,
+    "name": "YouGov / UMass Amherst"
+   },
+   "abc / washington post": {
+    "effect": -0.81,
+    "n": 2,
+    "name": "ABC / Washington Post"
+   },
+   "big data poll": {
+    "effect": -0.8,
+    "n": 1,
+    "name": "Big Data Poll"
+   },
+   "glengariff group / detroit news": {
+    "effect": -0.8,
+    "n": 1,
+    "name": "Glengariff Group / Detroit News"
+   },
+   "rutgers-eagleton": {
+    "effect": -0.8,
+    "n": 1,
+    "name": "Rutgers-Eagleton"
+   },
+   "christopher newport university": {
+    "effect": 0.8,
+    "n": 3,
+    "name": "Christopher Newport University"
+   },
+   "latino decisions": {
+    "effect": 0.79,
+    "n": 1,
+    "name": "Latino Decisions"
+   },
+   "public policy polling (d-duty and country pac)": {
+    "effect": 0.78,
+    "n": 1,
+    "name": "Public Policy Polling (D-Duty and Country Pac)"
+   },
+   "rutgers university": {
+    "effect": 0.78,
+    "n": 1,
+    "name": "Rutgers University"
+   },
+   "lighthouse research": {
+    "effect": -0.77,
+    "n": 1,
+    "name": "Lighthouse Research"
+   },
+   "y2 analytics": {
+    "effect": -0.77,
+    "n": 1,
+    "name": "Y2 Analytics"
+   },
+   "mwr research / consumer energy alliance": {
+    "effect": -0.76,
+    "n": 1,
+    "name": "MWR Research / Consumer Energy Alliance"
+   },
+   "clearview research": {
+    "effect": -0.76,
+    "n": 1,
+    "name": "Clearview Research"
+   },
+   "rbi strategies & research": {
+    "effect": 0.75,
+    "n": 1,
+    "name": "RBI Strategies & Research"
+   },
+   "public policy polling": {
+    "effect": 0.74,
+    "n": 28,
+    "name": "Public Policy Polling"
+   },
+   "fabrizio ward / hart research associates": {
+    "effect": -0.74,
+    "n": 3,
+    "name": "Fabrizio Ward / Hart Research Associates"
+   },
+   "florida southern college": {
+    "effect": -0.74,
+    "n": 1,
+    "name": "Florida Southern College"
+   },
+   "victory insights": {
+    "effect": 0.74,
+    "n": 1,
+    "name": "Victory Insights"
+   },
+   "oh predictive insights": {
+    "effect": -0.72,
+    "n": 27,
+    "name": "OH Predictive Insights"
+   },
+   "marist college / nbc news": {
+    "effect": 0.7,
+    "n": 1,
+    "name": "Marist College / NBC News"
+   },
+   "research & polling inc.": {
+    "effect": -0.7,
+    "n": 2,
+    "name": "Research & Polling Inc."
+   },
+   "public policy polling (d-levine)": {
+    "effect": 0.7,
+    "n": 1,
+    "name": "Public Policy Polling (D-Levine)"
+   },
+   "morning consult": {
+    "effect": 0.69,
+    "n": 73,
+    "name": "Morning Consult"
+   },
+   "umass lowell": {
+    "effect": -0.68,
+    "n": 1,
+    "name": "UMass Lowell"
+   },
+   "civiqs / daily kos": {
+    "effect": 0.68,
+    "n": 14,
+    "name": "Civiqs / Daily Kos"
+   },
+   "research & polling, inc.": {
+    "effect": 0.67,
+    "n": 1,
+    "name": "Research & Polling, Inc."
+   },
+   "ipsos / reuters": {
+    "effect": -0.65,
+    "n": 14,
+    "name": "Ipsos / Reuters"
+   },
+   "mclaughlin (r-missouri rising action)": {
+    "effect": -0.63,
+    "n": 2,
+    "name": "McLaughlin (R-Missouri Rising Action)"
+   },
+   "echelon insights": {
+    "effect": 0.63,
+    "n": 9,
+    "name": "Echelon Insights"
+   },
+   "marist college": {
+    "effect": 0.62,
+    "n": 17,
+    "name": "Marist College"
+   },
+   "the phillips academy poll": {
+    "effect": -0.62,
+    "n": 1,
+    "name": "The Phillips Academy Poll"
+   },
+   "insideradvantage": {
+    "effect": -0.62,
+    "n": 4,
+    "name": "InsiderAdvantage"
+   },
+   "franklin & marshall college": {
+    "effect": 0.62,
+    "n": 6,
+    "name": "Franklin & Marshall College"
+   },
+   "citizen data": {
+    "effect": 0.62,
+    "n": 3,
+    "name": "Citizen Data"
+   },
+   "siena research / nyt": {
+    "effect": -0.6,
+    "n": 2,
+    "name": "Siena Research / NYT"
+   },
+   "strategic research associates": {
+    "effect": -0.6,
+    "n": 6,
+    "name": "Strategic Research Associates"
+   },
+   "ohio northern university / lucid": {
+    "effect": 0.59,
+    "n": 1,
+    "name": "Ohio Northern University / Lucid"
+   },
+   "amber integrated": {
+    "effect": -0.58,
+    "n": 2,
+    "name": "Amber Integrated"
+   },
+   "siena college / nyt upshot": {
+    "effect": -0.58,
+    "n": 18,
+    "name": "Siena College / NYT Upshot"
+   },
+   "meredith college": {
+    "effect": 0.57,
+    "n": 5,
+    "name": "Meredith College"
+   },
+   "selzer / des moines register": {
+    "effect": 0.57,
+    "n": 2,
+    "name": "Selzer / Des Moines Register"
+   },
+   "data orbital": {
+    "effect": -0.57,
+    "n": 6,
+    "name": "Data Orbital"
+   },
+   "bk strategies": {
+    "effect": -0.55,
+    "n": 1,
+    "name": "BK Strategies"
+   },
+   "gba strategies (d-heinrich)": {
+    "effect": 0.55,
+    "n": 1,
+    "name": "GBA Strategies (D-Heinrich)"
+   },
+   "cherry communications": {
+    "effect": -0.55,
+    "n": 4,
+    "name": "Cherry Communications"
+   },
+   "umass lowell / yougov": {
+    "effect": 0.55,
+    "n": 2,
+    "name": "UMass Lowell / YouGov"
+   },
+   "mclaughlin & associates (r-nr pac)": {
+    "effect": -0.55,
+    "n": 1,
+    "name": "McLaughlin & Associates (R-NR PAC)"
+   },
+   "texas lyceum": {
+    "effect": 0.54,
+    "n": 1,
+    "name": "Texas Lyceum"
+   },
+   "dan jones & associates": {
+    "effect": 0.53,
+    "n": 4,
+    "name": "Dan Jones & Associates"
+   },
+   "activote": {
+    "effect": 0.53,
+    "n": 2,
+    "name": "ActiVote"
+   },
+   "change research / cnbc": {
+    "effect": -0.53,
+    "n": 27,
+    "name": "Change Research / CNBC"
+   },
+   "hart research associates (d-dscc)": {
+    "effect": 0.52,
+    "n": 1,
+    "name": "Hart Research Associates (D-DSCC)"
+   },
+   "university of mary washington / ssrs": {
+    "effect": -0.52,
+    "n": 1,
+    "name": "University of Mary Washington / SSRS"
+   },
+   "harper polling (r-35th pac)": {
+    "effect": -0.52,
+    "n": 1,
+    "name": "Harper Polling (R-35th PAC)"
+   },
+   "socialsphere": {
+    "effect": 0.51,
+    "n": 2,
+    "name": "SocialSphere"
+   },
+   "university of texas at tyler / dallas morning news": {
+    "effect": -0.51,
+    "n": 1,
+    "name": "University of Texas at Tyler / Dallas Morning News"
+   },
+   "dixie strategies": {
+    "effect": -0.5,
+    "n": 2,
+    "name": "Dixie Strategies"
+   },
+   "american research group": {
+    "effect": 0.5,
+    "n": 3,
+    "name": "American Research Group"
+   },
+   "epic-mra": {
+    "effect": 0.49,
+    "n": 8,
+    "name": "EPIC-MRA"
+   },
+   "marquette university": {
+    "effect": -0.49,
+    "n": 10,
+    "name": "Marquette University"
+   },
+   "colby college": {
+    "effect": 0.49,
+    "n": 2,
+    "name": "Colby College"
+   },
+   "stockton university": {
+    "effect": -0.49,
+    "n": 3,
+    "name": "Stockton University"
+   },
+   "global strategy group (d-manchin)": {
+    "effect": 0.47,
+    "n": 2,
+    "name": "Global Strategy Group (D-Manchin)"
+   },
+   "bsp research / shaw & co.": {
+    "effect": -0.46,
+    "n": 2,
+    "name": "BSP Research / Shaw & Co."
+   },
+   "reuters / ipsos": {
+    "effect": -0.46,
+    "n": 3,
+    "name": "Reuters / Ipsos"
+   },
+   "civiqs": {
+    "effect": -0.45,
+    "n": 18,
+    "name": "Civiqs"
+   },
+   "target-insyght": {
+    "effect": 0.44,
+    "n": 3,
+    "name": "Target-Insyght"
+   },
+   "crosswind media & public relations": {
+    "effect": 0.41,
+    "n": 1,
+    "name": "Crosswind Media & Public Relations"
+   },
+   "fairleigh dickinson university": {
+    "effect": -0.41,
+    "n": 1,
+    "name": "Fairleigh Dickinson University"
+   },
+   "targoz market research / pollsmart": {
+    "effect": 0.4,
+    "n": 2,
+    "name": "Targoz Market Research / PollSmart"
+   },
+   "surveymonkey / axios": {
+    "effect": -0.4,
+    "n": 20,
+    "name": "SurveyMonkey / Axios"
+   },
+   "rasmussen reports / pulse opinion research": {
+    "effect": -0.4,
+    "n": 1,
+    "name": "Rasmussen Reports / Pulse Opinion Research"
+   },
+   "cu boulder / yougov": {
+    "effect": 0.39,
+    "n": 1,
+    "name": "CU Boulder / YouGov"
+   },
+   "marketing resource group": {
+    "effect": 0.39,
+    "n": 1,
+    "name": "Marketing Resource Group"
+   },
+   "vanderbilt university / ssrs": {
+    "effect": 0.39,
+    "n": 1,
+    "name": "Vanderbilt University / SSRS"
+   },
+   "the mellman group": {
+    "effect": -0.39,
+    "n": 1,
+    "name": "The Mellman Group"
+   },
+   "jmc analytics (r-red metrics group)": {
+    "effect": -0.38,
+    "n": 1,
+    "name": "JMC Analytics (R-Red Metrics Group)"
+   },
+   "university of mary washington / psrai": {
+    "effect": -0.37,
+    "n": 1,
+    "name": "University of Mary Washington / PSRAI"
+   },
+   "cbs news / yougov": {
+    "effect": -0.37,
+    "n": 7,
+    "name": "CBS News / YouGov"
+   },
+   "reconnect research / probolsky research": {
+    "effect": -0.36,
+    "n": 1,
+    "name": "Reconnect Research / Probolsky Research"
+   },
+   "meeting street research (r-fischer)": {
+    "effect": -0.36,
+    "n": 1,
+    "name": "Meeting Street Research (R-Fischer)"
+   },
+   "mellman group": {
+    "effect": 0.35,
+    "n": 1,
+    "name": "Mellman Group"
+   },
+   "cygnal": {
+    "effect": -0.34,
+    "n": 3,
+    "name": "Cygnal"
+   },
+   "university of nevada las vegas lee business school": {
+    "effect": -0.34,
+    "n": 1,
+    "name": "University of Nevada Las Vegas Lee Business School"
+   },
+   "st. pete polls": {
+    "effect": -0.32,
+    "n": 9,
+    "name": "St. Pete Polls"
+   },
+   "the tarrance group (r-nrsc)": {
+    "effect": 0.32,
+    "n": 1,
+    "name": "The Tarrance Group (R-NRSC)"
+   },
+   "nbc news / marist": {
+    "effect": -0.31,
+    "n": 17,
+    "name": "NBC News / Marist"
+   },
+   "gqr research (d-tmi)": {
+    "effect": -0.31,
+    "n": 1,
+    "name": "GQR Research (D-TMI)"
+   },
+   "roanoke college": {
+    "effect": -0.3,
+    "n": 4,
+    "name": "Roanoke College"
+   },
+   "dfm research": {
+    "effect": 0.29,
+    "n": 1,
+    "name": "DFM Research"
+   },
+   "highground public affairs": {
+    "effect": -0.28,
+    "n": 3,
+    "name": "HighGround Public Affairs"
+   },
+   "mason-dixon polling & strategy": {
+    "effect": 0.28,
+    "n": 3,
+    "name": "Mason-Dixon Polling & Strategy"
+   },
+   "marist college / nbc": {
+    "effect": 0.27,
+    "n": 2,
+    "name": "Marist College / NBC"
+   },
+   "yougov / university of colorado": {
+    "effect": -0.27,
+    "n": 1,
+    "name": "YouGov / University of Colorado"
+   },
+   "vox populi polling": {
+    "effect": -0.27,
+    "n": 12,
+    "name": "Vox Populi Polling"
+   },
+   "gba strategies (d-end citizens united)": {
+    "effect": 0.27,
+    "n": 1,
+    "name": "GBA Strategies (D-End Citizens United)"
+   },
+   "chism strategies": {
+    "effect": -0.26,
+    "n": 1,
+    "name": "Chism Strategies"
+   },
+   "tulchin research (d-moveon)": {
+    "effect": 0.25,
+    "n": 1,
+    "name": "Tulchin Research (D-MoveOn)"
+   },
+   "chism strategies (d-reform austin)": {
+    "effect": 0.25,
+    "n": 1,
+    "name": "Chism Strategies (D-Reform Austin)"
+   },
+   "frederick polls": {
+    "effect": -0.25,
+    "n": 1,
+    "name": "Frederick Polls"
+   },
+   "zogby analytics": {
+    "effect": -0.25,
+    "n": 1,
+    "name": "Zogby Analytics"
+   },
+   "critical insights": {
+    "effect": 0.23,
+    "n": 2,
+    "name": "Critical Insights"
+   },
+   "research america inc.": {
+    "effect": 0.23,
+    "n": 3,
+    "name": "Research America Inc."
+   },
+   "ipsos / reutuers": {
+    "effect": -0.22,
+    "n": 1,
+    "name": "Ipsos / Reutuers"
+   },
+   "university of texas tyler": {
+    "effect": 0.22,
+    "n": 1,
+    "name": "University of Texas Tyler"
+   },
+   "colby college / socialsphere": {
+    "effect": 0.22,
+    "n": 2,
+    "name": "Colby College / SocialSphere"
+   },
+   "yougov / umass lowell": {
+    "effect": 0.21,
+    "n": 6,
+    "name": "YouGov / UMass Lowell"
+   },
+   "monmouth university": {
+    "effect": -0.21,
+    "n": 12,
+    "name": "Monmouth University"
+   },
+   "yougov / university of texas / texas tribune": {
+    "effect": -0.21,
+    "n": 1,
+    "name": "YouGov / University of Texas / Texas Tribune"
+   },
+   "ipsos": {
+    "effect": 0.2,
+    "n": 16,
+    "name": "Ipsos"
+   },
+   "florida state university / yougov": {
+    "effect": 0.2,
+    "n": 1,
+    "name": "Florida State University / YouGov"
+   },
+   "baris/ peach state battleground poll": {
+    "effect": 0.2,
+    "n": 1,
+    "name": "Baris/ Peach State Battleground Poll"
+   },
+   "yougov / texas hispanic policy foundation / rice university's baker institute": {
+    "effect": -0.2,
+    "n": 1,
+    "name": "YouGov / Texas Hispanic Policy Foundation / Rice University's Baker Institute"
+   },
+   "east tennessee state university": {
+    "effect": 0.19,
+    "n": 1,
+    "name": "East Tennessee State University"
+   },
+   "surveymonkey": {
+    "effect": 0.19,
+    "n": 1,
+    "name": "SurveyMonkey"
+   },
+   "rasmussen reports": {
+    "effect": -0.18,
+    "n": 3,
+    "name": "Rasmussen Reports"
+   },
+   "schar school / washington post": {
+    "effect": 0.18,
+    "n": 1,
+    "name": "Schar School / Washington Post"
+   },
+   "opinion insight / american action forum": {
+    "effect": -0.17,
+    "n": 2,
+    "name": "Opinion Insight / American Action Forum"
+   },
+   "strategies 360": {
+    "effect": 0.17,
+    "n": 2,
+    "name": "Strategies 360"
+   },
+   "usc": {
+    "effect": -0.16,
+    "n": 1,
+    "name": "USC"
+   },
+   "suffolk university": {
+    "effect": 0.15,
+    "n": 31,
+    "name": "Suffolk University"
+   },
+   "selzer & co.": {
+    "effect": 0.15,
+    "n": 3,
+    "name": "Selzer & Co."
+   },
+   "university of texas / yougov": {
+    "effect": -0.15,
+    "n": 2,
+    "name": "University of Texas / YouGov"
+   },
+   "public policy polling (d-giffords)": {
+    "effect": -0.15,
+    "n": 1,
+    "name": "Public Policy Polling (D-Giffords)"
+   },
+   "public policy polling (d-edge comms.)": {
+    "effect": -0.15,
+    "n": 2,
+    "name": "Public Policy Polling (D-EDGE Comms.)"
+   },
+   "keating research / onsight public affairs / colorado sun": {
+    "effect": 0.14,
+    "n": 1,
+    "name": "Keating Research / Onsight Public Affairs / Colorado Sun"
+   },
+   "keating research": {
+    "effect": 0.14,
+    "n": 1,
+    "name": "Keating Research"
+   },
+   "kaiser family foundation / ssrs": {
+    "effect": -0.14,
+    "n": 2,
+    "name": "Kaiser Family Foundation / SSRS"
+   },
+   "harrisx / the hill": {
+    "effect": -0.14,
+    "n": 1,
+    "name": "HarrisX / The Hill"
+   },
+   "muhlenberg college": {
+    "effect": -0.13,
+    "n": 5,
+    "name": "Muhlenberg College"
+   },
+   "kaiser family foundation / cook political report": {
+    "effect": 0.13,
+    "n": 2,
+    "name": "Kaiser Family Foundation / Cook Political Report"
+   },
+   "gqr research (d-end citizens united)": {
+    "effect": -0.13,
+    "n": 1,
+    "name": "GQR Research (D-End Citizens United)"
+   },
+   "public policy polling (d-tmi)": {
+    "effect": 0.12,
+    "n": 1,
+    "name": "Public Policy Polling (D-TMI)"
+   },
+   "university of utah": {
+    "effect": 0.12,
+    "n": 2,
+    "name": "University of Utah"
+   },
+   "bluegrass community & technical college": {
+    "effect": -0.1,
+    "n": 1,
+    "name": "Bluegrass Community & Technical College"
+   },
+   "reconnect research / roanoke college": {
+    "effect": 0.1,
+    "n": 1,
+    "name": "Reconnect Research / Roanoke College"
+   },
+   "roanoke college / reconnect research": {
+    "effect": 0.1,
+    "n": 1,
+    "name": "Roanoke College / Reconnect Research"
+   },
+   "landmark communications": {
+    "effect": 0.09,
+    "n": 1,
+    "name": "Landmark Communications"
+   },
+   "vcreek/amg": {
+    "effect": -0.08,
+    "n": 1,
+    "name": "VCreek/AMG"
+   },
+   "western new england university": {
+    "effect": 0.07,
+    "n": 2,
+    "name": "Western New England University"
+   },
+   "university of new hampshire": {
+    "effect": 0.06,
+    "n": 15,
+    "name": "University of New Hampshire"
+   },
+   "siena college / nyt": {
+    "effect": -0.06,
+    "n": 1,
+    "name": "Siena College / NYT"
+   },
+   "keating research / magellan strategies": {
+    "effect": 0.05,
+    "n": 1,
+    "name": "Keating Research / Magellan Strategies"
+   },
+   "yougov / university of houston": {
+    "effect": -0.04,
+    "n": 1,
+    "name": "YouGov / University of Houston"
+   },
+   "yougov / slu": {
+    "effect": -0.04,
+    "n": 1,
+    "name": "YouGov / SLU"
+   },
+   "surveyusa": {
+    "effect": 0.03,
+    "n": 31,
+    "name": "SurveyUSA"
+   },
+   "national research inc": {
+    "effect": 0.02,
+    "n": 1,
+    "name": "National Research Inc"
+   },
+   "rmg research / politicaliq": {
+    "effect": -0.02,
+    "n": 2,
+    "name": "RMG Research / PoliticalIQ"
+   },
+   "public policy polling (d-end citizens united)": {
+    "effect": 0.02,
+    "n": 3,
+    "name": "Public Policy Polling (D-End Citizens United)"
+   },
+   "fox news": {
+    "effect": -0.01,
+    "n": 30,
+    "name": "FOX News"
+   },
+   "public opinion strategies (r-fha)": {
+    "effect": 0.0,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-FHA)"
+   }
+  },
+  "house": {
+   "american research group": {
+    "effect": 3.71,
+    "n": 2,
+    "name": "American Research Group"
+   },
+   "remington (r-marshall)": {
+    "effect": -3.53,
+    "n": 1,
+    "name": "Remington (R-Marshall)"
+   },
+   "mclaughlin & associates (r-woodall)": {
+    "effect": -3.18,
+    "n": 1,
+    "name": "McLaughlin & Associates (R-Woodall)"
+   },
+   "desales university": {
+    "effect": 2.95,
+    "n": 3,
+    "name": "DeSales University"
+   },
+   "mclaughlin & associates (r-salazar)": {
+    "effect": -2.9,
+    "n": 2,
+    "name": "McLaughlin & Associates (R-Salazar)"
+   },
+   "uc berkeley": {
+    "effect": 2.86,
+    "n": 8,
+    "name": "UC Berkeley"
+   },
+   "rmg research": {
+    "effect": -2.84,
+    "n": 10,
+    "name": "RMG Research"
+   },
+   "change research (d-thompson)": {
+    "effect": 2.75,
+    "n": 1,
+    "name": "Change Research (D-Thompson)"
+   },
+   "jayhawk consulting (d-lapolice)": {
+    "effect": 2.55,
+    "n": 2,
+    "name": "Jayhawk Consulting (D-LaPolice)"
+   },
+   "fm3 research": {
+    "effect": 2.48,
+    "n": 1,
+    "name": "FM3 Research"
+   },
+   "emerson college": {
+    "effect": -2.39,
+    "n": 31,
+    "name": "Emerson College"
+   },
+   "public opinion strategies (r-harkey)": {
+    "effect": -2.26,
+    "n": 2,
+    "name": "Public Opinion Strategies (R-Harkey)"
+   },
+   "onmessage inc. (r-edwards)": {
+    "effect": -2.19,
+    "n": 1,
+    "name": "OnMessage Inc. (R-Edwards)"
+   },
+   "tulchin research (d-bourdeaux)": {
+    "effect": 2.14,
+    "n": 1,
+    "name": "Tulchin Research (D-Bourdeaux)"
+   },
+   "university of utah": {
+    "effect": -2.08,
+    "n": 4,
+    "name": "University of Utah"
+   },
+   "thomas partner strategies": {
+    "effect": -2.03,
+    "n": 2,
+    "name": "Thomas Partner Strategies"
+   },
+   "garin-hart-yang research group (d-luria)": {
+    "effect": 2.01,
+    "n": 1,
+    "name": "Garin-Hart-Yang Research Group (D-Luria)"
+   },
+   "colby college": {
+    "effect": 1.99,
+    "n": 3,
+    "name": "Colby College"
+   },
+   "tulchin research (d-cisneros)": {
+    "effect": 1.98,
+    "n": 2,
+    "name": "Tulchin Research (D-Cisneros)"
+   },
+   "gs strategy group (r-clf)": {
+    "effect": -1.91,
+    "n": 1,
+    "name": "GS Strategy Group (R-CLF)"
+   },
+   "remington research group / missouri scout": {
+    "effect": -1.89,
+    "n": 1,
+    "name": "Remington Research Group / Missouri Scout"
+   },
+   "the polling company (r-blum)": {
+    "effect": -1.86,
+    "n": 2,
+    "name": "The Polling Company (R-Blum)"
+   },
+   "remington research (r-yoder)": {
+    "effect": -1.85,
+    "n": 1,
+    "name": "Remington Research (R-Yoder)"
+   },
+   "wpa intelligence (r-king)": {
+    "effect": -1.84,
+    "n": 1,
+    "name": "WPA Intelligence (R-King)"
+   },
+   "carroll strategies": {
+    "effect": -1.83,
+    "n": 6,
+    "name": "Carroll Strategies"
+   },
+   "alg research (d-eggman)": {
+    "effect": -1.79,
+    "n": 1,
+    "name": "ALG Research (D-Eggman)"
+   },
+   "alg research (d-hegar)": {
+    "effect": 1.77,
+    "n": 1,
+    "name": "ALG Research (D-Hegar)"
+   },
+   "elway research": {
+    "effect": -1.73,
+    "n": 2,
+    "name": "Elway Research"
+   },
+   "mitchell research": {
+    "effect": -1.69,
+    "n": 1,
+    "name": "Mitchell Research"
+   },
+   "siena college / the new york times": {
+    "effect": 1.6,
+    "n": 3,
+    "name": "Siena College / The New York Times"
+   },
+   "yougov": {
+    "effect": 1.58,
+    "n": 1,
+    "name": "YouGov"
+   },
+   "washington post / schar school": {
+    "effect": 1.57,
+    "n": 3,
+    "name": "Washington Post / Schar School"
+   },
+   "mclaughlin & associates (r-comstock)": {
+    "effect": -1.56,
+    "n": 1,
+    "name": "McLaughlin & Associates (R-Comstock)"
+   },
+   "the glengariff group, inc.": {
+    "effect": -1.55,
+    "n": 2,
+    "name": "The Glengariff Group, Inc."
+   },
+   "the polling company (r-citizens united)": {
+    "effect": -1.52,
+    "n": 1,
+    "name": "The Polling Company (R-Citizens United)"
+   },
+   "tulchin research (d-mcmurray)": {
+    "effect": 1.5,
+    "n": 2,
+    "name": "Tulchin Research (D-McMurray)"
+   },
+   "the tarrance group (r-carter)": {
+    "effect": -1.5,
+    "n": 1,
+    "name": "The Tarrance Group (R-Carter)"
+   },
+   "gba strategies (d-pureval)": {
+    "effect": 1.49,
+    "n": 2,
+    "name": "GBA Strategies (D-Pureval)"
+   },
+   "susquehanna polling & research": {
+    "effect": 1.38,
+    "n": 1,
+    "name": "Susquehanna Polling & Research"
+   },
+   "nyt upshot / siena college": {
+    "effect": 1.32,
+    "n": 80,
+    "name": "NYT Upshot / Siena College"
+   },
+   "zogby analytics": {
+    "effect": 1.27,
+    "n": 1,
+    "name": "Zogby Analytics"
+   },
+   "public opinion strategies (r-fitzpatrick)": {
+    "effect": -1.22,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-Fitzpatrick)"
+   },
+   "public policy polling (d-heckroth)": {
+    "effect": -1.2,
+    "n": 1,
+    "name": "Public Policy Polling (D-Heckroth)"
+   },
+   "tulchin research (d-campa-najjar)": {
+    "effect": 1.17,
+    "n": 3,
+    "name": "Tulchin Research (D-Campa-Najjar)"
+   },
+   "strategies 360 (d-hill)": {
+    "effect": -1.13,
+    "n": 1,
+    "name": "Strategies 360 (D-Hill)"
+   },
+   "y2 analytics (r-love)": {
+    "effect": -1.11,
+    "n": 1,
+    "name": "Y2 Analytics (R-Love)"
+   },
+   "public opinion strategies (r-walters)": {
+    "effect": -1.06,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-Walters)"
+   },
+   "alg research (d-axne)": {
+    "effect": 1.04,
+    "n": 1,
+    "name": "ALG Research (D-Axne)"
+   },
+   "fabrizio, lee & associates (r-clf)": {
+    "effect": 1.04,
+    "n": 2,
+    "name": "Fabrizio, Lee & Associates (R-CLF)"
+   },
+   "moore information (r-hardy)": {
+    "effect": -1.03,
+    "n": 1,
+    "name": "Moore Information (R-Hardy)"
+   },
+   "alg research (d-stevens)": {
+    "effect": 1.02,
+    "n": 1,
+    "name": "ALG Research (D-Stevens)"
+   },
+   "university of new hampshire": {
+    "effect": -0.94,
+    "n": 18,
+    "name": "University of New Hampshire"
+   },
+   "fabrizio ward / hart research associates": {
+    "effect": -0.94,
+    "n": 1,
+    "name": "Fabrizio Ward / Hart Research Associates"
+   },
+   "the tarrance group (r-coffman)": {
+    "effect": -0.93,
+    "n": 1,
+    "name": "The Tarrance Group (R-Coffman)"
+   },
+   "alg research (d-shalala)": {
+    "effect": 0.92,
+    "n": 1,
+    "name": "ALG Research (D-Shalala)"
+   },
+   "national research inc. (r-macarthur)": {
+    "effect": -0.91,
+    "n": 1,
+    "name": "National Research Inc. (R-MacArthur)"
+   },
+   "the mellman group (d-golden)": {
+    "effect": 0.9,
+    "n": 2,
+    "name": "The Mellman Group (D-Golden)"
+   },
+   "franklin & marshall college": {
+    "effect": -0.88,
+    "n": 1,
+    "name": "Franklin & Marshall College"
+   },
+   "gqr research (d-slotkin)": {
+    "effect": 0.87,
+    "n": 1,
+    "name": "GQR Research (D-Slotkin)"
+   },
+   "patriot polling": {
+    "effect": -0.84,
+    "n": 1,
+    "name": "Patriot Polling"
+   },
+   "gqr research (d-kim)": {
+    "effect": -0.84,
+    "n": 1,
+    "name": "GQR Research (D-Kim)"
+   },
+   "global strategy group": {
+    "effect": -0.83,
+    "n": 1,
+    "name": "Global Strategy Group"
+   },
+   "research & polling inc.": {
+    "effect": 0.79,
+    "n": 3,
+    "name": "Research & Polling Inc."
+   },
+   "garin-hart-yang research group (d-mcgrath)": {
+    "effect": 0.76,
+    "n": 3,
+    "name": "Garin-Hart-Yang Research Group (D-McGrath)"
+   },
+   "global strategy group (d-crow)": {
+    "effect": -0.75,
+    "n": 1,
+    "name": "Global Strategy Group (D-Crow)"
+   },
+   "we ask america": {
+    "effect": -0.74,
+    "n": 1,
+    "name": "We Ask America"
+   },
+   "vcreek / amg (r-russell)": {
+    "effect": -0.73,
+    "n": 3,
+    "name": "VCreek / AMG (R-Russell)"
+   },
+   "feldman group (d-levin)": {
+    "effect": -0.73,
+    "n": 1,
+    "name": "Feldman Group (D-Levin)"
+   },
+   "tulchin research (d-janz)": {
+    "effect": 0.72,
+    "n": 1,
+    "name": "Tulchin Research (D-Janz)"
+   },
+   "critical insights": {
+    "effect": 0.7,
+    "n": 3,
+    "name": "Critical Insights"
+   },
+   "amber integrated": {
+    "effect": -0.7,
+    "n": 1,
+    "name": "Amber Integrated"
+   },
+   "colby college / socialsphere": {
+    "effect": -0.7,
+    "n": 1,
+    "name": "Colby College / SocialSphere"
+   },
+   "global strategy group (d-davids)": {
+    "effect": -0.69,
+    "n": 1,
+    "name": "Global Strategy Group (D-Davids)"
+   },
+   "bendixen & amandi research (d-shalala)": {
+    "effect": 0.67,
+    "n": 1,
+    "name": "Bendixen & Amandi Research (D-Shalala)"
+   },
+   "global strategy group (d-horsford)": {
+    "effect": 0.66,
+    "n": 1,
+    "name": "Global Strategy Group (D-Horsford)"
+   },
+   "st. pete polls": {
+    "effect": -0.64,
+    "n": 3,
+    "name": "St. Pete Polls"
+   },
+   "public opinion strategies (r-barr)": {
+    "effect": -0.64,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-Barr)"
+   },
+   "mellman group (d-mcadams)": {
+    "effect": 0.64,
+    "n": 3,
+    "name": "Mellman Group (D-McAdams)"
+   },
+   "siena college / new york times": {
+    "effect": 0.63,
+    "n": 1,
+    "name": "Siena College / New York Times"
+   },
+   "global strategy group (d-bryce)": {
+    "effect": 0.6,
+    "n": 2,
+    "name": "Global Strategy Group (D-Bryce)"
+   },
+   "gqr research (d-eastman)": {
+    "effect": 0.6,
+    "n": 1,
+    "name": "GQR Research (D-Eastman)"
+   },
+   "gqr research (d-coleman)": {
+    "effect": 0.58,
+    "n": 1,
+    "name": "GQR Research (D-Coleman)"
+   },
+   "strategic national": {
+    "effect": 0.57,
+    "n": 1,
+    "name": "Strategic National"
+   },
+   "stockton university": {
+    "effect": -0.55,
+    "n": 2,
+    "name": "Stockton University"
+   },
+   "alg research (d-shapiro)": {
+    "effect": 0.55,
+    "n": 1,
+    "name": "ALG Research (D-Shapiro)"
+   },
+   "sooner poll": {
+    "effect": 0.54,
+    "n": 1,
+    "name": "Sooner Poll"
+   },
+   "national research inc. (r-webber)": {
+    "effect": -0.52,
+    "n": 1,
+    "name": "National Research Inc. (R-Webber)"
+   },
+   "saint anselm college": {
+    "effect": -0.52,
+    "n": 9,
+    "name": "Saint Anselm College"
+   },
+   "cole, snodgrass & associates / soonerpoll": {
+    "effect": -0.51,
+    "n": 1,
+    "name": "Cole, Snodgrass & Associates / SoonerPoll"
+   },
+   "change research": {
+    "effect": -0.5,
+    "n": 6,
+    "name": "Change Research"
+   },
+   "soonerpoll": {
+    "effect": 0.5,
+    "n": 3,
+    "name": "SoonerPoll"
+   },
+   "gba strategies (d-gershon)": {
+    "effect": 0.47,
+    "n": 1,
+    "name": "GBA Strategies (D-Gershon)"
+   },
+   "university of north florida": {
+    "effect": -0.41,
+    "n": 1,
+    "name": "University of North Florida"
+   },
+   "change research (d-bryce)": {
+    "effect": 0.41,
+    "n": 1,
+    "name": "Change Research (D-Bryce)"
+   },
+   "mason-dixon": {
+    "effect": -0.4,
+    "n": 2,
+    "name": "Mason-Dixon"
+   },
+   "expedition strategies (d-scholten)": {
+    "effect": 0.4,
+    "n": 1,
+    "name": "Expedition Strategies (D-Scholten)"
+   },
+   "gba strategies (d-allred)": {
+    "effect": -0.38,
+    "n": 1,
+    "name": "GBA Strategies (D-Allred)"
+   },
+   "meeting street research (r-bacon)": {
+    "effect": -0.38,
+    "n": 1,
+    "name": "Meeting Street Research (R-Bacon)"
+   },
+   "normington, petts & associates (d-dinicola)": {
+    "effect": -0.36,
+    "n": 1,
+    "name": "Normington, Petts & Associates (D-DiNicola)"
+   },
+   "hendrix college / talkbusiness": {
+    "effect": -0.36,
+    "n": 1,
+    "name": "Hendrix College / TalkBusiness"
+   },
+   "muhlenberg college": {
+    "effect": -0.35,
+    "n": 1,
+    "name": "Muhlenberg College"
+   },
+   "pulse research": {
+    "effect": -0.35,
+    "n": 1,
+    "name": "Pulse Research"
+   },
+   "dixie strategies": {
+    "effect": -0.35,
+    "n": 3,
+    "name": "Dixie Strategies"
+   },
+   "dfm research": {
+    "effect": 0.32,
+    "n": 2,
+    "name": "DFM Research"
+   },
+   "gqr research (d-mucarsel-powell)": {
+    "effect": 0.3,
+    "n": 1,
+    "name": "GQR Research (D-Mucarsel-Powell)"
+   },
+   "tulchin research (d-rouda)": {
+    "effect": -0.29,
+    "n": 1,
+    "name": "Tulchin Research (D-Rouda)"
+   },
+   "pulse opinion research": {
+    "effect": -0.29,
+    "n": 1,
+    "name": "Pulse Opinion Research"
+   },
+   "siena college": {
+    "effect": 0.26,
+    "n": 11,
+    "name": "Siena College"
+   },
+   "pan atlantic research": {
+    "effect": 0.26,
+    "n": 7,
+    "name": "Pan Atlantic Research"
+   },
+   "global strategy group (d-porter)": {
+    "effect": -0.26,
+    "n": 2,
+    "name": "Global Strategy Group (D-Porter)"
+   },
+   "suffolk university": {
+    "effect": -0.25,
+    "n": 2,
+    "name": "Suffolk University"
+   },
+   "public opinion strategies (r-bishop)": {
+    "effect": -0.25,
+    "n": 1,
+    "name": "Public Opinion Strategies (R-Bishop)"
+   },
+   "public policy polling (d-scott)": {
+    "effect": -0.22,
+    "n": 1,
+    "name": "Public Policy Polling (D-Scott)"
+   },
+   "public policy polling (d-porter)": {
+    "effect": 0.22,
+    "n": 2,
+    "name": "Public Policy Polling (D-Porter)"
+   },
+   "public policy polling (d-dinicola)": {
+    "effect": -0.21,
+    "n": 1,
+    "name": "Public Policy Polling (D-DiNicola)"
+   },
+   "gqr research (d-carlson)": {
+    "effect": 0.21,
+    "n": 2,
+    "name": "GQR Research (D-Carlson)"
+   },
+   "lighthouse research": {
+    "effect": 0.2,
+    "n": 4,
+    "name": "Lighthouse Research"
+   },
+   "jmc analytics / bold blue campaigns": {
+    "effect": 0.2,
+    "n": 2,
+    "name": "JMC Analytics / Bold Blue Campaigns"
+   },
+   "american viewpoint (r-clf)": {
+    "effect": -0.2,
+    "n": 1,
+    "name": "American Viewpoint (R-CLF)"
+   },
+   "lake research partners (d-long)": {
+    "effect": -0.19,
+    "n": 3,
+    "name": "Lake Research Partners (D-Long)"
+   },
+   "gqr research (d-malinowski)": {
+    "effect": -0.19,
+    "n": 1,
+    "name": "GQR Research (D-Malinowski)"
+   },
+   "christopher newport university": {
+    "effect": -0.19,
+    "n": 3,
+    "name": "Christopher Newport University"
+   },
+   "spectrum news / siena": {
+    "effect": -0.17,
+    "n": 4,
+    "name": "Spectrum News / Siena"
+   },
+   "muhlenberg college / morning call": {
+    "effect": -0.17,
+    "n": 1,
+    "name": "Muhlenberg College / Morning Call"
+   },
+   "unlv lee business school": {
+    "effect": -0.16,
+    "n": 1,
+    "name": "UNLV Lee Business School"
+   },
+   "jayhawk consulting": {
+    "effect": 0.15,
+    "n": 1,
+    "name": "Jayhawk Consulting"
+   },
+   "fm3 research (d-brown)": {
+    "effect": 0.14,
+    "n": 1,
+    "name": "FM3 Research (D-Brown)"
+   },
+   "siena college / nyt upshot": {
+    "effect": -0.14,
+    "n": 2,
+    "name": "Siena College / NYT Upshot"
+   },
+   "strategies 360 (d-janz)": {
+    "effect": 0.12,
+    "n": 2,
+    "name": "Strategies 360 (D-Janz)"
+   },
+   "gba strategies (d-o'connor)": {
+    "effect": -0.1,
+    "n": 2,
+    "name": "GBA Strategies (D-O'Connor)"
+   },
+   "go right strategies (r-rogers)": {
+    "effect": -0.1,
+    "n": 2,
+    "name": "Go Right Strategies (R-Rogers)"
+   },
+   "fleming & associates": {
+    "effect": 0.07,
+    "n": 1,
+    "name": "Fleming & Associates"
+   },
+   "thirty-ninth street strategies (d-mcbath)": {
+    "effect": -0.05,
+    "n": 2,
+    "name": "Thirty-Ninth Street Strategies (D-McBath)"
+   },
+   "dan jones & associates": {
+    "effect": -0.04,
+    "n": 7,
+    "name": "Dan Jones & Associates"
+   },
+   "monmouth university": {
+    "effect": 0.04,
+    "n": 29,
+    "name": "Monmouth University"
+   },
+   "target insyght": {
+    "effect": 0.03,
+    "n": 5,
+    "name": "Target Insyght"
+   },
+   "hendrix college": {
+    "effect": -0.03,
+    "n": 3,
+    "name": "Hendrix College"
+   },
+   "susquehanna polling and research": {
+    "effect": 0.02,
+    "n": 1,
+    "name": "Susquehanna Polling and Research"
+   },
+   "research & polling, inc.": {
+    "effect": -0.01,
+    "n": 4,
+    "name": "Research & Polling, Inc."
+   },
+   "surveyusa": {
+    "effect": 0.01,
+    "n": 15,
+    "name": "SurveyUSA"
+   }
+  },
+  "governor": {
+   "american research group": {
+    "effect": 5.79,
+    "n": 4,
+    "name": "American Research Group"
+   },
+   "target insyght": {
+    "effect": 5.74,
+    "n": 1,
+    "name": "Target Insyght"
+   },
+   "public policy polling (d-garcia)": {
+    "effect": 5.22,
+    "n": 3,
+    "name": "Public Policy Polling (D-Garcia)"
+   },
+   "thomas partners strategies": {
+    "effect": -4.47,
+    "n": 8,
+    "name": "Thomas Partners Strategies"
+   },
+   "luntz global": {
+    "effect": -4.28,
+    "n": 1,
+    "name": "Luntz Global"
+   },
+   "franklin & marshall college": {
+    "effect": 4.14,
+    "n": 7,
+    "name": "Franklin & Marshall College"
+   },
+   "long island university": {
+    "effect": 3.68,
+    "n": 1,
+    "name": "Long Island University"
+   },
+   "we ask america": {
+    "effect": -3.47,
+    "n": 3,
+    "name": "We Ask America"
+   },
+   "liberty opinion research (r-reform party)": {
+    "effect": -3.41,
+    "n": 1,
+    "name": "Liberty Opinion Research (R-Reform Party)"
+   },
+   "redfield & wilton strategies": {
+    "effect": 3.22,
+    "n": 8,
+    "name": "Redfield & Wilton Strategies"
+   },
+   "soonerpoll": {
+    "effect": 3.09,
+    "n": 7,
+    "name": "SoonerPoll"
+   },
+   "john zogby strategies": {
+    "effect": 2.93,
+    "n": 4,
+    "name": "John Zogby Strategies"
+   },
+   "fallon research": {
+    "effect": -2.79,
+    "n": 2,
+    "name": "Fallon Research"
+   },
+   "public policy polling (d-ohio democratic party)": {
+    "effect": 2.73,
+    "n": 3,
+    "name": "Public Policy Polling (D-Ohio Democratic Party)"
+   },
+   "phillips academy": {
+    "effect": -2.63,
+    "n": 4,
+    "name": "Phillips Academy"
+   },
+   "massinc": {
+    "effect": -2.55,
+    "n": 6,
+    "name": "MassINC"
+   },
+   "ohio northern university / lucid": {
+    "effect": -2.53,
+    "n": 1,
+    "name": "Ohio Northern University / Lucid"
+   },
+   "meredith college": {
+    "effect": 2.44,
+    "n": 4,
+    "name": "Meredith College"
+   },
+   "st. cloud state university": {
+    "effect": 2.42,
+    "n": 2,
+    "name": "St. Cloud State University"
+   },
+   "epstein group": {
+    "effect": -2.4,
+    "n": 1,
+    "name": "Epstein Group"
+   },
+   "vox populi polling": {
+    "effect": 2.35,
+    "n": 8,
+    "name": "Vox Populi Polling"
+   },
+   "garin-hart-yang (d-abrams)": {
+    "effect": 2.32,
+    "n": 2,
+    "name": "Garin-Hart-Yang (D-Abrams)"
+   },
+   "dhm research": {
+    "effect": 2.32,
+    "n": 3,
+    "name": "DHM Research"
+   },
+   "probolsky research": {
+    "effect": -2.31,
+    "n": 2,
+    "name": "Probolsky Research"
+   },
+   "gravis marketing": {
+    "effect": 2.27,
+    "n": 20,
+    "name": "Gravis Marketing"
+   },
+   "cnn / ssrs": {
+    "effect": 2.23,
+    "n": 16,
+    "name": "CNN / SSRS"
+   },
+   "target-insyght": {
+    "effect": -2.21,
+    "n": 4,
+    "name": "Target-Insyght"
+   },
+   "university of new hampshire": {
+    "effect": -2.2,
+    "n": 20,
+    "name": "University of New Hampshire"
+   },
+   "change research (d-nh democratic party)": {
+    "effect": 2.13,
+    "n": 1,
+    "name": "Change Research (D-NH Democratic Party)"
+   },
+   "targetpoint (r-fung)": {
+    "effect": -2.12,
+    "n": 1,
+    "name": "TargetPoint (R-Fung)"
+   },
+   "targoz market research": {
+    "effect": -2.09,
+    "n": 7,
+    "name": "Targoz Market Research"
+   },
+   "targetsmart (d-progressnow az)": {
+    "effect": 2.03,
+    "n": 1,
+    "name": "TargetSmart (D-ProgressNow AZ)"
+   },
+   "the glengariff group, inc.": {
+    "effect": 2.01,
+    "n": 5,
+    "name": "The Glengariff Group, Inc."
+   },
+   "harrisx": {
+    "effect": -2.0,
+    "n": 21,
+    "name": "HarrisX"
+   },
+   "mitchell research": {
+    "effect": -1.97,
+    "n": 7,
+    "name": "Mitchell Research"
+   },
+   "lighthouse research / salt lake tribune": {
+    "effect": -1.93,
+    "n": 1,
+    "name": "Lighthouse Research / Salt Lake Tribune"
+   },
+   "the phillips academy": {
+    "effect": -1.9,
+    "n": 1,
+    "name": "The Phillips Academy"
+   },
+   "university of arkansas": {
+    "effect": 1.88,
+    "n": 2,
+    "name": "University of Arkansas"
+   },
+   "patriot polling": {
+    "effect": -1.82,
+    "n": 2,
+    "name": "Patriot Polling"
+   },
+   "nyt upshot / siena college": {
+    "effect": -1.78,
+    "n": 5,
+    "name": "NYT Upshot / Siena College"
+   },
+   "dixie strategies": {
+    "effect": -1.76,
+    "n": 2,
+    "name": "Dixie Strategies"
+   },
+   "goucher college": {
+    "effect": -1.74,
+    "n": 3,
+    "name": "Goucher College"
+   },
+   "surveyusa": {
+    "effect": 1.7,
+    "n": 38,
+    "name": "SurveyUSA"
+   },
+   "remington (r-laxalt)": {
+    "effect": -1.69,
+    "n": 1,
+    "name": "Remington (R-Laxalt)"
+   },
+   "usc dornsife / los angeles times": {
+    "effect": 1.68,
+    "n": 1,
+    "name": "USC Dornsife / Los Angeles Times"
+   },
+   "alaska survey research": {
+    "effect": 1.67,
+    "n": 7,
+    "name": "Alaska Survey Research"
+   },
+   "glengariff group": {
+    "effect": 1.66,
+    "n": 3,
+    "name": "Glengariff Group"
+   },
+   "research america": {
+    "effect": 1.66,
+    "n": 1,
+    "name": "Research America"
+   },
+   "gravis marketing (i-a)": {
+    "effect": 1.65,
+    "n": 1,
+    "name": "Gravis Marketing (I-A)"
+   },
+   "triton polling & research (r-carpenter)": {
+    "effect": -1.64,
+    "n": 1,
+    "name": "Triton Polling & Research (R-Carpenter)"
+   },
+   "slingshot strategies (i-hayes)": {
+    "effect": 1.58,
+    "n": 2,
+    "name": "Slingshot Strategies (I-Hayes)"
+   },
+   "wick insights": {
+    "effect": -1.57,
+    "n": 5,
+    "name": "Wick Insights"
+   },
+   "civiqs": {
+    "effect": 1.55,
+    "n": 14,
+    "name": "Civiqs"
+   },
+   "hendrix college": {
+    "effect": 1.54,
+    "n": 4,
+    "name": "Hendrix College"
+   },
+   "highground public affairs": {
+    "effect": -1.5,
+    "n": 1,
+    "name": "HighGround Public Affairs"
+   },
+   "alg research (d-sutton)": {
+    "effect": -1.49,
+    "n": 3,
+    "name": "ALG Research (D-Sutton)"
+   },
+   "cygnal": {
+    "effect": 1.43,
+    "n": 1,
+    "name": "Cygnal"
+   },
+   "y2 analytics / salt lake tribune": {
+    "effect": 1.43,
+    "n": 2,
+    "name": "Y2 Analytics / Salt Lake Tribune"
+   },
+   "research co.": {
+    "effect": -1.41,
+    "n": 20,
+    "name": "Research Co."
+   },
+   "big data poll": {
+    "effect": -1.4,
+    "n": 2,
+    "name": "Big Data Poll"
+   },
+   "strategies unlimited": {
+    "effect": 1.4,
+    "n": 1,
+    "name": "Strategies Unlimited"
+   },
+   "muhlenberg college": {
+    "effect": 1.39,
+    "n": 5,
+    "name": "Muhlenberg College"
+   },
+   "strategic research associates": {
+    "effect": -1.38,
+    "n": 2,
+    "name": "Strategic Research Associates"
+   },
+   "the phillips academy poll": {
+    "effect": -1.37,
+    "n": 1,
+    "name": "The Phillips Academy Poll"
+   },
+   "quinnipiac university": {
+    "effect": 1.36,
+    "n": 28,
+    "name": "Quinnipiac University"
+   },
+   "the mellman group": {
+    "effect": 1.36,
+    "n": 1,
+    "name": "The Mellman Group"
+   },
+   "human agency / missouri scout": {
+    "effect": -1.35,
+    "n": 1,
+    "name": "Human Agency / Missouri Scout"
+   },
+   "marist college / nbc news": {
+    "effect": 1.34,
+    "n": 1,
+    "name": "Marist College / NBC News"
+   },
+   "garin-hart-yang (d-jealous)": {
+    "effect": 1.32,
+    "n": 1,
+    "name": "Garin-Hart-Yang (D-Jealous)"
+   },
+   "university of iowa": {
+    "effect": 1.31,
+    "n": 1,
+    "name": "University of Iowa"
+   },
+   "massinc polling group": {
+    "effect": 1.29,
+    "n": 1,
+    "name": "MassINC Polling Group"
+   },
+   "–(l)": {
+    "effect": 1.23,
+    "n": 1,
+    "name": "–(L)"
+   },
+   "latino decisions": {
+    "effect": 1.22,
+    "n": 1,
+    "name": "Latino Decisions"
+   },
+   "university of georgia": {
+    "effect": -1.18,
+    "n": 8,
+    "name": "University of Georgia"
+   },
+   "onmessage inc. (r-scott)": {
+    "effect": -1.16,
+    "n": 1,
+    "name": "OnMessage Inc. (R-Scott)"
+   },
+   "uc berkeley": {
+    "effect": 1.14,
+    "n": 4,
+    "name": "UC Berkeley"
+   },
+   "yougov / cbs news": {
+    "effect": -1.14,
+    "n": 7,
+    "name": "YouGov / CBS News"
+   },
+   "university of north florida": {
+    "effect": -1.13,
+    "n": 5,
+    "name": "University of North Florida"
+   },
+   "yougov / ut": {
+    "effect": -1.12,
+    "n": 5,
+    "name": "YouGov / UT"
+   },
+   "marquette university": {
+    "effect": -1.12,
+    "n": 10,
+    "name": "Marquette University"
+   },
+   "saint louis university": {
+    "effect": 1.1,
+    "n": 1,
+    "name": "Saint Louis University"
+   },
+   "emerson college": {
+    "effect": -1.1,
+    "n": 83,
+    "name": "Emerson College"
+   },
+   "causeway solutions (r-no supermajorities pac)": {
+    "effect": -1.08,
+    "n": 1,
+    "name": "Causeway Solutions (R-No Supermajorities PAC)"
+   },
+   "research america inc.": {
+    "effect": -1.08,
+    "n": 1,
+    "name": "Research America Inc."
+   },
+   "marist college / nbc": {
+    "effect": 1.06,
+    "n": 1,
+    "name": "Marist College / NBC"
+   },
+   "digital research inc.": {
+    "effect": -1.06,
+    "n": 1,
+    "name": "Digital Research Inc."
+   },
+   "hoffman research group": {
+    "effect": 1.05,
+    "n": 2,
+    "name": "Hoffman Research Group"
+   },
+   "montana state university billings": {
+    "effect": 1.02,
+    "n": 1,
+    "name": "Montana State University Billings"
+   },
+   "university of montana": {
+    "effect": -1.02,
+    "n": 1,
+    "name": "University of Montana"
+   },
+   "fox news": {
+    "effect": -1.0,
+    "n": 18,
+    "name": "Fox News"
+   },
+   "saint anselm college": {
+    "effect": -0.99,
+    "n": 7,
+    "name": "Saint Anselm College"
+   },
+   "marketing resource group": {
+    "effect": 0.99,
+    "n": 1,
+    "name": "Marketing Resource Group"
+   },
+   "patinkin research strategies (i-walker)": {
+    "effect": -0.98,
+    "n": 1,
+    "name": "Patinkin Research Strategies (I-Walker)"
+   },
+   "swayable": {
+    "effect": -0.96,
+    "n": 3,
+    "name": "Swayable"
+   },
+   "university of texas tyler": {
+    "effect": -0.96,
+    "n": 1,
+    "name": "University of Texas Tyler"
+   },
+   "ascend action": {
+    "effect": 0.95,
+    "n": 1,
+    "name": "Ascend Action"
+   },
+   "ut tyler": {
+    "effect": -0.9,
+    "n": 9,
+    "name": "UT Tyler"
+   },
+   "kaiser family foundation / co health foundation / ssrs": {
+    "effect": 0.9,
+    "n": 1,
+    "name": "Kaiser Family Foundation / CO Health Foundation / SSRS"
+   },
+   "strategies 360": {
+    "effect": -0.89,
+    "n": 2,
+    "name": "Strategies 360"
+   },
+   "research consultants (r-farmpac)": {
+    "effect": 0.89,
+    "n": 1,
+    "name": "Research Consultants (R-FarmPAC)"
+   },
+   "mclaughlin & associates (r-laxalt)": {
+    "effect": -0.87,
+    "n": 1,
+    "name": "McLaughlin & Associates (R-Laxalt)"
+   },
+   "change research (d-garcia)": {
+    "effect": 0.86,
+    "n": 1,
+    "name": "Change Research (D-Garcia)"
+   },
+   "public policy polling (d-biss)": {
+    "effect": -0.85,
+    "n": 1,
+    "name": "Public Policy Polling (D-Biss)"
+   },
+   "monmouth university": {
+    "effect": 0.85,
+    "n": 4,
+    "name": "Monmouth University"
+   },
+   "triton polling and research": {
+    "effect": -0.85,
+    "n": 1,
+    "name": "Triton Polling and Research"
+   },
+   "civiqs / daily kos": {
+    "effect": -0.84,
+    "n": 3,
+    "name": "Civiqs / Daily Kos"
+   },
+   "zogby analytics": {
+    "effect": 0.83,
+    "n": 2,
+    "name": "Zogby Analytics"
+   },
+   "raba research": {
+    "effect": -0.8,
+    "n": 1,
+    "name": "RABA Research"
+   },
+   "nelson research": {
+    "effect": -0.8,
+    "n": 2,
+    "name": "Nelson Research"
+   },
+   "crosswind media & public relations": {
+    "effect": 0.78,
+    "n": 1,
+    "name": "Crosswind Media & Public Relations"
+   },
+   "jmc analytics (r-red metrics group)": {
+    "effect": 0.78,
+    "n": 1,
+    "name": "JMC Analytics (R-Red Metrics Group)"
+   },
+   "yougov / txhpf": {
+    "effect": 0.77,
+    "n": 2,
+    "name": "YouGov / TXHPF"
+   },
+   "fort hays state university": {
+    "effect": 0.76,
+    "n": 1,
+    "name": "Fort Hays State University"
+   },
+   "change research [ better source needed ]": {
+    "effect": -0.71,
+    "n": 1,
+    "name": "Change Research  [ better source needed ]"
+   },
+   "selzer & company": {
+    "effect": -0.71,
+    "n": 3,
+    "name": "Selzer & Company"
+   },
+   "southern illinois university": {
+    "effect": 0.7,
+    "n": 2,
+    "name": "Southern Illinois University"
+   },
+   "siena college / nyt upshot": {
+    "effect": -0.7,
+    "n": 5,
+    "name": "Siena College / NYT Upshot"
+   },
+   "echelon insights": {
+    "effect": 0.7,
+    "n": 11,
+    "name": "Echelon Insights"
+   },
+   "embold research": {
+    "effect": -0.68,
+    "n": 1,
+    "name": "Embold Research"
+   },
+   "surveymonkey": {
+    "effect": -0.67,
+    "n": 3,
+    "name": "SurveyMonkey"
+   },
+   "sachs media": {
+    "effect": 0.67,
+    "n": 2,
+    "name": "Sachs Media"
+   },
+   "siena college": {
+    "effect": -0.66,
+    "n": 16,
+    "name": "Siena College"
+   },
+   "marist college": {
+    "effect": 0.65,
+    "n": 28,
+    "name": "Marist College"
+   },
+   "merriman river group": {
+    "effect": -0.65,
+    "n": 1,
+    "name": "Merriman River Group"
+   },
+   "garin-hart-yang (d-smith)": {
+    "effect": 0.64,
+    "n": 1,
+    "name": "Garin-Hart-Yang (D-Smith)"
+   },
+   "sacred heart university": {
+    "effect": -0.63,
+    "n": 5,
+    "name": "Sacred Heart University"
+   },
+   "yougov": {
+    "effect": 0.63,
+    "n": 5,
+    "name": "YouGov"
+   },
+   "triton polling & research": {
+    "effect": 0.63,
+    "n": 1,
+    "name": "Triton Polling & Research"
+   },
+   "university of maryland": {
+    "effect": 0.62,
+    "n": 3,
+    "name": "University of Maryland"
+   },
+   "university of colorado / yougov": {
+    "effect": 0.6,
+    "n": 1,
+    "name": "University of Colorado / YouGov"
+   },
+   "nson opinion strategy (l)": {
+    "effect": -0.59,
+    "n": 1,
+    "name": "NSON Opinion Strategy (L)"
+   },
+   "yougov / uh": {
+    "effect": 0.59,
+    "n": 2,
+    "name": "YouGov / UH"
+   },
+   "the tarrance group (r-rga)": {
+    "effect": -0.59,
+    "n": 1,
+    "name": "The Tarrance Group (R-RGA)"
+   },
+   "rmg research / deseret news / hinckley institute of politics": {
+    "effect": 0.58,
+    "n": 1,
+    "name": "RMG Research / Deseret News / Hinckley Institute of Politics"
+   },
+   "magellan strategies": {
+    "effect": -0.57,
+    "n": 2,
+    "name": "Magellan Strategies"
+   },
+   "opinionworks": {
+    "effect": 0.57,
+    "n": 1,
+    "name": "OpinionWorks"
+   },
+   "yougov / perryundem": {
+    "effect": 0.54,
+    "n": 1,
+    "name": "YouGov / PerryUndem"
+   },
+   "yougov / ut / tt": {
+    "effect": -0.53,
+    "n": 1,
+    "name": "YouGov / UT / TT"
+   },
+   "bsp research / ut": {
+    "effect": 0.52,
+    "n": 1,
+    "name": "BSP Research / UT"
+   },
+   "public policy institute of california": {
+    "effect": 0.52,
+    "n": 5,
+    "name": "Public Policy Institute of California"
+   },
+   "epic-mra": {
+    "effect": -0.52,
+    "n": 8,
+    "name": "EPIC-MRA"
+   },
+   "michigan state university": {
+    "effect": -0.51,
+    "n": 2,
+    "name": "Michigan State University"
+   },
+   "texas lyceum": {
+    "effect": 0.51,
+    "n": 2,
+    "name": "Texas Lyceum"
+   },
+   "cherry communications": {
+    "effect": 0.5,
+    "n": 2,
+    "name": "Cherry Communications"
+   },
+   "data orbital": {
+    "effect": -0.5,
+    "n": 2,
+    "name": "Data Orbital"
+   },
+   "blueprint polling": {
+    "effect": -0.5,
+    "n": 1,
+    "name": "Blueprint Polling"
+   },
+   "umass lowell": {
+    "effect": 0.49,
+    "n": 2,
+    "name": "UMass Lowell"
+   },
+   "rmg research / politicaliq": {
+    "effect": 0.48,
+    "n": 1,
+    "name": "RMG Research / PoliticalIQ"
+   },
+   "victory insights": {
+    "effect": -0.47,
+    "n": 1,
+    "name": "Victory Insights"
+   },
+   "icitizen": {
+    "effect": -0.47,
+    "n": 1,
+    "name": "iCitizen"
+   },
+   "st. pete polls": {
+    "effect": 0.47,
+    "n": 8,
+    "name": "St. Pete Polls"
+   },
+   "trz communications (r-wtpc)": {
+    "effect": -0.47,
+    "n": 1,
+    "name": "TRZ Communications (R-WTPC)"
+   },
+   "east carolina university": {
+    "effect": -0.45,
+    "n": 11,
+    "name": "East Carolina University"
+   },
+   "stetson university": {
+    "effect": 0.45,
+    "n": 1,
+    "name": "Stetson University"
+   },
+   "landmark communications": {
+    "effect": -0.44,
+    "n": 3,
+    "name": "Landmark Communications"
+   },
+   "siena research / nyt": {
+    "effect": -0.44,
+    "n": 2,
+    "name": "Siena Research / NYT"
+   },
+   "victory research": {
+    "effect": -0.43,
+    "n": 5,
+    "name": "Victory Research"
+   },
+   "maine people's resource center": {
+    "effect": 0.43,
+    "n": 1,
+    "name": "Maine People's Resource Center"
+   },
+   "remington research group / missouri scout": {
+    "effect": -0.42,
+    "n": 8,
+    "name": "Remington Research Group / Missouri Scout"
+   },
+   "pan atlantic research": {
+    "effect": -0.42,
+    "n": 3,
+    "name": "Pan Atlantic Research"
+   },
+   "mwr research / consumer energy alliance": {
+    "effect": -0.42,
+    "n": 1,
+    "name": "MWR Research / Consumer Energy Alliance"
+   },
+   "socialsphere": {
+    "effect": -0.41,
+    "n": 2,
+    "name": "SocialSphere"
+   },
+   "university of illinois springfield": {
+    "effect": -0.41,
+    "n": 1,
+    "name": "University of Illinois Springfield"
+   },
+   "activote": {
+    "effect": -0.38,
+    "n": 2,
+    "name": "ActiVote"
+   },
+   "ipsos": {
+    "effect": 0.35,
+    "n": 17,
+    "name": "Ipsos"
+   },
+   "mason-dixon": {
+    "effect": -0.35,
+    "n": 15,
+    "name": "Mason-Dixon"
+   },
+   "carroll strategies": {
+    "effect": -0.35,
+    "n": 1,
+    "name": "Carroll Strategies"
+   },
+   "morning consult": {
+    "effect": -0.34,
+    "n": 2,
+    "name": "Morning Consult"
+   },
+   "rmg research": {
+    "effect": 0.34,
+    "n": 4,
+    "name": "RMG Research"
+   },
+   "bold decision": {
+    "effect": 0.34,
+    "n": 1,
+    "name": "Bold Decision"
+   },
+   "vanderbilt university / ssrs": {
+    "effect": 0.34,
+    "n": 1,
+    "name": "Vanderbilt University / SSRS"
+   },
+   "pacific market research": {
+    "effect": 0.34,
+    "n": 1,
+    "name": "Pacific Market Research"
+   },
+   "public policy polling (d-pottawatomie county dems)": {
+    "effect": -0.33,
+    "n": 1,
+    "name": "Public Policy Polling (D-Pottawatomie County Dems)"
+   },
+   "public policy polling (d-knea pac)": {
+    "effect": -0.33,
+    "n": 1,
+    "name": "Public Policy Polling (D-KNEA PAC)"
+   },
+   "alg research": {
+    "effect": 0.32,
+    "n": 1,
+    "name": "ALG Research"
+   },
+   "umass amherst / yougov": {
+    "effect": -0.32,
+    "n": 1,
+    "name": "UMass Amherst / YouGov"
+   },
+   "public policy polling": {
+    "effect": -0.31,
+    "n": 8,
+    "name": "Public Policy Polling"
+   },
+   "saint leo university": {
+    "effect": -0.31,
+    "n": 3,
+    "name": "Saint Leo University"
+   },
+   "echleon insights": {
+    "effect": -0.31,
+    "n": 1,
+    "name": "Echleon Insights"
+   },
+   "neighbourhood research & media": {
+    "effect": 0.3,
+    "n": 1,
+    "name": "Neighbourhood Research & Media"
+   },
+   "civiqs (d-crawford county dems)": {
+    "effect": 0.3,
+    "n": 1,
+    "name": "Civiqs (D-Crawford County Dems)"
+   },
+   "climate nexus": {
+    "effect": 0.3,
+    "n": 1,
+    "name": "Climate Nexus"
+   },
+   "redfield and wilton strategies": {
+    "effect": 0.3,
+    "n": 1,
+    "name": "Redfield and Wilton Strategies"
+   },
+   "strategies 360 / nbcmt": {
+    "effect": -0.29,
+    "n": 1,
+    "name": "Strategies 360 / NBCMT"
+   },
+   "public policy polling (d-edge comms.)": {
+    "effect": 0.29,
+    "n": 1,
+    "name": "Public Policy Polling (D-EDGE Comms.)"
+   },
+   "harstad strategic research": {
+    "effect": -0.29,
+    "n": 1,
+    "name": "Harstad Strategic Research"
+   },
+   "yougov / umass amherst": {
+    "effect": 0.27,
+    "n": 2,
+    "name": "YouGov / UMass Amherst"
+   },
+   "dittman research": {
+    "effect": -0.26,
+    "n": 1,
+    "name": "Dittman Research"
+   },
+   "fleming & associates": {
+    "effect": -0.23,
+    "n": 5,
+    "name": "Fleming & Associates"
+   },
+   "rasmussen reports": {
+    "effect": -0.23,
+    "n": 2,
+    "name": "Rasmussen Reports"
+   },
+   "university of texas / yougov": {
+    "effect": 0.23,
+    "n": 2,
+    "name": "University of Texas / YouGov"
+   },
+   "ogden & fry (r-liberty principles pac)": {
+    "effect": 0.22,
+    "n": 1,
+    "name": "Ogden & Fry (R-Liberty Principles PAC)"
+   },
+   "keating research / magellan strategies": {
+    "effect": 0.21,
+    "n": 2,
+    "name": "Keating Research / Magellan Strategies"
+   },
+   "surveyusa / wral-tv": {
+    "effect": -0.21,
+    "n": 1,
+    "name": "SurveyUSA / WRAL-TV"
+   },
+   "cu boulder / yougov": {
+    "effect": -0.2,
+    "n": 1,
+    "name": "CU Boulder / YouGov"
+   },
+   "kaiser family foundation / cook political report": {
+    "effect": -0.2,
+    "n": 1,
+    "name": "Kaiser Family Foundation / Cook Political Report"
+   },
+   "university of nevada, reno": {
+    "effect": 0.19,
+    "n": 1,
+    "name": "University of Nevada, Reno"
+   },
+   "selzer & co.": {
+    "effect": -0.19,
+    "n": 4,
+    "name": "Selzer & Co."
+   },
+   "gonzales research": {
+    "effect": -0.19,
+    "n": 4,
+    "name": "Gonzales Research"
+   },
+   "cbs news / yougov": {
+    "effect": -0.17,
+    "n": 1,
+    "name": "CBS News / YouGov"
+   },
+   "research & polling, inc.": {
+    "effect": 0.17,
+    "n": 2,
+    "name": "Research & Polling, Inc."
+   },
+   "mason-dixon polling & strategy": {
+    "effect": -0.17,
+    "n": 1,
+    "name": "Mason-Dixon Polling & Strategy"
+   },
+   "florida atlantic university": {
+    "effect": -0.17,
+    "n": 3,
+    "name": "Florida Atlantic University"
+   },
+   "neighborhood research and media": {
+    "effect": 0.16,
+    "n": 1,
+    "name": "Neighborhood Research and Media"
+   },
+   "unlv business school": {
+    "effect": 0.16,
+    "n": 1,
+    "name": "UNLV Business School"
+   },
+   "kaiser family foundation / ssrs": {
+    "effect": -0.15,
+    "n": 2,
+    "name": "Kaiser Family Foundation / SSRS"
+   },
+   "bsp research / shaw & co.": {
+    "effect": -0.15,
+    "n": 2,
+    "name": "BSP Research / Shaw & Co."
+   },
+   "public policy polling (d-co democratic party)": {
+    "effect": -0.14,
+    "n": 1,
+    "name": "Public Policy Polling (D-CO Democratic Party)"
+   },
+   "alg research (d-forward illinois)": {
+    "effect": -0.13,
+    "n": 1,
+    "name": "ALG Research (D-Forward Illinois)"
+   },
+   "highground inc.": {
+    "effect": -0.12,
+    "n": 2,
+    "name": "HighGround Inc."
+   },
+   "western new england university": {
+    "effect": -0.12,
+    "n": 2,
+    "name": "Western New England University"
+   },
+   "public policy polling (d-western states strategies)": {
+    "effect": -0.12,
+    "n": 1,
+    "name": "Public Policy Polling (D-Western States Strategies)"
+   },
+   "east tennessee state university": {
+    "effect": 0.11,
+    "n": 1,
+    "name": "East Tennessee State University"
+   },
+   "baldwin wallace university": {
+    "effect": -0.11,
+    "n": 5,
+    "name": "Baldwin Wallace University"
+   },
+   "public policy polling (d-protect our care)": {
+    "effect": 0.1,
+    "n": 1,
+    "name": "Public Policy Polling (D-Protect Our Care)"
+   },
+   "public policy polling (d-change course ct pac)": {
+    "effect": -0.1,
+    "n": 1,
+    "name": "Public Policy Polling (D-Change Course CT PAC)"
+   },
+   "oh predictive insights": {
+    "effect": -0.1,
+    "n": 7,
+    "name": "OH Predictive Insights"
+   },
+   "montana state university bozeman": {
+    "effect": 0.08,
+    "n": 1,
+    "name": "Montana State University Bozeman"
+   },
+   "research & polling inc.": {
+    "effect": 0.08,
+    "n": 2,
+    "name": "Research & Polling Inc."
+   },
+   "opinion savvy": {
+    "effect": 0.08,
+    "n": 2,
+    "name": "Opinion Savvy"
+   },
+   "florida southern college": {
+    "effect": -0.07,
+    "n": 1,
+    "name": "Florida Southern College"
+   },
+   "florida state university / yougov": {
+    "effect": 0.07,
+    "n": 1,
+    "name": "Florida State University / YouGov"
+   },
+   "siena college / nyt": {
+    "effect": 0.07,
+    "n": 2,
+    "name": "Siena College / NYT"
+   },
+   "texas hispanic policy foundation": {
+    "effect": 0.05,
+    "n": 1,
+    "name": "Texas Hispanic Policy Foundation"
+   },
+   "seven letter insight": {
+    "effect": 0.05,
+    "n": 1,
+    "name": "Seven Letter Insight"
+   },
+   "wick": {
+    "effect": 0.05,
+    "n": 1,
+    "name": "Wick"
+   },
+   "yougov / umass lowell": {
+    "effect": -0.05,
+    "n": 2,
+    "name": "YouGov / UMass Lowell"
+   },
+   "keating research / onsight public affairs / martin campaigns": {
+    "effect": -0.04,
+    "n": 1,
+    "name": "Keating Research / OnSight Public Affairs / Martin Campaigns"
+   },
+   "usc": {
+    "effect": -0.04,
+    "n": 1,
+    "name": "USC"
+   },
+   "public policy polling (d-georgia engaged)": {
+    "effect": -0.03,
+    "n": 1,
+    "name": "Public Policy Polling (D-Georgia Engaged)"
+   },
+   "riley research associates": {
+    "effect": 0.03,
+    "n": 1,
+    "name": "Riley Research Associates"
+   },
+   "umass lowell / yougov": {
+    "effect": 0.02,
+    "n": 2,
+    "name": "UMass Lowell / YouGov"
+   },
+   "change research (d-innovation ohio)": {
+    "effect": -0.01,
+    "n": 1,
+    "name": "Change Research (D-Innovation Ohio)"
+   },
+   "change research": {
+    "effect": -0.01,
+    "n": 10,
+    "name": "Change Research"
+   },
+   "suffolk university": {
+    "effect": 0.01,
+    "n": 34,
+    "name": "Suffolk University"
+   },
+   "yougov / uh / tsu": {
+    "effect": -0.0,
+    "n": 1,
+    "name": "YouGov / UH / TSU"
+   }
+  }
+ }
+}

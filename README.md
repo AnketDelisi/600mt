@@ -10,9 +10,9 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
   last presidential margin, the last House result and the rating band;
   governors use the state's last presidential lean, the rating band and
   incumbency. Polls are rebuilt from the individual surveys with
-  recency/partisan weights and an outlier guard, then blended, and a
-  correlated national/state Monte Carlo with a cycle poll-bias term produces
-  the seat distribution.
+  recency/partisan weights, strong pollster house effects and an outlier
+  guard, then blended, and a correlated national/state Monte Carlo with a
+  cycle poll-bias term produces the seat distribution.
 - **Map builder** (`map.html`) — a YAPMS-style painter: pick a shade, click
   districts/senate seats/governorships, watch the tally. Load the 600
   forecast as a starting point, undo, share the map by link, export a PNG.
@@ -26,6 +26,7 @@ data/us/races.json      # races, ratings, PVI, incumbents, current composition
 data/us/polling.json    # per-race polling averages (senate, governor)
 data/us/state_swing.json # state presidential margins 2008-24, elasticity, trend
 data/us/pres_by_cd.json # district presidential margins (2026/2024/2022 lines)
+data/us/pollster_effects.json # shrunk pollster house effects (2018-22 fit)
 data/us/forecast.json   # model output: probabilities, distributions, maps of races
 data/us/geo.json        # pre-projected states + 435 districts (Census TIGERweb, 2026 vintage)
 ```
@@ -48,7 +49,8 @@ backtest (and `--grid` / `--diag`); `scraper/us_calibrate_house.py` scores the
 House model on 2018-24; `scraper/us_calibrate_governor.py` scores the governor
 model on 2018-24. Grid selection uses 2018-2022 only; 2024 is the holdout.
 `scraper/us_seat_report.py` reports expected vs actual seats by cycle.
-`scraper/us_backtest.py` replays a live cycle
+`scraper/us_build_poll_effects.py` refits the shrunk pollster house effects
+from the 2018-22 snapshots. `scraper/us_backtest.py` replays a live cycle
 (`--chamber senate|house|governor --cycle 2022|2024`).
 
 Backtest caches are gitignored; rebuild them with:
