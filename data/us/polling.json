@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-21T16:56:48Z",
+  "scraped_at": "2026-10-21T19:30:15Z",
   "senate": {
     "Alabama": {
       "dem": 33.3,
@@ -326,10 +326,18 @@
     "Colorado": null,
     "Delaware": null,
     "Florida": {
-      "dem": 43.0,
-      "rep": 49.5,
+      "dem": 43.3,
+      "rep": 49.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "University of North Florida",
+          "dates": "October 12–19, 2026",
+          "sample": 1471,
+          "population": "LV",
+          "dem": 45.0,
+          "rep": 49.0
+        },
         {
           "pollster": "Univision / YouGov",
           "dates": "October 2–15, 2026",
@@ -671,12 +679,21 @@
       }
     },
     "Idaho": {
-      "rep": 42.3,
-      "ind": 40.0,
+      "rep": 42.6,
+      "ind": 33.2,
       "source": "Simple avg (latest 5 polls)",
-      "n_polls": 3,
-      "n_sponsored": 1,
+      "n_polls": 5,
+      "n_sponsored": 2,
       "polls": [
+        {
+          "pollster": "Peak Insights",
+          "dates": "September 28–30, 2026",
+          "partisan": "R",
+          "sample": 500,
+          "population": "LV",
+          "rep": 49.0,
+          "ind": 24.0
+        },
         {
           "pollster": "Advanced Targeting Research",
           "dates": "September 13–16, 2026",
@@ -684,6 +701,23 @@
           "population": "RV",
           "rep": 39.0,
           "ind": 50.0
+        },
+        {
+          "pollster": "Peak Insights",
+          "dates": "August 11–13, 2026",
+          "partisan": "R",
+          "sample": 500,
+          "population": "LV",
+          "rep": 52.0,
+          "ind": 18.0
+        },
+        {
+          "pollster": "The Bullfinch Group",
+          "dates": "August 4–7, 2026",
+          "sample": 608,
+          "population": "LV",
+          "rep": 33.0,
+          "ind": 38.0
         },
         {
           "pollster": "The Bullfinch Group",
@@ -731,6 +765,15 @@
           "population": "LV",
           "dem": 44.0,
           "rep": 46.0
+        },
+        {
+          "pollster": "GS Strategy Group /New River Strategies",
+          "dates": "October 9–13, 2026",
+          "partisan": "R",
+          "sample": 602,
+          "population": "LV",
+          "dem": 46.0,
+          "rep": 44.0
         },
         {
           "pollster": "NPA Polling",
@@ -2257,8 +2300,8 @@
       }
     },
     "Nebraska": {
-      "rep": 46.3,
-      "ind": 45.3,
+      "rep": 46.1,
+      "ind": 45.2,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -3055,6 +3098,15 @@
           "rep": 49.0
         },
         {
+          "pollster": "GS Strategy Group /New River Strategies",
+          "dates": "October 9–13, 2026",
+          "partisan": "R",
+          "sample": 959,
+          "population": "LV",
+          "dem": 49.0,
+          "rep": 43.0
+        },
+        {
           "pollster": "Bowling Green State University / YouGov",
           "dates": "September 29 – October 9, 2026",
           "sample": 1000,
@@ -3586,6 +3638,15 @@
           "population": "RV",
           "rep": 44.0,
           "ind": 31.0
+        },
+        {
+          "pollster": "Public Policy Polling",
+          "dates": "July 30–31, 2025",
+          "partisan": "D",
+          "sample": 524,
+          "population": "LV",
+          "rep": 41.0,
+          "ind": 28.0
         }
       ],
       "names": {
@@ -3630,6 +3691,15 @@
           "population": "LV",
           "dem": 52.0,
           "rep": 48.0
+        },
+        {
+          "pollster": "GS Strategy Group / New River Strategies",
+          "dates": "October 9–13, 2026",
+          "partisan": "R",
+          "sample": 934,
+          "population": "LV",
+          "dem": 49.0,
+          "rep": 44.0
         },
         {
           "pollster": "Quantus Insights",
@@ -4577,10 +4647,18 @@
       }
     },
     "Florida": {
-      "dem": 43.1,
-      "rep": 48.0,
+      "dem": 44.0,
+      "rep": 48.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "University of North Florida",
+          "dates": "October 12–19, 2026",
+          "sample": 1471,
+          "population": "LV",
+          "dem": 47.0,
+          "rep": 49.0
+        },
         {
           "pollster": "ActiVote",
           "dates": "October 1 – October 19, 2026",
@@ -4822,8 +4900,8 @@
       }
     },
     "Georgia": {
-      "dem": 46.6,
-      "rep": 48.1,
+      "dem": 46.5,
+      "rep": 48.0,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -4976,7 +5054,7 @@
     "Illinois": null,
     "Iowa": {
       "dem": 50.9,
-      "rep": 44.1,
+      "rep": 44.0,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -4987,6 +5065,15 @@
           "population": "LV",
           "dem": 49.0,
           "rep": 45.0
+        },
+        {
+          "pollster": "GS Strategy Group /New River Strategies",
+          "dates": "October 9–13, 2026",
+          "partisan": "R",
+          "sample": 602,
+          "population": "LV",
+          "dem": 54.0,
+          "rep": 43.0
         },
         {
           "pollster": "NPA Polling",
@@ -5143,8 +5230,8 @@
       }
     },
     "Kansas": {
-      "dem": 44.2,
-      "rep": 49.4,
+      "dem": 43.9,
+      "rep": 49.3,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -5798,8 +5885,8 @@
       }
     },
     "Nebraska": {
-      "dem": 40.4,
-      "rep": 43.9,
+      "dem": 40.5,
+      "rep": 43.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -5883,8 +5970,8 @@
       ]
     },
     "Nevada": {
-      "dem": 42.5,
-      "rep": 43.4,
+      "dem": 42.4,
+      "rep": 43.2,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -6157,23 +6244,33 @@
       }
     },
     "New York": {
-      "dem": 50.6,
-      "rep": 39.6,
+      "dem": 52.6,
+      "rep": 40.0,
       "source": "Simple avg (latest 5 polls)",
       "n_polls": 5,
-      "n_sponsored": 1,
+      "n_sponsored": 2,
       "polls": [
         {
-          "pollster": "Pollfinity Research",
-          "dates": "October 8–12, 2026",
-          "sample": 499,
-          "population": "RV",
-          "dem": 47.0,
-          "rep": 44.0
+          "pollster": "Quinnipiac University",
+          "dates": "October 15–19, 2026",
+          "sample": 1167,
+          "population": "LV",
+          "dem": 55.0,
+          "rep": 41.0
+        },
+        {
+          "pollster": "OnMessage Inc.",
+          "dates": "October 1–6, 2026",
+          "partisan": "R",
+          "sample": 1000,
+          "population": "LV",
+          "dem": 50.0,
+          "rep": 46.0
         },
         {
           "pollster": "Beacon Research",
           "dates": "October 1–6, 2026",
+          "partisan": "D",
           "sample": 820,
           "population": "RV",
           "dem": 53.0,
@@ -6412,6 +6509,15 @@
           "population": "LV",
           "dem": 51.0,
           "rep": 43.0
+        },
+        {
+          "pollster": "GS Strategy Group /New River Strategies",
+          "dates": "October 9–13, 2026",
+          "partisan": "R",
+          "sample": 959,
+          "population": "LV",
+          "dem": 49.0,
+          "rep": 44.0
         },
         {
           "pollster": "Bowling Green State University / YouGov",
@@ -6761,7 +6867,7 @@
       }
     },
     "Pennsylvania": {
-      "dem": 56.1,
+      "dem": 56.0,
       "rep": 32.6,
       "source": "Aggregate (Wikipedia)",
       "polls": [
@@ -6937,9 +7043,9 @@
       }
     },
     "Rhode Island": {
-      "dem": 42.6,
-      "rep": 16.2,
-      "ind": 26.6,
+      "dem": 41.6,
+      "rep": 15.6,
+      "ind": 26.2,
       "source": "Simple avg (latest 5 polls)",
       "n_polls": 5,
       "polls": [
@@ -6980,6 +7086,15 @@
           "ind": 25.0
         },
         {
+          "pollster": "University of New Hampshire",
+          "dates": "August 20–24, 2026",
+          "sample": 750,
+          "population": "LV",
+          "dem": 40.0,
+          "rep": 15.0,
+          "ind": 19.0
+        },
+        {
           "pollster": "Emerson College / WPRI-TV",
           "dates": "August 21–22, 2026",
           "sample": 1000,
@@ -6996,6 +7111,15 @@
           "dem": 38.0,
           "rep": 22.0,
           "ind": 19.0
+        },
+        {
+          "pollster": "Opinion Diagnostics",
+          "dates": "April 13–16, 2026",
+          "sample": 802,
+          "population": "LV",
+          "dem": 33.0,
+          "rep": 16.0,
+          "ind": 18.0
         }
       ],
       "names": {
@@ -7005,12 +7129,21 @@
       }
     },
     "South Carolina": {
-      "dem": 38.0,
-      "rep": 46.7,
+      "dem": 37.8,
+      "rep": 48.2,
       "source": "Simple avg (latest 5 polls)",
-      "n_polls": 3,
-      "n_sponsored": 2,
+      "n_polls": 4,
+      "n_sponsored": 3,
       "polls": [
+        {
+          "pollster": "Trafalgar Group",
+          "dates": "October 16–18, 2026",
+          "partisan": "R",
+          "sample": 1095,
+          "population": "LV",
+          "dem": 37.0,
+          "rep": 53.0
+        },
         {
           "pollster": "Resonance Media",
           "dates": "September 29 – October 3, 2026",
@@ -7139,6 +7272,15 @@
           "population": "LV",
           "dem": 49.0,
           "rep": 51.0
+        },
+        {
+          "pollster": "GS Strategy Group /New River Strategies",
+          "dates": "October 9–13, 2026",
+          "partisan": "R",
+          "sample": 934,
+          "population": "LV",
+          "dem": 46.0,
+          "rep": 48.0
         },
         {
           "pollster": "Marist University",

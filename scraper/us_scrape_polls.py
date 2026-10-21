@@ -108,6 +108,11 @@ def key_of(party):
     return {"D": "dem", "R": "rep", "I": "ind"}[party]
 
 
+def min_sum(vals):
+    """Independent races carry more undecided/other; accept a lower floor."""
+    return 60.0 if ("I" in vals or "ind" in vals) else 75.0
+
+
 def sponsor_of(cell):
     """Partisan sponsor marker from a pollster cell: 'D'/'R'/'I'/None.
 
@@ -226,7 +231,7 @@ def parse_aggregate(soup, tables=None):
                     vals[party] = v
         # at least a clean two-way matchup: multi-candidate jungle races and
         # primary-era fragments leave most of the vote to other columns
-        if len(vals) < 2 or not (75.0 <= sum(vals.values()) <= 100.0):
+        if len(vals) < 2 or not (min_sum(vals) <= sum(vals.values()) <= 100.0):
             continue
         out = {key_of(k): round(v, 1) for k, v in vals.items()}
         out["source"] = "Aggregate (Wikipedia)"
@@ -265,7 +270,7 @@ def parse_direct(soup, tables=None):
                     v = pct(cells[i])
                     if v is not None:
                         vals[party] = v
-            if len(vals) < 2 or sum(vals.values()) < 75:
+            if len(vals) < 2 or sum(vals.values()) < min_sum(vals):
                 continue
             found.append((vals, cells[1] if len(cells) > 1 else "",
                           sponsor_of(cells[0])))
@@ -326,7 +331,7 @@ def parse_individual(soup, tables=None):
                     v = pct(cells[i])
                     if v is not None:
                         vals[party] = v
-            if (len(vals) < 2 or sum(vals.values()) < 75 or not pollster
+            if (len(vals) < 2 or sum(vals.values()) < min_sum(vals) or not pollster
                     or pollster.lower() in ("average", "")):
                 continue
             # skip aggregate tables and sample-size continuation rows
