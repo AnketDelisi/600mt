@@ -9,9 +9,9 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
   historical elasticity), incumbency and trend; House races use the district's
   last presidential margin, the last House result and the rating band;
   governors use the state's last presidential lean, the rating band and
-  incumbency. Polls are rebuilt
-  from the individual surveys with recency/partisan weights and an outlier
-  guard, then blended, and a correlated national/state Monte Carlo produces
+  incumbency. Polls are rebuilt from the individual surveys with
+  recency/partisan weights and an outlier guard, then blended, and a
+  correlated national/state Monte Carlo with a cycle poll-bias term produces
   the seat distribution.
 - **Map builder** (`map.html`) — a YAPMS-style painter: pick a shade, click
   districts/senate seats/governorships, watch the tally. Load the 600

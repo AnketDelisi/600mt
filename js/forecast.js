@@ -496,7 +496,7 @@ function render() {
       last presidential lean, the rating band and incumbency. Polls are rebuilt from the individual
       surveys with recency and partisan weighting and an outlier guard, then
       blended. The simulation runs
-      (${fmt(f.environment ? f.environment.n_sims : 20000)} nights, national swing &sigma; = ${fmt(f.environment ? f.environment.national_swing_sigma : 2.5)} pts${f.environment && f.environment.state_swing_sigma ? `, plus a correlated per-state deviation &sigma; = ${fmt(f.environment.state_swing_sigma)} pts` : ""}).
+      (${fmt(f.environment ? f.environment.n_sims : 20000)} nights, national swing &sigma; = ${fmt(f.environment ? f.environment.national_swing_sigma : 2.5)} pts${f.environment && f.environment.poll_bias_sigma ? `, poll-bias &sigma; = ${fmt(f.environment.poll_bias_sigma)} pts` : ""}${f.environment && f.environment.state_swing_sigma ? `, plus a correlated per-state deviation &sigma; = ${fmt(f.environment.state_swing_sigma)} pts` : ""}).
       Races without public polling are shown as &ldquo;&mdash;&rdquo;; their probability comes from the fundamentals alone.
       Sources: Wikipedia (2026 Senate, House and gubernatorial election articles and ratings), The Downballot's district presidential results, and the generic-ballot aggregates.
       Model generated: ${f.generated ? new Date(f.generated).toUTCString() : "—"}.

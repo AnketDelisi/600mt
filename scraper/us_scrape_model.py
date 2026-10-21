@@ -28,14 +28,15 @@ Pipeline per race:
      the poll shares for their sides; without polls they fall back to the
      D-R prior.
   3. National-swing Monte Carlo: the environment mean is already in the
-     structural margin; each night adds a national shock (sigma_n) and one
-     correlated per-state deviation (sigma_state), so a state's Senate seat
-     and House districts move together. A race is won by the side with the
-     highest softmax(share/beta). Races without a Democrat get the shocks
-     only. Seat tallies count Democrats, Republicans and independents
-     separately across 20k nights; independents are counted with the
-     Democratic caucus (as the Senate independents caucus with them).
-     Per-race win probabilities are reported at the mean.
+     structural margin; each night adds a national shock (sigma_n), a
+     cycle-level poll-bias shock, and one correlated per-state deviation
+     (sigma_state), so a state's Senate seat and House districts move
+     together. A race is won by the side with the highest softmax(share/beta).
+     Races without a Democrat get the shocks only. Seat tallies count
+     Democrats, Republicans and independents separately across 20k nights;
+     independents are counted with the Democratic caucus (as the Senate
+     independents caucus with them). Per-race win probabilities are reported
+     at the mean.
 
 Chamber majority thresholds: Senate 50 (current D-caucus 47 vs R 53),
 House 218 seats, Governors shows an expected Dem/Rep count only.
@@ -68,6 +69,12 @@ RATING_ORDER = ("cook", "ie", "sabato")
 # seats - an artifact
 LOGISTIC_BETA = {"senate": 3.5, "house": 3.5, "governor": 3.5}
 NATIONAL_SIGMA = 2.5
+# A cycle-level poll bias can move every race the same way even when the
+# generic-ballot mean is right: the 2018-24 Senate backtest missed the seat
+# count by -1.0, +2.8, -1.8 and +0.1 (2020 over-D, 2022 under-D). One extra
+# national draw per night widens the chamber distribution without moving the
+# race means.
+POLL_BIAS_SIGMA = 1.5
 # per-state correlated swing deviation (points): every race in a state shares
 # one draw per simulated night, so a state's Senate seat and House districts
 # move together - the same architecture as the main site's regional swing
@@ -627,6 +634,7 @@ def run(chamber, races, poll_map, env_margin):
     seatz_i = [0] * N_SIMS
     for i in range(N_SIMS):
         Z = RNG.gauss(0.0, NATIONAL_SIGMA)
+        ZB = RNG.gauss(0.0, POLL_BIAS_SIGMA)
         ZS = {}
         dw = rw = iw = 0
         for k, sh in sides.items():
@@ -634,10 +642,9 @@ def run(chamber, races, poll_map, env_margin):
             if st not in ZS:
                 ZS[st] = RNG.gauss(0.0, STATE_SIGMA)
             # the environment is already in the structural margin; the
-            # simulation adds only correlated uncertainty (national + state).
-            # Races without a Democrat get the same shocks: the generic
-            # ballot says little about Republican-vs-Independent.
-            swing = Z + ZS[st]
+            # simulation adds only correlated uncertainty (national, cycle
+            # poll bias, state). Races without a Democrat get the same shocks.
+            swing = Z + ZB + ZS[st]
             swing_party = "D" if "D" in sh else "R"
             probs = win_probs(sh, swing, swing_party)
             u = RNG.random()
@@ -771,6 +778,7 @@ def main():
             "rating_margin_table": RATING_MARGIN,
             "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band. Governor: state presidential lean + rating band + incumbency. Polls rebuilt with recency/partisan weights and an outlier guard.",
             "national_swing_sigma": NATIONAL_SIGMA,
+            "poll_bias_sigma": POLL_BIAS_SIGMA,
             "state_swing_sigma": STATE_SIGMA,
             "env_weights": {"senate": STATE_ENV_WEIGHT["senate"],
                             "house": STATE_ENV_WEIGHT["house"],
