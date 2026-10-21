@@ -28,6 +28,8 @@ data/us/polling.json    # per-race polling averages (senate, governor)
 data/us/state_swing.json # state presidential margins 2008-24, elasticity, trend
 data/us/pres_by_cd.json # district presidential margins (2026/2024/2022 lines)
 data/us/pollster_effects.json # shrunk pollster house effects (2018-22 fit)
+data/us/state_legislative.json # lower-chamber state leans, 2018-22
+data/us/state_elasticity.json  # Silver Bulletin/CCES elasticity scores
 data/us/forecast.json   # model output: probabilities, distributions, maps of races
 data/us/geo.json        # pre-projected states + 435 districts (Census TIGERweb, 2026 vintage)
 ```
@@ -51,8 +53,11 @@ House model on 2018-24; `scraper/us_calibrate_governor.py` scores the governor
 model on 2018-24. Grid selection uses 2018-2022 only; 2024 is the holdout.
 `scraper/us_seat_report.py` reports expected vs actual seats by cycle.
 `scraper/us_build_poll_effects.py` refits the shrunk pollster house effects
-from the 2018-22 snapshots. `scraper/us_backtest.py` replays a live cycle
-(`--chamber senate|house|governor --cycle 2022|2024`).
+from the 2018-22 snapshots. `scraper/us_build_state_leg.py` builds the
+2018-22 lower-chamber leans (requires `pyarrow`); `scraper/us_build_elasticity.py`
+fetches the Silver Bulletin/CCES scores; `scraper/us_house_seat_calibration.py`
+replays historical House seat distributions. `scraper/us_backtest.py` replays
+a live cycle (`--chamber senate|house|governor --cycle 2022|2024`).
 
 Backtest caches are gitignored; rebuild them with:
 
@@ -65,6 +70,9 @@ python scraper/us_bt_governor_snapshot.py 2018 2020 2022 2024
 
 ## Notes
 
+- The state-legislative lean and Silver/CCES elasticity inputs are built and
+  tested but are not in the live model: neither improved the 2024 holdout.
+  The 2020 House result remains outside the model's 90% seat interval.
 - Sources: Wikipedia (2026 Senate / House / gubernatorial election and
   ratings articles), The Downballot's district presidential results,
   generic-ballot aggregates, Elections sources linked in the articles.
