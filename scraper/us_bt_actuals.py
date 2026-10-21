@@ -6,8 +6,9 @@ patch the cached snapshots.
 2024 uses the candidates table (State | Incumbent | Candidates).
 The per-state article parser mangles New Hampshire-style tables and misses
 several 2024 pages, so the national article is the source of truth here.
+Older cycles need a few manual fixes (special elections, runoff states).
 
-Usage: python scraper/us_bt_actuals.py 2022 2024
+Usage: python scraper/us_bt_actuals.py 2018 2020 2022 2024
 """
 import json
 import re
@@ -19,6 +20,24 @@ from bs4 import BeautifulSoup
 
 CACHE = Path(__file__).resolve().parent / ".cache"
 H = {"User-Agent": "600mt/1.0"}
+
+# Special elections share the regular state article (and thus its polls and
+# result), so the duplicate is not a usable race. A few older national tables
+# are missing or mangled (NE 2020, GA 2020 runoff); pin those to the official
+# result. Georgia 2020 uses Perdue's first-round margin, not the runoff.
+MANUAL_ACTUALS = {
+    2018: {
+        "Minnesota|Tina Smith": None,
+        "Mississippi|Cindy Hyde-Smith": None,
+    },
+    2020: {
+        "Georgia|David Perdue": -1.8,
+        "Georgia|Kelly Loeffler": None,
+        "Nebraska": -34.3,
+        "Alaska": -18.6,
+        "Arkansas": -36.4,
+    },
+}
 
 
 def pairs(result):
@@ -116,12 +135,25 @@ def main():
                 r["_old_actual"] = r.get("actual")
                 patched += 1
             r["actual"] = val
+        manual = MANUAL_ACTUALS.get(cycle, {})
+        for r in races:
+            inc = r.get("incumbent") or ""
+            for key, val in manual.items():
+                if "|" in key:
+                    st, name = key.split("|", 1)
+                    if r["state"] == st and inc.startswith(name):
+                        r["actual"] = val
+                        break
+                elif r["state"] == key:
+                    r["actual"] = val
+                    break
         path.write_text(json.dumps(races, indent=1), encoding="utf8")
         print(cycle, "actuals:", len(rows), "| patched", patched,
               "| races", len(races), "| missing:",
               [r["state"] for r in races if r.get("actual") is None])
         for r in races:
-            if r.get("_old_actual") is not None and abs((r["_old_actual"] or 0) - (r["actual"] or 0)) > 1:
+            if (r.get("_old_actual") is not None and r.get("actual") is not None
+                    and abs(r["_old_actual"] - r["actual"]) > 1):
                 print("  %-18s %+7.1f -> %+7.1f" % (r["state"], r["_old_actual"], r["actual"]))
 
 

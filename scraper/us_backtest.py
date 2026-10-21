@@ -1,25 +1,17 @@
 #!/usr/bin/env python3
-"""Backtest the US midterms model against the 2024 Senate election.
+"""Backtest the US midterms model against past Senate, House and governor
+cycles.
 
-Replays the model's real pipeline — fundamentals prior (PVI + last result +
-track-record-scaled personal vote), the consensus rating band, the poll blend
-and the environment mean — on the 33 races of the 2024 cycle, using only what
+Replays the model's real pipeline on the races of a cycle, using only what
 was knowable then, then scores the predictions against the actual two-party
 results: winner accuracy, margin MAE, Brier score and calibration bins.
 
-Inputs:
-  * the 2024 Senate article's "Predictions" table (PVI, incumbent, last
-    election, Cook/IE/Sabato ratings) — same layout as 2026, so the live
-    races scraper is reused with its URL swapped;
-  * each state article's poll tables via the live polls parsers;
-  * each state article's results table (Party | Candidate | Votes | %), the
-    top two parties give the actual two-party margin.
-
-The environment (generic ballot) is the final 2024 average, D+1.0.
-
 Usage:
-  python scraper/us_backtest.py            # score the current model
-  python scraper/us_calibrate.py --grid    # parameter grid (cached snapshots)
+  python scraper/us_backtest.py --chamber senate --cycle 2024
+  python scraper/us_backtest.py --chamber house --cycle 2022
+  python scraper/us_backtest.py --chamber governor --cycle 2022
+  python scraper/us_calibrate.py --grid    # cached Senate parameter grid
+  python scraper/us_calibrate_house.py --grid  # cached House grid
 """
 import argparse
 import math
@@ -38,6 +30,24 @@ import us_scrape_races as r
 
 H = {"User-Agent": "600-us-midterms/1.0"}
 CYCLES = {
+    2018: {
+        "senate": "https://en.wikipedia.org/wiki/"
+                  "2018_United_States_Senate_elections",
+        "house": "https://en.wikipedia.org/wiki/"
+                 "2018_United_States_House_of_Representatives_elections",
+        "ratings": "https://en.wikipedia.org/wiki/2018_United_States_House_"
+                   "of_Representatives_election_ratings",
+        "env_fallback": 8.5,    # final 2018 generic ballot, D+8.5
+    },
+    2020: {
+        "senate": "https://en.wikipedia.org/wiki/"
+                  "2020_United_States_Senate_elections",
+        "house": "https://en.wikipedia.org/wiki/"
+                 "2020_United_States_House_of_Representatives_elections",
+        "ratings": "https://en.wikipedia.org/wiki/2020_United_States_House_"
+                   "of_Representatives_election_ratings",
+        "env_fallback": 6.8,    # final 2020 generic ballot, D+6.8
+    },
     2022: {
         "senate": "https://en.wikipedia.org/wiki/"
                   "2022_United_States_Senate_elections",
@@ -201,9 +211,12 @@ def load_house(cycle=2024):
     if env is None:
         env = CYCLES[cycle]["env_fallback"]
     actuals = national_actuals(get(CYCLES[cycle]["house"]))
+    pres_map = m.PRES_BY_CD.get(str(cycle)) or {}
     by_state = {}
     for race in races:
         race["_actual"] = actuals.get(
+            race["state"] + " " + str(race.get("district", "")))
+        race["pres"] = pres_map.get(
             race["state"] + " " + str(race.get("district", "")))
         by_state.setdefault(race["state"], []).append(race)
     for state, state_races in by_state.items():
@@ -231,6 +244,97 @@ def load_house(cycle=2024):
                     polls["names"] = names
             race["_polls"] = polls
     return races, env
+
+
+def load_governors(cycle=2022):
+    """Governor races of a cycle with polls and actual results."""
+    url = ("https://en.wikipedia.org/wiki/%d_United_States_gubernatorial_"
+           "elections" % cycle)
+    soup = get(url)
+    tbl = None
+    for t in soup.find_all("table", class_="wikitable"):
+        rows = t.find_all("tr")
+        hdr = None
+        for row in rows[:3]:
+            cells = [c.get_text(" ", strip=True)
+                     for c in row.find_all(["th", "td"])]
+            if cells and cells[0] == "State" and any(
+                    "Cook" in h for h in cells):
+                hdr = cells
+                break
+        if hdr:
+            tbl = (t, hdr)
+            break
+    if tbl is None:
+        raise RuntimeError("no governor ratings table in %s" % url)
+    table, hdr = tbl
+    col = {}
+    for i, h in enumerate(hdr):
+        hl = h.lower()
+        if "pvi" in hl:
+            col["pvi"] = i - 1
+        elif "incumbent" in hl:
+            col["incumbent"] = i - 1
+        elif "last" in hl:
+            col["last"] = i - 1
+        elif "cook" in hl:
+            col["cook"] = i - 1
+        elif hl.startswith("ie") or "inside" in hl:
+            col["ie"] = i - 1
+        elif "sabato" in hl:
+            col["sabato"] = i - 1
+    races = []
+    for row in table.find_all("tr"):
+        th = row.find("th")
+        tds = row.find_all("td")
+        if th is None or len(tds) < 8:
+            continue
+        cells = [c.get_text(strip=True) for c in tds]
+        state = re.sub(r"\[.*?\]", "", re.sub(r"\(.*?\)", "", th.get_text(strip=True))).strip().title()
+        if not state or state.lower().startswith("overall"):
+            continue
+        try:
+            pvi = r.parse_pvi(cells[col["pvi"]])
+        except Exception:
+            continue
+        incumbent = r.strip_footnote(cells[col["incumbent"]])
+        last_res = r.parse_last_result(cells[col["last"]])
+        rating = {}
+        for k in ("cook", "ie", "sabato"):
+            idx = col.get(k)
+            if idx is not None and idx < len(cells):
+                rating[k] = cells[idx]
+        party = last_res["party"] if last_res else None
+        if party is None:
+            for v in rating.values():
+                mm = re.search(r"\b([RD])\b", v)
+                if mm:
+                    party = mm.group(1)
+                    break
+        races.append({
+            "state": state, "pvi": pvi,
+            "pvi_label": cells[col["pvi"]],
+            "incumbent": incumbent,
+            "inc_status": r.inc_status(incumbent),
+            "party": party, "last": last_res, "ratings": rating,
+        })
+    for race in races:
+        state = race["state"].replace(" ", "_")
+        surl = ("https://en.wikipedia.org/wiki/%d_%s_"
+                "gubernatorial_election" % (cycle, state))
+        try:
+            rsoup = get(surl)
+        except Exception:
+            race["_actual"] = None
+            race["_polls"] = None
+            continue
+        race["_actual"] = actual_margin(rsoup)
+        try:
+            polls = p.scrape_race("governor", race, surl)
+        except Exception:
+            polls = None
+        race["_polls"] = polls
+    return races
 
 
 def load_races(cycle=2024):
@@ -298,12 +402,17 @@ def score(races, label="", chamber="senate", env=ENV_2024,
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--chamber", default="senate", choices=("senate", "house"))
+    ap.add_argument("--chamber", default="senate",
+                    choices=("senate", "house", "governor"))
     ap.add_argument("--cycle", type=int, default=2024, choices=(2022, 2024))
     args = ap.parse_args()
     if args.chamber == "house":
         print("loading %d House races (50 state articles)..." % args.cycle)
         races, env = load_house(args.cycle)
+    elif args.chamber == "governor":
+        print("loading %d governor races..." % args.cycle)
+        races = load_governors(args.cycle)
+        env = CYCLES[args.cycle]["env_fallback"]
     else:
         print("loading %d Senate races..." % args.cycle)
         races = load_races(args.cycle)

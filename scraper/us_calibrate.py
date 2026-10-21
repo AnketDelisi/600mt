@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Calibration harness for the U.S. Senate model.
 
-Loads the cached 2022/2024 backtest snapshots and scores a parameterised v2
-estimator against the current model:
+Loads the cached 2018/2020/2022/2024 backtest snapshots and scores a
+parameterised v2 estimator against the current model:
 
   * polls rebuilt from the individual polls with recency, partisan and
     outlier weights (no more 2022 polls averaging into a 2024 race);
@@ -34,9 +34,11 @@ CACHE = ROOT / "scraper" / ".cache"
 SW = json.loads((ROOT / "data" / "us" / "state_swing.json").read_text(encoding="utf8"))
 NAT = SW["national_margin"]
 SW = SW["states"]
-ELECTION = {2022: date(2022, 11, 8), 2024: date(2024, 11, 5)}
-ENV = {2022: -1.0, 2024: -0.1}
-PRES_YEAR = {2022: "2020", 2024: "2020", 2026: "2024"}
+ELECTION = {2018: date(2018, 11, 6), 2020: date(2020, 11, 3),
+            2022: date(2022, 11, 8), 2024: date(2024, 11, 5)}
+ENV = {2018: 8.5, 2020: 6.8, 2022: -1.0, 2024: -0.1}
+PRES_YEAR = {2018: "2016", 2020: "2016", 2022: "2020", 2024: "2020",
+             2026: "2024"}
 
 BASE = {
     "half_life": 120, "max_age": 540, "partisan_w": 0.6, "trim": 12.0,
@@ -177,8 +179,11 @@ def cycle_of(asof):
 
 def load():
     rows = []
-    for cyc in (2022, 2024):
-        data = json.loads((CACHE / ("us_bt_%d.json" % cyc)).read_text(encoding="utf8"))
+    for cyc in (2018, 2020, 2022, 2024):
+        path = CACHE / ("us_bt_%d.json" % cyc)
+        if not path.is_file():
+            continue
+        data = json.loads(path.read_text(encoding="utf8"))
         for r in data:
             if r.get("actual") is None:
                 continue
@@ -233,21 +238,21 @@ def v1_score(rows):
 
 def main():
     rows = load()
-    print("races:", len(rows),
-          "| 2022:", sum(1 for r in rows if r["cycle"] == 2022),
-          "| 2024:", sum(1 for r in rows if r["cycle"] == 2024))
+    cycles = (2018, 2020, 2022, 2024)
+    print("races:", len(rows), "| " + " | ".join(
+        "%d: %d" % (c, sum(1 for r in rows if r["cycle"] == c)) for c in cycles))
     v1_score(rows)
-    for cyc in (2022, 2024):
+    for cyc in cycles:
         score([r for r in rows if r["cycle"] == cyc], BASE, "v2 %d" % cyc)
-    score(rows, BASE, "v2 both")
+    score(rows, BASE, "v2 all")
 
     if "--diag" in sys.argv:
         do_diag(rows)
 
     if "--grid" in sys.argv:
-        print("\n== grid (margin MAE / Brier; fit 2022, check 2024)")
-        r22 = [r for r in rows if r["cycle"] == 2022]
-        r24 = [r for r in rows if r["cycle"] == 2024]
+        print("\n== grid (fit 2018+2020+2022, check 2024)")
+        fit = [r for r in rows if r["cycle"] in (2018, 2020, 2022)]
+        check = [r for r in rows if r["cycle"] == 2024]
         best = []
         for pres_w in (1.0,):
             for env_full in (0.75, 1.0):
@@ -268,13 +273,13 @@ def main():
                                         p["guard_start"] = guard
                                         p["trend_w"] = trend
                                         p["beta_env"] = beta_env
-                                        mae22 = score_quiet(r22, p)
-                                        mae24 = score_quiet(r24, p)
-                                        best.append((mae22 + mae24, mae22, mae24, pres_w,
-                                                     env_full, use_inc, last_solid, band,
-                                                     guard, trend, beta_env))
+                                        mae_fit = score_quiet(fit, p)
+                                        mae_check = score_quiet(check, p)
+                                        best.append((mae_fit + mae_check, mae_fit, mae_check,
+                                                     pres_w, env_full, use_inc, last_solid,
+                                                     band, guard, trend, beta_env))
         best.sort()
-        print("sum MAE | 2022 | 2024 | pres_w | env | inc | last | band | guard | trend | beta")
+        print("sum MAE | fit | 2024 | pres_w | env | inc | last | band | guard | trend | beta")
         for b in best[:12]:
             print("%6.2f  %5.2f  %5.2f   %.2f   %.2f  %s  %.2f  %.2f  %.1f  %.1f  %.1f"
                   % (b[0], b[1], b[2], b[3], b[4], "Y" if b[5] else "n",

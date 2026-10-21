@@ -2,7 +2,7 @@
 """Cache the Senate backtest races (features + polls + actuals) for fast
 model iteration. Writes scraper/.cache/us_bt_<cycle>.json.
 
-Usage: python scraper/us_bt_snapshot.py [2022] [2024]
+Usage: python scraper/us_bt_snapshot.py [2018] [2020] [2022] [2024]
 """
 import json
 import sys

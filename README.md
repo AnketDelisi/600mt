@@ -6,11 +6,12 @@ The 600 midterms model, on its own street: a race-by-race forecast for the
 - **Forecast** (`index.html`) — win probabilities, expected seats, seat
   distributions, and every race with its polling. Senate races start from the
   state's presidential lean, the national environment (scaled by the state's
-  historical elasticity), incumbency and trend; House and governor races use
-  PVI, the last result and the rating band. Polls are rebuilt from the
-  individual surveys with recency/partisan weights and an outlier guard, then
-  blended, and a correlated national/state Monte Carlo produces the seat
-  distribution.
+  historical elasticity), incumbency and trend; House races use the district's
+  last presidential margin, the last House result and the rating band;
+  governors use state PVI, the last result and the band. Polls are rebuilt
+  from the individual surveys with recency/partisan weights and an outlier
+  guard, then blended, and a correlated national/state Monte Carlo produces
+  the seat distribution.
 - **Map builder** (`map.html`) — a YAPMS-style painter: pick a shade, click
   districts/senate seats/governorships, watch the tally. Load the 600
   forecast as a starting point, undo, share the map by link, export a PNG.
@@ -23,6 +24,7 @@ Live at <https://anketdelisi.github.io/600mt/>.
 data/us/races.json      # races, ratings, PVI, incumbents, current composition
 data/us/polling.json    # per-race polling averages (senate, governor)
 data/us/state_swing.json # state presidential margins 2008-24, elasticity, trend
+data/us/pres_by_cd.json # district presidential margins (2026/2024/2022 lines)
 data/us/forecast.json   # model output: probabilities, distributions, maps of races
 data/us/geo.json        # pre-projected states + 435 districts (Census TIGERweb, 2026 vintage)
 ```
@@ -38,15 +40,26 @@ python scraper/us_scrape_model.py
 
 `scraper/us_build_geo.py` rebuilds the boundaries (only needed when the
 districts change). `scraper/us_build_swing.py` rebuilds the static state
-swing data (county presidential results 2008-24). `scraper/us_calibrate.py`
-scores the Senate model on the cached 2022/2024 backtest (and `--grid` /
-`--diag`); `scraper/us_backtest.py` replays it on a live cycle.
+swing data (county presidential results 2008-24); `scraper/us_build_pres_cd.py`
+rebuilds the district presidential lookup from The Downballot's tables.
+`scraper/us_calibrate.py` scores the Senate model on the cached 2018-24
+backtest (and `--grid` / `--diag`); `scraper/us_calibrate_house.py` scores the
+House model on 2022/24. `scraper/us_backtest.py` replays a live cycle
+(`--chamber senate|house|governor --cycle 2022|2024`).
+
+Backtest caches are gitignored; rebuild them with:
+
+```bash
+python scraper/us_bt_snapshot.py 2018 2020 2022 2024
+python scraper/us_bt_actuals.py 2018 2020 2022 2024
+python scraper/us_bt_house_snapshot.py 2022 2024
+```
 
 ## Notes
 
 - Sources: Wikipedia (2026 Senate / House / gubernatorial election and
-  ratings articles), generic-ballot aggregates, Elections sources linked in
-  the articles.
+  ratings articles), The Downballot's district presidential results,
+  generic-ballot aggregates, Elections sources linked in the articles.
 - The forecast is a model, not a prophecy. The map is yours.
 - Sibling site: [600](https://anketdelisi.github.io/600/) — 43 country
   election models.

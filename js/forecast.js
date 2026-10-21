@@ -490,13 +490,15 @@ function render() {
     <p class="foot">
       Method: Senate races start from the state's lean in the last presidential
       election, adjusted for the national environment (scaled by the state's
-      historical elasticity), incumbency and trend. House and governor races
-      start from district/state PVI, the last result and the rating band. Polls
-      are rebuilt from the individual surveys with recency and partisan
-      weighting and an outlier guard, then blended. The simulation runs
+      historical elasticity), incumbency and trend. House races start from the
+      district's last presidential margin (The Downballot, 2026 lines), the last
+      House result and the rating band. Governor races start from state PVI, the
+      last result and the rating band. Polls are rebuilt from the individual
+      surveys with recency and partisan weighting and an outlier guard, then
+      blended. The simulation runs
       (${fmt(f.environment ? f.environment.n_sims : 20000)} nights, national swing &sigma; = ${fmt(f.environment ? f.environment.national_swing_sigma : 2.5)} pts${f.environment && f.environment.state_swing_sigma ? `, plus a correlated per-state deviation &sigma; = ${fmt(f.environment.state_swing_sigma)} pts` : ""}).
       Races without public polling are shown as &ldquo;&mdash;&rdquo;; their probability comes from the fundamentals alone.
-      Sources: Wikipedia (2026 Senate, House and gubernatorial election articles and ratings) and the generic-ballot aggregates.
+      Sources: Wikipedia (2026 Senate, House and gubernatorial election articles and ratings), The Downballot's district presidential results, and the generic-ballot aggregates.
       Model generated: ${f.generated ? new Date(f.generated).toUTCString() : "—"}.
       Want to disagree? <a href="map.html"><b>Paint the map yourself &rarr;</b></a>
     </p>`;

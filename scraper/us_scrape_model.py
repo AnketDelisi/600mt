@@ -7,15 +7,16 @@ Pipeline per race:
        (state margin minus the national margin), plus the current generic
        ballot scaled by the state's historical elasticity, plus a
        track-record-scaled incumbency term and the state's recent trend.
-       This replaced PVI + last Senate result in v2: on the 2022/2024
-       Senate backtest it cut the margin MAE from 6.38 to 3.9 and the bias
-       from +3.3 to +0.2 (the last Senate result is often a personal-vote
+       This replaced PVI + last Senate result in v2: on the 2018-2024
+       Senate backtest it cut the margin MAE from 6.50 to 4.52 and the bias
+       from +3.3 to +1.5 (the last Senate result is often a personal-vote
        artifact, e.g. Manchin winning WV by 3 in a state Trump carried by 40).
-     * House/Governor: district/state PVI + last result, clamped inside the
-       consensus rating band (Safe >15, Likely 7.5-15, Lean 2.5-7.5,
-       Tossup <2.5). Governors keep the band because candidate-specific
-       effects (Phil Scott in Vermont) are large; the Senate backtest does
-       not validate removing it there.
+     * House: the district's last presidential margin (The Downballot,
+       calculated on the 2026 lines) + last House result, clamped inside
+       the rating band. This cut the 2022/2024 House backtest MAE from 13.3
+       to 5.3 (n=780). Governors keep state PVI + last result + band:
+       candidate-specific effects (Phil Scott in Vermont) are large and
+       the presidential lean alone does not validate there.
   2. Polling blend: the average is rebuilt from the individual polls with a
      120-day recency half-life, a partisan-poll discount, a weighted-median
      trim and an effective-sample floor; it is then precision-weighted
@@ -91,6 +92,10 @@ else:
     SWING_NATIONAL = {}
 STATE_LEAN_YEAR = "2024"
 STATE_ENV_WEIGHT = {"senate": 0.8, "governor": 0.25, "house": 0.25}
+PRES_PATH = OUTPUT_DIR / "pres_by_cd.json"
+PRES_BY_CD = (json.loads(PRES_PATH.read_text(encoding="utf-8"))
+              if PRES_PATH.exists() else {})
+HOUSE_PRES_CYCLE = "2026"
 TREND_WEIGHT = 0.2
 POLL_HALF_LIFE = 120.0      # days; a poll 4 months old counts half
 POLL_MAX_AGE = 540          # 18 months; anything older is noise
@@ -404,6 +409,15 @@ def grade_of(race):
     return "tossup"
 
 
+def district_pres(race, cycle=None):
+    """Last presidential margin (D-R) for the race's district, if available."""
+    if race.get("pres") is not None:
+        return race["pres"]
+    key = ((race.get("state") or "").replace("_", " ") + " "
+           + str(race.get("district") or ""))
+    return (PRES_BY_CD.get(cycle or HOUSE_PRES_CYCLE) or {}).get(key)
+
+
 def structural_margin(race, chamber, env, polls, lean_year=None):
     if chamber == "senate":
         st = state_swing(race)
@@ -413,9 +427,33 @@ def structural_margin(race, chamber, env, polls, lean_year=None):
         rm += TREND_WEIGHT * st.get("trend", 0.0)
         rm += incumbency_adj(race)
         return rm
-    # House and Governor keep the district/state fundamentals + rating band:
-    # governors in particular carry large candidate-specific effects (Phil
-    # Scott in Vermont, for one) that a presidential lean alone would erase.
+    if chamber == "house":
+        pres = district_pres(race)
+        if pres is not None:
+            # House races use the district's last presidential result, the
+            # last House result and the current rating band. The 2022/2024
+            # backtest cut the margin MAE from 13.3 to 4.9-5.7 by replacing
+            # PVI with this lean (the House version of the Senate change).
+            rm = pres
+            if polls is None:
+                rm += incumbency_adj(race)
+            last = last_margin(race)
+            if last is not None:
+                w = (OPEN_SEAT_LAST_WEIGHT if is_open_seat(race)
+                     else LAST_WEIGHT)
+                rm = w * last + (1.0 - w) * rm
+            band = consensus_band(race.get("ratings"))
+            if band is not None:
+                lo, hi, _ = band
+                rm = max(lo, min(hi, rm))
+                rm += STATE_ENV_WEIGHT["house"] * env
+            else:
+                rm += UNRATED_ENV_WEIGHT["house"] * env
+            return rm
+    # Governor (and a House race with no district lean) keep the old
+    # PVI + last result + rating band prior. Governors carry large
+    # candidate-specific effects (Phil Scott in Vermont) that a
+    # presidential lean alone would erase.
     band = consensus_band(race.get("ratings"))
     rm = fundamentals_margin(race, chamber, apply_inc=(polls is None))
     if band is not None:
@@ -707,7 +745,7 @@ def main():
     }
 
     result = {
-        "model": "600 in-house model — state-lean + poll fundamentals, correlated Monte Carlo",
+        "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "environment": {
             "election": ELECTION,
@@ -715,7 +753,7 @@ def main():
             "generic_ballot_generic_margin": env,
             "n_sims": N_SIMS,
             "rating_margin_table": RATING_MARGIN,
-            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend; House/Governor: PVI + last result + rating band. Polls rebuilt with recency/partisan weights and an outlier guard.",
+            "margin_method": "Senate: state presidential lean + elasticity-scaled environment + incumbency/trend. House: district presidential lean (The Downballot, 2026 lines) + last result + rating band. Governor: PVI + last result + rating band. Polls rebuilt with recency/partisan weights and an outlier guard.",
             "national_swing_sigma": NATIONAL_SIGMA,
             "state_swing_sigma": STATE_SIGMA,
             "env_weights": {"senate": STATE_ENV_WEIGHT["senate"],
