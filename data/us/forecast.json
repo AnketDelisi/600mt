@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-10-21T22:18:12Z",
+  "generated": "2026-10-22T12:50:57Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 12,
@@ -1452,6 +1452,147 @@
         }
       },
       {
+        "state": "South Dakota",
+        "district": "",
+        "incumbent": "Mike Rounds",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "lean": "Likely R",
+        "leader": "R",
+        "margin": 9.8,
+        "dem_pct": 0.0,
+        "rep_pct": 94.3,
+        "ind_pct": 5.7,
+        "dem_name": null,
+        "rep_name": "Mike Rounds",
+        "ind_name": "Brian Bengs",
+        "polls": {
+          "rep": 50.2,
+          "ind": 41.2,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 5,
+          "n_sponsored": 4,
+          "polls": [
+            {
+              "pollster": "Quantus Insights",
+              "dates": "October 17–19, 2026",
+              "partisan": "R",
+              "sample": 633,
+              "population": "LV",
+              "rep": 57.0,
+              "ind": 37.0
+            },
+            {
+              "pollster": "Public Opinon Strategies",
+              "dates": "October 12–16, 2026",
+              "partisan": "R",
+              "sample": 500,
+              "population": "LV",
+              "rep": 54.0,
+              "ind": 37.0
+            },
+            {
+              "pollster": "Concord Public Opinion Partners",
+              "dates": "October 6–8, 2026",
+              "partisan": "D",
+              "sample": 400,
+              "population": "LV",
+              "rep": 42.0,
+              "ind": 43.0
+            },
+            {
+              "pollster": "Zenith Research",
+              "dates": "September 24–27, 2026",
+              "sample": 500,
+              "population": "LV",
+              "rep": 53.0,
+              "ind": 47.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "September 8–9, 2026",
+              "partisan": "D",
+              "sample": 629,
+              "population": "RV",
+              "rep": 45.0,
+              "ind": 42.0
+            },
+            {
+              "pollster": "Lake Research Partners",
+              "dates": "August 26–30, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "rep": 44.0,
+              "ind": 51.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "August 13–17, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "rep": 44.0,
+              "ind": 44.0
+            },
+            {
+              "pollster": "Public Opinion Strategies",
+              "dates": "July 6–9, 2026",
+              "partisan": "R",
+              "sample": 500,
+              "population": "LV",
+              "rep": 56.0,
+              "ind": 33.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "May 29–30, 2026",
+              "partisan": "D",
+              "sample": 726,
+              "population": "RV",
+              "rep": 44.0,
+              "ind": 40.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "February 17–18, 2026",
+              "partisan": "D",
+              "sample": 685,
+              "population": "RV",
+              "rep": 47.0,
+              "ind": 35.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "November 13–14, 2025",
+              "partisan": "D",
+              "sample": 814,
+              "population": "RV",
+              "rep": 44.0,
+              "ind": 31.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "July 30–31, 2025",
+              "partisan": "D",
+              "sample": 524,
+              "population": "LV",
+              "rep": 41.0,
+              "ind": 28.0
+            }
+          ],
+          "names": {
+            "r": "Mike Rounds",
+            "i": "Brian Bengs"
+          }
+        }
+      },
+      {
         "state": "Georgia",
         "district": "",
         "incumbent": "Jon Ossoff",
@@ -1464,9 +1605,9 @@
         },
         "lean": "Likely D",
         "leader": "D",
-        "margin": 8.1,
-        "dem_pct": 91.1,
-        "rep_pct": 8.9,
+        "margin": 8.3,
+        "dem_pct": 91.4,
+        "rep_pct": 8.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -1492,6 +1633,14 @@
               "population": "LV",
               "dem": 52.0,
               "rep": 45.0
+            },
+            {
+              "pollster": "University of Georgia School of Public and International Affairs",
+              "dates": "October 7–15, 2026",
+              "sample": 1000,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 40.0
             },
             {
               "pollster": "Trafalgar Group",
@@ -1672,8 +1821,8 @@
         "lean": "Likely R",
         "leader": "R",
         "margin": 7.7,
-        "dem_pct": 10.0,
-        "rep_pct": 90.0,
+        "dem_pct": 9.9,
+        "rep_pct": 90.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -1683,6 +1832,15 @@
           "rep": 49.7,
           "source": "Aggregate (Wikipedia)",
           "polls": [
+            {
+              "pollster": "co/efficient",
+              "dates": "October 18–20, 2026",
+              "partisan": "R",
+              "sample": 1014,
+              "population": "LV",
+              "dem": 40.0,
+              "rep": 48.0
+            },
             {
               "pollster": "University of North Florida",
               "dates": "October 12–19, 2026",
@@ -2617,138 +2775,6 @@
         }
       },
       {
-        "state": "South Dakota",
-        "district": "",
-        "incumbent": "Mike Rounds",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "lean": "Lean R",
-        "leader": "R",
-        "margin": 3.9,
-        "dem_pct": 0.0,
-        "rep_pct": 75.5,
-        "ind_pct": 24.5,
-        "dem_name": null,
-        "rep_name": "Mike Rounds",
-        "ind_name": "Brian Bengs",
-        "polls": {
-          "rep": 47.6,
-          "ind": 44.0,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 5,
-          "n_sponsored": 4,
-          "polls": [
-            {
-              "pollster": "Public Opinon Strategies",
-              "dates": "October 12–16, 2026",
-              "partisan": "R",
-              "sample": 500,
-              "population": "LV",
-              "rep": 54.0,
-              "ind": 37.0
-            },
-            {
-              "pollster": "Concord Public Opinion Partners",
-              "dates": "October 6–8, 2026",
-              "partisan": "D",
-              "sample": 400,
-              "population": "LV",
-              "rep": 42.0,
-              "ind": 43.0
-            },
-            {
-              "pollster": "Zenith Research",
-              "dates": "September 24–27, 2026",
-              "sample": 500,
-              "population": "LV",
-              "rep": 53.0,
-              "ind": 47.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "September 8–9, 2026",
-              "partisan": "D",
-              "sample": 629,
-              "population": "RV",
-              "rep": 45.0,
-              "ind": 42.0
-            },
-            {
-              "pollster": "Lake Research Partners",
-              "dates": "August 26–30, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "rep": 44.0,
-              "ind": 51.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "August 13–17, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "rep": 44.0,
-              "ind": 44.0
-            },
-            {
-              "pollster": "Public Opinion Strategies",
-              "dates": "July 6–9, 2026",
-              "partisan": "R",
-              "sample": 500,
-              "population": "LV",
-              "rep": 56.0,
-              "ind": 33.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "May 29–30, 2026",
-              "partisan": "D",
-              "sample": 726,
-              "population": "RV",
-              "rep": 44.0,
-              "ind": 40.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "February 17–18, 2026",
-              "partisan": "D",
-              "sample": 685,
-              "population": "RV",
-              "rep": 47.0,
-              "ind": 35.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "November 13–14, 2025",
-              "partisan": "D",
-              "sample": 814,
-              "population": "RV",
-              "rep": 44.0,
-              "ind": 31.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "July 30–31, 2025",
-              "partisan": "D",
-              "sample": 524,
-              "population": "LV",
-              "rep": 41.0,
-              "ind": 28.0
-            }
-          ],
-          "names": {
-            "r": "Mike Rounds",
-            "i": "Brian Bengs"
-          }
-        }
-      },
-      {
         "state": "Michigan",
         "district": "",
         "incumbent": "Gary Peters",
@@ -3480,8 +3506,8 @@
         "lean": "Tossup",
         "leader": "D",
         "margin": 2.0,
-        "dem_pct": 63.9,
-        "rep_pct": 36.1,
+        "dem_pct": 64.0,
+        "rep_pct": 36.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -3491,6 +3517,15 @@
           "rep": 44.5,
           "source": "Aggregate (Wikipedia)",
           "polls": [
+            {
+              "pollster": "Beacon Research / Shaw & Co. Research",
+              "dates": "October 15–19, 2026",
+              "partisan": "D",
+              "sample": 2005,
+              "population": "RV",
+              "dem": 53.0,
+              "rep": 46.0
+            },
             {
               "pollster": "Marist University",
               "dates": "October 15–18, 2026",
@@ -3817,18 +3852,43 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 1.6,
-        "dem_pct": 61.1,
-        "rep_pct": 38.9,
+        "margin": 1.5,
+        "dem_pct": 60.2,
+        "rep_pct": 39.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 48.7,
-          "rep": 46.4,
+          "dem": 48.9,
+          "rep": 46.6,
           "source": "Aggregate (Wikipedia)",
           "polls": [
+            {
+              "pollster": "ActiVote",
+              "dates": "October 17–21, 2026",
+              "sample": 400,
+              "population": "LV",
+              "dem": 51.0,
+              "rep": 49.0
+            },
+            {
+              "pollster": "Emerson College",
+              "dates": "October 17–19, 2026",
+              "sample": 1000,
+              "population": "LV",
+              "dem": 49.0,
+              "rep": 48.0
+            },
+            {
+              "pollster": "Beacon Research / Shaw & Co. Research",
+              "dates": "October 15–19, 2026",
+              "partisan": "D",
+              "sample": 1398,
+              "population": "LV",
+              "dem": 49.0,
+              "rep": 49.0
+            },
             {
               "pollster": "CBS News / YouGov",
               "dates": "October 8–16, 2026",
@@ -4476,8 +4536,8 @@
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 46.3,
-          "rep": 45.7,
+          "dem": 46.2,
+          "rep": 45.4,
           "source": "Aggregate (Wikipedia)",
           "polls": [
             {
@@ -4916,45 +4976,45 @@
         }
       }
     ],
-    "expected_d_seats": 51.5,
-    "expected_r_seats": 48.5,
-    "expected_i_seats": 0.8,
+    "expected_d_seats": 51.3,
+    "expected_r_seats": 48.7,
+    "expected_i_seats": 0.6,
     "majority": {
-      "dem_pct": 66.5,
-      "rep_pct": 33.5
+      "dem_pct": 63.4,
+      "rep_pct": 36.6
     },
     "distribution_buckets": [
       {
         "seats": 45,
-        "pct": 0.7
+        "pct": 0.9
       },
       {
         "seats": 47,
-        "pct": 4.5
+        "pct": 5.6
       },
       {
         "seats": 49,
-        "pct": 15.5
+        "pct": 16.9
       },
       {
         "seats": 51,
-        "pct": 27.9
+        "pct": 28.3
       },
       {
         "seats": 53,
-        "pct": 29.6
+        "pct": 28.4
       },
       {
         "seats": 55,
-        "pct": 17.3
+        "pct": 15.9
       },
       {
         "seats": 57,
-        "pct": 4.1
+        "pct": 3.6
       },
       {
         "seats": 59,
-        "pct": 0.3
+        "pct": 0.2
       }
     ]
   },
@@ -11756,28 +11816,6 @@
         "polls": null
       },
       {
-        "state": "Nebraska",
-        "district": "1",
-        "incumbent": "Mike Flood",
-        "party": "R",
-        "rating": "Likely R",
-        "ratings": {
-          "cook": "Likely R",
-          "ie": "Likely R",
-          "sabato": "Likely R"
-        },
-        "lean": "Likely R",
-        "leader": "R",
-        "margin": 11.5,
-        "dem_pct": 3.6,
-        "rep_pct": 96.4,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
         "state": "New Jersey",
         "district": "5",
         "incumbent": "Josh Gottheimer",
@@ -12578,20 +12616,27 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 6.4,
-        "dem_pct": 86.1,
-        "rep_pct": 13.9,
+        "margin": 6.5,
+        "dem_pct": 86.5,
+        "rep_pct": 13.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 48.2,
-          "rep": 43.6,
+          "dem": 50.8,
+          "rep": 44.2,
           "source": "Simple avg (latest 5 polls)",
           "n_polls": 5,
-          "n_sponsored": 4,
+          "n_sponsored": 3,
           "polls": [
+            {
+              "pollster": "Texas Southern University",
+              "dates": "October 13–16, 2026",
+              "population": "LV",
+              "dem": 51.0,
+              "rep": 44.0
+            },
             {
               "pollster": "Normington Petts",
               "dates": "September 24–28, 2026",
@@ -12642,28 +12687,6 @@
             "r": "Monica De La Cruz"
           }
         }
-      },
-      {
-        "state": "Missouri",
-        "district": "2",
-        "incumbent": "Ann Wagner",
-        "party": "R",
-        "rating": "Likely R",
-        "ratings": {
-          "cook": "Likely R",
-          "ie": "Solid R",
-          "sabato": "Lean R"
-        },
-        "lean": "Lean R",
-        "leader": "R",
-        "margin": 6.3,
-        "dem_pct": 14.1,
-        "rep_pct": 85.9,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
       },
       {
         "state": "Arizona",
@@ -13131,63 +13154,63 @@
         }
       },
       {
-        "state": "Ohio",
-        "district": "15",
-        "incumbent": "Mike Carey",
+        "state": "Nebraska",
+        "district": "1",
+        "incumbent": "Mike Flood",
         "party": "R",
         "rating": "Likely R",
         "ratings": {
-          "cook": "Lean R",
+          "cook": "Likely R",
           "ie": "Likely R",
           "sabato": "Likely R"
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 4.9,
-        "dem_pct": 20.0,
-        "rep_pct": 80.0,
+        "margin": 4.2,
+        "dem_pct": 22.9,
+        "rep_pct": 77.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 41.0,
-          "rep": 43.7,
+          "dem": 42.0,
+          "rep": 44.3,
           "source": "Simple avg (latest 5 polls)",
           "n_polls": 3,
           "n_sponsored": 3,
           "polls": [
             {
-              "pollster": "Hart Research",
-              "dates": "September 22–24, 2026",
+              "pollster": "Public Policy Polling",
+              "dates": "October 19–20, 2026",
               "partisan": "D",
-              "sample": 500,
+              "sample": 536,
               "population": "LV",
-              "dem": 46.0,
-              "rep": 45.0
+              "dem": 45.0,
+              "rep": 46.0
             },
             {
-              "pollster": "Hart Research",
-              "dates": "August 6–9, 2026",
+              "pollster": "Global Strategy Group",
+              "dates": "August 31 – September 3, 2026",
               "partisan": "D",
-              "sample": 401,
+              "sample": 600,
               "population": "LV",
-              "dem": 37.0,
-              "rep": 41.0
+              "dem": 43.0,
+              "rep": 42.0
             },
             {
-              "pollster": "Hart Research",
-              "dates": "June 23–25, 2026",
+              "pollster": "Zenith Research",
+              "dates": "May 8–11, 2026",
               "partisan": "D",
-              "sample": 550,
+              "sample": 371,
               "population": "LV",
-              "dem": 40.0,
+              "dem": 38.0,
               "rep": 45.0
             }
           ],
           "names": {
-            "d": "Don Leonard",
-            "r": "Mike Carey"
+            "d": "Chris Backemeyer",
+            "r": "Mike Flood"
           }
         }
       },
@@ -13249,6 +13272,112 @@
           "names": {
             "d": "Kristina Knickerbocker",
             "r": "Mike Turner"
+          }
+        }
+      },
+      {
+        "state": "Kentucky",
+        "district": "6",
+        "incumbent": "Andy Barr",
+        "party": "R",
+        "rating": "Lean R",
+        "ratings": {
+          "cook": "Lean R",
+          "ie": "Tilt R",
+          "sabato": "Lean R"
+        },
+        "lean": "Lean D",
+        "leader": "D",
+        "margin": 4.1,
+        "dem_pct": 76.1,
+        "rep_pct": 23.9,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 45.8,
+          "rep": 39.2,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 5,
+          "n_sponsored": 5,
+          "polls": [
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "October 19–20, 2026",
+              "partisan": "D",
+              "sample": 572,
+              "population": "LV",
+              "dem": 47.0,
+              "rep": 41.0
+            },
+            {
+              "pollster": "DCCC",
+              "dates": "October 2–5, 2026",
+              "partisan": "D",
+              "sample": 606,
+              "population": "LV",
+              "dem": 46.0,
+              "rep": 40.0
+            },
+            {
+              "pollster": "Change Research",
+              "dates": "September 29 – October 5, 2026",
+              "partisan": "D",
+              "sample": 524,
+              "population": "LV",
+              "dem": 47.0,
+              "rep": 38.0
+            },
+            {
+              "pollster": "Lake Research Partners",
+              "dates": "September 30 – October 4, 2026",
+              "partisan": "D",
+              "sample": 400,
+              "population": "LV",
+              "dem": 47.0,
+              "rep": 40.0
+            },
+            {
+              "pollster": "GQR",
+              "dates": "September 25–30, 2026",
+              "partisan": "D",
+              "sample": 401,
+              "population": "LV",
+              "dem": 42.0,
+              "rep": 37.0
+            },
+            {
+              "pollster": "Lake Research Partners",
+              "dates": "August 17–23, 2026",
+              "partisan": "D",
+              "sample": 400,
+              "population": "LV",
+              "dem": 45.0,
+              "rep": 44.0
+            },
+            {
+              "pollster": "DCCC",
+              "dates": "July 29–30, 2026",
+              "partisan": "D",
+              "sample": 474,
+              "population": "V",
+              "dem": 47.0,
+              "rep": 47.0
+            },
+            {
+              "pollster": "GQR",
+              "dates": "June 24–28, 2026",
+              "partisan": "D",
+              "sample": 440,
+              "population": "V",
+              "dem": 39.0,
+              "rep": 42.0
+            }
+          ],
+          "names": {
+            "d": "Zach Dembo",
+            "r": "Ralph Alvarado"
           }
         }
       },
@@ -13378,103 +13507,6 @@
         "polls": null
       },
       {
-        "state": "Kentucky",
-        "district": "6",
-        "incumbent": "Andy Barr",
-        "party": "R",
-        "rating": "Lean R",
-        "ratings": {
-          "cook": "Lean R",
-          "ie": "Tilt R",
-          "sabato": "Lean R"
-        },
-        "lean": "Lean D",
-        "leader": "D",
-        "margin": 4.0,
-        "dem_pct": 76.0,
-        "rep_pct": 24.0,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 45.4,
-          "rep": 39.8,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 5,
-          "n_sponsored": 5,
-          "polls": [
-            {
-              "pollster": "DCCC",
-              "dates": "October 2–5, 2026",
-              "partisan": "D",
-              "sample": 606,
-              "population": "LV",
-              "dem": 46.0,
-              "rep": 40.0
-            },
-            {
-              "pollster": "Change Research",
-              "dates": "September 29 – October 5, 2026",
-              "partisan": "D",
-              "sample": 524,
-              "population": "LV",
-              "dem": 47.0,
-              "rep": 38.0
-            },
-            {
-              "pollster": "Lake Research Partners",
-              "dates": "September 30 – October 4, 2026",
-              "partisan": "D",
-              "sample": 400,
-              "population": "LV",
-              "dem": 47.0,
-              "rep": 40.0
-            },
-            {
-              "pollster": "GQR",
-              "dates": "September 25–30, 2026",
-              "partisan": "D",
-              "sample": 401,
-              "population": "LV",
-              "dem": 42.0,
-              "rep": 37.0
-            },
-            {
-              "pollster": "Lake Research Partners",
-              "dates": "August 17–23, 2026",
-              "partisan": "D",
-              "sample": 400,
-              "population": "LV",
-              "dem": 45.0,
-              "rep": 44.0
-            },
-            {
-              "pollster": "DCCC",
-              "dates": "July 29–30, 2026",
-              "partisan": "D",
-              "sample": 474,
-              "population": "V",
-              "dem": 47.0,
-              "rep": 47.0
-            },
-            {
-              "pollster": "GQR",
-              "dates": "June 24–28, 2026",
-              "partisan": "D",
-              "sample": 440,
-              "population": "V",
-              "dem": 39.0,
-              "rep": 42.0
-            }
-          ],
-          "names": {
-            "d": "Zach Dembo",
-            "r": "Ralph Alvarado"
-          }
-        }
-      },
-      {
         "state": "Nevada",
         "district": "2",
         "incumbent": "Mark Amodei",
@@ -13539,6 +13571,76 @@
         "rep_name": null,
         "ind_name": null,
         "polls": null
+      },
+      {
+        "state": "Ohio",
+        "district": "15",
+        "incumbent": "Mike Carey",
+        "party": "R",
+        "rating": "Likely R",
+        "ratings": {
+          "cook": "Lean R",
+          "ie": "Likely R",
+          "sabato": "Likely R"
+        },
+        "lean": "Lean R",
+        "leader": "R",
+        "margin": 3.6,
+        "dem_pct": 26.3,
+        "rep_pct": 73.7,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 42.8,
+          "rep": 44.0,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 4,
+          "n_sponsored": 4,
+          "polls": [
+            {
+              "pollster": "Hart Research",
+              "dates": "October 9–12, 2026",
+              "partisan": "D",
+              "sample": 503,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "Hart Research",
+              "dates": "September 22–24, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 46.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "Hart Research",
+              "dates": "August 6–9, 2026",
+              "partisan": "D",
+              "sample": 401,
+              "population": "LV",
+              "dem": 37.0,
+              "rep": 41.0
+            },
+            {
+              "pollster": "Hart Research",
+              "dates": "June 23–25, 2026",
+              "partisan": "D",
+              "sample": 550,
+              "population": "LV",
+              "dem": 40.0,
+              "rep": 45.0
+            }
+          ],
+          "names": {
+            "d": "Don Leonard",
+            "r": "Mike Carey"
+          }
+        }
       },
       {
         "state": "Wisconsin",
@@ -13685,76 +13787,6 @@
           "names": {
             "d": "Janelle Stelson",
             "r": "Scott Perry"
-          }
-        }
-      },
-      {
-        "state": "Florida",
-        "district": "13",
-        "incumbent": "Anna Paulina Luna",
-        "party": "R",
-        "rating": "Lean R",
-        "ratings": {
-          "cook": "Lean R",
-          "ie": "Lean R",
-          "sabato": "Likely R"
-        },
-        "lean": "Lean R",
-        "leader": "R",
-        "margin": 2.7,
-        "dem_pct": 31.4,
-        "rep_pct": 68.6,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 43.8,
-          "rep": 45.8,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 4,
-          "n_sponsored": 4,
-          "polls": [
-            {
-              "pollster": "Hart Research Associates",
-              "dates": "August 25–27, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 51.0,
-              "rep": 46.0
-            },
-            {
-              "pollster": "Fabrizio, Lee & Associates",
-              "dates": "August 4–6, 2026",
-              "partisan": "R",
-              "sample": 400,
-              "population": "LV",
-              "dem": 41.0,
-              "rep": 49.0
-            },
-            {
-              "pollster": "GQR",
-              "dates": "August 4–6, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 44.0,
-              "rep": 47.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "May 19–20, 2026",
-              "partisan": "D",
-              "sample": 616,
-              "population": "RV",
-              "dem": 39.0,
-              "rep": 41.0
-            }
-          ],
-          "names": {
-            "d": "Leela Gray",
-            "r": "Anna Paulina Luna"
           }
         }
       },
@@ -14003,100 +14035,6 @@
         }
       },
       {
-        "state": "New York",
-        "district": "21",
-        "incumbent": "Elise Stefanik",
-        "party": "R",
-        "rating": "Lean R",
-        "ratings": {
-          "cook": "Lean R",
-          "ie": "Lean R",
-          "sabato": "Lean R"
-        },
-        "lean": "Tossup",
-        "leader": "D",
-        "margin": 1.9,
-        "dem_pct": 63.2,
-        "rep_pct": 36.8,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 43.6,
-          "rep": 47.0,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 5,
-          "n_sponsored": 3,
-          "polls": [
-            {
-              "pollster": "Siena University",
-              "dates": "September 30 – October 6, 2026",
-              "sample": 496,
-              "population": "LV",
-              "dem": 46.0,
-              "rep": 42.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "September 29 – October 4, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 45.0,
-              "rep": 48.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "September 9–10, 2026",
-              "partisan": "D",
-              "sample": 557,
-              "population": "RV",
-              "dem": 43.0,
-              "rep": 48.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "August 30 – September 2, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 44.0,
-              "rep": 47.0
-            },
-            {
-              "pollster": "J.L. Partners",
-              "dates": "August 15–17, 2026",
-              "sample": 500,
-              "population": "LV",
-              "dem": 40.0,
-              "rep": 50.0
-            },
-            {
-              "pollster": "SurveyUSA",
-              "dates": "August 4–8, 2026",
-              "sample": 612,
-              "population": "LV",
-              "dem": 43.0,
-              "rep": 39.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "May 26–31, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 44.0,
-              "rep": 45.0
-            }
-          ],
-          "names": {
-            "d": "Blake Gendebien",
-            "r": "Anthony Constantino"
-          }
-        }
-      },
-      {
         "state": "Virginia",
         "district": "1",
         "incumbent": "Rob Wittman",
@@ -14275,6 +14213,146 @@
           "names": {
             "d": "Paige Cognetti",
             "r": "Rob Bresnahan"
+          }
+        }
+      },
+      {
+        "state": "Florida",
+        "district": "13",
+        "incumbent": "Anna Paulina Luna",
+        "party": "R",
+        "rating": "Lean R",
+        "ratings": {
+          "cook": "Lean R",
+          "ie": "Lean R",
+          "sabato": "Likely R"
+        },
+        "lean": "Tossup",
+        "leader": "R",
+        "margin": 1.5,
+        "dem_pct": 39.2,
+        "rep_pct": 60.8,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 44.4,
+          "rep": 45.8,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 5,
+          "n_sponsored": 5,
+          "polls": [
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "October 14–15, 2026",
+              "partisan": "D",
+              "sample": 603,
+              "population": "LV",
+              "dem": 47.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "Hart Research Associates",
+              "dates": "August 25–27, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 51.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "Fabrizio, Lee & Associates",
+              "dates": "August 4–6, 2026",
+              "partisan": "R",
+              "sample": 400,
+              "population": "LV",
+              "dem": 41.0,
+              "rep": 49.0
+            },
+            {
+              "pollster": "GQR",
+              "dates": "August 4–6, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 44.0,
+              "rep": 47.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "May 19–20, 2026",
+              "partisan": "D",
+              "sample": 616,
+              "population": "RV",
+              "dem": 39.0,
+              "rep": 41.0
+            }
+          ],
+          "names": {
+            "d": "Leela Gray",
+            "r": "Anna Paulina Luna"
+          }
+        }
+      },
+      {
+        "state": "Missouri",
+        "district": "2",
+        "incumbent": "Ann Wagner",
+        "party": "R",
+        "rating": "Likely R",
+        "ratings": {
+          "cook": "Likely R",
+          "ie": "Solid R",
+          "sabato": "Lean R"
+        },
+        "lean": "Tossup",
+        "leader": "R",
+        "margin": 1.5,
+        "dem_pct": 39.7,
+        "rep_pct": 60.3,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 43.0,
+          "rep": 44.0,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 3,
+          "n_sponsored": 3,
+          "polls": [
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "October 19–20, 2026",
+              "partisan": "D",
+              "sample": 631,
+              "population": "LV",
+              "dem": 46.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "Remington Research Group",
+              "dates": "September 14–15, 2026",
+              "partisan": "R",
+              "sample": 565,
+              "population": "LV",
+              "dem": 42.0,
+              "rep": 43.0
+            },
+            {
+              "pollster": "FM3 Research",
+              "dates": "May 26–31, 2026",
+              "partisan": "D",
+              "sample": 600,
+              "population": "LV",
+              "dem": 41.0,
+              "rep": 44.0
+            }
+          ],
+          "names": {
+            "d": "Fred Wellman",
+            "r": "Ann Wagner"
           }
         }
       },
@@ -14655,6 +14733,109 @@
         "polls": null
       },
       {
+        "state": "New York",
+        "district": "21",
+        "incumbent": "Elise Stefanik",
+        "party": "R",
+        "rating": "Lean R",
+        "ratings": {
+          "cook": "Lean R",
+          "ie": "Lean R",
+          "sabato": "Lean R"
+        },
+        "lean": "Tossup",
+        "leader": "D",
+        "margin": 1.0,
+        "dem_pct": 56.9,
+        "rep_pct": 43.1,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 44.4,
+          "rep": 46.2,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 5,
+          "n_sponsored": 4,
+          "polls": [
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "October 12–13, 2026",
+              "partisan": "D",
+              "sample": 613,
+              "population": "LV",
+              "dem": 44.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "Siena University",
+              "dates": "September 30 – October 6, 2026",
+              "sample": 496,
+              "population": "LV",
+              "dem": 46.0,
+              "rep": 42.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "September 29 – October 4, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 45.0,
+              "rep": 48.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "September 9–10, 2026",
+              "partisan": "D",
+              "sample": 557,
+              "population": "RV",
+              "dem": 43.0,
+              "rep": 48.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "August 30 – September 2, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 44.0,
+              "rep": 47.0
+            },
+            {
+              "pollster": "J.L. Partners",
+              "dates": "August 15–17, 2026",
+              "sample": 500,
+              "population": "LV",
+              "dem": 40.0,
+              "rep": 50.0
+            },
+            {
+              "pollster": "SurveyUSA",
+              "dates": "August 4–8, 2026",
+              "sample": 612,
+              "population": "LV",
+              "dem": 43.0,
+              "rep": 39.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "May 26–31, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 44.0,
+              "rep": 45.0
+            }
+          ],
+          "names": {
+            "d": "Blake Gendebien",
+            "r": "Anthony Constantino"
+          }
+        }
+      },
+      {
         "state": "North Carolina",
         "district": "11",
         "incumbent": "Chuck Edwards",
@@ -14697,92 +14878,6 @@
         "rep_name": null,
         "ind_name": null,
         "polls": null
-      },
-      {
-        "state": "Montana",
-        "district": "1",
-        "incumbent": "Ryan Zinke",
-        "party": "R",
-        "rating": "Tossup",
-        "ratings": {
-          "cook": "Tossup",
-          "ie": "Tilt R",
-          "sabato": "Lean R"
-        },
-        "lean": "Tossup",
-        "leader": "R",
-        "margin": 0.8,
-        "dem_pct": 44.0,
-        "rep_pct": 56.0,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 44.4,
-          "rep": 43.8,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 5,
-          "n_sponsored": 3,
-          "polls": [
-            {
-              "pollster": "American Pulse",
-              "dates": "September 19–24, 2026",
-              "sample": 314,
-              "population": "LV",
-              "dem": 45.0,
-              "rep": 46.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "September 20–23, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 47.0,
-              "rep": 44.0
-            },
-            {
-              "pollster": "Public Policy Polling",
-              "dates": "September 9–10, 2026",
-              "partisan": "D",
-              "sample": 536,
-              "population": "RV",
-              "dem": 45.0,
-              "rep": 43.0
-            },
-            {
-              "pollster": "Rutgers University Eagleton Institute of Politics",
-              "dates": "August 27 – September 7, 2026",
-              "sample": 375,
-              "population": "RV",
-              "dem": 41.0,
-              "rep": 42.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "June 22–25, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 44.0,
-              "rep": 44.0
-            },
-            {
-              "pollster": "Upswing Research",
-              "dates": "April 30 – May 5, 2026",
-              "partisan": "D",
-              "sample": 401,
-              "population": "LV",
-              "dem": 43.0,
-              "rep": 48.0
-            }
-          ],
-          "names": {
-            "d": "Sam Forstag",
-            "r": "Aaron Flint"
-          }
-        }
       },
       {
         "state": "Michigan",
@@ -14858,20 +14953,29 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 0.3,
-        "dem_pct": 52.2,
-        "rep_pct": 47.8,
+        "margin": 0.5,
+        "dem_pct": 53.7,
+        "rep_pct": 46.3,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 44.0,
-          "rep": 46.5,
+          "dem": 43.8,
+          "rep": 45.8,
           "source": "Simple avg (latest 5 polls)",
-          "n_polls": 4,
-          "n_sponsored": 3,
+          "n_polls": 5,
+          "n_sponsored": 4,
           "polls": [
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "October 13–14, 2026",
+              "partisan": "D",
+              "sample": 588,
+              "population": "LV",
+              "dem": 43.0,
+              "rep": 43.0
+            },
             {
               "pollster": "SurveyUSA",
               "dates": "October 4–9, 2026",
@@ -14984,6 +15088,101 @@
         }
       },
       {
+        "state": "Montana",
+        "district": "1",
+        "incumbent": "Ryan Zinke",
+        "party": "R",
+        "rating": "Tossup",
+        "ratings": {
+          "cook": "Tossup",
+          "ie": "Tilt R",
+          "sabato": "Lean R"
+        },
+        "lean": "Tossup",
+        "leader": "R",
+        "margin": 0.2,
+        "dem_pct": 48.6,
+        "rep_pct": 51.4,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 45.2,
+          "rep": 44.0,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 5,
+          "n_sponsored": 3,
+          "polls": [
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "October 12–14, 2026",
+              "partisan": "D",
+              "sample": 541,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "American Pulse",
+              "dates": "September 19–24, 2026",
+              "sample": 314,
+              "population": "LV",
+              "dem": 45.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "September 20–23, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 47.0,
+              "rep": 44.0
+            },
+            {
+              "pollster": "Public Policy Polling",
+              "dates": "September 9–10, 2026",
+              "partisan": "D",
+              "sample": 536,
+              "population": "RV",
+              "dem": 45.0,
+              "rep": 43.0
+            },
+            {
+              "pollster": "Rutgers University Eagleton Institute of Politics",
+              "dates": "August 27 – September 7, 2026",
+              "sample": 375,
+              "population": "RV",
+              "dem": 41.0,
+              "rep": 42.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "June 22–25, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 44.0,
+              "rep": 44.0
+            },
+            {
+              "pollster": "Upswing Research",
+              "dates": "April 30 – May 5, 2026",
+              "partisan": "D",
+              "sample": 401,
+              "population": "LV",
+              "dem": 43.0,
+              "rep": 48.0
+            }
+          ],
+          "names": {
+            "d": "Sam Forstag",
+            "r": "Aaron Flint"
+          }
+        }
+      },
+      {
         "state": "Alabama",
         "district": "2",
         "incumbent": "Shomari Figures",
@@ -15043,12 +15242,12 @@
         }
       }
     ],
-    "expected_d_seats": 231.6,
-    "expected_r_seats": 203.4,
+    "expected_d_seats": 232.2,
+    "expected_r_seats": 202.8,
     "expected_i_seats": 0.1,
     "majority": {
-      "dem_pct": 84.5,
-      "rep_pct": 15.6
+      "dem_pct": 85.0,
+      "rep_pct": 15.0
     },
     "distribution_buckets": [
       {
@@ -15073,11 +15272,11 @@
       },
       {
         "seats": 203,
-        "pct": 0.6
+        "pct": 0.7
       },
       {
         "seats": 205,
-        "pct": 0.9
+        "pct": 0.8
       },
       {
         "seats": 207,
@@ -15089,31 +15288,31 @@
       },
       {
         "seats": 211,
-        "pct": 1.6
+        "pct": 1.7
       },
       {
         "seats": 213,
-        "pct": 2.2
+        "pct": 2.1
       },
       {
         "seats": 215,
-        "pct": 2.8
+        "pct": 2.5
       },
       {
         "seats": 217,
-        "pct": 3.3
+        "pct": 3.2
       },
       {
         "seats": 219,
-        "pct": 3.6
+        "pct": 3.4
       },
       {
         "seats": 221,
-        "pct": 4.2
+        "pct": 4.0
       },
       {
         "seats": 223,
-        "pct": 4.6
+        "pct": 4.3
       },
       {
         "seats": 225,
@@ -15121,19 +15320,19 @@
       },
       {
         "seats": 227,
-        "pct": 5.5
+        "pct": 5.3
       },
       {
         "seats": 229,
-        "pct": 6.1
+        "pct": 5.8
       },
       {
         "seats": 231,
-        "pct": 5.4
+        "pct": 5.6
       },
       {
         "seats": 233,
-        "pct": 5.6
+        "pct": 5.4
       },
       {
         "seats": 235,
@@ -15141,19 +15340,19 @@
       },
       {
         "seats": 237,
-        "pct": 5.6
+        "pct": 5.7
       },
       {
         "seats": 239,
-        "pct": 5.2
+        "pct": 5.1
       },
       {
         "seats": 241,
-        "pct": 4.4
+        "pct": 4.7
       },
       {
         "seats": 243,
-        "pct": 4.1
+        "pct": 4.0
       },
       {
         "seats": 245,
@@ -15161,11 +15360,11 @@
       },
       {
         "seats": 247,
-        "pct": 3.2
+        "pct": 3.6
       },
       {
         "seats": 249,
-        "pct": 2.7
+        "pct": 2.8
       },
       {
         "seats": 251,
@@ -15173,27 +15372,27 @@
       },
       {
         "seats": 253,
-        "pct": 1.9
+        "pct": 2.0
       },
       {
         "seats": 255,
-        "pct": 1.5
+        "pct": 1.6
       },
       {
         "seats": 257,
-        "pct": 1.1
+        "pct": 1.2
       },
       {
         "seats": 259,
-        "pct": 0.9
+        "pct": 1.0
       },
       {
         "seats": 261,
-        "pct": 0.6
+        "pct": 0.7
       },
       {
         "seats": 263,
-        "pct": 0.4
+        "pct": 0.5
       },
       {
         "seats": 265,
@@ -15201,7 +15400,7 @@
       },
       {
         "seats": 267,
-        "pct": 0.4
+        "pct": 0.3
       },
       {
         "seats": 269,
@@ -15213,7 +15412,7 @@
       },
       {
         "seats": 273,
-        "pct": 0.1
+        "pct": 0.2
       }
     ]
   },
@@ -15492,7 +15691,7 @@
         },
         "lean": "Solid D",
         "leader": "D",
-        "margin": 24.9,
+        "margin": 25.5,
         "dem_pct": 99.9,
         "rep_pct": 0.1,
         "ind_pct": 0.0,
@@ -15500,8 +15699,8 @@
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 55.5,
-          "rep": 35.7,
+          "dem": 57.3,
+          "rep": 36.0,
           "source": "Aggregate (Wikipedia)",
           "polls": [
             {
@@ -15519,6 +15718,14 @@
               "population": "LV",
               "dem": 63.0,
               "rep": 37.0
+            },
+            {
+              "pollster": "UC Berkeley Citrin Center/TrueDot/ Politico",
+              "dates": "October 9–14, 2026",
+              "sample": 909,
+              "population": "LV",
+              "dem": 55.0,
+              "rep": 35.0
             },
             {
               "pollster": "Manhattan Institute",
@@ -15822,7 +16029,7 @@
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
-          "sabato": "Safe R"
+          "sabato": "Likely R"
         },
         "lean": "Solid R",
         "leader": "R",
@@ -16432,18 +16639,18 @@
         },
         "lean": "Likely R",
         "leader": "R",
-        "margin": 13.9,
-        "dem_pct": 1.9,
-        "rep_pct": 98.1,
+        "margin": 13.4,
+        "dem_pct": 2.2,
+        "rep_pct": 97.8,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 37.8,
-          "rep": 48.2,
+          "dem": 38.4,
+          "rep": 48.8,
           "source": "Simple avg (latest 5 polls)",
-          "n_polls": 4,
+          "n_polls": 5,
           "n_sponsored": 3,
           "polls": [
             {
@@ -16454,6 +16661,14 @@
               "population": "LV",
               "dem": 37.0,
               "rep": 53.0
+            },
+            {
+              "pollster": "National Public Affairs",
+              "dates": "October 13–16, 2026",
+              "sample": 604,
+              "population": "LV",
+              "dem": 41.0,
+              "rep": 51.0
             },
             {
               "pollster": "Resonance Media",
@@ -17103,7 +17318,7 @@
               "rep": 45.0
             },
             {
-              "pollster": "GS Strategy Group /New River Strategies",
+              "pollster": "GS Strategy Group / New River Strategies",
               "dates": "October 9–13, 2026",
               "partisan": "R",
               "sample": 602,
@@ -17626,7 +17841,7 @@
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
-          "sabato": "Safe R"
+          "sabato": "Likely R"
         },
         "lean": "Lean R",
         "leader": "R",
@@ -17685,7 +17900,7 @@
         "ratings": {
           "cook": "Lean D",
           "ie": "Tilt D",
-          "sabato": "Lean D"
+          "sabato": "Likely D"
         },
         "lean": "Lean D",
         "leader": "D",
@@ -17953,9 +18168,9 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 5.0,
-        "dem_pct": 19.4,
-        "rep_pct": 80.6,
+        "margin": 5.2,
+        "dem_pct": 18.4,
+        "rep_pct": 81.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -17965,6 +18180,15 @@
           "rep": 48.7,
           "source": "Aggregate (Wikipedia)",
           "polls": [
+            {
+              "pollster": "co/efficient",
+              "dates": "October 18–20, 2026",
+              "partisan": "R",
+              "sample": 1014,
+              "population": "LV",
+              "dem": 40.0,
+              "rep": 49.0
+            },
             {
               "pollster": "University of North Florida",
               "dates": "October 12–19, 2026",
@@ -18328,13 +18552,13 @@
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
-          "sabato": "Tossup"
+          "sabato": "Lean D(flip)"
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 3.5,
-        "dem_pct": 73.1,
-        "rep_pct": 26.9,
+        "margin": 3.7,
+        "dem_pct": 74.0,
+        "rep_pct": 26.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -18344,6 +18568,15 @@
           "rep": 44.7,
           "source": "Aggregate (Wikipedia)",
           "polls": [
+            {
+              "pollster": "Beacon Research / Shaw & Co. Research",
+              "dates": "October 15–19, 2026",
+              "partisan": "D",
+              "sample": 2005,
+              "population": "RV",
+              "dem": 51.0,
+              "rep": 47.0
+            },
             {
               "pollster": "ActiVote",
               "dates": "September 27 – October 19, 2026",
@@ -18618,18 +18851,43 @@
         },
         "lean": "Lean R",
         "leader": "R",
-        "margin": 3.5,
-        "dem_pct": 27.0,
-        "rep_pct": 73.0,
+        "margin": 3.6,
+        "dem_pct": 26.4,
+        "rep_pct": 73.6,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
         "ind_name": null,
         "polls": {
-          "dem": 46.9,
-          "rep": 49.1,
+          "dem": 47.0,
+          "rep": 49.5,
           "source": "Aggregate (Wikipedia)",
           "polls": [
+            {
+              "pollster": "ActiVote",
+              "dates": "October 17–21, 2026",
+              "sample": 400,
+              "population": "LV",
+              "dem": 47.5,
+              "rep": 52.5
+            },
+            {
+              "pollster": "Emerson College",
+              "dates": "October 17-19, 2026",
+              "sample": 1000,
+              "population": "LV",
+              "dem": 45.0,
+              "rep": 49.0
+            },
+            {
+              "pollster": "Beacon Research / Shaw & Co. Research",
+              "dates": "October 15–19, 2026",
+              "partisan": "D",
+              "sample": 2011,
+              "population": "RV",
+              "dem": 49.0,
+              "rep": 50.0
+            },
             {
               "pollster": "CBS News / YouGov",
               "dates": "October 8–16, 2026",
