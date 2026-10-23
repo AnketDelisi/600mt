@@ -93,7 +93,7 @@ function raceRow(race) {
   const iBit = iv > 0.5 ? ` / ${fmt(iv)}% I` : "";
   const modelTip = `Model: ${race.lean} (${lead}+${fmt(Math.abs(race.margin))}) — ${fmt(race.dem_pct)}% D / ${fmt(race.rep_pct)}% R${iBit}`;
   const title = rtitle ? `${modelTip} · rating inputs — ${rtitle}` : modelTip;
-  return `<tr data-key="${raceKey(race)}">
+  return `<tr data-key="${raceKey(race)}" tabindex="0" aria-label="${name}: open race details">
     <td class="race-name" data-label="Race">${partyBadge(race.party)}<b>${name}</b><span class="inc">${inc}</span></td>
     <td data-label="Model rating"><span class="rating ${ratingClass(race.lean || race.rating)}" title="${title}">${race.lean || race.rating || "No rating"}</span></td>
     <td data-label="Polling average">${polls}</td>
@@ -102,9 +102,19 @@ function raceRow(race) {
 }
 
 function distributionSVG(chamberData, total, marker) {
-  const buckets = chamberData.distribution_buckets || [];
+  let buckets = (chamberData.distribution_buckets || []).slice();
   if (!buckets.length) return "";
-  const W = 1080, H = 170, padB = 20;
+  let bucketSpan = 2;
+  if (window.innerWidth <= 760 && buckets.length > 20) {
+    bucketSpan = 10;
+    const grouped = [];
+    for (let i = 0; i < buckets.length; i += 5) {
+      const slice = buckets.slice(i, i + 5);
+      grouped.push({ seats: slice[0].seats, pct: slice.reduce((a, b) => a + b.pct, 0) });
+    }
+    buckets = grouped;
+  }
+  const W = 1080, H = 190, padB = 24;
   const maxPct = Math.max(...buckets.map((b) => b.pct));
   const x = (seats) => (seats / total) * W;
   let bars = "";
@@ -121,34 +131,10 @@ function distributionSVG(chamberData, total, marker) {
   const markerLine = marker
     ? `<line x1="${x(marker)}" y1="2" x2="${x(marker)}" y2="${H - padB}" stroke="#151515" stroke-width="2" stroke-dasharray="4 3"/>`
     : "";
-  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${bars}${markerLine}${ticks}</svg>`;
-}
-
-function controlCard(chamberData) {
-  const maj = chamberData.majority || {};
-  const d = maj.dem_pct ?? null;
-  if (d === null) return "";
-  const r = maj.rep_pct;
-  const iSeats = chamberData.expected_i_seats || 0;
-  const label = US_LABELS[state.chamber];
-  return `<div class="ctl">
-    <div class="cell d"><div class="big">${fmt(d)}<span class="pct">%</span></div>
-      <div class="lbl">Democrats win the ${label}</div></div>
-    <div class="cell r"><div class="big">${fmt(r)}<span class="pct">%</span></div>
-      <div class="lbl">Republicans win the ${label}</div></div>
-    <div class="line">Expected seats — Democrats <b>${fmt(chamberData.expected_d_seats)}</b>${iSeats > 0.05 ? ` (incl. independents <b style="color:${C_I}">${fmt(iSeats)}</b>)` : ""}, Republicans <b>${fmt(chamberData.expected_r_seats)}</b>.
-    ${state.chamber === "senate" ? "51 seats are needed for a Democratic majority — a 50–50 split leaves control in Republican hands via the Vice President's tie-breaking vote." : "218 seats are needed for a majority."}${iSeats > 0.05 ? " Independent wins are counted with the Democratic caucus, as the Senate independents caucus with them." : ""}</div>
-  </div>`;
-}
-
-function governorCard(chamberData) {
-  const dTot = chamberData.total_d_governors ?? chamberData.expected_d_seats;
-  const rTot = chamberData.total_r_governors ?? chamberData.expected_r_seats;
-  return `<div class="ctl">
-    <div class="cell d"><div class="big">${fmt(dTot)}</div><div class="lbl">Expected Democratic governors</div></div>
-    <div class="cell r"><div class="big">${fmt(rTot)}</div><div class="lbl">Expected Republican governors</div></div>
-    <div class="line">Totals across all 50 governorships — ${chamberData.races.length} are contested in 2026, the other 14 are already settled.</div>
-  </div>`;
+  const top = buckets.reduce((a, b) => (b.pct > a.pct ? b : a), buckets[0]);
+  const topLabel = `<text x="${Math.min(W - 120, Math.max(120, x(top.seats)))}" y="13" text-anchor="middle" font-size="10" font-family="Source Code Pro,monospace" fill="#6C665B">Most likely ${top.seats}–${top.seats + bucketSpan - 1} D · ${top.pct.toFixed(1)}%</text>`;
+  const yLabel = `<text x="4" y="13" font-size="10" font-family="Source Code Pro,monospace" fill="#6C665B">share of simulations</text>`;
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Seat distribution">${yLabel}${topLabel}${bars}${markerLine}${ticks}</svg>`;
 }
 
 /* ---- map ---- */
@@ -172,17 +158,17 @@ function mapCard(chamberData) {
   const zoomed = isHouse && state.zoom !== null;
   const zoomName = state.zoom !== null ? state.geo.states[state.zoom].name : "";
   const ctrls = `<div class="map-ctrls">
-    <span class="map-title">${isHouse ? (zoomed ? `${zoomName} · click a district for details` : "All 435 districts · click a state to zoom in") : "Click a state for details"}</span>
+    <span class="map-title">${isHouse ? (zoomed ? `${zoomName} · click a district to highlight its race` : "All 435 districts · click a district to zoom to its state") : "Click a state to highlight its race"}</span>
     ${zoomed ? `<button class="btn sm" onclick="mapReset()">&larr; Back to all states</button>` : ""}
     <button class="shot-btn" onclick="captureMap()" title="Download this map as a PNG">
       <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13" r="3.2"/></svg>
     </button>
   </div>`;
-  return `<div class="card">
+  return `<div class="card map-card">
     <div class="card-head"><span class="bar"></span><div class="t">${US_LABELS[state.chamber]} map</div></div>
     <p class="note">${isHouse
-      ? "Every congressional district filled by the party the model makes the favourite — the shade is the win chance."
-      : `Every state contesting ${US_LABELS[state.chamber].toLowerCase()} seats in 2026, filled by the favoured party.`}</p>
+      ? "Every congressional district shaded by win chance; hue marks the favoured party."
+      : `Every state contesting ${US_LABELS[state.chamber].toLowerCase()} seats in 2026; hue marks the favoured party.`}</p>
     ${ctrls}
     <div class="mapwrap"><div class="map-stage"></div><div class="map-tip"></div></div>
     ${legendGradient()}
@@ -199,7 +185,7 @@ function buildMapHTML(chamberData) {
   for (const st of geo.states) {
     const race = stateRace(races, st.name);
     const fill = race ? raceColor(race.dem_pct, race.lean, race.ind_pct, race.leader, race.rep_pct) : C_GRAY;
-    stateD.push(`<path class="st" data-name="${st.name}" data-idx="${geo.states.indexOf(st)}" d="${st.d}" style="fill:${fill}"${race ? ` data-race="${raceKey(race)}"` : ""}/>`);
+    stateD.push(`<path class="st" data-name="${st.name}" data-idx="${geo.states.indexOf(st)}" tabindex="0" role="button" aria-label="${st.name}" d="${st.d}" style="fill:${fill}"${race ? ` data-race="${raceKey(race)}"` : ""}/>`);
   }
 
   let body;
@@ -215,7 +201,7 @@ function buildMapHTML(chamberData) {
     const dPaths = dists.map((d) => {
       const race = races.find((r) => r.state === st.name && String(r.district || "") === d.cd);
       const fill = race ? raceColor(race.dem_pct, race.lean, race.ind_pct, race.leader, race.rep_pct) : C_GRAY;
-      return `<path class="dist" data-name="${st.name} ${d.cd}" d="${d.d}" style="fill:${fill}"${race ? ` data-race="${raceKey(race)}"` : ""}/>`;
+      return `<path class="dist" data-name="${st.name} ${d.cd}" tabindex="0" role="button" aria-label="${st.name} ${d.cd}" d="${d.d}" style="fill:${fill}"${race ? ` data-race="${raceKey(race)}"` : ""}/>`;
     });
     body = `<g transform="${t}">${dPaths.join("")}</g>`;
   } else if (isHouse) {
@@ -229,7 +215,7 @@ function buildMapHTML(chamberData) {
   } else {
     body = `<g class="land"><path d="${geo.nation}"/></g>${stateD.join("")}`;
   }
-  return `<svg class="map-svg" viewBox="0 0 ${W} ${H}">${body}</svg>`;
+  return `<svg class="map-svg" viewBox="0 0 ${W} ${H}" role="group" aria-label="${US_LABELS[state.chamber]} forecast map">${body}</svg>`;
 }
 
 function attachMap(pane, chamberData) {
@@ -259,13 +245,17 @@ function attachMap(pane, chamberData) {
       }
     });
     el.addEventListener("mouseleave", () => { tip.style.display = "none"; });
-    el.addEventListener("click", () => {
+    const activate = () => {
       const key = el.getAttribute("data-race");
       if (isHouse && !zoomed && key) {
         const idx = parseInt(el.getAttribute("data-idx"), 10);
         if (idx !== null && !isNaN(idx) && state.geo.states[idx]) { state.zoom = idx; render(); return; }
       }
       if (key) selectRace(pane, key);
+    };
+    el.addEventListener("click", activate);
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(); }
     });
   });
   svg.querySelectorAll(".st").forEach((el) => {
@@ -275,8 +265,11 @@ function attachMap(pane, chamberData) {
 
 function selectRace(pane, key) {
   pane.querySelectorAll("tr").forEach((tr) => tr.classList.remove("selected"));
+  pane.querySelectorAll(".map-svg .focus").forEach((el) => el.classList.remove("focus"));
   const tr = pane.querySelector(`tr[data-key="${CSS.escape(key)}"]`);
   if (tr && tr.scrollIntoView) { tr.classList.add("selected"); tr.scrollIntoView({ behavior: "smooth", block: "center" }); }
+  const mapEl = pane.querySelector(`.map-svg [data-race="${CSS.escape(key)}"]`);
+  if (mapEl) mapEl.classList.add("focus");
 }
 
 /* ---- race detail: poll table + trend ---- */
@@ -375,7 +368,9 @@ function raceDetailHTML(race) {
   const raceQuery = new URLSearchParams({
     chamber: state.chamber, state: race.state, district: race.district || "",
   }).toString();
+  const model = `<div class="rd-model"><b>Model:</b> D ${fmt(race.dem_pct)}% / R ${fmt(race.rep_pct)}%${race.ind_pct > 0.5 ? ` / I ${fmt(race.ind_pct)}%` : ''} · margin ${race.leader || (race.margin >= 0 ? 'D' : 'R')}+${fmt(Math.abs(race.margin))}${race.lean ? ' · ' + race.lean : ''}</div>`;
   return `<div class="race-detail">
+    ${model}
     <div class="rd-head"><span class="rd-title">Polling — ${race.state}${race.district ? " " + race.district : ""}</span>
       <span class="rd-note">${entry.source}${entry.n_polls ? " · " + entry.n_polls + " polls" : ""}${entry.n_sponsored ? " · incl. " + entry.n_sponsored + " partisan" : ""}</span>
       <a class="race-link" href="race.html?${raceQuery}">Open race page &rarr;</a></div>
@@ -426,8 +421,6 @@ function render() {
   if (!f) return;
   const data = f[state.chamber];
   const pane = document.getElementById("pane-" + state.chamber);
-  const headerCard = state.chamber === "governor" ? governorCard(data) : controlCard(data);
-
   let races = data.races.slice();
   if (state.sort === "close") races.sort((a, b) => Math.abs(a.margin) - Math.abs(b.margin));
   else if (state.sort === "rd") races.sort((a, b) => b.dem_pct - a.dem_pct);
@@ -443,7 +436,7 @@ function render() {
 
   const table = `<div class="card">
     <div class="card-head"><span class="bar"></span><div class="t">Every ${US_LABELS[state.chamber].toLowerCase()} race</div></div>
-    <p class="note">${data.races.length} races &middot; sorted ${state.sort === "close" ? "by closeness" : state.sort === "rd" ? "by Democratic probability" : "by Republican probability"} &middot; click a row to see it on the map, click again to open the polling.</p>
+    <p class="note">${data.races.length} races &middot; sorted ${state.sort === "close" ? "by closeness" : state.sort === "rd" ? "by Democratic probability" : "by Republican probability"} &middot; ${state.chamber === "house" ? "click a row to zoom to its state; click a district to open polling" : "click a row to open polling; hover a row to highlight the map"}.</p>
     <div class="toggle-flow">${sortSel}
       <input class="race-search" id="raceSearch" type="search"
              placeholder="Search state, district or incumbent" aria-label="Search races">
@@ -479,23 +472,14 @@ function render() {
   const dist = (data.distribution_buckets || []).length
     ? `<div class="card">
         <div class="card-head"><span class="bar"></span><div class="t">Seat distribution</div></div>
-        <p class="note">Share of simulated election nights producing each number of Democratic ${state.chamber === "governor" ? "governors" : "seats"} (2-seat buckets).</p>
+        <p class="note">Share of simulated election nights producing each number of Democratic ${state.chamber === "governor" ? "governors" : "seats"}.</p>
         <div class="chart">${distributionSVG(data, total, marker)}</div>
       </div>`
     : "";
 
   pane.innerHTML = `
     ${statusBar}
-    <div class="layout-2col">
-      <div class="col-a">
-        <div class="card">
-          <div class="card-head"><span class="bar"></span><div class="t">Race for the ${state.chamber === "house" ? "U.S. House" : state.chamber === "senate" ? "U.S. Senate" : "governors' mansions"}</div></div>
-          <p class="note">The chance shown is the share of simulated election nights each party wins the chamber.</p>
-          ${headerCard}
-        </div>
-      </div>
-      <div class="col-b">${mapHtml}</div>
-    </div>
+    ${mapHtml}
     ${dist}
     ${table}
     <p class="foot">
@@ -538,7 +522,7 @@ function attachRows(pane, data) {
       if (el) el.classList.add("focus");
     });
     tr.addEventListener("mouseleave", () => { pane.querySelectorAll(".map-svg .focus").forEach((p) => p.classList.remove("focus")); });
-    tr.addEventListener("click", () => {
+    const activate = () => {
       const key = tr.getAttribute("data-key");
       if (state.chamber === "house" && state.zoom === null) {
         const race = raceByKey(data, key);
@@ -546,6 +530,10 @@ function attachRows(pane, data) {
       }
       selectRace(pane, key);
       toggleRaceDetail(tr, raceByKey(data, key));
+    };
+    tr.addEventListener("click", activate);
+    tr.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(); }
     });
   });
 }
@@ -568,12 +556,34 @@ function setSort(v) { state.sort = v; render(); }
 function selectChamber(ch) {
   state.chamber = ch;
   state.zoom = null;
-  document.querySelectorAll(".tab").forEach((t) => t.classList.toggle("active", t.dataset.chamber === ch));
-  document.querySelectorAll(".pane").forEach((p) => p.classList.toggle("active", p.id === "pane-" + ch));
+  document.querySelectorAll(".tab").forEach((t) => {
+    const active = t.dataset.chamber === ch;
+    t.classList.toggle("active", active);
+    t.setAttribute("aria-selected", String(active));
+    t.tabIndex = active ? 0 : -1;
+  });
+  document.querySelectorAll(".pane").forEach((p) => {
+    const active = p.id === "pane-" + ch;
+    p.classList.toggle("active", active);
+    p.setAttribute("aria-hidden", String(!active));
+  });
   render();
 }
 
-document.querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => selectChamber(t.dataset.chamber)));
+document.querySelectorAll(".tab").forEach((t, i, tabs) => {
+  t.addEventListener("click", () => selectChamber(t.dataset.chamber));
+  t.addEventListener("keydown", (e) => {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+    e.preventDefault();
+    let next = i;
+    if (e.key === "ArrowRight") next = (i + 1) % tabs.length;
+    if (e.key === "ArrowLeft") next = (i - 1 + tabs.length) % tabs.length;
+    if (e.key === "Home") next = 0;
+    if (e.key === "End") next = tabs.length - 1;
+    tabs[next].focus();
+    selectChamber(tabs[next].dataset.chamber);
+  });
+});
 
 if (document.getElementById("pane-senate")) {
   Promise.all([
@@ -587,7 +597,10 @@ if (document.getElementById("pane-senate")) {
       state.geo = g;
       state.polls = p;
       const gen = document.getElementById("generic");
-      if (gen && f.environment) gen.textContent = fmt(f.environment.generic_ballot_generic_margin);
+      if (gen && f.environment && f.environment.generic_ballot_generic_margin != null) {
+        const gb = f.environment.generic_ballot_generic_margin;
+        gen.textContent = `${gb >= 0 ? 'D +' : 'R +'}${fmt(Math.abs(gb))}`;
+      }
       render();
     })
     .catch((err) => {

@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://anketdelisi.github.io/600mt/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/site.css?v=20261023a">
 </head>
 <body>
   <header class="topbar">
@@ -34,21 +34,21 @@
       <h1 class="display">The midterms,<br><em>race by race.</em></h1>
       <p class="lede">Race-by-race chances for the Senate, the House and the governorships — presidential lean, district fundamentals, polls, and a correlated national-swing simulation of 20,000 election nights.</p>
       <div class="dateline">
-        <span>Generic ballot <b id="generic">—</b> D</span>
+        <span>Generic ballot <b id="generic">—</b></span>
         <span class="spacer"></span>
-        <a href="map.html"><b>Make your own prediction &rarr;</b></a>
+        <a href="map.html"><b>Open map builder &rarr;</b></a>
       </div>
     </header>
 
-    <nav class="tabs" id="tabs" aria-label="Chamber">
-      <button class="tab active" data-chamber="senate">Senate</button>
-      <button class="tab" data-chamber="house">House</button>
-      <button class="tab" data-chamber="governor">Governors</button>
+    <nav class="tabs" id="tabs" aria-label="Chamber" role="tablist">
+      <button class="tab active" id="tab-senate" data-chamber="senate" role="tab" aria-selected="true" aria-controls="pane-senate" tabindex="0">Senate</button>
+      <button class="tab" id="tab-house" data-chamber="house" role="tab" aria-selected="false" aria-controls="pane-house" tabindex="-1">House</button>
+      <button class="tab" id="tab-governor" data-chamber="governor" role="tab" aria-selected="false" aria-controls="pane-governor" tabindex="-1">Governors</button>
     </nav>
 
-    <div id="pane-senate" class="pane active"></div>
-    <div id="pane-house" class="pane"></div>
-    <div id="pane-governor" class="pane"></div>
+    <div id="pane-senate" class="pane active" role="tabpanel" aria-labelledby="tab-senate"></div>
+    <div id="pane-house" class="pane" role="tabpanel" aria-labelledby="tab-house" aria-hidden="true"></div>
+    <div id="pane-governor" class="pane" role="tabpanel" aria-labelledby="tab-governor" aria-hidden="true"></div>
 
   </main>
 
@@ -61,6 +61,6 @@
     </div>
   </footer>
 
-  <script src="js/forecast.js"></script>
+  <script src="js/forecast.js?v=20261023a"></script>
 </body>
 </html>
