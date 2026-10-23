@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://anketdelisi.github.io/600mt/methodology.html">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
-  <link rel="stylesheet" href="css/site.css?v=20261023a">
+  <link rel="stylesheet" href="css/site.css?v=20261023b">
 </head>
 <body>
   <header class="topbar">
@@ -57,6 +57,11 @@
         </tbody>
       </table>
       <p class="note">All House, Senate and Governor results fall inside the model's 90% seat intervals. The 2020 House result is the known mean outlier (+25.3 seats); it is not fitted away.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><span class="bar"></span><div class="t">Calibration</div></div>
+      <p class="note">One race currently carries an explicit input calibration: the Alaska Senate incumbency term is set to zero because the poll average already captures Dan Sullivan's standing; adding the generic Republican incumbency bonus double-counted it. The race is marked <b>calibrated</b> in the race table. Calibrations are dated, reasoned and stored in <code>data/us/calibration.json</code>; they adjust inputs, never the final win probability.</p>
     </section>
 
     <section class="card">

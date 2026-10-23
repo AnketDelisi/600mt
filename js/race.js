@@ -45,6 +45,9 @@
     const ratings = race.ratings || {};
     const ratingBits = [["Cook", ratings.cook], ["IE", ratings.ie], ["Sabato", ratings.sabato]]
       .filter((x) => x[1]).map((x) => `${x[0]}: ${x[1]}`).join(" · ") || "No published rating";
+    const calNote = race.calibration
+      ? `<p class="note cal-note"><b>Calibration:</b> ${race.calibration.reason || "manual input adjustment"}</p>`
+      : "";
 
     let fecHtml = "";
     if (fec && fec.cycles && fec.cycles["2026"]) {
@@ -78,6 +81,7 @@
           <div class="cell r"><div class="big">${fmt(race.rep_pct)}<span class="pct">%</span></div><div class="lbl">Republicans win</div></div>
           ${iBit}
           <div class="line">Margin <b>${lead}+${fmt(Math.abs(race.margin))}</b> · ${race.lean || race.rating || "No rating"}. Ratings — ${ratingBits}.</div>
+          ${calNote}
         </div>
       </div>
       ${fecHtml}

@@ -93,8 +93,9 @@ function raceRow(race) {
   const iBit = iv > 0.5 ? ` / ${fmt(iv)}% I` : "";
   const modelTip = `Model: ${race.lean} (${lead}+${fmt(Math.abs(race.margin))}) — ${fmt(race.dem_pct)}% D / ${fmt(race.rep_pct)}% R${iBit}`;
   const title = rtitle ? `${modelTip} · rating inputs — ${rtitle}` : modelTip;
+  const calibration = race.calibration ? `<span class="cal-badge" title="${String(race.calibration.reason || "manual calibration").replace(/"/g, "&quot;")}">calibrated</span>` : "";
   return `<tr data-key="${raceKey(race)}" tabindex="0" aria-label="${name}: open race details">
-    <td class="race-name" data-label="Race">${partyBadge(race.party)}<b>${name}</b><span class="inc">${inc}</span></td>
+    <td class="race-name" data-label="Race">${partyBadge(race.party)}<b>${name}</b>${calibration}<span class="inc">${inc}</span></td>
     <td data-label="Model rating"><span class="rating ${ratingClass(race.lean || race.rating)}" title="${title}">${race.lean || race.rating || "No rating"}</span></td>
     <td data-label="Polling average">${polls}</td>
     <td data-label="Win probability">${chance}</td>

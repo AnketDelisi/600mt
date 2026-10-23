@@ -121,6 +121,9 @@ POLLSTER_RATING_PATH = OUTPUT_DIR / "pollster_ratings.json"
 POLLSTER_RATINGS = (json.loads(POLLSTER_RATING_PATH.read_text(encoding="utf-8"))
                     if POLLSTER_RATING_PATH.exists() else {})
 POLLSTER_RATING_SCALE = 0.5
+CALIBRATION_PATH = OUTPUT_DIR / "calibration.json"
+CALIBRATION = (json.loads(CALIBRATION_PATH.read_text(encoding="utf-8"))
+               if CALIBRATION_PATH.exists() else {})
 HOUSE_PRES_CYCLE = "2026"
 TREND_WEIGHT = 0.2
 POLL_HALF_LIFE = 120.0      # days; a poll 4 months old counts half
@@ -298,6 +301,18 @@ INC_BONUS = 2.5   # base personal-vote term (D-minus-R points); the 2024
                   # backtest's margin MAE improved monotonically from 1.5 to
                   # 3.5 (15.7 -> 14.3 pts on 400 House races), 2.5 is the
                   # middle of that range
+
+
+def race_calibration(race, chamber):
+    """Optional, auditable race calibration (input-level only)."""
+    return ((CALIBRATION.get(chamber) or {}).get(race.get("state")) or {})
+
+
+def calibrated_incumbency(race, chamber):
+    c = race_calibration(race, chamber)
+    if "incumbency" in c:
+        return float(c["incumbency"])
+    return incumbency_adj(race)
 
 
 def incumbency_adj(race):
@@ -550,7 +565,7 @@ def structural_margin(race, chamber, env, polls, lean_year=None):
         rm = state_lean(race, lean_year)
         rm += STATE_ENV_WEIGHT[chamber] * env * beta
         rm += TREND_WEIGHT * st.get("trend", 0.0)
-        rm += incumbency_adj(race)
+        rm += calibrated_incumbency(race, chamber)
         return rm
     if chamber == "governor":
         # Governors use the state's last presidential lean but keep the
@@ -559,7 +574,7 @@ def structural_margin(race, chamber, env, polls, lean_year=None):
         # backtest improved the margin MAE from 11.3/14.6 to 8.3/12.0.
         rm = state_lean(race, lean_year, GOVERNOR_LEAN_PRIOR_WEIGHT)
         if polls is None:
-            rm += incumbency_adj(race)
+            rm += calibrated_incumbency(race, chamber)
         band = consensus_band(race.get("ratings"))
         if band is not None:
             lo, hi, _ = band
@@ -577,7 +592,7 @@ def structural_margin(race, chamber, env, polls, lean_year=None):
             # PVI with this lean (the House version of the Senate change).
             rm = pres
             if polls is None:
-                rm += incumbency_adj(race)
+                rm += calibrated_incumbency(race, chamber)
             last = last_margin(race)
             if last is not None:
                 w = (OPEN_SEAT_LAST_WEIGHT if is_open_seat(race)
@@ -818,6 +833,7 @@ def run(chamber, races, poll_map, env_margin):
             "lean": lean_from(leader, margin),
             "leader": leader,
             "margin": margin,
+            "calibration": race_calibration(r, chamber) or None,
             "dem_pct": round(100 * probs.get("D", 0.0), 1),
             "rep_pct": round(100 * probs.get("R", 0.0), 1),
             "ind_pct": round(100 * probs.get("I", 0.0), 1),

@@ -1,0 +1,10 @@
+{
+ "senate": {
+  "Alaska": {
+   "incumbency": 0.0,
+   "reason": "Polls already reflect Sullivan's standing; the generic Republican incumbency term double-counted it.",
+   "source": "manual calibration review",
+   "as_of": "2026-10-23"
+  }
+ }
+}
