@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-23T12:28:11Z",
+  "scraped_at": "2026-10-24T11:52:57Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -5185,7 +5185,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 62.9,
+          "party": "R"
+        }
       },
       {
         "state": "Pennsylvania",
@@ -6948,7 +6956,7 @@
           "party": "R"
         },
         "ratings": {
-          "cook": "Tossup",
+          "cook": "Lean D(flip)",
           "ie": "Tossup",
           "sabato": "Lean D(flip)"
         }
