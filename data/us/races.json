@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-24T11:52:57Z",
+  "scraped_at": "2026-10-25T12:23:35Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -2039,7 +2039,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 63.9,
+          "party": "R"
+        }
       },
       {
         "state": "Florida",
@@ -2331,7 +2339,15 @@
         "inc_status": "open",
         "party": "R",
         "status": "Incumbent retiring torun for U.S. Senate",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 63.1,
+          "party": "R"
+        }
       },
       {
         "state": "Georgia",
@@ -4906,7 +4922,15 @@
         "inc_status": "open",
         "party": "R",
         "status": "Incumbent retiring torun for U.S. Senate",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 60.4,
+          "party": "R"
+        }
       },
       {
         "state": "Oklahoma",
@@ -5563,7 +5587,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 64.1,
+          "party": "R"
+        }
       },
       {
         "state": "Texas",
@@ -6021,7 +6053,15 @@
         "inc_status": "open",
         "party": "R",
         "status": "Incumbent retiring torun for U.S. Senate",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 62.7,
+          "party": "R"
+        }
       },
       {
         "state": "Utah",
