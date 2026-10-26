@@ -139,6 +139,8 @@ POLL_TRIM = 12.0            # drop polls >12 pts from the weighted median
 POLL_AGG_SIGMA = 2.5
 POLL_DIR_SIGMA = 3.0
 POLL_MIN_NEFF = 1.5
+POLL_SS_PROCESS = 0.25
+POLL_SS_OBS = 10000.0
 POLL_GUARD_START = 8.0
 POLL_GUARD_WIDTH = 8.0
 GRADE_SIGMA = {"solid": 3.0, "likely": 3.75, "lean": 4.5, "tossup": 6.0, "none": 6.0}
@@ -436,6 +438,24 @@ def pollster_effect(name, chamber):
     return 0.0
 
 
+def state_space_margin(rows):
+    if len(rows) < 2:
+        return None
+    rows = sorted(rows, key=lambda item: item[0], reverse=True)
+    mean = rows[0][1]
+    variance = 4.0
+    last_age = rows[0][0]
+    for age, margin, sample in rows:
+        gap = max(0.0, last_age - age)
+        variance += POLL_SS_PROCESS * gap
+        obs = POLL_SS_OBS / max(50.0, float(sample or 50))
+        gain = variance / (variance + obs)
+        mean += gain * (margin - mean)
+        variance *= (1.0 - gain)
+        last_age = age
+    return mean
+
+
 def poll_estimate_detail(entry, asof, params=None, chamber=None):
     """(margin, sigma, n_eff, source) from the individual polls first.
 
@@ -460,6 +480,7 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
     sample_ref = float(p.get("sample_ref", POLL_SAMPLE_REF))
     sample_power = float(p.get("sample_power", POLL_SAMPLE_POWER))
     rows = []
+    ss_rows = []
     seen = {}
     for pol in entry.get("polls") or []:
         if pol.get("dem") is None or pol.get("rep") is None:
@@ -476,6 +497,7 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
         mar -= pollster_effect(pol.get("pollster"), chamber)
         if (pol.get("population") or "").upper() == "RV":
             mar += POLL_RV_SHIFT
+        ss_rows.append((age, mar, pol.get("sample") or 50))
         w = 0.5 ** (age / half_life)
         if pol.get("partisan"):
             w *= partisan_w
@@ -519,6 +541,9 @@ def poll_estimate_detail(entry, asof, params=None, chamber=None):
             mean = sum(mar * w for mar, w, _ in keep) / ws
             neff = ws * ws / sum(w * w for _, w, _ in keep)
             if neff >= min_neff:
+                ss_mean = state_space_margin(ss_rows)
+                if ss_mean is not None:
+                    mean = ss_mean
                 sigma = max(2.0, dir_sigma / math.sqrt(neff))
                 return mean, sigma, neff, "direct"
     dem, rep = entry.get("dem"), entry.get("rep")
