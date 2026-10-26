@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-25T12:23:35Z",
+  "scraped_at": "2026-10-26T13:58:41Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -25,33 +25,33 @@
   "generic_ballot": [
     {
       "pollster": "Decision Desk HQ",
-      "dates": "January 9, 2025 – October 20, 2026",
-      "dem": 50.4,
-      "rep": 42.5
+      "dates": "January 9, 2025 – October 23, 2026",
+      "dem": 51.1,
+      "rep": 43.1
     },
     {
       "pollster": "FiftyPlusOne",
-      "dates": "January 9, 2025 – October 20, 2026",
-      "dem": 52.0,
-      "rep": 42.9
+      "dates": "January 9, 2025 – October 23, 2026",
+      "dem": 52.2,
+      "rep": 43.0
     },
     {
       "pollster": "NBC News",
-      "dates": "January 9, 2025 – October 20, 2026",
+      "dates": "January 9, 2025 – October 23, 2026",
       "dem": 52.0,
       "rep": 43.0
     },
     {
       "pollster": "RealClearPolitics",
-      "dates": "September 28 – October 20, 2026",
-      "dem": 50.5,
-      "rep": 42.4
+      "dates": "October 8–23, 2026",
+      "dem": 51.1,
+      "rep": 42.8
     },
     {
       "pollster": "Silver Bulletin",
-      "dates": "January 9, 2025 – October 20, 2026",
-      "dem": 50.5,
-      "rep": 41.4
+      "dates": "January 9, 2025 – October 23, 2026",
+      "dem": 50.6,
+      "rep": 41.6
     }
   ],
   "races": {
@@ -2039,15 +2039,7 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 63.9,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Florida",
