@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-28T13:52:35Z",
+  "scraped_at": "2026-10-29T13:58:26Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -5740,7 +5740,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 66.4,
+          "party": "R"
+        }
       },
       {
         "state": "Texas",
