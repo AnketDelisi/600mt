@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-30T13:54:16Z",
+  "scraped_at": "2026-10-31T13:25:42Z",
   "senate": {
     "Alabama": {
       "dem": 35.0,
@@ -62,6 +62,14 @@
       "rep": 46.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Alaska Survey Research",
+          "dates": "October 26–29, 2026",
+          "sample": 1326,
+          "population": "LV",
+          "dem": 48.0,
+          "rep": 46.0
+        },
         {
           "pollster": "Data for Progress",
           "dates": "October 8–16, 2026",
@@ -398,6 +406,15 @@
           "population": "LV",
           "dem": 43.0,
           "rep": 51.0
+        },
+        {
+          "pollster": "Workbench Strategy",
+          "dates": "October 18–22, 2026",
+          "partisan": "D",
+          "sample": 800,
+          "population": "LV",
+          "dem": 47.0,
+          "rep": 49.0
         },
         {
           "pollster": "co/efficient",
@@ -1167,10 +1184,26 @@
       }
     },
     "Kansas": {
-      "dem": 46.8,
-      "rep": 45.7,
+      "dem": 48.6,
+      "rep": 45.5,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Emerson College",
+          "dates": "October 26–28, 2026",
+          "sample": 800,
+          "population": "LV",
+          "dem": 50.0,
+          "rep": 47.0
+        },
+        {
+          "pollster": "The Washington Post / SSPG",
+          "dates": "October 22–26, 2026",
+          "sample": 801,
+          "population": "LV",
+          "dem": 52.0,
+          "rep": 43.0
+        },
         {
           "pollster": "SSRS",
           "dates": "October 20–26, 2026",
@@ -1309,7 +1342,46 @@
       }
     },
     "Kentucky": null,
-    "Louisiana": null,
+    "Louisiana": {
+      "dem": 42.0,
+      "rep": 44.7,
+      "source": "Simple avg (latest 5 polls)",
+      "n_polls": 3,
+      "n_sponsored": 3,
+      "polls": [
+        {
+          "pollster": "Hart Research Associates",
+          "dates": "October 28–29, 2026",
+          "partisan": "D",
+          "sample": 502,
+          "population": "LV",
+          "dem": 45.0,
+          "rep": 45.0
+        },
+        {
+          "pollster": "Hart Research Associates",
+          "dates": "September 17–19, 2026",
+          "partisan": "D",
+          "sample": 500,
+          "population": "LV",
+          "dem": 44.0,
+          "rep": 48.0
+        },
+        {
+          "pollster": "Public Policy Polling",
+          "dates": "July 21–22, 2026",
+          "partisan": "D",
+          "sample": 518,
+          "population": "RV",
+          "dem": 37.0,
+          "rep": 41.0
+        }
+      ],
+      "names": {
+        "r": "Julia Letlow",
+        "d": "Jamie Davis"
+      }
+    },
     "Maine": {
       "dem": 49.3,
       "rep": 46.6,
@@ -1676,10 +1748,19 @@
       }
     },
     "Michigan": {
-      "dem": 49.1,
-      "rep": 44.9,
+      "dem": 49.3,
+      "rep": 44.8,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Rasmussen Reports",
+          "dates": "October 28–29, 2026",
+          "partisan": "R",
+          "sample": 745,
+          "population": "LV",
+          "dem": 49.0,
+          "rep": 44.0
+        },
         {
           "pollster": "Upswing Research",
           "dates": "October 24–28, 2026",
@@ -2193,6 +2274,14 @@
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
+          "pollster": "KSTP / SurveyUSA",
+          "dates": "October 24–28, 2026",
+          "sample": 714,
+          "population": "LV",
+          "dem": 48.0,
+          "rep": 41.0
+        },
+        {
           "pollster": "New York Times / Siena University",
           "dates": "October 19–26, 2026",
           "sample": 752,
@@ -2426,9 +2515,9 @@
       }
     },
     "Montana": {
-      "dem": 17.1,
-      "rep": 42.2,
-      "ind": 30.8,
+      "dem": 17.4,
+      "rep": 41.0,
+      "ind": 30.5,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -2440,6 +2529,15 @@
           "dem": 10.0,
           "rep": 38.0,
           "ind": 39.0
+        },
+        {
+          "pollster": "Montana State University Billings",
+          "dates": "October 5–21, 2026",
+          "sample": 720,
+          "population": "A",
+          "dem": 21.0,
+          "rep": 30.0,
+          "ind": 26.0
         },
         {
           "pollster": "Quantus Insights",
@@ -2604,10 +2702,18 @@
       }
     },
     "Nebraska": {
-      "rep": 46.5,
-      "ind": 45.8,
+      "rep": 46.4,
+      "ind": 45.3,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "New York Times / Siena University",
+          "dates": "October 23–29, 2026",
+          "sample": 809,
+          "population": "LV",
+          "rep": 49.0,
+          "ind": 43.0
+        },
         {
           "pollster": "Echelon Insights",
           "dates": "October 16–23, 2026",
@@ -3914,10 +4020,19 @@
       }
     },
     "South Carolina": {
-      "dem": 45.0,
-      "rep": 46.9,
+      "dem": 45.3,
+      "rep": 46.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Patinkin Research Strategies",
+          "dates": "October 27–29, 2026",
+          "partisan": "D",
+          "sample": 500,
+          "population": "LV",
+          "dem": 48.0,
+          "rep": 43.0
+        },
         {
           "pollster": "New York Times / Siena University",
           "dates": "October 19–26, 2026",
@@ -4046,12 +4161,19 @@
       }
     },
     "South Dakota": {
-      "rep": 52.2,
-      "ind": 39.2,
-      "source": "Simple avg (latest 5 polls)",
-      "n_polls": 5,
-      "n_sponsored": 3,
+      "rep": 51.1,
+      "ind": 40.7,
+      "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Concord Public Opinion Partners",
+          "dates": "October 22–26, 2026",
+          "partisan": "D",
+          "sample": 448,
+          "population": "LV",
+          "rep": 41.0,
+          "ind": 43.0
+        },
         {
           "pollster": "Emerson College",
           "dates": "October 19–20, 2026",
@@ -4218,6 +4340,15 @@
           "population": "LV",
           "dem": 49.0,
           "rep": 43.0
+        },
+        {
+          "pollster": "Data for Progress",
+          "dates": "October 23–26, 2026",
+          "partisan": "D",
+          "sample": 712,
+          "population": "LV",
+          "dem": 49.0,
+          "rep": 45.0
         },
         {
           "pollster": "YouGov Blue",
@@ -4904,6 +5035,23 @@
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
+          "pollster": "GrayHouse",
+          "dates": "October 28–29, 2026",
+          "partisan": "R",
+          "sample": 500,
+          "population": "LV",
+          "dem": 50.0,
+          "rep": 45.0
+        },
+        {
+          "pollster": "Noble Predictive Insights",
+          "dates": "October 26–28, 2026",
+          "sample": 511,
+          "population": "LV",
+          "dem": 51.0,
+          "rep": 45.0
+        },
+        {
           "pollster": "HighGround, Inc.",
           "dates": "October 21–25, 2026",
           "sample": 400,
@@ -5154,6 +5302,14 @@
       "rep": 36.0,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Berkeley IGS",
+          "dates": "October 19–25, 2026",
+          "sample": 1477,
+          "population": "LV",
+          "dem": 61.0,
+          "rep": 34.0
+        },
         {
           "pollster": "SurveyUSA",
           "dates": "October 19–24, 2026",
@@ -5445,6 +5601,15 @@
           "population": "LV",
           "dem": 44.0,
           "rep": 50.0
+        },
+        {
+          "pollster": "Workbench Strategy",
+          "dates": "October 18–22, 2026",
+          "partisan": "D",
+          "sample": 800,
+          "population": "LV",
+          "dem": 48.0,
+          "rep": 46.0
         },
         {
           "pollster": "co/efficient",
@@ -6148,10 +6313,26 @@
       }
     },
     "Kansas": {
-      "dem": 44.7,
-      "rep": 48.9,
+      "dem": 46.2,
+      "rep": 48.4,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Emerson College",
+          "dates": "October 26–28, 2026",
+          "sample": 800,
+          "population": "LV",
+          "dem": 46.0,
+          "rep": 50.0
+        },
+        {
+          "pollster": "The Washington Post / SSPG",
+          "dates": "October 22–26, 2026",
+          "sample": 801,
+          "population": "LV",
+          "dem": 51.0,
+          "rep": 45.0
+        },
         {
           "pollster": "SSRS",
           "dates": "October 20–26, 2026",
@@ -6227,8 +6408,8 @@
       }
     },
     "Maine": {
-      "dem": 49.1,
-      "rep": 39.5,
+      "dem": 49.5,
+      "rep": 39.4,
       "ind": 7.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
@@ -6541,6 +6722,14 @@
           "rep": 41.0
         },
         {
+          "pollster": "Michigan State University /Verasight",
+          "dates": "October 8–23, 2026",
+          "sample": 1383,
+          "population": "LV",
+          "dem": 51.0,
+          "rep": 42.0
+        },
+        {
           "pollster": "Glengariff Group",
           "dates": "October 19–22, 2026",
           "sample": 600,
@@ -6799,6 +6988,14 @@
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
+          "pollster": "KSTP / SurveyUSA",
+          "dates": "October 24–28, 2026",
+          "sample": 718,
+          "population": "LV",
+          "dem": 51.0,
+          "rep": 39.0
+        },
+        {
           "pollster": "State Navigate",
           "dates": "October 26–28, 2026",
           "sample": 806,
@@ -6917,6 +7114,14 @@
       "rep": 44.2,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "New York Times / Siena University",
+          "dates": "October 23–29, 2026",
+          "sample": 809,
+          "population": "LV",
+          "dem": 40.0,
+          "rep": 53.0
+        },
         {
           "pollster": "Echelon Insights",
           "dates": "October 16–23, 2026",
@@ -7038,6 +7243,14 @@
       "rep": 43.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Noble Predictive Insights",
+          "dates": "October 26–28, 2026",
+          "sample": 487,
+          "population": "LV",
+          "dem": 47.0,
+          "rep": 47.0
+        },
         {
           "pollster": "Hart Research",
           "dates": "October 20–25, 2026",
@@ -8485,7 +8698,7 @@
     },
     "Texas": {
       "dem": 46.8,
-      "rep": 49.4,
+      "rep": 49.6,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -10045,20 +10258,26 @@
       }
     },
     "Montana 1": {
-      "dem": 47.2,
-      "rep": 45.8,
+      "dem": 47.6,
+      "rep": 43.4,
       "source": "Simple avg (latest 5 polls)",
       "n_polls": 5,
-      "n_sponsored": 3,
+      "n_sponsored": 2,
       "polls": [
         {
           "pollster": "RedBox Research",
-          "dates": "October 20-23, 2026",
+          "dates": "October 20–23, 2026",
           "partisan": "D",
           "sample": 754,
           "population": "LV",
           "dem": 46.0,
           "rep": 48.0
+        },
+        {
+          "pollster": "Montana State University Billings",
+          "dates": "October 5–21, 2026",
+          "dem": 49.0,
+          "rep": 32.0
         },
         {
           "pollster": "Emerson College",

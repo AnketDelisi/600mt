@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-30T13:53:08Z",
+  "scraped_at": "2026-10-31T13:24:32Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -26,20 +26,20 @@
     {
       "pollster": "Decision Desk HQ",
       "dates": "January 9, 2025 – October 26, 2026",
-      "dem": 51.2,
-      "rep": 41.8
+      "dem": 51.5,
+      "rep": 42.6
     },
     {
       "pollster": "FiftyPlusOne",
       "dates": "January 9, 2025 – October 26, 2026",
       "dem": 52.2,
-      "rep": 43.2
+      "rep": 43.4
     },
     {
       "pollster": "NBC News",
       "dates": "January 9, 2025 – October 26, 2026",
       "dem": 52.0,
-      "rep": 43.0
+      "rep": 44.0
     },
     {
       "pollster": "RealClearPolitics",
@@ -50,7 +50,7 @@
     {
       "pollster": "Silver Bulletin",
       "dates": "January 9, 2025 – October 26, 2026",
-      "dem": 51.2,
+      "dem": 51.3,
       "rep": 42.4
     }
   ],
@@ -150,7 +150,7 @@
         "party": "R",
         "last": null,
         "ratings": {
-          "cook": "Solid R",
+          "cook": "Likely R",
           "ie": "Likely R",
           "sabato": "Likely R"
         }
@@ -388,7 +388,7 @@
           "party": "R"
         },
         "ratings": {
-          "cook": "Likely R",
+          "cook": "Lean R",
           "ie": "Tilt R",
           "sabato": "Lean R"
         }
@@ -5352,7 +5352,15 @@
         "inc_status": "open",
         "party": "R",
         "status": "Incumbent retiring torun for governor",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 59.5,
+          "party": "R"
+        }
       },
       {
         "state": "South Carolina",
@@ -5522,7 +5530,15 @@
         "inc_status": "open",
         "party": "R",
         "status": "Incumbent lost renomination",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 65.7,
+          "party": "R"
+        }
       },
       {
         "state": "Texas",
@@ -5716,15 +5732,7 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 66.4,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Texas",
@@ -6598,7 +6606,7 @@
           "party": "D"
         },
         "ratings": {
-          "cook": "Lean D",
+          "cook": "Likely D",
           "ie": "Tilt D",
           "sabato": "Likely D"
         }
@@ -7142,7 +7150,7 @@
           "party": "D"
         },
         "ratings": {
-          "cook": "Tossup",
+          "cook": "Lean D",
           "ie": "Tilt D",
           "sabato": "Lean D"
         }
