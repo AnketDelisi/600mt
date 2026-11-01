@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-31T13:25:42Z",
+  "scraped_at": "2026-11-01T14:07:23Z",
   "senate": {
     "Alabama": {
       "dem": 35.0,
@@ -58,8 +58,8 @@
       }
     },
     "Alaska": {
-      "dem": 49.1,
-      "rep": 46.7,
+      "dem": 49.3,
+      "rep": 47.4,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -68,7 +68,8 @@
           "sample": 1326,
           "population": "LV",
           "dem": 48.0,
-          "rep": 46.0
+          "rep": 46.0,
+          "ind": 3.0
         },
         {
           "pollster": "Data for Progress",
@@ -77,7 +78,8 @@
           "sample": 694,
           "population": "LV",
           "dem": 47.0,
-          "rep": 44.0
+          "rep": 44.0,
+          "ind": 4.0
         },
         {
           "pollster": "Public Policy Polling",
@@ -95,7 +97,8 @@
           "sample": 775,
           "population": "LV",
           "dem": 44.0,
-          "rep": 42.0
+          "rep": 42.0,
+          "ind": 3.0
         },
         {
           "pollster": "InsiderAdvantage",
@@ -104,7 +107,8 @@
           "sample": 1200,
           "population": "LV",
           "dem": 48.0,
-          "rep": 43.0
+          "rep": 43.0,
+          "ind": 2.0
         },
         {
           "pollster": "Alaska Survey Research",
@@ -112,7 +116,8 @@
           "sample": 1512,
           "population": "LV",
           "dem": 47.0,
-          "rep": 45.0
+          "rep": 45.0,
+          "ind": 5.0
         },
         {
           "pollster": "New York Times / Siena University",
@@ -129,7 +134,8 @@
           "sample": 758,
           "population": "LV",
           "dem": 46.0,
-          "rep": 46.0
+          "rep": 46.0,
+          "ind": 2.0
         },
         {
           "pollster": "Trafalgar Group",
@@ -138,7 +144,8 @@
           "sample": 1079,
           "population": "LV",
           "dem": 46.0,
-          "rep": 47.0
+          "rep": 47.0,
+          "ind": 3.0
         },
         {
           "pollster": "co/efficient",
@@ -147,7 +154,8 @@
           "sample": 799,
           "population": "LV",
           "dem": 46.0,
-          "rep": 48.0
+          "rep": 48.0,
+          "ind": 1.0
         },
         {
           "pollster": "Rasmussen Reports",
@@ -156,7 +164,8 @@
           "sample": 1188,
           "population": "LV",
           "dem": 39.0,
-          "rep": 39.0
+          "rep": 39.0,
+          "ind": 7.0
         },
         {
           "pollster": "Alaska Survey Research",
@@ -164,7 +173,8 @@
           "sample": 1352,
           "population": "LV",
           "dem": 48.0,
-          "rep": 44.0
+          "rep": 44.0,
+          "ind": 4.0
         },
         {
           "pollster": "Fabrizio Ward / Impact Research",
@@ -173,7 +183,8 @@
           "sample": 800,
           "population": "LV",
           "dem": 46.0,
-          "rep": 41.0
+          "rep": 41.0,
+          "ind": 4.0
         },
         {
           "pollster": "Alaska Survey Research",
@@ -198,7 +209,8 @@
           "sample": 605,
           "population": "LV",
           "dem": 45.0,
-          "rep": 41.0
+          "rep": 41.0,
+          "ind": 4.0
         },
         {
           "pollster": "New York Times / Siena University",
@@ -302,12 +314,13 @@
       ],
       "names": {
         "r": "Dan S. Sullivan",
-        "d": "Mary Peltola"
+        "d": "Mary Peltola",
+        "i": "Daniel J. Sullivan Jr."
       }
     },
     "Arkansas": {
-      "dem": 40.8,
-      "rep": 47.9,
+      "dem": 40.3,
+      "rep": 50.1,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -362,9 +375,42 @@
     "Delaware": null,
     "Florida": {
       "dem": 43.4,
-      "rep": 49.9,
+      "rep": 49.4,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Big Data Poll",
+          "dates": "October 26–30, 2026",
+          "sample": 1067,
+          "population": "LV",
+          "dem": 45.0,
+          "rep": 52.0
+        },
+        {
+          "pollster": "Stetson University",
+          "dates": "October 26–30, 2026",
+          "sample": 852,
+          "population": "RV",
+          "dem": 45.0,
+          "rep": 49.0
+        },
+        {
+          "pollster": "InsiderAdvantage",
+          "dates": "October 28–29, 2026",
+          "partisan": "R",
+          "sample": 1200,
+          "population": "LV",
+          "dem": 43.0,
+          "rep": 49.0
+        },
+        {
+          "pollster": "Political Matrix/The Listener Group",
+          "dates": "October 26–28, 2026",
+          "sample": 500,
+          "population": "LV",
+          "dem": 36.0,
+          "rep": 42.0
+        },
         {
           "pollster": "St. Pete Polls",
           "dates": "October 25–27, 2026",
@@ -862,7 +908,44 @@
         "i": "Todd Achilles"
       }
     },
-    "Illinois": null,
+    "Illinois": {
+      "dem": 54.5,
+      "rep": 40.5,
+      "source": "Simple avg (latest 5 polls)",
+      "n_polls": 3,
+      "n_sponsored": 1,
+      "polls": [
+        {
+          "pollster": "ActiVote",
+          "dates": "October 21–30, 2026",
+          "sample": 400,
+          "population": "LV",
+          "dem": 56.0,
+          "rep": 44.0
+        },
+        {
+          "pollster": "ActiVote",
+          "dates": "September 26 – October 20, 2026",
+          "sample": 400,
+          "population": "LV",
+          "dem": 58.5,
+          "rep": 41.5
+        },
+        {
+          "pollster": "Public Policy Polling",
+          "dates": "September 30 – October 1, 2026",
+          "partisan": "D",
+          "sample": 569,
+          "population": "LV",
+          "dem": 49.0,
+          "rep": 36.0
+        }
+      ],
+      "names": {
+        "d": "Juliana Stratton",
+        "r": "Don Tracy"
+      }
+    },
     "Iowa": {
       "dem": 45.8,
       "rep": 46.0,
@@ -1184,7 +1267,7 @@
       }
     },
     "Kansas": {
-      "dem": 48.6,
+      "dem": 48.7,
       "rep": 45.5,
       "source": "Aggregate (Wikipedia)",
       "polls": [
@@ -1383,10 +1466,19 @@
       }
     },
     "Maine": {
-      "dem": 49.3,
-      "rep": 46.6,
+      "dem": 49.4,
+      "rep": 46.3,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Data for Progress",
+          "dates": "October 23–27, 2026",
+          "partisan": "D",
+          "sample": 652,
+          "population": "LV",
+          "dem": 50.0,
+          "rep": 45.0
+        },
         {
           "pollster": "SSRS",
           "dates": "October 20–26, 2026",
@@ -1748,8 +1840,8 @@
       }
     },
     "Michigan": {
-      "dem": 49.3,
-      "rep": 44.8,
+      "dem": 49.4,
+      "rep": 44.9,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -1785,6 +1877,15 @@
           "population": "LV",
           "dem": 49.0,
           "rep": 42.0
+        },
+        {
+          "pollster": "Data for Progress",
+          "dates": "October 23–25, 2026",
+          "partisan": "D",
+          "sample": 622,
+          "population": "LV",
+          "dem": 50.0,
+          "rep": 46.0
         },
         {
           "pollster": "RedBox Research",
@@ -2702,8 +2803,8 @@
       }
     },
     "Nebraska": {
-      "rep": 46.4,
-      "ind": 45.3,
+      "rep": 46.8,
+      "ind": 45.0,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -3575,8 +3676,8 @@
       }
     },
     "Ohio": {
-      "dem": 48.1,
-      "rep": 44.8,
+      "dem": 48.2,
+      "rep": 45.6,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -4305,10 +4406,18 @@
     },
     "Tennessee": null,
     "Texas": {
-      "dem": 49.2,
+      "dem": 49.0,
       "rep": 46.2,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Kreate Strategies",
+          "dates": "October 27–30, 2026",
+          "sample": 900,
+          "population": "LV",
+          "dem": 48.0,
+          "rep": 45.0
+        },
         {
           "pollster": "Quantus Insights",
           "dates": "October 26–28, 2026",
@@ -5303,6 +5412,14 @@
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
+          "pollster": "ActiVote",
+          "dates": "October 17–31, 2026",
+          "sample": 400,
+          "population": "LV",
+          "dem": 63.0,
+          "rep": 37.0
+        },
+        {
           "pollster": "Berkeley IGS",
           "dates": "October 19–25, 2026",
           "sample": 1477,
@@ -5565,10 +5682,51 @@
       }
     },
     "Florida": {
-      "dem": 44.0,
-      "rep": 49.0,
+      "dem": 44.2,
+      "rep": 48.5,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "ActiVote",
+          "dates": "October 20–31, 2026",
+          "sample": 400,
+          "population": "LV",
+          "dem": 48.0,
+          "rep": 52.0
+        },
+        {
+          "pollster": "Big Data Poll",
+          "dates": "October 26–30, 2026",
+          "sample": 1067,
+          "population": "LV",
+          "dem": 44.0,
+          "rep": 47.0
+        },
+        {
+          "pollster": "Stetson University",
+          "dates": "October 26–30, 2026",
+          "sample": 852,
+          "population": "RV",
+          "dem": 45.0,
+          "rep": 51.0
+        },
+        {
+          "pollster": "InsiderAdvantage",
+          "dates": "October 28–29, 2026",
+          "partisan": "R",
+          "sample": 1200,
+          "population": "LV",
+          "dem": 45.0,
+          "rep": 49.0
+        },
+        {
+          "pollster": "Political Matrix/The Listener Group",
+          "dates": "October 26–28, 2026",
+          "sample": 500,
+          "population": "LV",
+          "dem": 39.0,
+          "rep": 40.0
+        },
         {
           "pollster": "St. Pete Polls",
           "dates": "October 25–27, 2026",
@@ -6080,12 +6238,20 @@
       }
     },
     "Illinois": {
-      "dem": 55.7,
-      "rep": 36.3,
+      "dem": 56.5,
+      "rep": 37.5,
       "source": "Simple avg (latest 5 polls)",
-      "n_polls": 3,
+      "n_polls": 4,
       "n_sponsored": 1,
       "polls": [
+        {
+          "pollster": "ActiVote",
+          "dates": "October 23–31, 2026",
+          "sample": 400,
+          "population": "LV",
+          "dem": 59.0,
+          "rep": 41.0
+        },
         {
           "pollster": "ActiVote",
           "dates": "October 2–22, 2026",
@@ -6322,8 +6488,8 @@
           "dates": "October 26–28, 2026",
           "sample": 800,
           "population": "LV",
-          "dem": 46.0,
-          "rep": 50.0
+          "dem": 48.0,
+          "rep": 53.0
         },
         {
           "pollster": "The Washington Post / SSPG",
@@ -6409,10 +6575,20 @@
     },
     "Maine": {
       "dem": 49.5,
-      "rep": 39.4,
-      "ind": 7.7,
+      "rep": 39.3,
+      "ind": 7.3,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Data for Progress",
+          "dates": "October 23–27, 2026",
+          "partisan": "D",
+          "sample": 652,
+          "population": "LV",
+          "dem": 49.0,
+          "rep": 37.0,
+          "ind": 7.0
+        },
         {
           "pollster": "SSRS",
           "dates": "October 20–26, 2026",
@@ -6720,6 +6896,15 @@
           "population": "LV",
           "dem": 53.0,
           "rep": 41.0
+        },
+        {
+          "pollster": "Data for Progress",
+          "dates": "October 23–25, 2026",
+          "partisan": "D",
+          "sample": 622,
+          "population": "LV",
+          "dem": 50.0,
+          "rep": 46.0
         },
         {
           "pollster": "Michigan State University /Verasight",
@@ -7111,7 +7296,7 @@
     },
     "Nebraska": {
       "dem": 40.5,
-      "rep": 44.2,
+      "rep": 46.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -7843,8 +8028,8 @@
       }
     },
     "Ohio": {
-      "dem": 48.1,
-      "rep": 45.0,
+      "dem": 48.3,
+      "rep": 45.4,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -8692,8 +8877,7 @@
       ],
       "names": {
         "r": "Marsha Blackburn",
-        "d": "Jerri Green",
-        "i": "David Hatley"
+        "d": "Jerri Green"
       }
     },
     "Texas": {
@@ -8701,6 +8885,14 @@
       "rep": 49.6,
       "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Kreate Strategies",
+          "dates": "October 27–30, 2026",
+          "sample": 900,
+          "population": "LV",
+          "dem": 47.0,
+          "rep": 49.0
+        },
         {
           "pollster": "Quantus Insights",
           "dates": "October 26–28, 2026",
@@ -8716,6 +8908,15 @@
           "sample": 923,
           "population": "LV",
           "dem": 46.0,
+          "rep": 48.0
+        },
+        {
+          "pollster": "Data for Progress",
+          "dates": "October 23–26, 2026",
+          "partisan": "D",
+          "sample": 712,
+          "population": "LV",
+          "dem": 47.0,
           "rep": 48.0
         },
         {
@@ -8741,7 +8942,7 @@
           "sample": 400,
           "population": "LV",
           "dem": 48.0,
-          "rep": 53.0
+          "rep": 52.0
         },
         {
           "pollster": "Univision / YouGov",
@@ -10525,7 +10726,7 @@
       "polls": [
         {
           "pollster": "RedBox Research",
-          "dates": "October 20-23, 2026",
+          "dates": "October 20–23, 2026",
           "partisan": "D",
           "sample": 726,
           "population": "LV",

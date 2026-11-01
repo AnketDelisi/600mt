@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-31T13:24:32Z",
+  "scraped_at": "2026-11-01T14:06:37Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -2039,7 +2039,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 63.9,
+          "party": "R"
+        }
       },
       {
         "state": "Florida",
@@ -2619,7 +2627,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 99.9,
+          "party": "R"
+        }
       },
       {
         "state": "Illinois",
@@ -2854,15 +2870,7 @@
         "inc_status": "running",
         "party": "D",
         "status": "Incumbent renominated",
-        "ratings": {
-          "cook": "Solid D",
-          "ie": "Solid D",
-          "sabato": "Safe D"
-        },
-        "last": {
-          "pct": 53.4,
-          "party": "D"
-        }
+        "ratings": {}
       },
       {
         "state": "Kansas",
@@ -5248,7 +5256,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 63.7,
+          "party": "R"
+        }
       },
       {
         "state": "Pennsylvania",
@@ -5732,7 +5748,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 66.4,
+          "party": "R"
+        }
       },
       {
         "state": "Texas",
