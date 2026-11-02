@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-01T14:06:37Z",
+  "scraped_at": "2026-11-02T16:52:51Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -25,33 +25,33 @@
   "generic_ballot": [
     {
       "pollster": "Decision Desk HQ",
-      "dates": "January 9, 2025 – October 26, 2026",
-      "dem": 51.5,
-      "rep": 42.6
+      "dates": "January 9, 2025 – October 30, 2026",
+      "dem": 51.2,
+      "rep": 42.3
     },
     {
       "pollster": "FiftyPlusOne",
-      "dates": "January 9, 2025 – October 26, 2026",
-      "dem": 52.2,
-      "rep": 43.4
+      "dates": "January 9, 2025 – October 30, 2026",
+      "dem": 52.3,
+      "rep": 43.7
     },
     {
       "pollster": "NBC News",
-      "dates": "January 9, 2025 – October 26, 2026",
+      "dates": "January 9, 2025 – October 30, 2026",
       "dem": 52.0,
       "rep": 44.0
     },
     {
       "pollster": "RealClearPolitics",
-      "dates": "October 8–26, 2026",
-      "dem": 51.4,
-      "rep": 43.2
+      "dates": "October 8–30, 2026",
+      "dem": 52.0,
+      "rep": 43.1
     },
     {
       "pollster": "Silver Bulletin",
-      "dates": "January 9, 2025 – October 26, 2026",
-      "dem": 51.3,
-      "rep": 42.4
+      "dates": "January 9, 2025 – October 30, 2026",
+      "dem": 51.4,
+      "rep": 42.6
     }
   ],
   "races": {
@@ -2627,15 +2627,7 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "last": {
-          "pct": 99.9,
-          "party": "R"
-        }
+        "ratings": {}
       },
       {
         "state": "Illinois",
@@ -5494,7 +5486,15 @@
         "inc_status": "running",
         "party": "R",
         "status": "Incumbent renominated",
-        "ratings": {}
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "last": {
+          "pct": 59.5,
+          "party": "R"
+        }
       },
       {
         "state": "Tennessee",
