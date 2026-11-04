@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-03T14:53:50Z",
+  "scraped_at": "2026-11-04T15:12:22Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -7,16 +7,6 @@
     "governor": "https://en.wikipedia.org/wiki/2026_United_States_gubernatorial_elections"
   },
   "composition": {
-    "senate": {
-      "r": 53,
-      "d": 45,
-      "i": 2
-    },
-    "house": {
-      "r": 218,
-      "d": 214,
-      "i": 1
-    },
     "governor": {
       "r": 18,
       "d": 18
@@ -25,33 +15,33 @@
   "generic_ballot": [
     {
       "pollster": "Decision Desk HQ",
-      "dates": "January 9, 2025 – October 30, 2026",
-      "dem": 51.2,
-      "rep": 42.3
+      "dates": "January 9, 2025 – November 1, 2026",
+      "dem": 51.4,
+      "rep": 42.8
     },
     {
       "pollster": "FiftyPlusOne",
-      "dates": "January 9, 2025 – October 30, 2026",
-      "dem": 52.3,
-      "rep": 43.7
+      "dates": "January 9, 2025 – November 1, 2026",
+      "dem": 52.8,
+      "rep": 44.1
     },
     {
       "pollster": "NBC News",
-      "dates": "January 9, 2025 – October 30, 2026",
+      "dates": "January 9, 2025 – November 1, 2026",
       "dem": 52.0,
       "rep": 44.0
     },
     {
       "pollster": "RealClearPolitics",
-      "dates": "October 8–30, 2026",
-      "dem": 52.0,
-      "rep": 43.1
+      "dates": "October 9 – November 1, 2026",
+      "dem": 52.1,
+      "rep": 43.3
     },
     {
       "pollster": "Silver Bulletin",
-      "dates": "January 9, 2025 – October 30, 2026",
-      "dem": 51.4,
-      "rep": 42.6
+      "dates": "January 9, 2025 – November 1, 2026",
+      "dem": 51.8,
+      "rep": 43.0
     }
   ],
   "races": {
@@ -648,7 +638,7 @@
         "pvi_label": "R+17",
         "incumbent": "None (new seat)",
         "inc_status": "open",
-        "party": null,
+        "party": "R",
         "status": "",
         "ratings": {}
       },
@@ -660,7 +650,7 @@
         "incumbent": "Shomari Figures",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Lean R(flip)",
           "ie": "Tilt R(flip)",
@@ -679,7 +669,7 @@
         "incumbent": "Mike Rogers",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -690,7 +680,7 @@
         "incumbent": "Robert Aderholt",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -701,7 +691,7 @@
         "incumbent": "Dale Strong",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -712,7 +702,7 @@
         "incumbent": "Gary Palmer",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -723,7 +713,7 @@
         "incumbent": "Terri Sewell",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -791,7 +781,7 @@
         "incumbent": "Yassamin Ansari",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -802,7 +792,7 @@
         "incumbent": "Greg Stanton",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -851,7 +841,7 @@
         "incumbent": "Adelita Grijalva",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -881,7 +871,7 @@
         "incumbent": "Paul Gosar",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -892,7 +882,7 @@
         "incumbent": "Rick Crawford",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -922,7 +912,7 @@
         "incumbent": "Steve Womack",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -933,7 +923,7 @@
         "incumbent": "Bruce Westerman",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "▌YBruce Westerman(Republican)▌James Russell (Democratic)",
         "ratings": {}
       },
       {
@@ -944,7 +934,7 @@
         "incumbent": "James Gallagher",
         "inc_status": "running",
         "party": "R",
-        "status": "",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {}
       },
       {
@@ -1007,7 +997,7 @@
         "incumbent": "Kevin KileyRedistricted from the3rd district",
         "inc_status": "running",
         "party": null,
-        "status": "",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Solid D(flip)",
           "ie": "Likely D(flip)",
@@ -1257,9 +1247,9 @@
         "pvi": -9.0,
         "pvi_label": "D+9",
         "incumbent": "Julia Brownley",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -1390,7 +1380,7 @@
         "pvi_label": "D+8",
         "incumbent": "None (new seat)",
         "inc_status": "open",
-        "party": null,
+        "party": "D",
         "status": "",
         "ratings": {}
       },
@@ -1507,9 +1497,9 @@
         "pvi": -2.0,
         "pvi_label": "D+2",
         "incumbent": "Darrell Issa",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -1572,7 +1562,7 @@
         "incumbent": "Diana DeGette",
         "inc_status": "open",
         "party": "D",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.Democratic hold.",
         "ratings": {}
       },
       {
@@ -1583,7 +1573,7 @@
         "incumbent": "Joe Neguse",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1651,7 +1641,7 @@
         "incumbent": "Jason Crow",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1662,7 +1652,7 @@
         "incumbent": "Brittany Pettersen",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1673,7 +1663,7 @@
         "incumbent": "Gabe Evans",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -1692,7 +1682,7 @@
         "incumbent": "John B. Larson",
         "inc_status": "open",
         "party": "D",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.Democratic hold.",
         "ratings": {}
       },
       {
@@ -1703,7 +1693,7 @@
         "incumbent": "Joe Courtney",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1714,7 +1704,7 @@
         "incumbent": "Rosa DeLauro",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1725,7 +1715,7 @@
         "incumbent": "Jim Himes",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1736,7 +1726,7 @@
         "incumbent": "Jahana Hayes",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1747,7 +1737,7 @@
         "incumbent": "Sarah McBride",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1758,7 +1748,7 @@
         "incumbent": "Jimmy Patronis",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1767,9 +1757,9 @@
         "pvi": 8.0,
         "pvi_label": "R+8",
         "incumbent": "Neal Dunn",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -1788,7 +1778,7 @@
         "incumbent": "Kat Cammack",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -1807,7 +1797,7 @@
         "incumbent": "Aaron Bean",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely R",
           "ie": "Solid R",
@@ -1826,7 +1816,7 @@
         "incumbent": "John Rutherford",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -1845,7 +1835,7 @@
         "incumbent": "Randy Fine",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -1856,7 +1846,7 @@
         "incumbent": "Cory Mills",
         "inc_status": "open",
         "party": "R",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.",
         "ratings": {
           "cook": "Lean R",
           "ie": "Likely R",
@@ -1875,7 +1865,7 @@
         "incumbent": "Mike Haridopolos",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -1922,9 +1912,9 @@
         "pvi": 7.0,
         "pvi_label": "R+7",
         "incumbent": "Daniel Webster",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -1943,7 +1933,7 @@
         "incumbent": "Gus Bilirakis",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -1981,7 +1971,7 @@
         "incumbent": "Kathy Castor",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tilt D",
@@ -2000,7 +1990,7 @@
         "incumbent": "Laurel Lee",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -2017,9 +2007,9 @@
         "pvi": 6.0,
         "pvi_label": "R+6",
         "incumbent": "Vern Buchanan",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
@@ -2038,7 +2028,7 @@
         "incumbent": "Greg Steube",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -2057,7 +2047,7 @@
         "incumbent": "Scott Franklin",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -2074,9 +2064,9 @@
         "pvi": 14.0,
         "pvi_label": "R+14",
         "incumbent": "Byron Donalds",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for governor",
+        "status": "Incumbent retired torun for governor.Republican hold.",
         "ratings": {}
       },
       {
@@ -2098,7 +2088,7 @@
         "incumbent": "Brian Mast",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -2116,7 +2106,7 @@
         "pvi_label": "R+4",
         "incumbent": "None (new seat)",
         "inc_status": "open",
-        "party": null,
+        "party": "D",
         "status": "",
         "ratings": {
           "cook": "Tossup",
@@ -2133,7 +2123,7 @@
         "incumbent": "Lois FrankelRedistricted from the22nd district",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2142,9 +2132,9 @@
         "pvi": -22.0,
         "pvi_label": "D+22",
         "incumbent": "Frederica Wilson",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -2155,7 +2145,7 @@
         "incumbent": "Jared MoskowitzRedistricted from the23rd district",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Lean D",
           "ie": "Tilt D",
@@ -2212,7 +2202,7 @@
         "incumbent": "Carlos A. Giménez",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2221,9 +2211,9 @@
         "pvi": 8.0,
         "pvi_label": "R+8",
         "incumbent": "Buddy Carter",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -2242,7 +2232,7 @@
         "incumbent": "Sanford Bishop",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2253,7 +2243,7 @@
         "incumbent": "Brian Jack",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2264,7 +2254,7 @@
         "incumbent": "Hank Johnson",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2275,7 +2265,7 @@
         "incumbent": "Nikema Williams",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2286,7 +2276,7 @@
         "incumbent": "Lucy McBath",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2297,7 +2287,7 @@
         "incumbent": "Rich McCormick",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -2316,7 +2306,7 @@
         "incumbent": "Austin Scott",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2327,7 +2317,7 @@
         "incumbent": "Andrew Clyde",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2336,9 +2326,9 @@
         "pvi": 11.0,
         "pvi_label": "R+11",
         "incumbent": "Mike Collins",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -2355,9 +2345,9 @@
         "pvi": 12.0,
         "pvi_label": "R+12",
         "incumbent": "Barry Loudermilk",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {}
       },
       {
@@ -2368,7 +2358,7 @@
         "incumbent": "Rick Allen",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -2387,7 +2377,7 @@
         "incumbent": "Everton Blair",
         "inc_status": "running",
         "party": "D",
-        "status": "Blair lost the initial nomination for the full term; later elected to completeDavid Scott's unexpired term.",
+        "status": "Incumbent lost nomination for full term; later elected to complete unexpired term.Democratic hold.",
         "ratings": {}
       },
       {
@@ -2398,7 +2388,7 @@
         "incumbent": "Clay Fuller",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2409,7 +2399,7 @@
         "incumbent": "Ed Case",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2420,7 +2410,7 @@
         "incumbent": "Jill Tokuda",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2431,7 +2421,7 @@
         "incumbent": "Russ Fulcher",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2442,7 +2432,7 @@
         "incumbent": "Mike Simpson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2453,7 +2443,7 @@
         "incumbent": "Jonathan Jackson",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2462,9 +2452,9 @@
         "pvi": -18.0,
         "pvi_label": "D+18",
         "incumbent": "Robin Kelly",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.Democratic hold.",
         "ratings": {}
       },
       {
@@ -2475,7 +2465,7 @@
         "incumbent": "Delia Ramirez",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2484,9 +2474,9 @@
         "pvi": -17.0,
         "pvi_label": "D+17",
         "incumbent": "Chuy García",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -2497,7 +2487,7 @@
         "incumbent": "Mike Quigley",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2508,7 +2498,7 @@
         "incumbent": "Sean Casten",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2517,9 +2507,9 @@
         "pvi": -34.0,
         "pvi_label": "D+34",
         "incumbent": "Danny Davis",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -2528,9 +2518,9 @@
         "pvi": -5.0,
         "pvi_label": "D+5",
         "incumbent": "Raja Krishnamoorthi",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.Democratic hold.",
         "ratings": {}
       },
       {
@@ -2539,9 +2529,9 @@
         "pvi": -19.0,
         "pvi_label": "D+19",
         "incumbent": "Jan Schakowsky",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -2552,7 +2542,7 @@
         "incumbent": "Brad Schneider",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2563,7 +2553,7 @@
         "incumbent": "Bill Foster",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2574,7 +2564,7 @@
         "incumbent": "Mike Bost",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2585,7 +2575,7 @@
         "incumbent": "Nikki Budzinski",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2596,7 +2586,7 @@
         "incumbent": "Lauren Underwood",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2607,7 +2597,7 @@
         "incumbent": "Mary Miller",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2618,7 +2608,7 @@
         "incumbent": "Darin LaHood",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2629,7 +2619,7 @@
         "incumbent": "Eric Sorensen",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2640,7 +2630,7 @@
         "incumbent": "Frank J. Mrvan",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Likely D",
@@ -2659,7 +2649,7 @@
         "incumbent": "Rudy Yakym",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2670,7 +2660,7 @@
         "incumbent": "Marlin Stutzman",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2681,7 +2671,7 @@
         "incumbent": "Jim Baird",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2692,7 +2682,7 @@
         "incumbent": "Victoria Spartz",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean R",
           "ie": "Likely R",
@@ -2711,7 +2701,7 @@
         "incumbent": "Jefferson Shreve",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2722,7 +2712,7 @@
         "incumbent": "André Carson",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2733,7 +2723,7 @@
         "incumbent": "Mark Messmer",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2744,7 +2734,7 @@
         "incumbent": "Erin Houchin",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2755,7 +2745,7 @@
         "incumbent": "Mariannette Miller-Meeks",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -2772,9 +2762,9 @@
         "pvi": 4.0,
         "pvi_label": "R+4",
         "incumbent": "Ashley Hinson",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.Democratic gain.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
@@ -2793,7 +2783,7 @@
         "incumbent": "Zach Nunn",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -2810,9 +2800,9 @@
         "pvi": 15.0,
         "pvi_label": "R+15",
         "incumbent": "Randy Feenstra",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for governor",
+        "status": "Incumbent retired torun for governor.Republican hold.",
         "ratings": {}
       },
       {
@@ -2823,7 +2813,7 @@
         "incumbent": "Tracey Mann",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2834,7 +2824,7 @@
         "incumbent": "Derek Schmidt",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
@@ -2853,7 +2843,7 @@
         "incumbent": "Sharice Davids",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2864,7 +2854,7 @@
         "incumbent": "Ron Estes",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2875,7 +2865,7 @@
         "incumbent": "James Comer",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2886,7 +2876,7 @@
         "incumbent": "Brett Guthrie",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2897,7 +2887,7 @@
         "incumbent": "Morgan McGarvey",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2908,7 +2898,7 @@
         "incumbent": "Thomas Massie",
         "inc_status": "open",
         "party": "R",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.Republican hold.",
         "ratings": {}
       },
       {
@@ -2919,7 +2909,7 @@
         "incumbent": "Hal Rogers",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2928,9 +2918,9 @@
         "pvi": 7.0,
         "pvi_label": "R+7",
         "incumbent": "Andy Barr",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.Democratic gain.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
@@ -2949,7 +2939,7 @@
         "incumbent": "Steve Scalise",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent running",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2960,7 +2950,7 @@
         "incumbent": "Troy Carter",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent running",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2971,7 +2961,7 @@
         "incumbent": "Clay Higgins",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent running",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2982,7 +2972,7 @@
         "incumbent": "Mike Johnson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent running",
+        "status": "",
         "ratings": {}
       },
       {
@@ -2991,9 +2981,9 @@
         "pvi": 17.0,
         "pvi_label": "R+17",
         "incumbent": "Julia Letlow",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.",
         "ratings": {}
       },
       {
@@ -3002,9 +2992,9 @@
         "pvi": 16.0,
         "pvi_label": "R+16",
         "incumbent": "Cleo Fields",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring to run forLouisiana State Senate",
+        "status": "Incumbent retired to run forLouisiana State Senate.",
         "ratings": {}
       },
       {
@@ -3015,7 +3005,7 @@
         "incumbent": "Chellie Pingree",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3045,7 +3035,7 @@
         "incumbent": "Andy Harris",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -3064,7 +3054,7 @@
         "incumbent": "Johnny Olszewski",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3075,7 +3065,7 @@
         "incumbent": "Sarah Elfreth",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3086,7 +3076,7 @@
         "incumbent": "Glenn Ivey",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3097,7 +3087,7 @@
         "incumbent": "Steny Hoyer",
         "inc_status": "open",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retiringDemocratic hold.",
         "ratings": {}
       },
       {
@@ -3108,7 +3098,7 @@
         "incumbent": "April McClain Delaney",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3119,7 +3109,7 @@
         "incumbent": "Kweisi Mfume",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3130,7 +3120,7 @@
         "incumbent": "Jamie Raskin",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3141,7 +3131,7 @@
         "incumbent": "Richard Neal",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3163,7 +3153,7 @@
         "incumbent": "Lori Trahan",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3174,7 +3164,7 @@
         "incumbent": "Jake Auchincloss",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3196,7 +3186,7 @@
         "incumbent": "Seth Moulton",
         "inc_status": "open",
         "party": "D",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retiring torun for U.S. Senate.New member elected.Democratic hold.",
         "ratings": {}
       },
       {
@@ -3218,7 +3208,7 @@
         "incumbent": "Stephen Lynch",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3229,7 +3219,7 @@
         "incumbent": "Bill Keating",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3240,7 +3230,7 @@
         "incumbent": "Jack Bergman",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -3259,7 +3249,7 @@
         "incumbent": "John Moolenaar",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3270,7 +3260,7 @@
         "incumbent": "Hillary Scholten",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid D",
           "ie": "Likely D",
@@ -3308,7 +3298,7 @@
         "incumbent": "Tim Walberg",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3319,7 +3309,7 @@
         "incumbent": "Debbie Dingell",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3349,7 +3339,7 @@
         "incumbent": "Kristen McDonald Rivet",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Solid D",
@@ -3368,7 +3358,7 @@
         "incumbent": "Lisa McClain",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3398,7 +3388,7 @@
         "incumbent": "Haley Stevens",
         "inc_status": "open",
         "party": "D",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retiring torun for U.S. Senate.New member elected.Democratic hold.",
         "ratings": {}
       },
       {
@@ -3409,7 +3399,7 @@
         "incumbent": "Rashida Tlaib",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3420,7 +3410,7 @@
         "incumbent": "Shri Thanedar",
         "inc_status": "open",
         "party": "D",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.New member elected.Democratic hold.",
         "ratings": {}
       },
       {
@@ -3450,7 +3440,7 @@
         "incumbent": "Angie Craig",
         "inc_status": "open",
         "party": null,
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retiring torun for U.S. Senate.New member elected.DFL hold.",
         "ratings": {
           "cook": "Likely D",
           "ie": "Likely D",
@@ -3469,7 +3459,7 @@
         "incumbent": "Kelly Morrison",
         "inc_status": "running",
         "party": null,
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3480,7 +3470,7 @@
         "incumbent": "Betty McCollum",
         "inc_status": "running",
         "party": null,
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3491,7 +3481,7 @@
         "incumbent": "Ilhan Omar",
         "inc_status": "running",
         "party": null,
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3502,7 +3492,7 @@
         "incumbent": "Tom Emmer",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3513,7 +3503,7 @@
         "incumbent": "Michelle Fischbach",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3524,7 +3514,7 @@
         "incumbent": "Pete Stauber",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -3543,7 +3533,7 @@
         "incumbent": "Trent Kelly",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3554,7 +3544,7 @@
         "incumbent": "Bennie Thompson",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3565,7 +3555,7 @@
         "incumbent": "Michael Guest",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3576,7 +3566,7 @@
         "incumbent": "Mike Ezell",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3587,7 +3577,7 @@
         "incumbent": "Wesley Bell",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3598,7 +3588,7 @@
         "incumbent": "Ann Wagner",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Likely R",
           "ie": "Solid R",
@@ -3617,7 +3607,7 @@
         "incumbent": "Bob Onder",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3628,7 +3618,7 @@
         "incumbent": "Mark Alford",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3639,7 +3629,7 @@
         "incumbent": "Emanuel Cleaver",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3648,9 +3638,9 @@
         "pvi": 19.0,
         "pvi_label": "R+19",
         "incumbent": "Sam Graves",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {}
       },
       {
@@ -3661,7 +3651,7 @@
         "incumbent": "Eric Burlison",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3672,7 +3662,7 @@
         "incumbent": "Jason Smith",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3681,9 +3671,9 @@
         "pvi": 5.0,
         "pvi_label": "R+5",
         "incumbent": "Ryan Zinke",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
@@ -3702,7 +3692,7 @@
         "incumbent": "Troy Downing",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3730,9 +3720,9 @@
         "pvi": -3.0,
         "pvi_label": "D+3",
         "incumbent": "Don Bacon",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Democratic gain.",
         "ratings": {
           "cook": "Likely D(flip)",
           "ie": "Lean D(flip)",
@@ -3751,7 +3741,7 @@
         "incumbent": "Adrian Smith",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3762,7 +3752,7 @@
         "incumbent": "Dina Titus",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Lean D",
@@ -3800,7 +3790,7 @@
         "incumbent": "Susie Lee",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Lean D",
@@ -3819,7 +3809,7 @@
         "incumbent": "Steven Horsford",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Likely D",
@@ -3836,9 +3826,9 @@
         "pvi": -2.0,
         "pvi_label": "D+2",
         "incumbent": "Chris Pappas",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.Democratic hold.",
         "ratings": {
           "cook": "Likely D",
           "ie": "Lean D",
@@ -3857,7 +3847,7 @@
         "incumbent": "Maggie Goodlander",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid D",
           "ie": "Solid D",
@@ -3876,7 +3866,7 @@
         "incumbent": "Donald Norcross",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3887,7 +3877,7 @@
         "incumbent": "Jeff Van Drew",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
@@ -3906,7 +3896,7 @@
         "incumbent": "Herb Conaway",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3917,7 +3907,7 @@
         "incumbent": "Chris Smith",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3928,7 +3918,7 @@
         "incumbent": "Josh Gottheimer",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3939,7 +3929,7 @@
         "incumbent": "Frank Pallone",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3950,7 +3940,7 @@
         "incumbent": "Thomas Kean Jr.",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -3969,7 +3959,7 @@
         "incumbent": "Rob Menendez",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -3980,7 +3970,7 @@
         "incumbent": "Nellie Pou",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Solid D",
@@ -3999,7 +3989,7 @@
         "incumbent": "LaMonica McIver",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4010,7 +4000,7 @@
         "incumbent": "Analilia Mejia",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4019,9 +4009,9 @@
         "pvi": -13.0,
         "pvi_label": "D+13",
         "incumbent": "Bonnie Watson Coleman",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4032,7 +4022,7 @@
         "incumbent": "Melanie Stansbury",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4043,7 +4033,7 @@
         "incumbent": "Gabe Vasquez",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Lean D",
           "ie": "Tilt D",
@@ -4062,7 +4052,7 @@
         "incumbent": "Teresa Leger Fernandez",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4149,7 +4139,7 @@
         "incumbent": "Gregory Meeks",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4160,7 +4150,7 @@
         "incumbent": "Grace Meng",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4169,9 +4159,9 @@
         "pvi": -25.0,
         "pvi_label": "D+25",
         "incumbent": "Nydia Velázquez",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.New member elected.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4182,7 +4172,7 @@
         "incumbent": "Hakeem Jeffries",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4193,7 +4183,7 @@
         "incumbent": "Yvette Clarke",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4204,7 +4194,7 @@
         "incumbent": "Dan Goldman",
         "inc_status": "open",
         "party": "D",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.New member elected.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4215,7 +4205,7 @@
         "incumbent": "Nicole Malliotakis",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4224,9 +4214,9 @@
         "pvi": -33.0,
         "pvi_label": "D+33",
         "incumbent": "Jerry Nadler",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.New member elected.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4237,7 +4227,7 @@
         "incumbent": "Adriano Espaillat",
         "inc_status": "open",
         "party": "D",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.New member elected.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4248,7 +4238,7 @@
         "incumbent": "Alexandria Ocasio-Cortez",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4259,7 +4249,7 @@
         "incumbent": "Ritchie Torres",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4270,7 +4260,7 @@
         "incumbent": "George Latimer",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4281,7 +4271,7 @@
         "incumbent": "Mike Lawler",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
@@ -4300,7 +4290,7 @@
         "incumbent": "Pat Ryan",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4311,7 +4301,7 @@
         "incumbent": "Josh Riley",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Solid D",
@@ -4330,7 +4320,7 @@
         "incumbent": "Paul Tonko",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4341,7 +4331,7 @@
         "incumbent": "Elise Stefanik",
         "inc_status": "open",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retiring.",
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
@@ -4360,7 +4350,7 @@
         "incumbent": "John Mannion",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4371,7 +4361,7 @@
         "incumbent": "Nick Langworthy",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -4390,7 +4380,7 @@
         "incumbent": "Claudia Tenney",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4401,7 +4391,7 @@
         "incumbent": "Joseph Morelle",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4412,7 +4402,7 @@
         "incumbent": "Tim Kennedy",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4423,7 +4413,7 @@
         "incumbent": "Don Davis",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tilt D",
@@ -4442,7 +4432,7 @@
         "incumbent": "Deborah Ross",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4472,7 +4462,7 @@
         "incumbent": "Valerie Foushee",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4559,7 +4549,7 @@
         "incumbent": "Richard Hudson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
@@ -4597,7 +4587,7 @@
         "incumbent": "Chuck Edwards",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominatedbut withdrew",
+        "status": "Incumbent renominatedbut withdrew.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -4616,7 +4606,7 @@
         "incumbent": "Alma Adams",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4665,7 +4655,7 @@
         "incumbent": "Julie Fedorchak",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4676,7 +4666,7 @@
         "incumbent": "Greg Landsman",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Lean D",
@@ -4695,7 +4685,7 @@
         "incumbent": "David Taylor",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4706,7 +4696,7 @@
         "incumbent": "Joyce Beatty",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4717,7 +4707,7 @@
         "incumbent": "Jim Jordan",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4728,7 +4718,7 @@
         "incumbent": "Bob Latta",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4739,7 +4729,7 @@
         "incumbent": "Michael Rulli",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4750,7 +4740,7 @@
         "incumbent": "Max Miller",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tilt D(flip)",
@@ -4769,7 +4759,7 @@
         "incumbent": "Warren Davidson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -4788,7 +4778,7 @@
         "incumbent": "Marcy Kaptur",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Lean D",
           "ie": "Tilt D",
@@ -4826,7 +4816,7 @@
         "incumbent": "Shontel Brown",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4837,7 +4827,7 @@
         "incumbent": "Troy Balderson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4848,7 +4838,7 @@
         "incumbent": "Emilia Sykes",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Solid D",
@@ -4867,7 +4857,7 @@
         "incumbent": "David Joyce",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4878,7 +4868,7 @@
         "incumbent": "Mike Carey",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
@@ -4895,9 +4885,9 @@
         "pvi": 11.0,
         "pvi_label": "R+11",
         "incumbent": "Kevin Hern",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -4916,7 +4906,7 @@
         "incumbent": "Josh Brecheen",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4927,7 +4917,7 @@
         "incumbent": "Frank Lucas",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4938,7 +4928,7 @@
         "incumbent": "Tom Cole",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4968,7 +4958,7 @@
         "incumbent": "Suzanne Bonamici",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4979,7 +4969,7 @@
         "incumbent": "Cliff Bentz",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -4990,7 +4980,7 @@
         "incumbent": "Maxine Dexter",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5001,7 +4991,7 @@
         "incumbent": "Val Hoyle",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5012,7 +5002,7 @@
         "incumbent": "Janelle Bynum",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5023,7 +5013,7 @@
         "incumbent": "Andrea Salinas",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5034,7 +5024,7 @@
         "incumbent": "Brian Fitzpatrick",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
@@ -5053,7 +5043,7 @@
         "incumbent": "Brendan Boyle",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5062,9 +5052,9 @@
         "pvi": -40.0,
         "pvi_label": "D+40",
         "incumbent": "Dwight Evans",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -5075,7 +5065,7 @@
         "incumbent": "Madeleine Dean",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5086,7 +5076,7 @@
         "incumbent": "Mary Gay Scanlon",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5097,7 +5087,7 @@
         "incumbent": "Chrissy Houlahan",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5108,7 +5098,7 @@
         "incumbent": "Ryan Mackenzie",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -5127,7 +5117,7 @@
         "incumbent": "Rob Bresnahan",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -5146,7 +5136,7 @@
         "incumbent": "Dan Meuser",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5157,7 +5147,7 @@
         "incumbent": "Scott Perry",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -5176,7 +5166,7 @@
         "incumbent": "Lloyd Smucker",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5195,7 +5185,7 @@
         "incumbent": "Summer Lee",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5206,7 +5196,7 @@
         "incumbent": "John Joyce",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5217,7 +5207,7 @@
         "incumbent": "Guy Reschenthaler",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5228,7 +5218,7 @@
         "incumbent": "Glenn Thompson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5239,7 +5229,7 @@
         "incumbent": "Mike Kelly",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5258,7 +5248,7 @@
         "incumbent": "Chris Deluzio",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5269,7 +5259,7 @@
         "incumbent": "Gabe Amo",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5280,7 +5270,7 @@
         "incumbent": "Seth Magaziner",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5289,9 +5279,9 @@
         "pvi": 6.0,
         "pvi_label": "R+6",
         "incumbent": "Nancy Mace",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for governor",
+        "status": "Incumbent retired torun for governor.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tilt R",
@@ -5310,7 +5300,7 @@
         "incumbent": "Joe Wilson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent renominated.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5329,7 +5319,7 @@
         "incumbent": "Sheri Biggs",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5340,7 +5330,7 @@
         "incumbent": "William Timmons",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5349,9 +5339,9 @@
         "pvi": 11.0,
         "pvi_label": "R+11",
         "incumbent": "Ralph Norman",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for governor",
+        "status": "Incumbent retired torun for governor. Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5370,7 +5360,7 @@
         "incumbent": "Jim Clyburn",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5381,7 +5371,7 @@
         "incumbent": "Russell Fry",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5390,9 +5380,9 @@
         "pvi": 15.0,
         "pvi_label": "R+15",
         "incumbent": "Dusty Johnson",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for governor",
+        "status": "Incumbent retired torun for governor.Republican hold.",
         "ratings": {}
       },
       {
@@ -5403,7 +5393,7 @@
         "incumbent": "Diana Harshbarger",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5414,7 +5404,7 @@
         "incumbent": "Tim Burchett",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5425,7 +5415,7 @@
         "incumbent": "Chuck Fleischmann",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5436,7 +5426,7 @@
         "incumbent": "Scott DesJarlais",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent renominated.",
         "ratings": {}
       },
       {
@@ -5447,7 +5437,7 @@
         "incumbent": "Andy Ogles",
         "inc_status": "open",
         "party": "R",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5464,9 +5454,9 @@
         "pvi": 13.0,
         "pvi_label": "R+13",
         "incumbent": "John Rose",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for governor",
+        "status": "Incumbent retired torun for governor.Republican hold.",
         "ratings": {}
       },
       {
@@ -5477,7 +5467,7 @@
         "incumbent": "Matt Van Epps",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent renominated.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5496,7 +5486,7 @@
         "incumbent": "David Kustoff",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5505,9 +5495,9 @@
         "pvi": 9.0,
         "pvi_label": "R+9",
         "incumbent": "Steve Cohen",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.",
         "ratings": {
           "cook": "Likely R(flip)",
           "ie": "Likely R(flip)",
@@ -5526,7 +5516,7 @@
         "incumbent": "Nathaniel Moran",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5537,7 +5527,7 @@
         "incumbent": "Dan Crenshaw",
         "inc_status": "open",
         "party": "R",
-        "status": "Incumbent lost renomination",
+        "status": "Incumbent lost renomination.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5556,7 +5546,7 @@
         "incumbent": "Keith Self",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5567,7 +5557,7 @@
         "incumbent": "Pat Fallon",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5578,7 +5568,7 @@
         "incumbent": "Lance Gooden",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent renominated.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5597,7 +5587,7 @@
         "incumbent": "Jake Ellzey",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5608,7 +5598,7 @@
         "incumbent": "Lizzie Fletcher",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5617,9 +5607,9 @@
         "pvi": 13.0,
         "pvi_label": "R+13",
         "incumbent": "Morgan Luttrell",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {}
       },
       {
@@ -5644,9 +5634,9 @@
         "pvi": 10.0,
         "pvi_label": "R+10",
         "incumbent": "Michael McCaul",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5665,7 +5655,7 @@
         "incumbent": "August Pfluger",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5676,7 +5666,7 @@
         "incumbent": "Craig Goldman",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5687,7 +5677,7 @@
         "incumbent": "Ronny Jackson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5698,7 +5688,7 @@
         "incumbent": "Randy Weber",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5709,7 +5699,7 @@
         "incumbent": "Monica De La Cruz",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tilt D(flip)",
@@ -5728,7 +5718,7 @@
         "incumbent": "Veronica Escobar",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5739,7 +5729,7 @@
         "incumbent": "Pete Sessions",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5758,7 +5748,7 @@
         "incumbent": "Christian Menefee",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5767,9 +5757,9 @@
         "pvi": 25.0,
         "pvi_label": "R+25",
         "incumbent": "Jodey Arrington",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {}
       },
       {
@@ -5780,7 +5770,7 @@
         "incumbent": "Joaquin Castro",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5789,9 +5779,9 @@
         "pvi": 10.0,
         "pvi_label": "R+10",
         "incumbent": "Chip Roy",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for Texas attorney general",
+        "status": "Incumbent retired torun for Texas attorney general.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5808,9 +5798,9 @@
         "pvi": 11.0,
         "pvi_label": "R+11",
         "incumbent": "Troy Nehls",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5828,7 +5818,7 @@
         "pvi_label": "R+7",
         "incumbent": "Vacant",
         "inc_status": "open",
-        "party": null,
+        "party": "D",
         "status": "",
         "ratings": {
           "cook": "Lean R",
@@ -5848,7 +5838,7 @@
         "incumbent": "Beth Van Duyne",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5867,7 +5857,7 @@
         "incumbent": "Roger Williams",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5878,7 +5868,7 @@
         "incumbent": "Brandon Gill",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5908,7 +5898,7 @@
         "incumbent": "Henry Cuellar",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely D",
           "ie": "Lean D",
@@ -5927,7 +5917,7 @@
         "incumbent": "Sylvia Garcia",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -5937,7 +5927,7 @@
         "pvi_label": "D+25",
         "incumbent": "None (new seat)",
         "inc_status": "open",
-        "party": null,
+        "party": "D",
         "status": "",
         "ratings": {}
       },
@@ -5949,7 +5939,7 @@
         "incumbent": "John Carter",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5982,9 +5972,9 @@
         "pvi": -18.0,
         "pvi_label": "D+18",
         "incumbent": "Jasmine CrockettRedistricted from the30th district",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring torun for U.S. Senate.Democratic loss.",
+        "status": "Incumbent retired torun for U.S. Senate.Democratic hold.",
         "ratings": {}
       },
       {
@@ -5995,7 +5985,7 @@
         "incumbent": "Vicente Gonzalez",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Lean D",
           "ie": "Tossup",
@@ -6013,7 +6003,7 @@
         "pvi_label": "R+4",
         "incumbent": "None (new seat)",
         "inc_status": "open",
-        "party": null,
+        "party": "D",
         "status": "",
         "ratings": {
           "cook": "Tossup",
@@ -6030,7 +6020,7 @@
         "incumbent": "Brian Babin",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -6039,9 +6029,9 @@
         "pvi": -30.0,
         "pvi_label": "D+30",
         "incumbent": "Lloyd Doggett",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring.Democratic loss.",
+        "status": "Incumbent retired.Democratic loss.",
         "ratings": {}
       },
       {
@@ -6050,9 +6040,9 @@
         "pvi": 10.0,
         "pvi_label": "R+10",
         "incumbent": "Wesley Hunt",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for U.S. Senate",
+        "status": "Incumbent retired torun for U.S. Senate",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -6070,7 +6060,7 @@
         "pvi_label": "D+12",
         "incumbent": "None (new seat)",
         "inc_status": "open",
-        "party": null,
+        "party": "D",
         "status": "",
         "ratings": {}
       },
@@ -6082,7 +6072,7 @@
         "incumbent": "Blake MooreRedistricted from the1st district",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent renominated.",
         "ratings": {}
       },
       {
@@ -6093,7 +6083,7 @@
         "incumbent": "Celeste MaloyRedistricted from the2nd district",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -6102,9 +6092,9 @@
         "pvi": 17.0,
         "pvi_label": "R+17",
         "incumbent": "Burgess Owens",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring.Republican loss.",
+        "status": "Incumbent retired.Republican loss.",
         "ratings": {}
       },
       {
@@ -6115,7 +6105,7 @@
         "incumbent": "Becca Balint",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -6126,7 +6116,7 @@
         "incumbent": "Rob Wittman",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tilt R",
@@ -6145,7 +6135,7 @@
         "incumbent": "Jen Kiggans",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -6235,7 +6225,7 @@
         "incumbent": "Don Beyer",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -6246,7 +6236,7 @@
         "incumbent": "Morgan Griffith",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -6257,7 +6247,7 @@
         "incumbent": "Suhas Subramanyam",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {}
       },
       {
@@ -6435,7 +6425,7 @@
         "incumbent": "Bryan Steil",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
@@ -6465,7 +6455,7 @@
         "incumbent": "Derrick Van Orden",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",

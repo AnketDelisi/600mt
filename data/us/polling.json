@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-03T14:54:28Z",
+  "scraped_at": "2026-11-04T15:13:22Z",
   "senate": {
     "Alabama": {
       "dem": 36.6,
@@ -56,8 +56,8 @@
       }
     },
     "Alaska": {
-      "dem": 49.0,
-      "rep": 46.9,
+      "dem": 49.1,
+      "rep": 47.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -338,16 +338,26 @@
         }
       ],
       "names": {
-        "r": "Dan S. Sullivan",
         "d": "Mary Peltola",
-        "i": "Daniel J. Sullivan Jr."
+        "r": "Dan S. Sullivan"
       }
     },
     "Arkansas": {
-      "dem": 40.3,
-      "rep": 50.1,
-      "source": "Aggregate (Wikipedia)",
+      "dem": 40.4,
+      "rep": 50.2,
+      "source": "Simple avg (latest 5 polls)",
+      "n_polls": 5,
+      "n_sponsored": 2,
       "polls": [
+        {
+          "pollster": "GrayHouse",
+          "dates": "October 27–28, 2026",
+          "partisan": "R",
+          "sample": 509,
+          "population": "LV",
+          "dem": 39.0,
+          "rep": 55.0
+        },
         {
           "pollster": "Hendrix College",
           "dates": "October 8–13, 2026",
@@ -362,8 +372,8 @@
           "partisan": "R",
           "sample": 550,
           "population": "LV",
-          "dem": 39.0,
-          "rep": 50.0
+          "dem": 40.0,
+          "rep": 51.0
         },
         {
           "pollster": "J.L. Partners",
@@ -397,12 +407,19 @@
       }
     },
     "Colorado": {
-      "dem": 55.3,
-      "rep": 37.3,
-      "source": "Simple avg (latest 5 polls)",
-      "n_polls": 3,
-      "n_sponsored": 1,
+      "dem": 58.1,
+      "rep": 37.8,
+      "source": "Aggregate (Wikipedia)",
       "polls": [
+        {
+          "pollster": "Keating Research",
+          "dates": "November 1–2, 2026",
+          "partisan": "D",
+          "sample": 400,
+          "population": "LV",
+          "dem": 58.0,
+          "rep": 37.0
+        },
         {
           "pollster": "Research Co.",
           "dates": "October 31 – November 2, 2026",
@@ -436,8 +453,8 @@
     },
     "Delaware": null,
     "Florida": {
-      "dem": 43.4,
-      "rep": 49.4,
+      "dem": 43.6,
+      "rep": 49.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -447,6 +464,15 @@
           "population": "LV",
           "dem": 44.0,
           "rep": 51.0
+        },
+        {
+          "pollster": "RedBox Research",
+          "dates": "October 30–31, 2026",
+          "partisan": "D",
+          "sample": 2898,
+          "population": "LV",
+          "dem": 45.0,
+          "rep": 47.0
         },
         {
           "pollster": "Big Data Poll",
@@ -472,6 +498,14 @@
           "population": "LV",
           "dem": 43.0,
           "rep": 49.0
+        },
+        {
+          "pollster": "Targoz Market Research",
+          "dates": "October 26–29, 2026",
+          "sample": 1013,
+          "population": "LV",
+          "dem": 43.0,
+          "rep": 52.0
         },
         {
           "pollster": "Political Matrix/The Listener Group",
@@ -924,11 +958,11 @@
       }
     },
     "Idaho": {
-      "rep": 44.4,
-      "ind": 34.6,
+      "rep": 48.6,
+      "ind": 32.4,
       "source": "Simple avg (latest 5 polls)",
       "n_polls": 5,
-      "n_sponsored": 2,
+      "n_sponsored": 3,
       "polls": [
         {
           "pollster": "VoteNexus Research",
@@ -937,6 +971,15 @@
           "population": "LV",
           "rep": 49.0,
           "ind": 43.0
+        },
+        {
+          "pollster": "Peak Insights",
+          "dates": "October 13–15, 2026",
+          "partisan": "R",
+          "sample": 500,
+          "population": "LV",
+          "rep": 54.0,
+          "ind": 27.0
         },
         {
           "pollster": "Peak Insights",
@@ -992,12 +1035,12 @@
       ],
       "names": {
         "r": "Jim Risch",
-        "i": "Todd Achilles"
+        "i": "Natalie Fleming"
       }
     },
     "Illinois": {
-      "dem": 54.1,
-      "rep": 40.6,
+      "dem": 54.2,
+      "rep": 40.8,
       "source": "Simple avg (latest 5 polls)",
       "n_polls": 4,
       "n_sponsored": 1,
@@ -1023,8 +1066,8 @@
           "dates": "September 26 – October 20, 2026",
           "sample": 400,
           "population": "LV",
-          "dem": 58.5,
-          "rep": 41.5
+          "dem": 59.0,
+          "rep": 42.0
         },
         {
           "pollster": "Public Policy Polling",
@@ -1399,13 +1442,13 @@
         }
       ],
       "names": {
-        "r": "Ashley Hinson",
-        "d": "Josh Turek"
+        "d": "Josh Turek",
+        "r": "Ashley Hinson"
       }
     },
     "Kansas": {
-      "dem": 49.4,
-      "rep": 45.7,
+      "dem": 49.9,
+      "rep": 45.4,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -1589,8 +1632,8 @@
         }
       ],
       "names": {
-        "r": "Roger Marshall",
-        "d": "Adam Hamilton"
+        "d": "Adam Hamilton",
+        "r": "Roger Marshall"
       }
     },
     "Kentucky": null,
@@ -1961,8 +2004,8 @@
         }
       ],
       "names": {
-        "r": "Susan Collins",
-        "d": "Troy Jackson (replacing Graham Platner )"
+        "d": "Troy Jackson (replacing Graham Platner )",
+        "r": "Susan Collins"
       }
     },
     "Massachusetts": {
@@ -2090,8 +2133,8 @@
       }
     },
     "Michigan": {
-      "dem": 50.1,
-      "rep": 44.7,
+      "dem": 50.4,
+      "rep": 45.2,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -2109,6 +2152,15 @@
           "population": "LV",
           "dem": 51.0,
           "rep": 45.0
+        },
+        {
+          "pollster": "Trafalgar Group",
+          "dates": "October 31 – November 1, 2026",
+          "partisan": "R",
+          "sample": 1087,
+          "population": "LV",
+          "dem": 47.0,
+          "rep": 46.0
         },
         {
           "pollster": "Concord Public Opinion Partners",
@@ -2677,8 +2729,8 @@
       }
     },
     "Minnesota": {
-      "dem": 49.4,
-      "rep": 43.2,
+      "dem": 49.6,
+      "rep": 43.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -2950,15 +3002,14 @@
         }
       ],
       "names": {
-        "r": "Cindy Hyde-Smith",
         "d": "Scott Colom",
-        "i": "Ty Pinkins"
+        "r": "Cindy Hyde-Smith"
       }
     },
     "Montana": {
-      "dem": 17.4,
-      "rep": 41.0,
-      "ind": 30.5,
+      "dem": 17.2,
+      "rep": 41.1,
+      "ind": 30.9,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -3140,13 +3191,13 @@
       ],
       "names": {
         "r": "Kurt Alme",
-        "d": "Alani Bankhead",
-        "i": "Seth Bodnar"
+        "i": "Seth Bodnar",
+        "d": "Alani Bankhead"
       }
     },
     "Nebraska": {
-      "rep": 47.2,
-      "ind": 45.6,
+      "rep": 47.8,
+      "ind": 45.9,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -3346,11 +3397,9 @@
       }
     },
     "New Hampshire": {
-      "dem": 51.4,
-      "rep": 43.6,
-      "source": "Simple avg (latest 5 polls)",
-      "n_polls": 5,
-      "n_sponsored": 2,
+      "dem": 51.3,
+      "rep": 43.0,
+      "source": "Aggregate (Wikipedia)",
       "polls": [
         {
           "pollster": "AtlasIntel",
@@ -3628,8 +3677,8 @@
     },
     "New Jersey": null,
     "New Mexico": {
-      "dem": 53.8,
-      "rep": 37.0,
+      "dem": 56.2,
+      "rep": 37.7,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -3671,8 +3720,8 @@
       }
     },
     "North Carolina": {
-      "dem": 52.7,
-      "rep": 42.0,
+      "dem": 53.8,
+      "rep": 42.6,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -4113,8 +4162,8 @@
         }
       ],
       "names": {
-        "r": "Michael Whatley",
-        "d": "Roy Cooper"
+        "d": "Roy Cooper",
+        "r": "Michael Whatley"
       }
     },
     "Ohio": {
@@ -4583,18 +4632,16 @@
         }
       ],
       "names": {
-        "r": "Jon Husted",
-        "d": "Sherrod Brown"
+        "d": "Sherrod Brown",
+        "r": "Jon Husted"
       }
     },
     "Oklahoma": null,
     "Oregon": null,
     "Rhode Island": {
-      "dem": 56.2,
-      "rep": 30.6,
-      "ind": 4.6,
-      "source": "Simple avg (latest 5 polls)",
-      "n_polls": 5,
+      "dem": 58.8,
+      "rep": 29.6,
+      "source": "Aggregate (Wikipedia)",
       "polls": [
         {
           "pollster": "University of New Hampshire",
@@ -4664,8 +4711,8 @@
       }
     },
     "South Carolina": {
-      "dem": 45.4,
-      "rep": 46.8,
+      "dem": 45.7,
+      "rep": 46.9,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -4827,13 +4874,13 @@
         }
       ],
       "names": {
-        "r": "Darline Graham (replacing Lindsey Graham )",
-        "d": "Annie Andrews"
+        "d": "Annie Andrews",
+        "r": "Darline Graham"
       }
     },
     "South Dakota": {
       "rep": 51.1,
-      "ind": 40.7,
+      "ind": 40.8,
       "source": "Aggregate (Wikipedia)",
       "polls": [
         {
@@ -5648,8 +5695,8 @@
         }
       ],
       "names": {
-        "r": "Ken Paxton",
-        "d": "James Talarico"
+        "d": "James Talarico",
+        "r": "Ken Paxton"
       }
     },
     "Virginia": null,
@@ -6209,12 +6256,21 @@
       }
     },
     "Colorado": {
-      "dem": 53.7,
-      "rep": 37.0,
+      "dem": 55.0,
+      "rep": 36.0,
       "source": "Simple avg (latest 5 polls)",
-      "n_polls": 3,
-      "n_sponsored": 1,
+      "n_polls": 4,
+      "n_sponsored": 2,
       "polls": [
+        {
+          "pollster": "Keating Research",
+          "dates": "November 1–2, 2026",
+          "partisan": "D",
+          "sample": 400,
+          "population": "LV",
+          "dem": 59.0,
+          "rep": 33.0
+        },
         {
           "pollster": "Research Co.",
           "dates": "October 31 – November 2, 2026",
@@ -6368,6 +6424,15 @@
           "rep": 48.0
         },
         {
+          "pollster": "RedBox Research",
+          "dates": "October 30–31, 2026",
+          "partisan": "D",
+          "sample": 2898,
+          "population": "LV",
+          "dem": 46.0,
+          "rep": 47.0
+        },
+        {
           "pollster": "ActiVote",
           "dates": "October 20–31, 2026",
           "sample": 400,
@@ -6399,6 +6464,14 @@
           "population": "LV",
           "dem": 45.0,
           "rep": 49.0
+        },
+        {
+          "pollster": "Targoz Market Research",
+          "dates": "October 26–29, 2026",
+          "sample": 1014,
+          "population": "LV",
+          "dem": 43.0,
+          "rep": 50.0
         },
         {
           "pollster": "Political Matrix/The Listener Group",
@@ -6887,8 +6960,8 @@
         }
       ],
       "names": {
-        "r": "Rick Jackson",
-        "d": "Keisha Lance Bottoms"
+        "d": "Keisha Lance Bottoms",
+        "r": "Rick Jackson"
       }
     },
     "Hawaii": null,
@@ -6936,7 +7009,7 @@
       }
     },
     "Illinois": {
-      "dem": 56.6,
+      "dem": 57.0,
       "rep": 37.2,
       "source": "Simple avg (latest 5 polls)",
       "n_polls": 5,
@@ -6957,6 +7030,14 @@
           "population": "LV",
           "dem": 59.0,
           "rep": 41.0
+        },
+        {
+          "pollster": "University of Illinois Springfield",
+          "dates": "October 1-22, 2026",
+          "sample": 550,
+          "population": "LV",
+          "dem": 56.0,
+          "rep": 34.0
         },
         {
           "pollster": "ActiVote",
@@ -7213,8 +7294,8 @@
         }
       ],
       "names": {
-        "r": "Zach Lahn",
-        "d": "Rob Sand"
+        "d": "Rob Sand",
+        "r": "Zach Lahn"
       }
     },
     "Kansas": {
@@ -7717,8 +7798,7 @@
       ],
       "names": {
         "d": "Maura Healey",
-        "r": "Mike Minogue",
-        "i": "Andrea James"
+        "r": "Mike Minogue"
       }
     },
     "Michigan": {
@@ -8349,7 +8429,11 @@
           "dem": 39.0,
           "rep": 51.0
         }
-      ]
+      ],
+      "names": {
+        "r": "Jim Pillen",
+        "d": "Lynne Walz"
+      }
     },
     "Nevada": {
       "dem": 43.5,
@@ -8501,8 +8585,8 @@
         }
       ],
       "names": {
-        "r": "Joe Lombardo",
-        "d": "Aaron Ford"
+        "d": "Aaron Ford",
+        "r": "Joe Lombardo"
       }
     },
     "New Hampshire": {
@@ -9382,8 +9466,8 @@
         }
       ],
       "names": {
-        "r": "Vivek Ramaswamy",
-        "d": "Amy Acton"
+        "d": "Amy Acton",
+        "r": "Vivek Ramaswamy"
       }
     },
     "Oklahoma": {
@@ -9788,8 +9872,8 @@
       ],
       "names": {
         "d": "Helena Foulkes",
-        "r": "Aaron Guckian",
-        "i": "Ken Block"
+        "i": "Ken Block",
+        "r": "Aaron Guckian"
       }
     },
     "South Carolina": {
@@ -10529,8 +10613,8 @@
         }
       ],
       "names": {
-        "r": "Greg Abbott",
-        "d": "Gina Hinojosa"
+        "d": "Gina Hinojosa",
+        "r": "Greg Abbott"
       }
     },
     "Vermont": {
