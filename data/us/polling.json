@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-04T15:13:22Z",
+  "scraped_at": "2026-11-05T15:14:52Z",
   "senate": {
     "Alabama": {
       "dem": 36.6,
@@ -4875,7 +4875,7 @@
       ],
       "names": {
         "d": "Annie Andrews",
-        "r": "Darline Graham"
+        "r": "Darline Graham (replacing Lindsey Graham )"
       }
     },
     "South Dakota": {
@@ -10787,12 +10787,20 @@
   },
   "house": {
     "Alabama 2": {
-      "dem": 45.7,
-      "rep": 46.0,
+      "dem": 45.8,
+      "rep": 46.5,
       "source": "Simple avg (latest 5 polls)",
-      "n_polls": 3,
+      "n_polls": 4,
       "n_sponsored": 3,
       "polls": [
+        {
+          "pollster": "Remington Research Group",
+          "dates": "October 23–25, 2026",
+          "sample": 642,
+          "population": "LV",
+          "dem": 46.0,
+          "rep": 48.0
+        },
         {
           "pollster": "Tulchin Research",
           "dates": "August 24–31, 2026",
