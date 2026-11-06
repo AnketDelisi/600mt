@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-11-05T15:15:19Z",
+  "generated": "2026-11-06T14:51:45Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 0.0,
@@ -16265,6 +16265,120 @@
         }
       },
       {
+        "state": "Maine",
+        "district": "2",
+        "incumbent": "Jared Golden",
+        "party": "D",
+        "rating": "Lean R",
+        "ratings": {
+          "cook": "Lean R(flip)",
+          "ie": "Lean R(flip)",
+          "sabato": "Lean R(flip)"
+        },
+        "lean": "Tossup",
+        "leader": "D",
+        "margin": 2.4,
+        "calibration": null,
+        "dem_pct": 66.5,
+        "rep_pct": 33.5,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": {
+          "dem": 49.6,
+          "rep": 47.4,
+          "source": "Simple avg (latest 5 polls)",
+          "n_polls": 5,
+          "n_sponsored": 4,
+          "polls": [
+            {
+              "pollster": "Tulchin Research",
+              "dates": "October 12–14, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 50.0,
+              "rep": 46.0
+            },
+            {
+              "pollster": "Tulchin Research",
+              "dates": "September 27–30, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 50.0,
+              "rep": 48.0
+            },
+            {
+              "pollster": "University of New Hampshire",
+              "dates": "September 17–21, 2026",
+              "sample": 627,
+              "population": "LV",
+              "dem": 51.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "Impact Research",
+              "dates": "September 8–12, 2026",
+              "partisan": "D",
+              "sample": 500,
+              "population": "LV",
+              "dem": 49.0,
+              "rep": 49.0
+            },
+            {
+              "pollster": "DCCC Targeting Team",
+              "dates": "August 11–13, 2026",
+              "partisan": "D",
+              "sample": 621,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 49.0
+            },
+            {
+              "pollster": "Tulchin Research",
+              "dates": "July 11–16, 2026",
+              "partisan": "D",
+              "sample": 600,
+              "population": "LV",
+              "dem": 49.0,
+              "rep": 48.0
+            },
+            {
+              "pollster": "co/efficient",
+              "dates": "April 26–28, 2026",
+              "partisan": "R",
+              "sample": 918,
+              "population": "LV",
+              "dem": 40.0,
+              "rep": 50.0
+            },
+            {
+              "pollster": "University of New Hampshire",
+              "dates": "February 12–16, 2026",
+              "sample": 521,
+              "population": "LV",
+              "dem": 46.0,
+              "rep": 47.0
+            },
+            {
+              "pollster": "The Mellman Group",
+              "dates": "June 4–10, 2025",
+              "partisan": "D",
+              "sample": 400,
+              "population": "LV",
+              "dem": 37.0,
+              "rep": 47.0
+            }
+          ],
+          "names": {
+            "d": "Matt Dunlap",
+            "r": "Paul LePage"
+          }
+        }
+      },
+      {
         "state": "New York",
         "district": "21",
         "incumbent": "Elise Stefanik",
@@ -16454,120 +16568,6 @@
           "names": {
             "d": "Leela Gray",
             "r": "Anna Paulina Luna"
-          }
-        }
-      },
-      {
-        "state": "Maine",
-        "district": "2",
-        "incumbent": "Jared Golden",
-        "party": "D",
-        "rating": "Lean R",
-        "ratings": {
-          "cook": "Lean R(flip)",
-          "ie": "Lean R(flip)",
-          "sabato": "Lean R(flip)"
-        },
-        "lean": "Tossup",
-        "leader": "D",
-        "margin": 2.0,
-        "calibration": null,
-        "dem_pct": 63.6,
-        "rep_pct": 36.4,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": {
-          "dem": 49.6,
-          "rep": 47.4,
-          "source": "Simple avg (latest 5 polls)",
-          "n_polls": 5,
-          "n_sponsored": 4,
-          "polls": [
-            {
-              "pollster": "Tulchin Research",
-              "dates": "October 12–14, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 50.0,
-              "rep": 46.0
-            },
-            {
-              "pollster": "Tulchin Research",
-              "dates": "September 27–30, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 50.0,
-              "rep": 48.0
-            },
-            {
-              "pollster": "University of New Hampshire",
-              "dates": "September 17–21, 2026",
-              "sample": 627,
-              "population": "LV",
-              "dem": 51.0,
-              "rep": 45.0
-            },
-            {
-              "pollster": "Impact Research",
-              "dates": "September 8–12, 2026",
-              "partisan": "D",
-              "sample": 500,
-              "population": "LV",
-              "dem": 49.0,
-              "rep": 49.0
-            },
-            {
-              "pollster": "DCCC Targeting Team",
-              "dates": "August 11–13, 2026",
-              "partisan": "D",
-              "sample": 621,
-              "population": "LV",
-              "dem": 48.0,
-              "rep": 49.0
-            },
-            {
-              "pollster": "Tulchin Research",
-              "dates": "July 11–16, 2026",
-              "partisan": "D",
-              "sample": 600,
-              "population": "LV",
-              "dem": 49.0,
-              "rep": 48.0
-            },
-            {
-              "pollster": "co/efficient",
-              "dates": "April 26–28, 2026",
-              "partisan": "R",
-              "sample": 918,
-              "population": "LV",
-              "dem": 40.0,
-              "rep": 50.0
-            },
-            {
-              "pollster": "University of New Hampshire",
-              "dates": "February 12–16, 2026",
-              "sample": 521,
-              "population": "LV",
-              "dem": 46.0,
-              "rep": 47.0
-            },
-            {
-              "pollster": "The Mellman Group",
-              "dates": "June 4–10, 2025",
-              "partisan": "D",
-              "sample": 400,
-              "population": "LV",
-              "dem": 37.0,
-              "rep": 47.0
-            }
-          ],
-          "names": {
-            "d": "Matt Dunlap",
-            "r": "Paul LePage"
           }
         }
       },
@@ -17926,8 +17926,8 @@
     "expected_r_seats": 199.1,
     "expected_i_seats": 0.0,
     "majority": {
-      "dem_pct": 89.2,
-      "rep_pct": 10.8
+      "dem_pct": 89.3,
+      "rep_pct": 10.7
     },
     "distribution_buckets": [
       {
@@ -17960,7 +17960,7 @@
       },
       {
         "seats": 209,
-        "pct": 1.0
+        "pct": 1.1
       },
       {
         "seats": 211,
@@ -17988,7 +17988,7 @@
       },
       {
         "seats": 223,
-        "pct": 3.3
+        "pct": 3.2
       },
       {
         "seats": 225,
@@ -18000,11 +18000,11 @@
       },
       {
         "seats": 229,
-        "pct": 4.8
+        "pct": 4.7
       },
       {
         "seats": 231,
-        "pct": 4.9
+        "pct": 5.0
       },
       {
         "seats": 233,
@@ -18012,7 +18012,7 @@
       },
       {
         "seats": 235,
-        "pct": 5.1
+        "pct": 5.2
       },
       {
         "seats": 237,

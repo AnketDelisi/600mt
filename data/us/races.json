@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-05T15:13:52Z",
+  "scraped_at": "2026-11-06T14:50:05Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -741,9 +741,9 @@
         "pvi": 1.0,
         "pvi_label": "R+1",
         "incumbent": "David Schweikert",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retiring torun for governor",
+        "status": "Incumbent retired torun for governor.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
@@ -893,7 +893,7 @@
         "incumbent": "French Hill",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
@@ -1622,7 +1622,7 @@
         "incumbent": "Jeff Crank",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Tossup",
           "ie": "Tossup",
@@ -1952,7 +1952,7 @@
         "incumbent": "Anna Paulina Luna",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
@@ -3014,9 +3014,9 @@
         "pvi": 4.0,
         "pvi_label": "R+4",
         "incumbent": "Jared Golden",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring",
+        "status": "Incumbent retired.Republican gain.",
         "ratings": {
           "cook": "Lean R(flip)",
           "ie": "Lean R(flip)",
@@ -4063,7 +4063,7 @@
         "incumbent": "Nick LaLota",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5426,7 +5426,7 @@
         "incumbent": "Scott DesJarlais",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent lost re-election.Democratic gain.",
+        "status": "Incumbent renominated",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5475,7 +5475,7 @@
         "incumbent": "Matt Van Epps",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated.",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -5505,7 +5505,7 @@
         "incumbent": "Steve Cohen",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retired.",
+        "status": "Incumbent retired.Republican gain.",
         "ratings": {
           "cook": "Likely R(flip)",
           "ie": "Likely R(flip)",
@@ -6080,7 +6080,7 @@
         "incumbent": "Blake MooreRedistricted from the1st district",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated.",
+        "status": "",
         "ratings": {}
       },
       {
@@ -6184,7 +6184,7 @@
         "incumbent": "John McGuire",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated.",
+        "status": "",
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
@@ -6318,7 +6318,7 @@
         "incumbent": "Dan Newhouse",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retired.",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
