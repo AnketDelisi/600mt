@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-11-06T14:51:45Z",
+  "generated": "2026-11-07T13:47:59Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 0.0,
@@ -114,7 +114,8 @@
               "sample": 905,
               "population": "LV",
               "dem": 53.0,
-              "rep": 32.0
+              "rep": 32.0,
+              "ind": 4.0
             },
             {
               "pollster": "Suffolk University",
@@ -122,7 +123,8 @@
               "sample": 500,
               "population": "LV",
               "dem": 60.0,
-              "rep": 32.0
+              "rep": 32.0,
+              "ind": 1.0
             },
             {
               "pollster": "UMass Lowell",
@@ -138,7 +140,8 @@
               "sample": 800,
               "population": "RV",
               "dem": 56.0,
-              "rep": 29.0
+              "rep": 29.0,
+              "ind": 6.0
             },
             {
               "pollster": "MassINC Polling Group",
@@ -146,7 +149,8 @@
               "sample": 800,
               "population": "LV",
               "dem": 54.0,
-              "rep": 28.0
+              "rep": 28.0,
+              "ind": 3.0
             },
             {
               "pollster": "University of New Hampshire",
@@ -12390,6 +12394,29 @@
         "polls": null
       },
       {
+        "state": "Arizona",
+        "district": "5",
+        "incumbent": "Andy Biggs",
+        "party": "R",
+        "rating": "Solid R",
+        "ratings": {
+          "cook": "Solid R",
+          "ie": "Solid R",
+          "sabato": "Safe R"
+        },
+        "lean": "Solid R",
+        "leader": "R",
+        "margin": 18.3,
+        "calibration": null,
+        "dem_pct": 0.5,
+        "rep_pct": 99.5,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
         "state": "California",
         "district": "39",
         "incumbent": "Mark Takano",
@@ -12665,29 +12692,6 @@
         "calibration": null,
         "dem_pct": 99.3,
         "rep_pct": 0.7,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Arizona",
-        "district": "5",
-        "incumbent": "Andy Biggs",
-        "party": "R",
-        "rating": "Solid R",
-        "ratings": {
-          "cook": "Solid R",
-          "ie": "Solid R",
-          "sabato": "Safe R"
-        },
-        "lean": "Solid R",
-        "leader": "R",
-        "margin": 16.9,
-        "calibration": null,
-        "dem_pct": 0.8,
-        "rep_pct": 99.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -18000,7 +18004,7 @@
       },
       {
         "seats": 229,
-        "pct": 4.7
+        "pct": 4.8
       },
       {
         "seats": 231,
@@ -18068,7 +18072,7 @@
       },
       {
         "seats": 263,
-        "pct": 1.1
+        "pct": 1.2
       },
       {
         "seats": 265,
@@ -18084,7 +18088,7 @@
       },
       {
         "seats": 271,
-        "pct": 0.2
+        "pct": 0.3
       },
       {
         "seats": 273,

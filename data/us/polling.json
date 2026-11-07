@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-06T14:51:17Z",
+  "scraped_at": "2026-11-07T13:47:37Z",
   "senate": {
     "Alabama": {
       "dem": 36.6,
@@ -2019,7 +2019,8 @@
           "sample": 905,
           "population": "LV",
           "dem": 53.0,
-          "rep": 32.0
+          "rep": 32.0,
+          "ind": 4.0
         },
         {
           "pollster": "Suffolk University",
@@ -2027,7 +2028,8 @@
           "sample": 500,
           "population": "LV",
           "dem": 60.0,
-          "rep": 32.0
+          "rep": 32.0,
+          "ind": 1.0
         },
         {
           "pollster": "UMass Lowell",
@@ -2043,7 +2045,8 @@
           "sample": 800,
           "population": "RV",
           "dem": 56.0,
-          "rep": 29.0
+          "rep": 29.0,
+          "ind": 6.0
         },
         {
           "pollster": "MassINC Polling Group",
@@ -2051,7 +2054,8 @@
           "sample": 800,
           "population": "LV",
           "dem": 54.0,
-          "rep": 28.0
+          "rep": 28.0,
+          "ind": 3.0
         },
         {
           "pollster": "University of New Hampshire",
