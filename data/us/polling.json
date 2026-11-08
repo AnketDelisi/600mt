@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-07T13:47:37Z",
+  "scraped_at": "2026-11-08T14:08:10Z",
   "senate": {
     "Alabama": {
       "dem": 36.6,
@@ -7037,7 +7037,7 @@
         },
         {
           "pollster": "University of Illinois Springfield",
-          "dates": "October 1-22, 2026",
+          "dates": "October 1–22, 2026",
           "sample": 550,
           "population": "LV",
           "dem": 56.0,

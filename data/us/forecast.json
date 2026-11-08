@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-11-07T13:47:59Z",
+  "generated": "2026-11-08T14:08:24Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 0.0,
@@ -18918,7 +18918,7 @@
             },
             {
               "pollster": "University of Illinois Springfield",
-              "dates": "October 1-22, 2026",
+              "dates": "October 1–22, 2026",
               "sample": 550,
               "population": "LV",
               "dem": 56.0,
