@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-09T17:15:03Z",
+  "scraped_at": "2026-11-10T15:27:02Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -762,7 +762,7 @@
         "incumbent": "Eli Crane",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
@@ -1403,7 +1403,7 @@
         "incumbent": "Young Kim",
         "inc_status": "running",
         "party": "R",
-        "status": "",
+        "status": "Incumbent lost re-election.Republican loss.",
         "ratings": {}
       },
       {
@@ -1603,7 +1603,7 @@
         "incumbent": "Lauren Boebert",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Lean R",
           "ie": "Likely R",
@@ -2164,7 +2164,7 @@
         "incumbent": "Mario Díaz-Balart",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
@@ -4473,7 +4473,7 @@
         "incumbent": "Virginia Foxx",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Likely R",
           "ie": "Solid R",
