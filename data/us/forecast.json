@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-11-10T15:28:00Z",
+  "generated": "2026-11-11T14:59:00Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 0.0,
@@ -3997,7 +3997,7 @@
             }
           ],
           "names": {
-            "d": "Troy Jackson (replacing Graham Platner )",
+            "d": "Troy Jackson (replaced Graham Platner )",
             "r": "Susan Collins"
           }
         }
