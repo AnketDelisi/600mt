@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-11T14:57:46Z",
+  "scraped_at": "2026-11-12T15:50:12Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -3386,9 +3386,9 @@
         "pvi": -9.0,
         "pvi_label": "D+9",
         "incumbent": "Haley Stevens",
-        "inc_status": "open",
+        "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retiring torun for U.S. Senate.Democratic hold.",
+        "status": "Incumbent retired torun for U.S. Senate.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4443,7 +4443,7 @@
         "incumbent": "Greg Murphy",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent lost re-election.Democratic gain.",
         "ratings": {
           "cook": "Likely R",
           "ie": "Likely R",
@@ -5300,7 +5300,7 @@
         "incumbent": "Joe Wilson",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated.",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",

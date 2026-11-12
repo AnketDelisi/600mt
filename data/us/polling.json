@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-11T14:58:35Z",
+  "scraped_at": "2026-11-12T15:50:56Z",
   "senate": {
     "Alabama": {
       "dem": 36.6,
@@ -2176,6 +2176,14 @@
           "rep": 41.0
         },
         {
+          "pollster": "HarrisX",
+          "dates": "October 30 – November 1, 2026",
+          "sample": 663,
+          "population": "LV",
+          "dem": 48.0,
+          "rep": 45.0
+        },
+        {
           "pollster": "Research Co.",
           "dates": "October 30 – November 1, 2026",
           "sample": 450,
@@ -4193,6 +4201,14 @@
           "rep": 45.0
         },
         {
+          "pollster": "HarrisX",
+          "dates": "October 30 – November 1, 2026",
+          "sample": 496,
+          "population": "LV",
+          "dem": 47.0,
+          "rep": 45.0
+        },
+        {
           "pollster": "Research Co.",
           "dates": "October 30 – November 1, 2026",
           "sample": 450,
@@ -5055,6 +5071,14 @@
           "population": "LV",
           "dem": 50.0,
           "rep": 48.0
+        },
+        {
+          "pollster": "HarrisX",
+          "dates": "October 30 – November 1, 2026",
+          "sample": 512,
+          "population": "LV",
+          "dem": 50.0,
+          "rep": 44.0
         },
         {
           "pollster": "AtlasIntel",
@@ -7829,6 +7853,14 @@
           "rep": 41.0
         },
         {
+          "pollster": "HarrisX",
+          "dates": "October 30 – November 1, 2026",
+          "sample": 663,
+          "population": "LV",
+          "dem": 53.0,
+          "rep": 41.0
+        },
+        {
           "pollster": "Research Co.",
           "dates": "October 30 – November 1, 2026",
           "sample": 450,
@@ -9097,6 +9129,14 @@
           "rep": 48.0
         },
         {
+          "pollster": "HarrisX",
+          "dates": "October 30 – November 1, 2026",
+          "sample": 496,
+          "population": "LV",
+          "dem": 45.0,
+          "rep": 47.0
+        },
+        {
           "pollster": "Research Co.",
           "dates": "October 30 – November 1, 2026",
           "sample": 450,
@@ -10076,6 +10116,14 @@
           "population": "LV",
           "dem": 49.0,
           "rep": 50.0
+        },
+        {
+          "pollster": "HarrisX",
+          "dates": "October 30 – November 1, 2026",
+          "sample": 512,
+          "population": "LV",
+          "dem": 46.0,
+          "rep": 51.0
         },
         {
           "pollster": "AtlasIntel",

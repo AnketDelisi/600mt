@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-11-11T14:59:00Z",
+  "generated": "2026-11-12T15:51:12Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 0.0,
@@ -3052,10 +3052,10 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 5.8,
+        "margin": 5.7,
         "calibration": null,
-        "dem_pct": 83.9,
-        "rep_pct": 16.1,
+        "dem_pct": 83.5,
+        "rep_pct": 16.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -3098,6 +3098,14 @@
               "population": "LV",
               "dem": 51.0,
               "rep": 41.0
+            },
+            {
+              "pollster": "HarrisX",
+              "dates": "October 30 – November 1, 2026",
+              "sample": 663,
+              "population": "LV",
+              "dem": 48.0,
+              "rep": 45.0
             },
             {
               "pollster": "Research Co.",
@@ -4207,8 +4215,8 @@
         "leader": "D",
         "margin": 2.4,
         "calibration": null,
-        "dem_pct": 66.2,
-        "rep_pct": 33.8,
+        "dem_pct": 66.5,
+        "rep_pct": 33.5,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -4242,6 +4250,14 @@
               "population": "LV",
               "dem": 50.0,
               "rep": 48.0
+            },
+            {
+              "pollster": "HarrisX",
+              "dates": "October 30 – November 1, 2026",
+              "sample": 512,
+              "population": "LV",
+              "dem": 50.0,
+              "rep": 44.0
             },
             {
               "pollster": "AtlasIntel",
@@ -5127,10 +5143,10 @@
         },
         "lean": "Tossup",
         "leader": "D",
-        "margin": 1.9,
+        "margin": 1.8,
         "calibration": null,
-        "dem_pct": 63.0,
-        "rep_pct": 37.0,
+        "dem_pct": 62.9,
+        "rep_pct": 37.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -5153,6 +5169,14 @@
               "dates": "October 31 – November 1, 2026",
               "partisan": "R",
               "sample": 1092,
+              "population": "LV",
+              "dem": 47.0,
+              "rep": 45.0
+            },
+            {
+              "pollster": "HarrisX",
+              "dates": "October 30 – November 1, 2026",
+              "sample": 496,
               "population": "LV",
               "dem": 47.0,
               "rep": 45.0
@@ -6521,8 +6545,8 @@
     "expected_r_seats": 48.3,
     "expected_i_seats": 0.5,
     "majority": {
-      "dem_pct": 69.2,
-      "rep_pct": 30.8
+      "dem_pct": 69.1,
+      "rep_pct": 30.9
     },
     "distribution_buckets": [
       {
@@ -6547,7 +6571,7 @@
       },
       {
         "seats": 53,
-        "pct": 29.3
+        "pct": 29.2
       },
       {
         "seats": 55,
@@ -10531,6 +10555,25 @@
         "polls": null
       },
       {
+        "state": "Michigan",
+        "district": "11",
+        "incumbent": "Haley Stevens",
+        "party": "D",
+        "rating": null,
+        "ratings": {},
+        "lean": "Solid D",
+        "leader": "D",
+        "margin": 25.3,
+        "calibration": null,
+        "dem_pct": 99.9,
+        "rep_pct": 0.1,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
         "state": "Pennsylvania",
         "district": "4",
         "incumbent": "Madeleine Dean",
@@ -11054,25 +11097,6 @@
         "calibration": null,
         "dem_pct": 0.1,
         "rep_pct": 99.9,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Michigan",
-        "district": "11",
-        "incumbent": "Haley Stevens",
-        "party": "D",
-        "rating": null,
-        "ratings": {},
-        "lean": "Solid D",
-        "leader": "D",
-        "margin": 22.8,
-        "calibration": null,
-        "dem_pct": 99.9,
-        "rep_pct": 0.1,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -17992,7 +18016,7 @@
       },
       {
         "seats": 223,
-        "pct": 3.2
+        "pct": 3.3
       },
       {
         "seats": 225,
@@ -21238,6 +21262,14 @@
               "rep": 41.0
             },
             {
+              "pollster": "HarrisX",
+              "dates": "October 30 – November 1, 2026",
+              "sample": 663,
+              "population": "LV",
+              "dem": 53.0,
+              "rep": 41.0
+            },
+            {
               "pollster": "Research Co.",
               "dates": "October 30 – November 1, 2026",
               "sample": 450,
@@ -21759,10 +21791,10 @@
         },
         "lean": "Lean D",
         "leader": "D",
-        "margin": 5.1,
+        "margin": 4.8,
         "calibration": null,
-        "dem_pct": 81.0,
-        "rep_pct": 19.0,
+        "dem_pct": 79.7,
+        "rep_pct": 20.3,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -21779,6 +21811,14 @@
               "population": "LV",
               "dem": 48.0,
               "rep": 48.0
+            },
+            {
+              "pollster": "HarrisX",
+              "dates": "October 30 – November 1, 2026",
+              "sample": 496,
+              "population": "LV",
+              "dem": 45.0,
+              "rep": 47.0
             },
             {
               "pollster": "Research Co.",
@@ -22795,10 +22835,10 @@
         },
         "lean": "Tossup",
         "leader": "R",
-        "margin": 1.9,
+        "margin": 2.0,
         "calibration": null,
-        "dem_pct": 37.0,
-        "rep_pct": 63.0,
+        "dem_pct": 35.8,
+        "rep_pct": 64.2,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -22823,6 +22863,14 @@
               "population": "LV",
               "dem": 49.0,
               "rep": 50.0
+            },
+            {
+              "pollster": "HarrisX",
+              "dates": "October 30 – November 1, 2026",
+              "sample": 512,
+              "population": "LV",
+              "dem": 46.0,
+              "rep": 51.0
             },
             {
               "pollster": "AtlasIntel",
@@ -23975,15 +24023,15 @@
         }
       }
     ],
-    "expected_d_seats": 21.6,
-    "expected_r_seats": 14.4,
+    "expected_d_seats": 21.5,
+    "expected_r_seats": 14.5,
     "expected_i_seats": 0.0,
     "majority": {
       "dem_pct": 0.0,
       "rep_pct": 0.0
     },
     "distribution_buckets": null,
-    "total_d_governors": 27.6,
-    "total_r_governors": 22.4
+    "total_d_governors": 27.5,
+    "total_r_governors": 22.5
   }
 }
