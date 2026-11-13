@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-12T15:50:12Z",
+  "scraped_at": "2026-11-13T15:10:17Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -2377,7 +2377,7 @@
         "incumbent": "Everton Blair",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent lost nomination for full term; later elected to complete unexpired term.Democratic hold.",
+        "status": "Incumbent lost nomination for full term;later elected to complete unexpired term.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4161,7 +4161,7 @@
         "incumbent": "Nydia Velázquez",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retired. Democratic hold.",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4216,7 +4216,7 @@
         "incumbent": "Jerry Nadler",
         "inc_status": "running",
         "party": "D",
-        "status": "Incumbent retired. Democratic hold.",
+        "status": "Incumbent retired.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4331,7 +4331,7 @@
         "incumbent": "Elise Stefanik",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent retired. Republican hold.",
+        "status": "Incumbent retired.Republican hold.",
         "ratings": {
           "cook": "Lean R",
           "ie": "Lean R",
@@ -4473,7 +4473,7 @@
         "incumbent": "Virginia Foxx",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "Incumbent renominated.",
         "ratings": {
           "cook": "Likely R",
           "ie": "Solid R",
@@ -4587,7 +4587,7 @@
         "incumbent": "Chuck Edwards",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominatedbut withdrew.Democratic gain.",
+        "status": "Incumbent renominated but withdrew.Democratic gain.",
         "ratings": {
           "cook": "Lean D(flip)",
           "ie": "Tilt D(flip)",
