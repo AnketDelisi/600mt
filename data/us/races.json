@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-13T15:10:17Z",
+  "scraped_at": "2026-11-14T13:58:40Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -967,7 +967,7 @@
         "incumbent": "Mike Thompson",
         "inc_status": "running",
         "party": "D",
-        "status": "",
+        "status": "Incumbent lost re-election.Democratic hold.",
         "ratings": {}
       },
       {
@@ -4568,7 +4568,7 @@
         "incumbent": "Pat Harrigan",
         "inc_status": "running",
         "party": "R",
-        "status": "Incumbent renominated",
+        "status": "",
         "ratings": {
           "cook": "Solid R",
           "ie": "Solid R",
