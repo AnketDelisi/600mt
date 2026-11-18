@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-17T16:44:59Z",
+  "scraped_at": "2026-11-18T16:16:26Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -5933,10 +5933,10 @@
         "district": "30",
         "pvi": -25.0,
         "pvi_label": "D+25",
-        "incumbent": "None (new seat)",
-        "inc_status": "open",
+        "incumbent": "Jasmine Crockett",
+        "inc_status": "running",
         "party": "D",
-        "status": "",
+        "status": "Incumbent retired torun for U.S. Senate.Democratic hold.",
         "ratings": {}
       },
       {
@@ -5979,10 +5979,10 @@
         "district": "33",
         "pvi": -18.0,
         "pvi_label": "D+18",
-        "incumbent": "Jasmine CrockettRedistricted from the30th district",
-        "inc_status": "running",
+        "incumbent": "Julie JohnsonRedistricted from the32nd district",
+        "inc_status": "open",
         "party": "D",
-        "status": "Incumbent retired torun for U.S. Senate.Democratic hold.",
+        "status": "Incumbent lost renomination.Democratic hold.",
         "ratings": {}
       },
       {
