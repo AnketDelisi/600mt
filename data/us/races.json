@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-20T15:57:09Z",
+  "scraped_at": "2026-11-21T15:08:48Z",
   "sources": {
     "senate": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
     "house": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
@@ -892,7 +892,7 @@
         "incumbent": "Bruce Westerman",
         "inc_status": "running",
         "party": "R",
-        "status": "▌YBruce Westerman(Republican)▌James Russell (Democratic)",
+        "status": "▌YBruce Westerman(Republican) 65.5%▌James Russell (Democratic) 34.5%",
         "ratings": {}
       },
       {
