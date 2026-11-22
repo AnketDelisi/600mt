@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-11-21T15:10:03Z",
+  "generated": "2026-11-22T15:12:48Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 0.0,
@@ -9991,7 +9991,7 @@
       {
         "state": "Florida",
         "district": "28",
-        "incumbent": "Carlos A. Giménez",
+        "incumbent": "Carlos A. Gimenez",
         "party": "R",
         "rating": null,
         "ratings": {},
@@ -14765,7 +14765,7 @@
       {
         "state": "New Mexico",
         "district": "3",
-        "incumbent": "Teresa Leger Fernandez",
+        "incumbent": "Teresa Leger Fernández",
         "party": "D",
         "rating": null,
         "ratings": {},
