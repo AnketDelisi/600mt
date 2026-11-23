@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-11-22T15:12:48Z",
+  "generated": "2026-11-23T19:03:37Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 0.0,
@@ -1237,7 +1237,7 @@
           ],
           "names": {
             "d": "Annie Andrews",
-            "r": "Darline Graham (replaced Lindsey Graham )"
+            "r": "Darline Graham (replaced Lindsey Graham †)"
           }
         }
       },
