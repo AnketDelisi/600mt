@@ -1,6 +1,6 @@
 {
   "model": "600 in-house model — district/state presidential lean + poll fundamentals, correlated Monte Carlo",
-  "generated": "2026-11-23T19:03:37Z",
+  "generated": "2026-11-25T17:52:30Z",
   "environment": {
     "election": "2026-11-03",
     "days_to_election": 0.0,
@@ -9422,6 +9422,25 @@
         "polls": null
       },
       {
+        "state": "Maryland",
+        "district": "5",
+        "incumbent": "Steny Hoyer",
+        "party": "D",
+        "rating": null,
+        "ratings": {},
+        "lean": "Solid D",
+        "leader": "D",
+        "margin": 33.7,
+        "calibration": null,
+        "dem_pct": 100.0,
+        "rep_pct": 0.0,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
         "state": "New York",
         "district": "16",
         "incumbent": "George Latimer",
@@ -9761,25 +9780,6 @@
         "calibration": null,
         "dem_pct": 0.0,
         "rep_pct": 100.0,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
-      },
-      {
-        "state": "Maryland",
-        "district": "5",
-        "incumbent": "Steny Hoyer",
-        "party": "D",
-        "rating": null,
-        "ratings": {},
-        "lean": "Solid D",
-        "leader": "D",
-        "margin": 31.2,
-        "calibration": null,
-        "dem_pct": 100.0,
-        "rep_pct": 0.0,
         "ind_pct": 0.0,
         "dem_name": null,
         "rep_name": null,
@@ -13682,6 +13682,29 @@
         "polls": null
       },
       {
+        "state": "Minnesota",
+        "district": "2",
+        "incumbent": "Angie Craig",
+        "party": null,
+        "rating": "Likely D",
+        "ratings": {
+          "cook": "Likely D",
+          "ie": "Likely D",
+          "sabato": "Likely D"
+        },
+        "lean": "Likely D",
+        "leader": "D",
+        "margin": 8.7,
+        "calibration": null,
+        "dem_pct": 92.4,
+        "rep_pct": 7.6,
+        "ind_pct": 0.0,
+        "dem_name": null,
+        "rep_name": null,
+        "ind_name": null,
+        "polls": null
+      },
+      {
         "state": "New Jersey",
         "district": "3",
         "incumbent": "Herb Conaway",
@@ -14157,29 +14180,6 @@
             "r": "Monica De La Cruz"
           }
         }
-      },
-      {
-        "state": "Minnesota",
-        "district": "2",
-        "incumbent": "Angie Craig",
-        "party": null,
-        "rating": "Likely D",
-        "ratings": {
-          "cook": "Likely D",
-          "ie": "Likely D",
-          "sabato": "Likely D"
-        },
-        "lean": "Lean D",
-        "leader": "D",
-        "margin": 7.2,
-        "calibration": null,
-        "dem_pct": 88.6,
-        "rep_pct": 11.4,
-        "ind_pct": 0.0,
-        "dem_name": null,
-        "rep_name": null,
-        "ind_name": null,
-        "polls": null
       },
       {
         "state": "Ohio",
@@ -17950,16 +17950,16 @@
         }
       }
     ],
-    "expected_d_seats": 221.5,
-    "expected_r_seats": 213.5,
+    "expected_d_seats": 221.6,
+    "expected_r_seats": 213.4,
     "expected_i_seats": 0.0,
     "majority": {
-      "dem_pct": 61.5,
-      "rep_pct": 38.5
+      "dem_pct": 61.6,
+      "rep_pct": 38.4
     },
     "distribution_buckets": [
       {
-        "seats": 165,
+        "seats": 163,
         "pct": 0.1
       },
       {
@@ -18008,11 +18008,11 @@
       },
       {
         "seats": 189,
-        "pct": 1.0
+        "pct": 0.9
       },
       {
         "seats": 191,
-        "pct": 1.2
+        "pct": 1.1
       },
       {
         "seats": 193,
@@ -18032,7 +18032,7 @@
       },
       {
         "seats": 201,
-        "pct": 2.1
+        "pct": 2.0
       },
       {
         "seats": 203,
@@ -18044,11 +18044,11 @@
       },
       {
         "seats": 207,
-        "pct": 2.7
+        "pct": 2.8
       },
       {
         "seats": 209,
-        "pct": 3.0
+        "pct": 3.1
       },
       {
         "seats": 211,
@@ -18056,7 +18056,7 @@
       },
       {
         "seats": 213,
-        "pct": 3.5
+        "pct": 3.4
       },
       {
         "seats": 215,
@@ -18068,11 +18068,11 @@
       },
       {
         "seats": 219,
-        "pct": 4.0
+        "pct": 3.9
       },
       {
         "seats": 221,
-        "pct": 4.2
+        "pct": 4.3
       },
       {
         "seats": 223,
@@ -18080,7 +18080,7 @@
       },
       {
         "seats": 225,
-        "pct": 4.4
+        "pct": 4.5
       },
       {
         "seats": 227,
@@ -18096,11 +18096,11 @@
       },
       {
         "seats": 233,
-        "pct": 4.1
+        "pct": 4.2
       },
       {
         "seats": 235,
-        "pct": 3.7
+        "pct": 3.8
       },
       {
         "seats": 237,
@@ -18120,7 +18120,7 @@
       },
       {
         "seats": 245,
-        "pct": 2.6
+        "pct": 2.7
       },
       {
         "seats": 247,
